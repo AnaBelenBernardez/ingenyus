@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Lastik";
+  src: url("Lastik-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("Satoshi-Variable.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SatoshiItalic";
+  src: url("Satoshi-VariableItalic.ttf") format("truetype");
+}

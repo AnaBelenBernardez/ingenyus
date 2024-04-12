@@ -1,16 +1,24 @@
+div {
+  background-color: rgb(123, 153, 170);
+}
+
 h1 {
   font-family: "Lastik";
   font-weight: 100;
+  color: var(--codgray);
 }
 
 h2 {
   font-family: "Lastik";
+  color: var(--denim);
 }
 
 h3 {
   font-family: "Satoshi";
+  color: var(--gallery);
 }
 
 p {
   font-family: "SatoshiItalic";
+  color: var(--athens);
 }

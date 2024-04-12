@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --codgray: #161616;
+  --athens: #f7f7f8;
+  --denim: #1851e3;
+  --gallery: #eeeeee;
+  font-family: "Satoshi", serif;
+}

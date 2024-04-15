@@ -1,14 +1,64 @@
 @font-face {
   font-family: "Lastik";
-  src: url("Lastik-Regular.otf") format("opentype");
+  src: url("Lastik-Regular.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Satoshi";
-  src: url("Satoshi-Variable.ttf") format("truetype");
+  font-family: "Satoshi-Black";
+  src: url("Satoshi-Black.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "SatoshiItalic";
-  src: url("Satoshi-VariableItalic.ttf") format("truetype");
+  font-family: "Satoshi-BlackItalic";
+  src: url("Satoshi-BlackItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("Satoshi-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Satoshi-BoldItalic";
+  src: url("Satoshi-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Satoshi-Italic";
+  src: url("Satoshi-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url("Satoshi-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Satoshi-LightItalic";
+  src: url("Satoshi-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("Satoshi-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Satoshi-MediumItalic";
+  src: url("Satoshi-MediumItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("Satoshi-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("Satoshi-Variable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Satoshi-VariableItalic";
+  src: url("Satoshi-VariableItalic.woff2") format("woff2");
 }

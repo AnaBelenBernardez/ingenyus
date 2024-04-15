@@ -14,11 +14,11 @@ h2 {
 }
 
 h3 {
-  font-family: "Satoshi";
+  font-family: "Satoshi-Regular";
   color: var(--gallery);
 }
 
 p {
-  font-family: "SatoshiItalic";
+  font-family: "Satoshi-Italic";
   color: var(--athens);
 }

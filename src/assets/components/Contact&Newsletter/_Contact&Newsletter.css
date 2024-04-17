@@ -1,9 +1,15 @@
+* {
+    font-family: 'Satoshi-Regular';
+}
+
 .newsletter_contact {
     background-color: rgba(25, 81, 228, 255);
-    height: 25rem;
+    width: 1512px;
+    height: 850.5px;
     display: flex;
     flex-direction: column;
-    color: white;
+    color: #F7F7F8;
+    font-family: 'Satoshi-Regular';
     align-items: center;
 }
 
@@ -11,36 +17,41 @@
 .contact,
 .newsletter {
     flex: 1;
-    width: 40rem;
+    width: 714px;
+    width: 1231px;
 }
 
 
 .contact {
-    border-bottom: none
+    border-bottom: none;
+    padding-top: 2rem;
 }
 
 .both_title {
     padding: 1.5rem 0rem 0rem 0rem;
-    letter-spacing: 1.5px;
-    font-size: 1.5rem;
+    font-size: 67.2px;
     margin-bottom: 1rem;
-    font-weight: 100;
+    font-weight: 300;
+    line-height: 96px;
 }
 
 
 .nc_text {
-    font-size: 12px;
+    font-size: 16.8px;
+    font-style: none;
+    font-family: 'Satoshi-Regular';
+    font-weight: 300;
     color: white;
-    margin-top: 1rem
+    margin-top: 2rem
 }
 
 
 .newsletter {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 3rem;
     border-top: 1px solid white;
-
+    padding-top: 2rem;
 }
 
 
@@ -51,7 +62,7 @@
 
 
 .newsletter_right {
-    padding: 2rem 0rem 0rem 0rem;
+    padding: 5rem 0rem 0rem 0rem;
 }
 
 
@@ -65,21 +76,30 @@
         rgba(25, 81, 228, 255);
     border: none;
     border-bottom: 1px solid white;
-    margin-top: 0.2rem;
+    height: 34.38px;
 }
 
 .newsletter_email input::placeholder {
     color: white;
-    opacity: 0.5;
+    opacity: 0.3;
+    font-size: 16.8px;
 }
 
+.nc_email {
+    font-weight: 700;
+    font-size: 16.8px;
+    line-height: 24px;
+}
 
 .button_contact {
-    border-radius: 1rem;
-    font-size: 12px;
-    color: blue;
-    width: 4.5rem;
-    border: none;
+    border-radius: 840px;
+    background-color: #F7F7F8;
+    font-size: 14.7px;
+    font-weight: 400;
+    color: #1851E3;
+    width: 84.3px;
+    height: 35.7px;
+    border: 1.05px;
     padding: 0.5rem 0 0.5rem 0;
     margin-bottom: 2rem;
 }

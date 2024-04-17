@@ -21,7 +21,7 @@ export function Contact_Newsletter() {
                 </div>
                 <div className="newsletter_right">
                     <form className="newsletter_email" action="">
-                        <label className="nc_text" htmlFor="">email*</label>
+                        <label className="nc_email" htmlFor="">email*</label>
                         <input type="email" placeholder="email@ejemplo.com" />
                     </form>
                 </div>

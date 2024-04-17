@@ -1,9 +1,6 @@
+import BiologyMap from '../assets/components/Maps/BiologyMap';
 const Biology = () => {
-    return (
-        <main>
-            <h1>Biology</h1>
-        </main>
-    );
+    return <BiologyMap />;
 };
 
 export default Biology;

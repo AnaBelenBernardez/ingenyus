@@ -1,9 +1,6 @@
+import MathematicsMap from '../assets/components/Maps/MathematicsMap';
 const Mathematics = () => {
-    return (
-        <main>
-            <h1>Mathematics</h1>
-        </main>
-    );
+    return <MathematicsMap />;
 };
 
 export default Mathematics;

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './style.css';
 
 function Nav() {
@@ -10,38 +10,40 @@ function Nav() {
         <nav className='nav'>
             <ul>
                 <li>
-                    <button id='homeButton' className='buttonNav'>
-                        <Link to='/'>home</Link>
+                    <button className='buttonNav'>
+                        <NavLink exact='true' to='/' activeclassname='active'>
+                            home
+                        </NavLink>
                     </button>
                 </li>
                 <li>
                     <button className='buttonNav'>
-                        <Link to='chemistry'>química</Link>
+                        <NavLink to='chemistry'>química</NavLink>
                     </button>
                 </li>
                 <li>
                     <button className='buttonNav'>
-                        <Link to='physics'>física</Link>
+                        <NavLink to='physics'>física</NavLink>
                     </button>
                 </li>
                 <li>
                     <button className='buttonNav'>
-                        <Link to='biology'>biología</Link>
+                        <NavLink to='biology'>biología</NavLink>
                     </button>
                 </li>
                 <li>
                     <button className='buttonNav'>
-                        <Link to='computer-science'>computación</Link>
+                        <NavLink to='computer-science'>computación</NavLink>
                     </button>
                 </li>
                 <li>
                     <button className='buttonNav'>
-                        <Link to='mathematics'>matemáticas</Link>
+                        <NavLink to='mathematics'>matemáticas</NavLink>
                     </button>
                 </li>
                 <li>
                     <button className='buttonNav'>
-                        <Link to='medicine'>medicina</Link>
+                        <NavLink to='medicine'>medicina</NavLink>
                     </button>
                 </li>
                 <li>
@@ -50,7 +52,7 @@ function Nav() {
                         id='languageSelect'
                         // onChange={(e) => handleChange(e)}
                     >
-                        <option value='es' selected>
+                        <option value='es' defaultValue>
                             es
                         </option>
                         <option value='en'>en</option>

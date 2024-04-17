@@ -1,0 +1,91 @@
+.newsletter_contact {
+    background-color: rgba(25, 81, 228, 255);
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+
+
+.contact,
+.newsletter {
+    flex: 1;
+    width: 40rem;
+}
+
+
+.contact {
+    border-bottom: none
+}
+
+.both_title {
+    padding: 1.5rem 0rem 0rem 0rem;
+    letter-spacing: 1.5px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 100;
+}
+
+
+.nc_text {
+    font-size: 12px;
+    color: white;
+    margin-top: 1rem
+}
+
+
+.newsletter {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    border-top: 1px solid white;
+
+}
+
+
+.newsletter_left,
+.newsletter_right {
+    flex: 1;
+}
+
+
+.newsletter_right {
+    padding: 2rem 0rem 0rem 0rem;
+}
+
+
+.newsletter_email {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter_email input {
+    background-color:
+        rgba(25, 81, 228, 255);
+    border: none;
+    border-bottom: 1px solid white;
+    margin-top: 0.2rem;
+}
+
+.newsletter_email input::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+
+.button_contact {
+    border-radius: 1rem;
+    font-size: 12px;
+    color: blue;
+    width: 4.5rem;
+    border: none;
+    padding: 0.5rem 0 0.5rem 0;
+    margin-bottom: 2rem;
+}
+
+.contact_button_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

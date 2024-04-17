@@ -4,7 +4,7 @@
 
 .newsletter_contact {
     background-color: rgba(25, 81, 228, 255);
-    width: 1512px;
+    width: 100vw;
     height: 850.5px;
     display: flex;
     flex-direction: column;
@@ -28,11 +28,12 @@
 }
 
 .both_title {
-    padding: 1.5rem 0rem 0rem 0rem;
+    padding: 3rem 0rem 0rem 0rem;
     font-size: 67.2px;
     margin-bottom: 1rem;
     font-weight: 300;
     line-height: 96px;
+    margin-bottom: 2rem;
 }
 
 
@@ -42,7 +43,7 @@
     font-family: 'Satoshi-Regular';
     font-weight: 300;
     color: white;
-    margin-top: 2rem
+    margin-top: 1.5rem
 }
 
 
@@ -51,7 +52,7 @@
     flex-direction: row;
     gap: 3rem;
     border-top: 1px solid white;
-    padding-top: 2rem;
+    padding-top: 0rem;
 }
 
 
@@ -100,12 +101,19 @@
     width: 84.3px;
     height: 35.7px;
     border: 1.05px;
-    padding: 0.5rem 0 0.5rem 0;
-    margin-bottom: 2rem;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.button_contact:hover {
+    background-color: #1851E3;
+    color: #F7F7F8;
+    border: 1px solid white;
 }
 
 .contact_button_box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    padding-top: 3.7rem
 }

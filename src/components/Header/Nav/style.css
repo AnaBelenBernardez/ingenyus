@@ -24,22 +24,12 @@
     color: var(--denim);
 }
 
-#homeButton {
+.buttonNav .active {
     border: 1px var(--athens) solid;
     border-radius: 50rem;
-    width: 69.63px;
-    height: 27.02px;
+    padding: 0rem 1rem 0.2rem 1rem;
 }
 
-#homeButton a {
-    display: block;
-    margin-top: -2px;
-}
-
-#homeButton:hover {
+.buttonNav .active:hover {
     background-color: var(--athens);
-}
-
-#homeButton:hover a {
-    color: var(--denim);
 }

@@ -3,7 +3,7 @@ export default function ComputerScienceMap() {
     return (
         <section>
             <div>
-                {data.ComputerScience.map((item, index) => (
+                {data.computerScience.map((item, index) => (
                     <div key={index}>
                         <div>
                             <img src={item.src} alt={item.name} />

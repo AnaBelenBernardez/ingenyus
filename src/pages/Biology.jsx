@@ -1,8 +1,8 @@
 const Biology = () => {
     return (
-        <div>
+        <main>
             <h1>Biology</h1>
-        </div>
+        </main>
     );
 };
 

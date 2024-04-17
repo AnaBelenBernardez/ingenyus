@@ -1,5 +1,4 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Biology from './pages/Biology';
 import Physics from './pages/Physics';
@@ -9,10 +8,12 @@ import ComputerScience from './pages/ComputerScience';
 import Medicine from './pages/Medicine';
 import './App.css';
 import Header from './components/Header';
+import PageTitle from './components/PageTitle';
 
 function App() {
     return (
         <div className='App'>
+            <PageTitle />
             <Header />
             <Routes>
                 <Route exact path='/' element={<Home />} />

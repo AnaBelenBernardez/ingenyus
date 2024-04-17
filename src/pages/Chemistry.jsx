@@ -1,9 +1,6 @@
+import ChemystryMap from '../assets/components/Maps/ChemistryMap';
 const Chemistry = () => {
-    return (
-        <main>
-            <h1>Chemistry</h1>
-        </main>
-    );
+    return <ChemystryMap />;
 };
 
 export default Chemistry;

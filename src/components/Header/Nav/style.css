@@ -1,0 +1,45 @@
+.buttonNav {
+    background-color: transparent;
+    border: none;
+    color: var(--athens);
+    font-family: 'Satoshi-Regular';
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.nav > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.buttonNav > a {
+    text-decoration: none;
+    color: var(--athens);
+}
+
+.buttonNav:hover,
+.buttonNav > a:hover {
+    color: var(--denim);
+}
+
+#homeButton {
+    border: 1px var(--athens) solid;
+    border-radius: 50rem;
+    width: 69.63px;
+    height: 27.02px;
+}
+
+#homeButton a {
+    display: block;
+    margin-top: -2px;
+}
+
+#homeButton:hover {
+    background-color: var(--athens);
+}
+
+#homeButton:hover a {
+    color: var(--denim);
+}

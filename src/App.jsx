@@ -1,20 +1,33 @@
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Biology from './pages/Biology';
+import Physics from './pages/Physics';
+import Chemistry from './pages/Chemistry';
+import Mathematics from './pages/Mathematics';
+import ComputerScience from './pages/ComputerScience';
+import Medicine from './pages/Medicine';
 import './App.css';
-import { Contact_Newsletter } from './assets/components/Contact&Newsletter/Contact&Newsletter';
+import { Contact_Newsletter } from './components/Contact&Newsletter/Contact&Newsletter';
+import Header from './components/Header';
+import PageTitle from './components/PageTitle';
 
 function App() {
     return (
-        <>
-            <main>
-                <div className='example'>
-                    <h1>ingenyus *</h1>
-                    <h2>Lastik</h2>
-                    <h3>Satoshi</h3>
-                    <p>Satoshi Italic</p>
-                </div>
-                <Contact_Newsletter />
-
-            </main>
-        </>
+        <div className='App'>
+            <PageTitle />
+            <Header />
+            <Routes>
+                <Route exact path='/' element={<Home />} />
+                <Route path='biology' element={<Biology />} />
+                <Route path='physics' element={<Physics />} />
+                <Route path='chemistry' element={<Chemistry />} />
+                <Route path='mathematics' element={<Mathematics />} />
+                <Route path='computer-science' element={<ComputerScience />} />
+                <Route path='medicine' element={<Medicine />} />
+                <Route path='*' element={<div>404 Not Found</div>} />
+            </Routes>
+            <Contact_Newsletter />
+        </div>
     );
 }
 

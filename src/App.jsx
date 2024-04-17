@@ -12,6 +12,7 @@ function App() {
                     <p>Satoshi Italic</p>
                 </div>
                 <Contact_Newsletter />
+
             </main>
         </>
     );

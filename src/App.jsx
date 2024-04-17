@@ -13,28 +13,17 @@ import Header from './components/Header';
 function App() {
     return (
         <div className='App'>
-           <Header />
-            <Router>
-                    <Routes>
-                        <Route path='/' element={<Home />}></Route>
-                        <Route path='biology' element={<Biology />}></Route>
-                        <Route path='physics' element={<Physics />}></Route>
-                        <Route path='chemistry' element={<Chemistry />}></Route>
-                        <Route
-                            path='mathematics'
-                            element={<Mathematics />}
-                        ></Route>
-                        <Route
-                            path='computer-science'
-                            element={<ComputerScience />}
-                        ></Route>
-                        <Route path='medicine' element={<Medicine />}></Route>
-                        <Route
-                            path='*'
-                            element={<div>404 Not Found</div>}
-                        ></Route>
-                    </Routes>
-            </Router>
+            <Header />
+            <Routes>
+                <Route exact path='/' element={<Home />} />
+                <Route path='biology' element={<Biology />} />
+                <Route path='physics' element={<Physics />} />
+                <Route path='chemistry' element={<Chemistry />} />
+                <Route path='mathematics' element={<Mathematics />} />
+                <Route path='computer-science' element={<ComputerScience />} />
+                <Route path='medicine' element={<Medicine />} />
+                <Route path='*' element={<div>404 Not Found</div>} />
+            </Routes>
         </div>
     );
 }

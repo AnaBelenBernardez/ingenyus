@@ -1,8 +1,8 @@
 const Physics = () => {
     return (
-        <div>
+        <main>
             <h1>Physics</h1>
-        </div>
+        </main>
     );
 };
 

@@ -1,8 +1,8 @@
 const ComputerScience = () => {
     return (
-        <div>
+        <main>
             <h1>Computer Science</h1>
-        </div>
+        </main>
     );
 };
 

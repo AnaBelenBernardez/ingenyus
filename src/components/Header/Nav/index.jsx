@@ -16,38 +16,38 @@ function Nav() {
                 </li>
                 <li>
                     <button className='buttonNav'>
-                        <Link to='/'>química</Link>
+                        <Link to='chemistry'>química</Link>
                     </button>
                 </li>
                 <li>
                     <button className='buttonNav'>
-                        <Link to='/'>física</Link>
+                        <Link to='physics'>física</Link>
                     </button>
                 </li>
                 <li>
                     <button className='buttonNav'>
-                        <Link to='/'>biología</Link>
+                        <Link to='biology'>biología</Link>
                     </button>
                 </li>
                 <li>
                     <button className='buttonNav'>
-                        <Link to='/'>computación</Link>
+                        <Link to='computer-science'>computación</Link>
                     </button>
                 </li>
                 <li>
                     <button className='buttonNav'>
-                        <Link to='/'>matemáticas</Link>
+                        <Link to='mathematics'>matemáticas</Link>
                     </button>
                 </li>
                 <li>
                     <button className='buttonNav'>
-                        <Link to='/'>medicina</Link>
+                        <Link to='medicine'>medicina</Link>
                     </button>
                 </li>
                 <li>
                     <select
                         className='buttonNav'
-                        id='languageSelector'
+                        id='languageSelect'
                         // onChange={(e) => handleChange(e)}
                     >
                         <option value='es' selected>

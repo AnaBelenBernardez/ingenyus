@@ -8,12 +8,13 @@ import Mathematics from './pages/Mathematics';
 import ComputerScience from './pages/ComputerScience';
 import Medicine from './pages/Medicine';
 import './App.css';
+import Header from './components/Header';
 
 function App() {
     return (
         <div className='App'>
+           <Header />
             <Router>
-                <div>
                     <Routes>
                         <Route path='/' element={<Home />}></Route>
                         <Route path='biology' element={<Biology />}></Route>
@@ -33,7 +34,6 @@ function App() {
                             element={<div>404 Not Found</div>}
                         ></Route>
                     </Routes>
-                </div>
             </Router>
         </div>
     );

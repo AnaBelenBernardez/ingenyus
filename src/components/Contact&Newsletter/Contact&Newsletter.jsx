@@ -1,5 +1,5 @@
 import { BotonSimple } from "../BotonSimple/BotonSimple"
-import "./_Contact&Newsletter.css"
+import "../../css/layout/_Contact&Newsletter.css"
 
 export function Contact_Newsletter() {
 

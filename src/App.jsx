@@ -6,14 +6,14 @@ import Chemistry from './pages/Chemistry';
 import Mathematics from './pages/Mathematics';
 import ComputerScience from './pages/ComputerScience';
 import Medicine from './pages/Medicine';
-import './App.css';
+import '../src/css/base/_globals.css';
 import { Contact_Newsletter } from './components/Contact&Newsletter/Contact&Newsletter';
 import Header from './components/Header';
 import PageTitle from './components/PageTitle';
 
 function App() {
     return (
-        <div className='App'>
+        <>
             <PageTitle />
             <Header />
             <Routes>
@@ -27,8 +27,7 @@ function App() {
                 <Route path='*' element={<div>404 Not Found</div>} />
             </Routes>
             <Contact_Newsletter />
-            {/* <Footer /> */}
-        </div>
+        </>
     );
 }
 

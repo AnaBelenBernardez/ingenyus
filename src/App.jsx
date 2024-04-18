@@ -9,12 +9,14 @@ import Medicine from './pages/Medicine';
 import './App.css';
 import Header from './components/Header';
 import PageTitle from './components/PageTitle';
+import ScrollBar from './components/ScrollBar';
 
 function App() {
     return (
         <div className='App'>
             <PageTitle />
             <Header />
+            <ScrollBar />
             <Routes>
                 <Route exact path='/' element={<Home />} />
                 <Route path='biology' element={<Biology />} />

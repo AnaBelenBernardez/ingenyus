@@ -1,3 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Satoshi-Regular';
+}
+
+body {
+    margin: 0;
+    --codgray: #161616;
+    --athens: #f7f7f8;
+    --denim: #1851e3;
+    --gallery: #eeeeee;
+    font-family: 'Satoshi-Regular', serif;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -5,19 +21,4 @@ html {
 .main {
     max-width: 140rem;
     margin: 0 auto;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-
-    --codgray: #161616;
-    --athens: #f7f7f8;
-    --denim: #1851e3;
-    --gallery: #eeeeee;
-    font-family: 'Satoshi-Regular', serif;
 }

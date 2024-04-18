@@ -1,0 +1,31 @@
+.buttonLang {
+    list-style: none;
+    position: relative;
+}
+
+#enSelector {
+    position: absolute;
+    margin-top: 0.5rem;
+}
+
+.buttonNav:hover .triangleDown,
+.buttonLang:hover .triangleDown {
+    border-top-color: var(--denim);
+}
+
+.triangleDown {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid var(--athens);
+    position: absolute;
+    top: 50%;
+    left: 1.7rem;
+    transform: translateX(-50%);
+}
+
+.buttonNav:hover .triangleDown,
+.buttonLang:hover .triangleDown {
+    border-top-color: var(--denim);
+}

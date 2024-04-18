@@ -1,9 +1,6 @@
+import ComputerScienceMap from '../assets/components/Maps/ComputerScienceMap';
 const ComputerScience = () => {
-    return (
-        <main>
-            <h1>Computer Science</h1>
-        </main>
-    );
+    return <ComputerScienceMap />;
 };
 
 export default ComputerScience;

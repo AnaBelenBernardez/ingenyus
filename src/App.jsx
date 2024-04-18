@@ -26,7 +26,6 @@ function App() {
                 <Route path='medicine' element={<Medicine />} />
                 <Route path='*' element={<div>404 Not Found</div>} />
             </Routes>
-            <Contact_Newsletter />
         </div>
     );
 }

@@ -1,9 +1,6 @@
+import MedicineMap from '../assets/components/Maps/MedicineMap';
 const Medicine = () => {
-    return (
-        <main>
-            <h1>Medicine</h1>
-        </main>
-    );
+    return <MedicineMap />;
 };
 
 export default Medicine;

@@ -10,12 +10,14 @@ import '../src/css/base/_globals.css';
 import { Contact_Newsletter } from './components/Contact&Newsletter/Contact&Newsletter';
 import Header from './components/Header';
 import PageTitle from './components/PageTitle';
+import ScrollBar from './components/ScrollBar';
 
 function App() {
     return (
         <>
             <PageTitle />
             <Header />
+            <ScrollBar />
             <Routes>
                 <Route exact path='/' element={<Home />} />
                 <Route path='biology' element={<Biology />} />

@@ -14,10 +14,10 @@ html {
 }
 
 body {
-
     --codgray: #161616;
     --athens: #f7f7f8;
     --denim: #1851e3;
     --gallery: #eeeeee;
     font-family: 'Satoshi-Regular', serif;
+    background-color: #1851e3;
 }

@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import './style.css';
+import LanguageSelector from '../LanguageSelector';
 
 function Nav() {
     // function handleChange(event) {
@@ -46,18 +47,7 @@ function Nav() {
                         <NavLink to='medicine'>medicina</NavLink>
                     </button>
                 </li>
-                <li>
-                    <select
-                        className='buttonNav'
-                        id='languageSelect'
-                        // onChange={(e) => handleChange(e)}
-                    >
-                        <option value='es' defaultValue>
-                            es
-                        </option>
-                        <option value='en'>en</option>
-                    </select>
-                </li>
+                <LanguageSelector />
             </ul>
         </nav>
     );

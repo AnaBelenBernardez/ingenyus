@@ -27,7 +27,7 @@
 .buttonNav .active {
     border: 1px var(--athens) solid;
     border-radius: 50rem;
-    padding: 0rem 1rem 0.2rem 1rem;
+    padding: 0rem 1rem 0.3rem 1rem;
 }
 
 .buttonNav .active:hover {

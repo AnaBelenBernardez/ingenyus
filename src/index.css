@@ -21,3 +21,8 @@ body {
     font-family: 'Satoshi-Regular', serif;
     background-color: #1851e3;
 }
+
+::selection {
+    background-color: var(--athens);
+    color: var(--denim);
+}

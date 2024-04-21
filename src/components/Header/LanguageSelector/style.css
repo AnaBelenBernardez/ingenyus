@@ -1,6 +1,9 @@
 .buttonLang {
-    list-style: none;
     position: relative;
+}
+
+li {
+    list-style: none;
 }
 
 #enSelector {

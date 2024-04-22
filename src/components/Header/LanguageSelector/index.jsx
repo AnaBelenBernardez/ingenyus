@@ -1,7 +1,15 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import i18n from 'i18next';
 import './style.css';
 
 function LanguageSelector() {
+    const { t } = useTranslation();
+
+    const handleChangeLanguage = (language) => {
+        i18n.changeLanguage(language);
+    };
+
     const [showLanguages, setShowLanguages] = useState(false);
 
     const toggleLanguages = () => {
@@ -10,19 +18,29 @@ function LanguageSelector() {
 
     return (
         <>
-            <li>
-                <ul id='languageSelector' onClick={toggleLanguages}>
-                    <li className='buttonNav buttonLang' id='esSelector'>
-                        es
-                        <div className='triangleDown' />
-                    </li>
-                    {showLanguages && (
-                        <li className='buttonNav buttonLang' id='enSelector'>
-                            en
+            <div className='languageSelector'>
+                <li>
+                    <ul id='languageSelector' onClick={toggleLanguages}>
+                        <li
+                            className={`language ${i18n.language === 'es' ? 'active' : ''}`}
+                            onClick={() => handleChangeLanguage('es')}
+                            id='esSelector'
+                        >
+                            es
+                            <div className='triangleDown' />
                         </li>
-                    )}
-                </ul>
-            </li>
+                        {showLanguages && (
+                            <li
+                                className={`language ${i18n.language === 'es' ? 'active' : ''}`}
+                                onClick={() => handleChangeLanguage('en')}
+                                id='enSelector'
+                            >
+                                en
+                            </li>
+                        )}
+                    </ul>
+                </li>
+            </div>
         </>
     );
 }

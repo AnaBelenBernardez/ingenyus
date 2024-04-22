@@ -1,4 +1,4 @@
-import ComputerScienceMap from '../assets/components/Maps/ComputerScienceMap';
+import ComputerScienceMap from '../components/Maps/ComputerScienceMap';
 const ComputerScience = () => {
     return <ComputerScienceMap />;
 };

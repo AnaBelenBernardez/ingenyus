@@ -1,4 +1,4 @@
-import MathematicsMap from '../assets/components/Maps/MathematicsMap';
+import MathematicsMap from '../components/Maps/MathematicsMap';
 const Mathematics = () => {
     return <MathematicsMap />;
 };

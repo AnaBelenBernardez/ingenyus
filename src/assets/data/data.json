@@ -1,302 +1,607 @@
 {
-    "chemistry": [
-        {
-            "id": 1,
-            "name": "Marie Curie",
-            "date": "1867-1934",
-            "description": "Pionera e inigualable: primera mujer en ganar un Nobel y única persona en obtener ese reconocimiento en dos categorías diferentes",
-            "bio": "Marie Curie, un ícono de la ciencia, desafió los obstáculos de su época, convirtiéndose un referente en el estudio de la radiactividad - término que ella misma acuñó. Desde sus humildes comienzos en Polonia hasta su destacada carrera en París, su valentía y dedicación la llevaron a descubrir técnicas para el aislamiento de isótopos y los elementos radio y polonio, así como a crear los primeros centros radiológicos de la historia. Su legado y su pasión son toda una inspiración para las científicas y científicos actuales: Marie Curie rompió las barreras y se convirtió en la primera mujer en ser homenajeada con el Nobel y, hasta día de hoy, en la única persona en ganar el premio en dos categorías distintas: Física y Química.",
-            "src": ""
-        },
-        {
-            "id": 2,
-            "name": "Alice Ball",
-            "date": "1892-1916",
-            "description": "Icono de la lucha contra la lepra y la defensa de la salud pública",
-            "bio": "Alice Ball desafió las limitaciones de su tiempo para dejar una marca indeleble en la ciencia: se posicionó como creadora del único tratamiento efectivo contra la lepra hasta la aparición de los antibióticos. A pesar de su temprano fallecimiento, su ingenio y su pasión por la ciencia la llevaron a convertirse en una pionera en preservación de la salud pública, posicionándose además como un referente para la lucha racial al ser la primera mujer norteamericana de ascendencia calé en graduarse en la Universidad de Hawái con un máster. El legado de Alice Ball es una inspiración para las generaciones venideras, recordando que el talento y la determinación pueden trascender cualquier barrera.",
-            "src": ""
-        },
-        {
-            "id": 3,
-            "name": "Rosalind Franklin",
-            "date": "1920-1958",
-            "description": "Dama oscura del ADN, figura fundamental en la reivindicación del Efecto Matilda",
-            "bio": "Rosalind Franklin rompió las barreras impuestas en la sociedad de su tiempo para convertirse en un referente en estudio del ADN. Su trabajo pionero en la cristalografía de rayos X, su dedicación y perspicacia, su imparable dedicación y su gran intelecto la llevaron a descubrir la verdadera estructura del ADN, posicionándose frente a sus compañeros masculinos. Aunque su contribución fue subestimada, ignorada y ninguneada en vida, incluyendo el robo de su investigación y la exclusión como ganadora del Nobel, su legado se ha consolidado como el de una científica asombrosa que se enfrentó a los prejuicios de género, superándose a ella misma y dejando tras de sí hallazgos fundamentales para la evolución del conocimiento.",
-            "src": ""
-        },
-        {
-            "id": 4,
-            "name": "Gerty Cori",
-            "date": "1896-1957",
-            "description": "Inspiración en bioquímica y tercera mujer en ganar un Premio Nobel de Medicina",
-            "bio": "Gerty Cori desafió las barreras de género y las injusticias laborales para dejar una huella indeleble en la ciencia y el feminismo. A pesar de las dificultades para encontrar reconocimiento y recompensa económica en su carrera, perseveró con determinación hasta convertirse en la tercera mujer en el mundo, y la primera en Estados Unidos, en recibir el Premio Nobel de Medicina, compartido con su esposo Carl y el fisiólogo argentino Bernardo Houssay. Su galardón fue el fruto de años de arduo trabajo y dedicación a descubrir los secretos del metabolismo, revelando el mecanismo por el cual el glucógeno se transforma en ácido láctico en el tejido muscular. Gerty Cori, con su valentía y genio sin igual, dejó un legado eterno en la historia de la medicina y la bioquímica.",
-            "src": ""
-        },
-        {
-            "id": 5,
-            "name": "Jenara Vicenta Arnal",
-            "date": "1902-1960",
-            "description": "Símbolo del feminismo nacional, primera doctora en ciencias químicas de España",
-            "bio": "Jenara Vicenta Arnal trazó su propio camino hacia el reconocimiento en un mundo dominado por hombres. Como la primera doctora en Ciencias Químicas de España, desafió los convencionalismos de su época para sumergirse en las profundidades de la investigación química. Su labor en los laboratorios de Química Teórica de la Universidad de Zaragoza la destacó como una mente brillante y visionaria, cuyo trabajo resonó tanto en el país como en el extranjero. Exploró los límites de las oxidaciones químicas provocadas por la acción del flúor en corriente gaseosa, combinando su carrera con su pasión por la enseñanza y dedicando gran parte de su vida a transmitir su conocimiento a las generaciones futuras: su compromiso con la ciencia la llevó a trabajar para el Consejo Superior de Investigaciones Científicas (CSIC) y colaborar en diversas iniciativas educativas, dejando una profunda huella en el pensamiento científico de su tiempo.",
-            "src": ""
-        },
-        {
-            "id": 6,
-            "name": "Dorothy Hodgkin",
-            "date": "1910-1994",
-            "description": "Protagonista en el descubrimiento de la estructura de la penicilina, la vitamina B12 y la insulina",
-            "bio": "Dorothy Hodgkin dejó una huella indeleble en el campo de la cristalografía de proteínas, por la cual fue galardonada con el Premio Nobel de Química en 1964. Su legado científico quedó reflejado a través de una serie de descubrimientos que incluyen la confirmación de la estructura de la penicilina y la vitamina B12, lo que la convirtió en la tercera mujer en recibir tan prestigioso reconocimiento. Después de 35 años de arduo trabajo, Hodgkin logró descifrar la estructura de la insulina, un hito que amplió enormemente la comprensión de la biología molecular. Pionera en el estudio de biomoléculas mediante técnicas de cristalografía de rayos X, su legado perdura como una inspiración para generaciones futuras de científicas.",
-            "src": ""
-        }
-    ],
-    "physics": [
-        {
-            "id": 1,
-            "name": "Lise Meitner",
-            "date": "1878-1968",
-            "description": "Madre de la fisión nuclear, infravalorada y excluida del Premio Nobel",
-            "bio": "Lise Meitner deslumbró con su genio científico y su coraje moral. Desde su hallazgo del isótopo radiactivo protactinio-231 hasta su papel fundamental en el descubrimiento de la fisión nuclear en 1938, su trabajo la consagró como una de las mentes más brillantes de su tiempo. Pero, a pesar de ser aclamada como la \"Marie Curie alemana\" por Albert Einstein, su  contribución al descubrimiento de la fisión nuclear fue eclipsada injustamente cuando su colaborador, Otto Hahn, recibió el Premio Nobel en su lugar. Meitner, conocida como la \"madre judía de la bomba atómica\", rechazó participar en el proyecto Manhattan por convicciones éticas, desafiando así las presiones políticas y éticas de su tiempo. Su valentía y su dedicación a la verdad científica la convierten en un símbolo de lucha en contra del prejuicio de género y la injusticia.",
-            "src": ""
-        },
-        {
-            "id": 2,
-            "name": "Emmy Noether",
-            "date": "1882-1935",
-            "description": "Referente en física y feminista implacable",
-            "bio": "Emmy Noether dejó un legado imborrable en el panorama científico del siglo XX. Sus contribuciones, de una importancia fundamental, resonaron en los campos de la física y las matemáticas, especialmente el teorema que lleva su nombre, que establece una conexión esencial entre la simetría en física y las leyes de conservación, proporcionando un marco conceptual que sigue siendo fundamental en la comprensión del universo. Sin embargo, a pesar de su brillantez, se vio obstaculizada por las barreras de género, enfrentando la negación de oportunidades laborales dignas simplemente por ser mujer. A pesar de estas adversidades, su espíritu indomable y su dedicación infatigable a la búsqueda de la verdad científica la convierten en un símbolo lucha contra la injusticia y un referente en ciencia atemporal.",
-            "src": ""
-        },
-        {
-            "id": 3,
-            "name": "Cecilia Payne-Gaposchkin",
-            "date": "1900-1979",
-            "description": "Autora de la \"más brillante tesis doctoral escrita nunca en astronomía\" y primera en afirmar que las estrellas se componen de hidrógeno",
-            "bio": "En 1925, la tesis doctoral de Cecilia Payne propuso una idea audaz y visionaria: que las estrellas están compuestas principalmente por hidrógeno. Este trabajo, elogiado como \"la más brillante tesis doctoral escrita nunca en astronomía\", marcó un punto de inflexión en la comprensión del Universo. Aunque sus comienzos en la academia estuvieron marcados por obstáculos y prejuicios de género, su pasión por la ciencia la llevó a cruzar fronteras y océanos en busca de oportunidades. Después de estudiar botánica, física y química en la Universidad de Cambridge, encontró su verdadero hogar en Estados Unidos, donde consiguió que su trabajo fuese reconocido, a pesar de su condición de mujer. En 1938, se le concedió el título de \"astrónoma\", y en 1956, se convirtió en la primera mujer en ser profesora asociada en Harvard, abriendo así las puertas para las generaciones futuras de mujeres en la ciencia.",
-            "src": ""
-        },
-        {
-            "id": 4,
-            "name": "María Goeppert-Mayer",
-            "date": "1906-1972",
-            "description": "Científica fundamental en el desarrollo de la física nuclear y amante de la ciencia hasta sus últimos días",
-            "bio": "Maria Goeppert Mayer, ganadora del Premio Nobel de Física en 1963 por su innovador modelo de capas nuclear, fue la segunda mujer en recibir este honor después de Marie Curie. En su tesis doctoral, exploró el fenómeno de la absorción simultánea de dos fotones por un átomo, una audaz teoría que fue confirmada experimentalmente décadas después. Sin embargo, a pesar de su brillantez y destreza científica, gran parte de su carrera transcurrió en la penumbra de la no remuneración, sin obtener un puesto con salario a tiempo completo hasta los 53 años. Desarrolló el cálculo matemático que sustentaba su revolucionario modelo de capas nuclear, un logro que le valió el reconocimiento mundial con el Premio Nobel de Física compartido con J. Hans D. Jensen y Eugene Paul Wigner. Maria Goeppert Mayer, con su dedicación infatigable, fue una de las científicas más importantes en el desarrollo de la física nuclear y, hasta su fallecimiento, amó y trabajó por la ciencia de forma inquebrantable.",
-            "src": ""
-        },
-        {
-            "id": 5,
-            "name": "Felisa Martín Bravo",
-            "date": "1898-1979",
-            "description": "Primera mujer en ingresar en el Cuerpo Superior de Meteorología y la primera doctora en Física de España",
-            "bio": "Felisa Martín Bravo desafió las barreras de género y las adversidades políticas en su búsqueda incansable del conocimiento científico. Como la primera mujer en ingresar en el Cuerpo Superior de Meteorología y la primera doctora en Física en España, marcó un hito en la historia de la ciencia española. Desentrañó los misterios de la estructura cristalina de compuestos como el óxido de níquel y cobalto, así como el sulfuro de plomo. Su sed de conocimiento la llevó a Cambridge, donde amplió su comprensión de meteorología bajo la tutela de Ernest Rutherford y, a su regreso a España, se integró en el Servicio Meteorológico Nacional en Madrid convirtiéndose en la primera mujer en ser admitida, sin embargo, su negativa a abandonar Madrid durante la guerra civil española le valió el cese en su puesto. Su legado perdura como un recordatorio de la importancia de la persistencia y la lucha contra los prejuicios.",
-            "src": ""
-        },
-        {
-            "id": 6,
-            "name": "Chien Shiung Wu",
-            "date": "1912-1997",
-            "description": "Primera Dama de la Física y una de las mayores científicas experimentales de la historia",
-            "bio": "Chien Shiung Wu, destacó como una experta en radiactividad, contribuyendo de manera significativa al Proyecto Manhattan, donde su trabajo fue fundamental para desarrollar el proceso de separación de isótopos de uranio mediante difusión gaseosa. Sin embargo, fue Experimento de Wu el que la llevó a la prominencia científica. Este experimento desafiaba la ley hipotética de conservación de la paridad, demostrando que la naturaleza no siempre seguía los esquemas de simetría que se habían asumido previamente. Sin embargo, fueron sus colegas Tsung-Dao Lee y Chen Ning Yang los que recibieron el Premio Nobel de Física de 1957 por este descubrimiento, quedando Wu excluida del reconocimiento. No obstante, Chien Shiung Wu, con su ingenio y determinación, sigue siendo un faro de inspiración para los científicos de hoy en día y un símbolo feminista de lucha y superación.",
-            "src": ""
-        }
-    ],
-    "biology": [
-        {
-            "id": 1,
-            "name": "Mary Anning",
-            "date": "1800-1847",
-            "description": "Primera paleontóloga de la historia",
-            "bio": "Mary Anning, reconocida como la primera paleontóloga de la historia, marcó la comprensión del mundo prehistórico. Residiendo en Lyme Regis, Inglaterra, Anning se dedicó apasionadamente a la búsqueda y recolección de fósiles del Jurásico en los lechos marinos, estableciendo su reputación como una hábil coleccionista y comerciante de hallazgos paleontológicos. Sus descubrimientos no solo fueron impresionantes por sí mismos, sino que también provocaron cambios fundamentales en la comprensión científica del período y la evolución de la Tierra en el siglo XIX. Sin embargo, a pesar de su contribución invaluable al campo, Anning enfrentó numerosos obstáculos debido a su género y clase social. Como hija de disidentes de clase baja, fue marginada y excluida de la comunidad científica británica dominada por hombres ricos anglicanos, y sus logros rara vez fueron reconocidos en vida. A pesar de estas adversidades, su legado perdura como un testimonio de determinación, habilidad y pasión por el conocimiento en un tiempo y lugar donde las mujeres como ella luchaban por ser reconocidas en el ámbito científico.",
-            "src": ""
-        },
-        {
-            "id": 2,
-            "name": "Rachel Carson",
-            "date": "1907-1964",
-            "description": "Precursora de la conciencia ambiental y la lucha por la conservación",
-            "bio": "Como bióloga marina y conservacionista estadounidense, Rachel Carson cambió para siempre la forma en que percibimos el mundo natural. Primero escritora, su obra The Sea Around Us la consolidó como una figura de referencia en oceanografía y vida en los océanos. Sin embargo, fue a finales de los años 1950 cuando Carson redirigió su enfoque hacia la conservación, desafiando el uso indiscriminado de pesticidas sintéticos y provocando un cambio sísmico en la política nacional:  su protesta culminó en una prohibición nacional del DDT y otros productos químicos dañinos, así como a la creación de la Agencia de Protección Ambiental de los Estados Unidos. Por su incansable labor, Rachel Carson fue honrada póstumamente con la Medalla Presidencial de la Libertad por Jimmy Carter, un tributo merecido a su extraordinario impacto en la protección de nuestro planeta, que ha perdurado hasta la actualidad.",
-            "src": ""
-        },
-        {
-            "id": 3,
-            "name": "Esther Lederberg",
-            "date": "1922-2006",
-            "description": "Mente brillante en microbiología y genética bacteriana",
-            "bio": "Esther Lederberg fue una verdadera pionera en el campo de la genética bacteriana, realizando contribuciones trascendentales que incluyen el descubrimiento del virus bacteriófago λ, la transferencia de genes entre bacterias mediante la transducción especializada y el método de réplica en placa. Además, su descubrimiento del plásmido F, o factor de fertilidad, abrió nuevas fronteras en la comprensión de la genética bacteriana y la resistencia a los antibióticos. Pero su legado fue más allá: fundó y dirigió el prestigioso Plasmid Reference Center en la Universidad Stanford, un centro de conocimiento donde se mantenían, nombraban y distribuían plásmidos de diversos tipos, facilitando así el avance de la investigación en todo el mundo. Con su búsqueda de la verdad científica y su compromiso con la ciencia, Esther Lederberg sigue siendo una inspiración para las generaciones futuras, recordando el poder transformador de la dedicación en la búsqueda del conocimiento.",
-            "src": ""
-        },
-        {
-            "id": 4,
-            "name": "Sylvia Earle",
-            "date": "1935",
-            "description": "\"Primer héroe del planeta\" y defensora de los océanos",
-            "bio": "Sylvia Earle ha dedicado su vida a explorar y proteger los misterios del mundo submarino. Como bióloga marina, exploradora y autora, Sylvia hizo historia al convertirse en la primera científica jefe de la Administración Nacional Oceánica y Atmosférica, liderando los esfuerzos para comprender y conservar los ecosistemas marinos. Su incansable labor la llevó a ser reconocida como el primer Héroe del planeta por la revista Time en 1998, un tributo merecido a su dedicación, compromiso y defensa incansable de los océanos. Colaboró también en estudios sobre los impactos devastadores de los vertidos de petróleo, siendo homenajeada con el prestigioso Premio Princesa de Asturias de la Concordia en 2018, un reconocimiento a su incansable lucha. Sylvia Earle, con su pasión y determinación, sigue siendo una inspiración para las acciones de defensa del océano, recordándonos la importancia vital de proteger y preservar los tesoros de nuestro planeta.",
-            "src": ""
-        },
-        {
-            "id": 5,
-            "name": "Ángeles Alvariño",
-            "date": "1916-2005",
-            "description": "Pionera en la investigación marina y visionaria en la exploración oceanográfica",
-            "bio": "Ángeles Alvariño dejó una marca indeleble en la exploración y comprensión de los océanos. Como oceanógrafa, zoóloga y profesora pionera en su campo, en 1953 se convirtió en la primera mujer científica en embarcarse en el buque oceanográfico británico, el Sarsia, marcando así un hito histórico en la exploración marina. A partir de 1956, extendió su influencia en los Estados Unidos, donde continuó sus investigaciones, descubriendo y documentando 22 especies de organismos marinos previamente desconocidos. Su legado fue reconocido en 2015, cuando la Real Academia Gallega de Ciencias (RAGC) seleccionó a Ángeles Alvariño para celebrar el 1 de junio como el «Día de la Ciencia en Galicia», siendo la primera vez que se homenajeó a una mujer investigadora en este evento. Su influencia sigue resonando a día de hoy, recordando la importancia de la curiosidad, la valentía y la determinación en la exploración del amplio mundo marino.",
-            "src": ""
-        },
-        {
-            "id": 6,
-            "name": "Elizabeth Blackburn",
-            "date": "1948",
-            "description": "Premio Nobel de Medicina y prestigiosa referente en bioquímica",
-            "bio": "Elizabeth Blackburn ha dejado una marca indeleble en la comprensión de los misterios del ADN y su papel en la salud humana. Originaria de Australia, descubrió la telomerasa, una enzima crucial en la formación de los telómeros durante la duplicación del ADN. Este hallazgo revolucionario no solo desveló información sobre los procesos fundamentales de la biología celular, sino que también le valió el Premio Nobel de Medicina en 2009. Blackburn, junto con su colega Carol Greider, también realizó un descubrimiento crucial al revelar que las células cancerosas pueden producir telomerasa en cantidades anormalmente altas, lo que contribuye al crecimiento descontrolado de tumores. Este hallazgo ha abierto nuevas puertas en la investigación del cáncer, brindando esperanza para el desarrollo de tratamientos más efectivos dirigidos a frenar la actividad de esta enzima y combatir la enfermedad.",
-            "src": ""
-        }
-    ],
-    "computerScience": [
-        {
-            "id": 1,
-            "name": "Ada Lovelace",
-            "date": "1815-1852",
-            "description": "Primera ingeniera de software y programadora, creadora de la máquina analítica",
-            "bio": "Ada Lovelace desempeñó un papel fundamental en la historia de la informática y la tecnología. Su colaboración con Charles Babbage en el desarrollo de la máquina analítica marcó un hito en la historia de la tecnología ya que, mientras otros se centraban únicamente en los cálculos numéricos, Lovelace vislumbró un futuro mucho más amplio para estas máquinas. Fue la primera en reconocer que la máquina analítica no se limitaba al simple cálculo, sino que tenía el potencial de procesar símbolos y realizar operaciones más complejas. Además, publicó lo que hoy se reconoce como el primer algoritmo destinado a ser procesado por una máquina, estableciendo así su lugar en la historia como la primera programadora de ordenadores. Su visión y comprensión de las capacidades de las computadoras sentaron las bases para el desarrollo de la informática moderna, posicionándose como una pionera cuyo ingenio y visión trascendieron su tiempo.",
-            "src": ""
-        },
-        {
-            "id": 2,
-            "name": "Grace Hopper",
-            "date": "1906-1992",
-            "description": "Pionera en computación y creadora del primer compilador para un lenguaje de programación",
-            "bio": "Grace Hopper, conocida como \"Amazing Grace\", fue mucho más que una pionera: como científica de la computación y contraalmirante en la Marina de los Estados Unidos, desafió los límites de lo posible y allanó el camino para las generaciones futuras. Durante las décadas de los 50 y 60, desarrolló el primer compilador para un lenguaje de programación, sentando las bases para la creación de COBOL, un lenguaje de alto nivel que sigue siendo utilizado en la actualidad. Su visión de los lenguajes de programación independientes de la máquina allanó el camino para una mayor accesibilidad y flexibilidad en el desarrollo de software. Su legado sigue recordando que con ingenio, determinación y visión, es posible superar cualquier desafío en el campo de la tecnología.",
-            "src": ""
-        },
-        {
-            "id": 3,
-            "name": "Annie Easly",
-            "date": "1933-2011",
-            "description": "Referente afroamericana en la informática teórica y la computación espacial",
-            "bio": "Annie Easley, matemática y científica afroamericana, jugó un papel clave en la labor llevada a cabo por el Centro de Investigación Lewis, ahora conocido como Glenn Research Center de la NASA, y su predecesor, el Comité Asesor Nacional de Aeronáutica (NACA). Su dedicación y talento la llevaron a ser una líder en el equipo que desarrolló el software para la etapa del cohete Centauro, contribuyendo así al avance de la exploración espacial. Además, Easley fue una de las primeras afroamericanas en desempeñarse como científica de computación en la NASA, siendo pionera en la lucha para una mayor diversidad e inclusión en la comunidad científica, demostrando que el talento y la pasión no conocen límites de género, raza ni origen.",
-            "src": ""
-        },
-        {
-            "id": 4,
-            "name": "Ana María Prieto",
-            "date": "1942-2018",
-            "description": "Pionera en programación, inspiración para las futuras generaciones informáticas",
-            "bio": "Ana María Prieto, la primera programadora española, trazó su propio camino en un mundo dominado por hombres. Desde su infancia en Santiago de Compostela hasta su innovadora labor en Madrid y Galicia, desafió los límites y abrió puertas para las mujeres en la ciencia y la tecnología en España. En 1963, se convirtió en la primera programadora de Bull General Electric y, a su regreso a las tierras gallegas, se llevó consigo el estandarte del progreso y la excelencia a través de su trabajo con los ordenadores de Philips e IBM. Su legado perdura como un faro de inspiración para las futuras generaciones de informáticas.",
-            "src": ""
-        },
-        {
-            "id": 5,
-            "name": "Ángela Ruiz Robles",
-            "date": "1895-1975",
-            "description": "Creadora de la enciclopedia mecánica, predecesora del libro electrónico",
-            "bio": "Angela Ruiz Robles, maestra, escritora e inventora española, dejó una marca indeleble en el mundo de la educación y la tecnología. Fue pionera en el desarrollo de una enciclopedia mecánica, un dispositivo innovador que podría considerarse como el precursor del libro electrónico moderno. Su visión y creatividad la llevaron a adelantarse en más de veinte años al dispositivo diseñado por el estadounidense Michael Hart en 1971, y en más de medio siglo a los e-books contemporáneos. Con su invento, Ruiz Robles no solo revolucionó la forma en que se accede y se comparte el  conocimiento, sino que también sentó las bases para la era digital que estábamos por experimentar. Fue una visionaria cuyo impacto se extiende mucho más allá de su tiempo, enriqueciendo y ampliando la cultura tecnológica.",
-            "src": ""
-        },
-        {
-            "id": 6,
-            "name": "Joan Clarke",
-            "date": "1917-1996",
-            "description": "Única informática del proyecto Enigma, pionera en criptoanálisis y numismática",
-            "bio": "Joan Clarke, destacada criptoanalista y numismática británica, desempeñó un papel crucial durante la Segunda Guerra Mundial al convertirse en la única mujer seleccionada para integrar el equipo de Alan Turing en Bletchley Park. Allí, trabajaron incansablemente en el proyecto Enigma, descifrando las comunicaciones secretas de la Alemania nazi y contribuyendo al esfuerzo aliado. Su habilidad y dedicación fueron reconocidas con premios que incluyeron el nombramiento como miembro de la Orden del Imperio Británico (MBE) en 1946. Clarke demostró que el género no era un impedimento para la excelencia y el heroísmo en tiempos de guerra, siendo su valiosa contribución en la lucha fundamental para la victoria de los Aliados. Joan Clarke no solo rompió barreras, sino que también inspiró a futuras generaciones a perseguir sus sueños y desafiar los estereotipos de género en el campo de la ciencia y la tecnología.",
-            "src": ""
-        }
-    ],
-    "mathematics": [
-        {
-            "id": 1,
-            "name": "Maryam Mirzhakani",
-            "date": "1977-2017",
-            "description": "Primera mujer en ganar la Medalla Fields e investigadora clave en geometría y sistemas dinámicos",
-            "bio": "Maryam Mirzakhani, una brillante matemática iraní, fue reconocida con la prestigiosa Medalla Fields en 2014, convirtiéndose en la primera mujer en recibir este premio, considerado el equivalente al Nobel en el campo de las matemáticas. Sus estudios se destacaron por su profundidad y originalidad, especialmente en áreas como el espacio de Teichmüller, la geometría  hiperbólica, la teoría ergódica y la geometría simpléctica. Mirzakhani  abordó los problemas existentes con una perspectiva única, realizando investigaciones impactantes que ampliaron los límites de la geometría y los sistemas dinámicos. Su legado perpetúa no solo a través de su mente  brillante, sino también como un modelo a seguir para aquellos que sueñan con hacer grandes contribuciones a la ciencia y la investigación.",
-            "src": ""
-        },
-        {
-            "id": 2,
-            "name": "María Gaetana Agnesi",
-            "date": "1718-1799",
-            "description": "Mujer científica más destacada del siglo XVIII en Europa y referencia en cálculo diferencial e integral",
-            "bio": "Maria Gaetana Agnesi, considerada una niña prodigio, dejó una huella imborrable en el mundo de las matemáticas y las ciencias, con más de 25 obras literarias publicadas y una gran trayectoria en filosofía, lingüística, filantropía y análisis numérico. Sus obras más influyentes, las \"Instituciones Analíticas\", se convirtieron en textos fundamentales en la enseñanza matemática europea por más de cincuenta años. Con una notable habilidad para simplificar conceptos complejos como el cálculo diferencial e integral, el cual trataba con asombrosa claridad y simplicidad, Agnesi se ganó el reconocimiento como una de las mujeres científicas más destacadas del siglo XVIII en Europa. Su legado continúa entre nosotros a día de hoy, incluso con el bautizo de un cráter en Venus en su nombre, destacando su contribución al conocimiento matemático y su inspiración como mujer que rompió barreras y sobresalió en una época donde las limitaciones eran restrictivas e injustas.",
-            "src": ""
-        },
-        {
-            "id": 3,
-            "name": "Florence Nightingale",
-            "date": "1820-1910",
-            "description": "Fundadora de la enfermería profesional contemporánea y pionera en estadística sanitaria",
-            "bio": "Florence Nightingale, reconocida estadística británica, no solo destacó en matemáticas desde temprana edad, sino que también aplicó sus conocimientos en epidemiología y estadística sanitaria, sentando así las bases de la enfermería profesional contemporánea. Como la primera mujer admitida en la Royal Statistical Society británica y miembro honorario de la American Statistical Association, Nightingale no solo rompió barreras de género, sino que también revolucionó el campo de la salud pública. Su legado perdura a través del establecimiento en 1860 de la escuela de enfermería en el hospital Saint Thomas de Londres, que hoy forma parte integral del King's College de Londres y del NHS, demostrando su dedicación y visión para la profesionalización y mejora continua de la enfermería, las matemáticas y la estadística.",
-            "src": ""
-        },
-        {
-            "id": 4,
-            "name": "Sophie Germain",
-            "date": "1776-1831",
-            "description": "Científica autodidacta, pionera en el desarrollo de la teoría de la elasticidad y la teoría de números",
-            "bio": "Sophie Germain, una matemática y física francesa autodidacta, desafió las convenciones de su época para dejar una huella perdurable en la historia de las matemáticas y la física. Reconocida como una de las pioneras en la teoría de la elasticidad y la teoría de números, Germain realizó importantes contribuciones, destacándose por su estudio de los números primos, más tarde conocidos como números primos de Sophie Germain. A pesar de enfrentar la oposición inicial de sus padres y las barreras impuestas por la sociedad, Germain perseveró en su educación bajo el seudónimo de Antoine Auguste LeBlanc, haciéndose pasar por un hombre para acceder al conocimiento. Su dedicación y genialidad la llevaron a trascender las limitaciones de género de su tiempo y a dejar un legado duradero y un ejemplo a seguir para las futuras generaciones de científicas.",
-            "src": ""
-        },
-        {
-            "id": 5,
-            "name": "María Montserrat Capdevilla",
-            "date": "1905-1993",
-            "description": "Matemática pionera en España, figura clave en el estudio axiomático de los espacios de Hilbert",
-            "bio": "María Montserrat Capdevila destacó como una de las primeras matemáticas de España, consolidando su reputación en un terreno tradicionalmente dominado por hombres. En 1928, con un expediente académico brillante en ciencias exactas, obtuvo su licenciatura, marcando el inicio de una carrera prometedora. Nombrada catedrática interina de matemáticas en el Instituto de Zafra, posteriormente logró su doctorado en la Universidad Central de Madrid y en 1931 recibió una beca de la Junta para la Ampliación de Estudios  para profundizar en la teoría de las funciones y la axiomática de los espacios de Hilbert en  la Universidad de la Sorbona. Aunque su camino como investigadora se vio truncado por la Guerra Civil, su legado perdura como un testimonio del talento y la determinación que desafiaron las barreras de género en el mundo de las matemáticas en España.",
-            "src": ""
-        },
-        {
-            "id": 6,
-            "name": "María del Carmen Martínez Sancho",
-            "date": "1901-1995",
-            "description": "Primera doctora y catedrática de Matemáticas en la enseñanza secundaria en España",
-            "bio": "María del Carmen Martínez Sancho es una figura emblemática en la historia de la educación y la investigación matemática en España. Pionera en muchos aspectos, fue la primera mujer en obtener el título de doctora y desempeñar el cargo de catedrática de Matemáticas en la enseñanza secundaria del país. Su incansable búsqueda de conocimiento la llevó a convertirse en la primera mujer pensionada por la Junta de Ampliación de Estudios en la Universidad de Berlín, donde profundizó en sus investigaciones y adquirió nuevos métodos pedagógicos. Su dedicación y excelencia académica no solo la distinguieron como una destacada investigadora, sino también como una líder en el ámbito educativo, ocupando cargos prominentes en la Sociedad Matemática Española. Su legado perdura como inspiración para las generaciones futuras de mujeres en el campo de las matemáticas en España.",
-            "src": ""
-        }
-    ],
-    "medicine": [
-        {
-            "id": 1,
-            "name": "Elizabeth Blackwell",
-            "date": "1821-1910",
-            "description": "Primera mujer en obtener un título médico en los Estados Unidos y ser registrada en el Consejo Médico General",
-            "bio": "Además de convertirse en una médica británica notable, Elizabeth Blackwell fue también una pionera que derribó barreras de género en la Medicina. Como la primera mujer en obtener un título médico en los Estados Unidos y ser registrada en el Consejo Médico General, allanó el camino para las futuras generaciones de mujeres en medicina. Su legado trasciende sus logros académicos, ya que desempeñó un papel crucial como defensora social y promotora de la educación médica femenina tanto en Estados Unidos como en Inglaterra. Además de su trabajo en la medicina, Blackwell co-fundó la Enfermería para Mujeres y Niños de Nueva York junto con su hermana Emily Blackwell, y dedicó esfuerzos a educar al público femenino sobre la importancia de la educación para las niñas. Durante la guerra de Secesión estadounidense, su papel en la organización del cuerpo de enfermeras demostró su compromiso con el feminismo y la atención médica en tiempos de crisis.",
-            "src": ""
-        },
-        {
-            "id": 2,
-            "name": "Nettie Stevens",
-            "date": "1816-1912",
-            "description": "Primera científica en describir las bases cromosómicas que determinan el sexo y la herencia",
-            "bio": "Nettie Stevens, una destacada genetista estadounidense de ascendencia inglesa y sueca, dejó una marca imborrable en el campo de la genética con sus series de descubrimientos revolucionarios: fue la primera investigadora en identificar las bases cromosómicas que determinan el sexo, un avance fundamental que transformó nuestra comprensión de la herencia biológica. Su trabajo no se detuvo ahí; también realizó contribuciones significativas a la embriología y la citogenética, ampliando el horizonte del conocimiento científico en estos campos. Uno de sus logros más destacados fue la demostración de que los cromosomas existen como pares en las células, una observación que puso fin a un debate científico de larga data y sentó las bases para futuras investigaciones en genética y biología celular.",
-            "src": ""
-        },
-        {
-            "id": 3,
-            "name": "Jane Cooke Wright",
-            "date": "1919-2013",
-            "description": "Cirujana pionera en la lucha contra el cáncer y el desarrollo de la quimioterapia como TRATAMIENTO accesible",
-            "bio": "Jane Cooke Wright fue una figura clave en la batalla contra el cáncer, distinguiéndose especialmente por sus innovaciones en el campo de la quimioterapia. Revolucionó el enfoque tradicional al emplear cultivos de tejidos humanos en lugar de ratones de laboratorio para evaluar los efectos de los posibles fármacos en las células cancerosas, marcando así un hito en la investigación oncológica. Además, fue pionera en la aplicación del metotrexato para tratar cánceres de mama y piel, introduciendo un enfoque terapéutico que transformaría radicalmente la práctica clínica. Sus primeros avances transformaron la quimioterapia de una teoría especulativa en una terapia probada y eficaz contra el cáncer, salvando innumerables vidas en el proceso. Su trabajo sentó las bases para el desarrollo de la terapia combinada y la personalización del tratamiento, sentando las bases de una investigación aun en evolución a día de hoy.",
-            "src": ""
-        },
-        {
-            "id": 4,
-            "name": "Dolors Aleu",
-            "date": "1857-1913",
-            "description": "Primera mujer licenciada en medicina en España y segunda en obtener el título de doctora",
-            "bio": "Dolors Aleu, una médica española feminista y visionaria, marcó la historia de la medicina al convertirse en la primera mujer licenciada en Medicina en España y la segunda en obtener el título de doctora. Especializada en Ginecología y Pediatría, destacó como pionera en su campo y, a lo largo de 25 años, ejerció con dedicación y pasión, atendiendo a sus pacientes en una consulta propia en Barcelona. Además, compartió su conocimiento como profesora de higiene doméstica en la Academia para la Ilustración de la Mujer, buscando empoderar a las mujeres a través de la educación en salud. Aleu no solo fue una médica excepcional, sino también una autora prolífica, escribiendo textos divulgativos destinados a mejorar la calidad de vida de las mujeres, especialmente en el ámbito de la maternidad. Su legado perdura como un testimonio inspirador de valentía, determinación y compromiso con el bienestar de la sociedad.",
-            "src": ""
-        },
-        {
-            "id": 5,
-            "name": "Concepción Aleixandre",
-            "date": "1862-1952",
-            "description": "Ginecóloga de renombre y referente en divulgación de salud sexual e higiene femenina",
-            "bio": "Concepción Aleixandre, una figura multifacética y pionera en numerosos campos, dejó una marca indeleble en la medicina y en la lucha por los derechos de las mujeres. Como maestra, médica, ginecóloga, inventora, activista, feminista y sufragista, su legado abarca una amplia gama de disciplinas y causas. Su dedicación a la investigación la llevó a patentar instrumentos ginecológicos en 1910, contribuyendo así al avance de la medicina en su campo. Además, desempeñó un papel crucial en la divulgación de la educación sobre higiene, especialmente dirigida a las mujeres, a través de su gestión de la sección dedicada a la \"salud de mujeres\" en la revista La Medicina Social Española (1916-1920). Aleixandre también se destacó como activista, impartiendo conferencias y mítines en los que abogaba por los derechos de las mujeres, sirviendo como testimonio de perseverancia, valentía y dedicación a la causa de la igualdad de género y el avance científico.",
-            "src": ""
-        },
-        {
-            "id": 6,
-            "name": "Elizabeth Garret",
-            "date": "1836-1917",
-            "description": "Sufragista icónica y primera mujer licenciada en Medicina en Reino Unido",
-            "bio": "Destacada médica y sufragista británica, Elizabeth Garrett Anderson enfrentó la denegación de admisión a las escuelas de medicina y estudió de manera independiente con galenos y en hospitales de Londres. Su determinación y habilidades la llevaron a convertirse en la primera mujer británica en obtener una licenciatura médica en 1865, abriendo así el camino para las generaciones futuras de mujeres en la medicina. No contenta con sus propios logros, Elizabeth Garret también abogó por la educación médica de las mujeres, creando una facultad médica exclusiva para ellas. Además de sus contribuciones a la medicina, Garret fue una pionera en la esfera política y social, siendo la primera mujer en Gran Bretaña en ocupar varios cargos de importancia, incluida la decanía de una escuela de medicina y el cargo de alcaldesa de Aldeburgh, convirtiéndose así en la primera alcaldesa de Gran Bretaña. Su vida y carrera continúan inspirando a mujeres de todo el mundo a perseguir sus sueños y desafiar las normas establecidas.",
-            "src": ""
-        }
-    ]
+    "es": {
+        "chemistry": [
+            {
+                "id": 1,
+                "name": "Marie Curie",
+                "date": "1867-1934",
+                "description": "Pionera e inigualable: primera mujer en ganar un Nobel y única persona en obtener ese reconocimiento en dos categorías diferentes",
+                "bio": "Marie Curie, un ícono de la ciencia, desafió los obstáculos de su época, convirtiéndose un referente en el estudio de la radiactividad - término que ella misma acuñó. Desde sus humildes comienzos en Polonia hasta su destacada carrera en París, su valentía y dedicación la llevaron a descubrir técnicas para el aislamiento de isótopos y los elementos radio y polonio, así como a crear los primeros centros radiológicos de la historia. Su legado y su pasión son toda una inspiración para las científicas y científicos actuales: Marie Curie rompió las barreras y se convirtió en la primera mujer en ser homenajeada con el Nobel y, hasta día de hoy, en la única persona en ganar el premio en dos categorías distintas: Física y Química.",
+                "src": ""
+            },
+            {
+                "id": 2,
+                "name": "Alice Ball",
+                "date": "1892-1916",
+                "description": "Icono de la lucha contra la lepra y la defensa de la salud pública",
+                "bio": "Alice Ball desafió las limitaciones de su tiempo para dejar una marca indeleble en la ciencia: se posicionó como creadora del único tratamiento efectivo contra la lepra hasta la aparición de los antibióticos. A pesar de su temprano fallecimiento, su ingenio y su pasión por la ciencia la llevaron a convertirse en una pionera en preservación de la salud pública, posicionándose además como un referente para la lucha racial al ser la primera mujer norteamericana de ascendencia calé en graduarse en la Universidad de Hawái con un máster. El legado de Alice Ball es una inspiración para las generaciones venideras, recordando que el talento y la determinación pueden trascender cualquier barrera.",
+                "src": ""
+            },
+            {
+                "id": 3,
+                "name": "Rosalind Franklin",
+                "date": "1920-1958",
+                "description": "Dama oscura del ADN, figura fundamental en la reivindicación del Efecto Matilda",
+                "bio": "Rosalind Franklin rompió las barreras impuestas en la sociedad de su tiempo para convertirse en un referente en estudio del ADN. Su trabajo pionero en la cristalografía de rayos X, su dedicación y perspicacia, su imparable dedicación y su gran intelecto la llevaron a descubrir la verdadera estructura del ADN, posicionándose frente a sus compañeros masculinos. Aunque su contribución fue subestimada, ignorada y ninguneada en vida, incluyendo el robo de su investigación y la exclusión como ganadora del Nobel, su legado se ha consolidado como el de una científica asombrosa que se enfrentó a los prejuicios de género, superándose a ella misma y dejando tras de sí hallazgos fundamentales para la evolución del conocimiento.",
+                "src": ""
+            },
+            {
+                "id": 4,
+                "name": "Gerty Cori",
+                "date": "1896-1957",
+                "description": "Inspiración en bioquímica y tercera mujer en ganar un Premio Nobel de Medicina",
+                "bio": "Gerty Cori desafió las barreras de género y las injusticias laborales para dejar una huella indeleble en la ciencia y el feminismo. A pesar de las dificultades para encontrar reconocimiento y recompensa económica en su carrera, perseveró con determinación hasta convertirse en la tercera mujer en el mundo, y la primera en Estados Unidos, en recibir el Premio Nobel de Medicina, compartido con su esposo Carl y el fisiólogo argentino Bernardo Houssay. Su galardón fue el fruto de años de arduo trabajo y dedicación a descubrir los secretos del metabolismo, revelando el mecanismo por el cual el glucógeno se transforma en ácido láctico en el tejido muscular. Gerty Cori, con su valentía y genio sin igual, dejó un legado eterno en la historia de la medicina y la bioquímica.",
+                "src": ""
+            },
+            {
+                "id": 5,
+                "name": "Jenara Vicenta Arnal",
+                "date": "1902-1960",
+                "description": "Símbolo del feminismo nacional, primera doctora en ciencias químicas de España",
+                "bio": "Jenara Vicenta Arnal trazó su propio camino hacia el reconocimiento en un mundo dominado por hombres. Como la primera doctora en Ciencias Químicas de España, desafió los convencionalismos de su época para sumergirse en las profundidades de la investigación química. Su labor en los laboratorios de Química Teórica de la Universidad de Zaragoza la destacó como una mente brillante y visionaria, cuyo trabajo resonó tanto en el país como en el extranjero. Exploró los límites de las oxidaciones químicas provocadas por la acción del flúor en corriente gaseosa, combinando su carrera con su pasión por la enseñanza y dedicando gran parte de su vida a transmitir su conocimiento a las generaciones futuras: su compromiso con la ciencia la llevó a trabajar para el Consejo Superior de Investigaciones Científicas (CSIC) y colaborar en diversas iniciativas educativas, dejando una profunda huella en el pensamiento científico de su tiempo.",
+                "src": ""
+            },
+            {
+                "id": 6,
+                "name": "Dorothy Hodgkin",
+                "date": "1910-1994",
+                "description": "Protagonista en el descubrimiento de la estructura de la penicilina, la vitamina B12 y la insulina",
+                "bio": "Dorothy Hodgkin dejó una huella indeleble en el campo de la cristalografía de proteínas, por la cual fue galardonada con el Premio Nobel de Química en 1964. Su legado científico quedó reflejado a través de una serie de descubrimientos que incluyen la confirmación de la estructura de la penicilina y la vitamina B12, lo que la convirtió en la tercera mujer en recibir tan prestigioso reconocimiento. Después de 35 años de arduo trabajo, Hodgkin logró descifrar la estructura de la insulina, un hito que amplió enormemente la comprensión de la biología molecular. Pionera en el estudio de biomoléculas mediante técnicas de cristalografía de rayos X, su legado perdura como una inspiración para generaciones futuras de científicas.",
+                "src": ""
+            }
+        ],
+        "physics": [
+            {
+                "id": 1,
+                "name": "Lise Meitner",
+                "date": "1878-1968",
+                "description": "Madre de la fisión nuclear, infravalorada y excluida del Premio Nobel",
+                "bio": "Lise Meitner deslumbró con su genio científico y su coraje moral. Desde su hallazgo del isótopo radiactivo protactinio-231 hasta su papel fundamental en el descubrimiento de la fisión nuclear en 1938, su trabajo la consagró como una de las mentes más brillantes de su tiempo. Pero, a pesar de ser aclamada como la \"Marie Curie alemana\" por Albert Einstein, su  contribución al descubrimiento de la fisión nuclear fue eclipsada injustamente cuando su colaborador, Otto Hahn, recibió el Premio Nobel en su lugar. Meitner, conocida como la \"madre judía de la bomba atómica\", rechazó participar en el proyecto Manhattan por convicciones éticas, desafiando así las presiones políticas y éticas de su tiempo. Su valentía y su dedicación a la verdad científica la convierten en un símbolo de lucha en contra del prejuicio de género y la injusticia.",
+                "src": ""
+            },
+            {
+                "id": 2,
+                "name": "Emmy Noether",
+                "date": "1882-1935",
+                "description": "Referente en física y feminista implacable",
+                "bio": "Emmy Noether dejó un legado imborrable en el panorama científico del siglo XX. Sus contribuciones, de una importancia fundamental, resonaron en los campos de la física y las matemáticas, especialmente el teorema que lleva su nombre, que establece una conexión esencial entre la simetría en física y las leyes de conservación, proporcionando un marco conceptual que sigue siendo fundamental en la comprensión del universo. Sin embargo, a pesar de su brillantez, se vio obstaculizada por las barreras de género, enfrentando la negación de oportunidades laborales dignas simplemente por ser mujer. A pesar de estas adversidades, su espíritu indomable y su dedicación infatigable a la búsqueda de la verdad científica la convierten en un símbolo lucha contra la injusticia y un referente en ciencia atemporal.",
+                "src": ""
+            },
+            {
+                "id": 3,
+                "name": "Cecilia Payne-Gaposchkin",
+                "date": "1900-1979",
+                "description": "Autora de la \"más brillante tesis doctoral escrita nunca en astronomía\" y primera en afirmar que las estrellas se componen de hidrógeno",
+                "bio": "En 1925, la tesis doctoral de Cecilia Payne propuso una idea audaz y visionaria: que las estrellas están compuestas principalmente por hidrógeno. Este trabajo, elogiado como \"la más brillante tesis doctoral escrita nunca en astronomía\", marcó un punto de inflexión en la comprensión del Universo. Aunque sus comienzos en la academia estuvieron marcados por obstáculos y prejuicios de género, su pasión por la ciencia la llevó a cruzar fronteras y océanos en busca de oportunidades. Después de estudiar botánica, física y química en la Universidad de Cambridge, encontró su verdadero hogar en Estados Unidos, donde consiguió que su trabajo fuese reconocido, a pesar de su condición de mujer. En 1938, se le concedió el título de \"astrónoma\", y en 1956, se convirtió en la primera mujer en ser profesora asociada en Harvard, abriendo así las puertas para las generaciones futuras de mujeres en la ciencia.",
+                "src": ""
+            },
+            {
+                "id": 4,
+                "name": "María Goeppert-Mayer",
+                "date": "1906-1972",
+                "description": "Científica fundamental en el desarrollo de la física nuclear y amante de la ciencia hasta sus últimos días",
+                "bio": "Maria Goeppert Mayer, ganadora del Premio Nobel de Física en 1963 por su innovador modelo de capas nuclear, fue la segunda mujer en recibir este honor después de Marie Curie. En su tesis doctoral, exploró el fenómeno de la absorción simultánea de dos fotones por un átomo, una audaz teoría que fue confirmada experimentalmente décadas después. Sin embargo, a pesar de su brillantez y destreza científica, gran parte de su carrera transcurrió en la penumbra de la no remuneración, sin obtener un puesto con salario a tiempo completo hasta los 53 años. Desarrolló el cálculo matemático que sustentaba su revolucionario modelo de capas nuclear, un logro que le valió el reconocimiento mundial con el Premio Nobel de Física compartido con J. Hans D. Jensen y Eugene Paul Wigner. Maria Goeppert Mayer, con su dedicación infatigable, fue una de las científicas más importantes en el desarrollo de la física nuclear y, hasta su fallecimiento, amó y trabajó por la ciencia de forma inquebrantable.",
+                "src": ""
+            },
+            {
+                "id": 5,
+                "name": "Felisa Martín Bravo",
+                "date": "1898-1979",
+                "description": "Primera mujer en ingresar en el Cuerpo Superior de Meteorología y la primera doctora en Física de España",
+                "bio": "Felisa Martín Bravo desafió las barreras de género y las adversidades políticas en su búsqueda incansable del conocimiento científico. Como la primera mujer en ingresar en el Cuerpo Superior de Meteorología y la primera doctora en Física en España, marcó un hito en la historia de la ciencia española. Desentrañó los misterios de la estructura cristalina de compuestos como el óxido de níquel y cobalto, así como el sulfuro de plomo. Su sed de conocimiento la llevó a Cambridge, donde amplió su comprensión de meteorología bajo la tutela de Ernest Rutherford y, a su regreso a España, se integró en el Servicio Meteorológico Nacional en Madrid convirtiéndose en la primera mujer en ser admitida, sin embargo, su negativa a abandonar Madrid durante la guerra civil española le valió el cese en su puesto. Su legado perdura como un recordatorio de la importancia de la persistencia y la lucha contra los prejuicios.",
+                "src": ""
+            },
+            {
+                "id": 6,
+                "name": "Chien Shiung Wu",
+                "date": "1912-1997",
+                "description": "Primera Dama de la Física y una de las mayores científicas experimentales de la historia",
+                "bio": "Chien Shiung Wu, destacó como una experta en radiactividad, contribuyendo de manera significativa al Proyecto Manhattan, donde su trabajo fue fundamental para desarrollar el proceso de separación de isótopos de uranio mediante difusión gaseosa. Sin embargo, fue Experimento de Wu el que la llevó a la prominencia científica. Este experimento desafiaba la ley hipotética de conservación de la paridad, demostrando que la naturaleza no siempre seguía los esquemas de simetría que se habían asumido previamente. Sin embargo, fueron sus colegas Tsung-Dao Lee y Chen Ning Yang los que recibieron el Premio Nobel de Física de 1957 por este descubrimiento, quedando Wu excluida del reconocimiento. No obstante, Chien Shiung Wu, con su ingenio y determinación, sigue siendo un faro de inspiración para los científicos de hoy en día y un símbolo feminista de lucha y superación.",
+                "src": ""
+            }
+        ],
+        "biology": [
+            {
+                "id": 1,
+                "name": "Mary Anning",
+                "date": "1800-1847",
+                "description": "Primera paleontóloga de la historia",
+                "bio": "Mary Anning, reconocida como la primera paleontóloga de la historia, marcó la comprensión del mundo prehistórico. Residiendo en Lyme Regis, Inglaterra, Anning se dedicó apasionadamente a la búsqueda y recolección de fósiles del Jurásico en los lechos marinos, estableciendo su reputación como una hábil coleccionista y comerciante de hallazgos paleontológicos. Sus descubrimientos no solo fueron impresionantes por sí mismos, sino que también provocaron cambios fundamentales en la comprensión científica del período y la evolución de la Tierra en el siglo XIX. Sin embargo, a pesar de su contribución invaluable al campo, Anning enfrentó numerosos obstáculos debido a su género y clase social. Como hija de disidentes de clase baja, fue marginada y excluida de la comunidad científica británica dominada por hombres ricos anglicanos, y sus logros rara vez fueron reconocidos en vida. A pesar de estas adversidades, su legado perdura como un testimonio de determinación, habilidad y pasión por el conocimiento en un tiempo y lugar donde las mujeres como ella luchaban por ser reconocidas en el ámbito científico.",
+                "src": ""
+            },
+            {
+                "id": 2,
+                "name": "Rachel Carson",
+                "date": "1907-1964",
+                "description": "Precursora de la conciencia ambiental y la lucha por la conservación",
+                "bio": "Como bióloga marina y conservacionista estadounidense, Rachel Carson cambió para siempre la forma en que percibimos el mundo natural. Primero escritora, su obra The Sea Around Us la consolidó como una figura de referencia en oceanografía y vida en los océanos. Sin embargo, fue a finales de los años 1950 cuando Carson redirigió su enfoque hacia la conservación, desafiando el uso indiscriminado de pesticidas sintéticos y provocando un cambio sísmico en la política nacional:  su protesta culminó en una prohibición nacional del DDT y otros productos químicos dañinos, así como a la creación de la Agencia de Protección Ambiental de los Estados Unidos. Por su incansable labor, Rachel Carson fue honrada póstumamente con la Medalla Presidencial de la Libertad por Jimmy Carter, un tributo merecido a su extraordinario impacto en la protección de nuestro planeta, que ha perdurado hasta la actualidad.",
+                "src": ""
+            },
+            {
+                "id": 3,
+                "name": "Esther Lederberg",
+                "date": "1922-2006",
+                "description": "Mente brillante en microbiología y genética bacteriana",
+                "bio": "Esther Lederberg fue una verdadera pionera en el campo de la genética bacteriana, realizando contribuciones trascendentales que incluyen el descubrimiento del virus bacteriófago λ, la transferencia de genes entre bacterias mediante la transducción especializada y el método de réplica en placa. Además, su descubrimiento del plásmido F, o factor de fertilidad, abrió nuevas fronteras en la comprensión de la genética bacteriana y la resistencia a los antibióticos. Pero su legado fue más allá: fundó y dirigió el prestigioso Plasmid Reference Center en la Universidad Stanford, un centro de conocimiento donde se mantenían, nombraban y distribuían plásmidos de diversos tipos, facilitando así el avance de la investigación en todo el mundo. Con su búsqueda de la verdad científica y su compromiso con la ciencia, Esther Lederberg sigue siendo una inspiración para las generaciones futuras, recordando el poder transformador de la dedicación en la búsqueda del conocimiento.",
+                "src": ""
+            },
+            {
+                "id": 4,
+                "name": "Sylvia Earle",
+                "date": "1935",
+                "description": "\"Primer héroe del planeta\" y defensora de los océanos",
+                "bio": "Sylvia Earle ha dedicado su vida a explorar y proteger los misterios del mundo submarino. Como bióloga marina, exploradora y autora, Sylvia hizo historia al convertirse en la primera científica jefe de la Administración Nacional Oceánica y Atmosférica, liderando los esfuerzos para comprender y conservar los ecosistemas marinos. Su incansable labor la llevó a ser reconocida como el primer Héroe del planeta por la revista Time en 1998, un tributo merecido a su dedicación, compromiso y defensa incansable de los océanos. Colaboró también en estudios sobre los impactos devastadores de los vertidos de petróleo, siendo homenajeada con el prestigioso Premio Princesa de Asturias de la Concordia en 2018, un reconocimiento a su incansable lucha. Sylvia Earle, con su pasión y determinación, sigue siendo una inspiración para las acciones de defensa del océano, recordándonos la importancia vital de proteger y preservar los tesoros de nuestro planeta.",
+                "src": ""
+            },
+            {
+                "id": 5,
+                "name": "Ángeles Alvariño",
+                "date": "1916-2005",
+                "description": "Pionera en la investigación marina y visionaria en la exploración oceanográfica",
+                "bio": "Ángeles Alvariño dejó una marca indeleble en la exploración y comprensión de los océanos. Como oceanógrafa, zoóloga y profesora pionera en su campo, en 1953 se convirtió en la primera mujer científica en embarcarse en el buque oceanográfico británico, el Sarsia, marcando así un hito histórico en la exploración marina. A partir de 1956, extendió su influencia en los Estados Unidos, donde continuó sus investigaciones, descubriendo y documentando 22 especies de organismos marinos previamente desconocidos. Su legado fue reconocido en 2015, cuando la Real Academia Gallega de Ciencias (RAGC) seleccionó a Ángeles Alvariño para celebrar el 1 de junio como el «Día de la Ciencia en Galicia», siendo la primera vez que se homenajeó a una mujer investigadora en este evento. Su influencia sigue resonando a día de hoy, recordando la importancia de la curiosidad, la valentía y la determinación en la exploración del amplio mundo marino.",
+                "src": ""
+            },
+            {
+                "id": 6,
+                "name": "Elizabeth Blackburn",
+                "date": "1948",
+                "description": "Premio Nobel de Medicina y prestigiosa referente en bioquímica",
+                "bio": "Elizabeth Blackburn ha dejado una marca indeleble en la comprensión de los misterios del ADN y su papel en la salud humana. Originaria de Australia, descubrió la telomerasa, una enzima crucial en la formación de los telómeros durante la duplicación del ADN. Este hallazgo revolucionario no solo desveló información sobre los procesos fundamentales de la biología celular, sino que también le valió el Premio Nobel de Medicina en 2009. Blackburn, junto con su colega Carol Greider, también realizó un descubrimiento crucial al revelar que las células cancerosas pueden producir telomerasa en cantidades anormalmente altas, lo que contribuye al crecimiento descontrolado de tumores. Este hallazgo ha abierto nuevas puertas en la investigación del cáncer, brindando esperanza para el desarrollo de tratamientos más efectivos dirigidos a frenar la actividad de esta enzima y combatir la enfermedad.",
+                "src": ""
+            }
+        ],
+        "computerScience": [
+            {
+                "id": 1,
+                "name": "Ada Lovelace",
+                "date": "1815-1852",
+                "description": "Primera ingeniera de software y programadora, creadora de la máquina analítica",
+                "bio": "Ada Lovelace desempeñó un papel fundamental en la historia de la informática y la tecnología. Su colaboración con Charles Babbage en el desarrollo de la máquina analítica marcó un hito en la historia de la tecnología ya que, mientras otros se centraban únicamente en los cálculos numéricos, Lovelace vislumbró un futuro mucho más amplio para estas máquinas. Fue la primera en reconocer que la máquina analítica no se limitaba al simple cálculo, sino que tenía el potencial de procesar símbolos y realizar operaciones más complejas. Además, publicó lo que hoy se reconoce como el primer algoritmo destinado a ser procesado por una máquina, estableciendo así su lugar en la historia como la primera programadora de ordenadores. Su visión y comprensión de las capacidades de las computadoras sentaron las bases para el desarrollo de la informática moderna, posicionándose como una pionera cuyo ingenio y visión trascendieron su tiempo.",
+                "src": ""
+            },
+            {
+                "id": 2,
+                "name": "Grace Hopper",
+                "date": "1906-1992",
+                "description": "Pionera en computación y creadora del primer compilador para un lenguaje de programación",
+                "bio": "Grace Hopper, conocida como \"Amazing Grace\", fue mucho más que una pionera: como científica de la computación y contraalmirante en la Marina de los Estados Unidos, desafió los límites de lo posible y allanó el camino para las generaciones futuras. Durante las décadas de los 50 y 60, desarrolló el primer compilador para un lenguaje de programación, sentando las bases para la creación de COBOL, un lenguaje de alto nivel que sigue siendo utilizado en la actualidad. Su visión de los lenguajes de programación independientes de la máquina allanó el camino para una mayor accesibilidad y flexibilidad en el desarrollo de software. Su legado sigue recordando que con ingenio, determinación y visión, es posible superar cualquier desafío en el campo de la tecnología.",
+                "src": ""
+            },
+            {
+                "id": 3,
+                "name": "Annie Easly",
+                "date": "1933-2011",
+                "description": "Referente afroamericana en la informática teórica y la computación espacial",
+                "bio": "Annie Easley, matemática y científica afroamericana, jugó un papel clave en la labor llevada a cabo por el Centro de Investigación Lewis, ahora conocido como Glenn Research Center de la NASA, y su predecesor, el Comité Asesor Nacional de Aeronáutica (NACA). Su dedicación y talento la llevaron a ser una líder en el equipo que desarrolló el software para la etapa del cohete Centauro, contribuyendo así al avance de la exploración espacial. Además, Easley fue una de las primeras afroamericanas en desempeñarse como científica de computación en la NASA, siendo pionera en la lucha para una mayor diversidad e inclusión en la comunidad científica, demostrando que el talento y la pasión no conocen límites de género, raza ni origen.",
+                "src": ""
+            },
+            {
+                "id": 4,
+                "name": "Ana María Prieto",
+                "date": "1942-2018",
+                "description": "Pionera en programación, inspiración para las futuras generaciones informáticas",
+                "bio": "Ana María Prieto, la primera programadora española, trazó su propio camino en un mundo dominado por hombres. Desde su infancia en Santiago de Compostela hasta su innovadora labor en Madrid y Galicia, desafió los límites y abrió puertas para las mujeres en la ciencia y la tecnología en España. En 1963, se convirtió en la primera programadora de Bull General Electric y, a su regreso a las tierras gallegas, se llevó consigo el estandarte del progreso y la excelencia a través de su trabajo con los ordenadores de Philips e IBM. Su legado perdura como un faro de inspiración para las futuras generaciones de informáticas.",
+                "src": ""
+            },
+            {
+                "id": 5,
+                "name": "Ángela Ruiz Robles",
+                "date": "1895-1975",
+                "description": "Creadora de la enciclopedia mecánica, predecesora del libro electrónico",
+                "bio": "Angela Ruiz Robles, maestra, escritora e inventora española, dejó una marca indeleble en el mundo de la educación y la tecnología. Fue pionera en el desarrollo de una enciclopedia mecánica, un dispositivo innovador que podría considerarse como el precursor del libro electrónico moderno. Su visión y creatividad la llevaron a adelantarse en más de veinte años al dispositivo diseñado por el estadounidense Michael Hart en 1971, y en más de medio siglo a los e-books contemporáneos. Con su invento, Ruiz Robles no solo revolucionó la forma en que se accede y se comparte el  conocimiento, sino que también sentó las bases para la era digital que estábamos por experimentar. Fue una visionaria cuyo impacto se extiende mucho más allá de su tiempo, enriqueciendo y ampliando la cultura tecnológica.",
+                "src": ""
+            },
+            {
+                "id": 6,
+                "name": "Joan Clarke",
+                "date": "1917-1996",
+                "description": "Única informática del proyecto Enigma, pionera en criptoanálisis y numismática",
+                "bio": "Joan Clarke, destacada criptoanalista y numismática británica, desempeñó un papel crucial durante la Segunda Guerra Mundial al convertirse en la única mujer seleccionada para integrar el equipo de Alan Turing en Bletchley Park. Allí, trabajaron incansablemente en el proyecto Enigma, descifrando las comunicaciones secretas de la Alemania nazi y contribuyendo al esfuerzo aliado. Su habilidad y dedicación fueron reconocidas con premios que incluyeron el nombramiento como miembro de la Orden del Imperio Británico (MBE) en 1946. Clarke demostró que el género no era un impedimento para la excelencia y el heroísmo en tiempos de guerra, siendo su valiosa contribución en la lucha fundamental para la victoria de los Aliados. Joan Clarke no solo rompió barreras, sino que también inspiró a futuras generaciones a perseguir sus sueños y desafiar los estereotipos de género en el campo de la ciencia y la tecnología.",
+                "src": ""
+            }
+        ],
+        "mathematics": [
+            {
+                "id": 1,
+                "name": "Maryam Mirzhakani",
+                "date": "1977-2017",
+                "description": "Primera mujer en ganar la Medalla Fields e investigadora clave en geometría y sistemas dinámicos",
+                "bio": "Maryam Mirzakhani, una brillante matemática iraní, fue reconocida con la prestigiosa Medalla Fields en 2014, convirtiéndose en la primera mujer en recibir este premio, considerado el equivalente al Nobel en el campo de las matemáticas. Sus estudios se destacaron por su profundidad y originalidad, especialmente en áreas como el espacio de Teichmüller, la geometría  hiperbólica, la teoría ergódica y la geometría simpléctica. Mirzakhani  abordó los problemas existentes con una perspectiva única, realizando investigaciones impactantes que ampliaron los límites de la geometría y los sistemas dinámicos. Su legado perpetúa no solo a través de su mente  brillante, sino también como un modelo a seguir para aquellos que sueñan con hacer grandes contribuciones a la ciencia y la investigación.",
+                "src": ""
+            },
+            {
+                "id": 2,
+                "name": "María Gaetana Agnesi",
+                "date": "1718-1799",
+                "description": "Mujer científica más destacada del siglo XVIII en Europa y referencia en cálculo diferencial e integral",
+                "bio": "Maria Gaetana Agnesi, considerada una niña prodigio, dejó una huella imborrable en el mundo de las matemáticas y las ciencias, con más de 25 obras literarias publicadas y una gran trayectoria en filosofía, lingüística, filantropía y análisis numérico. Sus obras más influyentes, las \"Instituciones Analíticas\", se convirtieron en textos fundamentales en la enseñanza matemática europea por más de cincuenta años. Con una notable habilidad para simplificar conceptos complejos como el cálculo diferencial e integral, el cual trataba con asombrosa claridad y simplicidad, Agnesi se ganó el reconocimiento como una de las mujeres científicas más destacadas del siglo XVIII en Europa. Su legado continúa entre nosotros a día de hoy, incluso con el bautizo de un cráter en Venus en su nombre, destacando su contribución al conocimiento matemático y su inspiración como mujer que rompió barreras y sobresalió en una época donde las limitaciones eran restrictivas e injustas.",
+                "src": ""
+            },
+            {
+                "id": 3,
+                "name": "Florence Nightingale",
+                "date": "1820-1910",
+                "description": "Fundadora de la enfermería profesional contemporánea y pionera en estadística sanitaria",
+                "bio": "Florence Nightingale, reconocida estadística británica, no solo destacó en matemáticas desde temprana edad, sino que también aplicó sus conocimientos en epidemiología y estadística sanitaria, sentando así las bases de la enfermería profesional contemporánea. Como la primera mujer admitida en la Royal Statistical Society británica y miembro honorario de la American Statistical Association, Nightingale no solo rompió barreras de género, sino que también revolucionó el campo de la salud pública. Su legado perdura a través del establecimiento en 1860 de la escuela de enfermería en el hospital Saint Thomas de Londres, que hoy forma parte integral del King's College de Londres y del NHS, demostrando su dedicación y visión para la profesionalización y mejora continua de la enfermería, las matemáticas y la estadística.",
+                "src": ""
+            },
+            {
+                "id": 4,
+                "name": "Sophie Germain",
+                "date": "1776-1831",
+                "description": "Científica autodidacta, pionera en el desarrollo de la teoría de la elasticidad y la teoría de números",
+                "bio": "Sophie Germain, una matemática y física francesa autodidacta, desafió las convenciones de su época para dejar una huella perdurable en la historia de las matemáticas y la física. Reconocida como una de las pioneras en la teoría de la elasticidad y la teoría de números, Germain realizó importantes contribuciones, destacándose por su estudio de los números primos, más tarde conocidos como números primos de Sophie Germain. A pesar de enfrentar la oposición inicial de sus padres y las barreras impuestas por la sociedad, Germain perseveró en su educación bajo el seudónimo de Antoine Auguste LeBlanc, haciéndose pasar por un hombre para acceder al conocimiento. Su dedicación y genialidad la llevaron a trascender las limitaciones de género de su tiempo y a dejar un legado duradero y un ejemplo a seguir para las futuras generaciones de científicas.",
+                "src": ""
+            },
+            {
+                "id": 5,
+                "name": "María Montserrat Capdevilla",
+                "date": "1905-1993",
+                "description": "Matemática pionera en España, figura clave en el estudio axiomático de los espacios de Hilbert",
+                "bio": "María Montserrat Capdevila destacó como una de las primeras matemáticas de España, consolidando su reputación en un terreno tradicionalmente dominado por hombres. En 1928, con un expediente académico brillante en ciencias exactas, obtuvo su licenciatura, marcando el inicio de una carrera prometedora. Nombrada catedrática interina de matemáticas en el Instituto de Zafra, posteriormente logró su doctorado en la Universidad Central de Madrid y en 1931 recibió una beca de la Junta para la Ampliación de Estudios  para profundizar en la teoría de las funciones y la axiomática de los espacios de Hilbert en  la Universidad de la Sorbona. Aunque su camino como investigadora se vio truncado por la Guerra Civil, su legado perdura como un testimonio del talento y la determinación que desafiaron las barreras de género en el mundo de las matemáticas en España.",
+                "src": ""
+            },
+            {
+                "id": 6,
+                "name": "María del Carmen Martínez Sancho",
+                "date": "1901-1995",
+                "description": "Primera doctora y catedrática de Matemáticas en la enseñanza secundaria en España",
+                "bio": "María del Carmen Martínez Sancho es una figura emblemática en la historia de la educación y la investigación matemática en España. Pionera en muchos aspectos, fue la primera mujer en obtener el título de doctora y desempeñar el cargo de catedrática de Matemáticas en la enseñanza secundaria del país. Su incansable búsqueda de conocimiento la llevó a convertirse en la primera mujer pensionada por la Junta de Ampliación de Estudios en la Universidad de Berlín, donde profundizó en sus investigaciones y adquirió nuevos métodos pedagógicos. Su dedicación y excelencia académica no solo la distinguieron como una destacada investigadora, sino también como una líder en el ámbito educativo, ocupando cargos prominentes en la Sociedad Matemática Española. Su legado perdura como inspiración para las generaciones futuras de mujeres en el campo de las matemáticas en España.",
+                "src": ""
+            }
+        ],
+        "medicine": [
+            {
+                "id": 1,
+                "name": "Elizabeth Blackwell",
+                "date": "1821-1910",
+                "description": "Primera mujer en obtener un título médico en los Estados Unidos y ser registrada en el Consejo Médico General",
+                "bio": "Además de convertirse en una médica británica notable, Elizabeth Blackwell fue también una pionera que derribó barreras de género en la Medicina. Como la primera mujer en obtener un título médico en los Estados Unidos y ser registrada en el Consejo Médico General, allanó el camino para las futuras generaciones de mujeres en medicina. Su legado trasciende sus logros académicos, ya que desempeñó un papel crucial como defensora social y promotora de la educación médica femenina tanto en Estados Unidos como en Inglaterra. Además de su trabajo en la medicina, Blackwell co-fundó la Enfermería para Mujeres y Niños de Nueva York junto con su hermana Emily Blackwell, y dedicó esfuerzos a educar al público femenino sobre la importancia de la educación para las niñas. Durante la guerra de Secesión estadounidense, su papel en la organización del cuerpo de enfermeras demostró su compromiso con el feminismo y la atención médica en tiempos de crisis.",
+                "src": ""
+            },
+            {
+                "id": 2,
+                "name": "Nettie Stevens",
+                "date": "1816-1912",
+                "description": "Primera científica en describir las bases cromosómicas que determinan el sexo y la herencia",
+                "bio": "Nettie Stevens, una destacada genetista estadounidense de ascendencia inglesa y sueca, dejó una marca imborrable en el campo de la genética con sus series de descubrimientos revolucionarios: fue la primera investigadora en identificar las bases cromosómicas que determinan el sexo, un avance fundamental que transformó nuestra comprensión de la herencia biológica. Su trabajo no se detuvo ahí; también realizó contribuciones significativas a la embriología y la citogenética, ampliando el horizonte del conocimiento científico en estos campos. Uno de sus logros más destacados fue la demostración de que los cromosomas existen como pares en las células, una observación que puso fin a un debate científico de larga data y sentó las bases para futuras investigaciones en genética y biología celular.",
+                "src": ""
+            },
+            {
+                "id": 3,
+                "name": "Jane Cooke Wright",
+                "date": "1919-2013",
+                "description": "Cirujana pionera en la lucha contra el cáncer y el desarrollo de la quimioterapia como TRATAMIENTO accesible",
+                "bio": "Jane Cooke Wright fue una figura clave en la batalla contra el cáncer, distinguiéndose especialmente por sus innovaciones en el campo de la quimioterapia. Revolucionó el enfoque tradicional al emplear cultivos de tejidos humanos en lugar de ratones de laboratorio para evaluar los efectos de los posibles fármacos en las células cancerosas, marcando así un hito en la investigación oncológica. Además, fue pionera en la aplicación del metotrexato para tratar cánceres de mama y piel, introduciendo un enfoque terapéutico que transformaría radicalmente la práctica clínica. Sus primeros avances transformaron la quimioterapia de una teoría especulativa en una terapia probada y eficaz contra el cáncer, salvando innumerables vidas en el proceso. Su trabajo sentó las bases para el desarrollo de la terapia combinada y la personalización del tratamiento, sentando las bases de una investigación aun en evolución a día de hoy.",
+                "src": ""
+            },
+            {
+                "id": 4,
+                "name": "Dolors Aleu",
+                "date": "1857-1913",
+                "description": "Primera mujer licenciada en medicina en España y segunda en obtener el título de doctora",
+                "bio": "Dolors Aleu, una médica española feminista y visionaria, marcó la historia de la medicina al convertirse en la primera mujer licenciada en Medicina en España y la segunda en obtener el título de doctora. Especializada en Ginecología y Pediatría, destacó como pionera en su campo y, a lo largo de 25 años, ejerció con dedicación y pasión, atendiendo a sus pacientes en una consulta propia en Barcelona. Además, compartió su conocimiento como profesora de higiene doméstica en la Academia para la Ilustración de la Mujer, buscando empoderar a las mujeres a través de la educación en salud. Aleu no solo fue una médica excepcional, sino también una autora prolífica, escribiendo textos divulgativos destinados a mejorar la calidad de vida de las mujeres, especialmente en el ámbito de la maternidad. Su legado perdura como un testimonio inspirador de valentía, determinación y compromiso con el bienestar de la sociedad.",
+                "src": ""
+            },
+            {
+                "id": 5,
+                "name": "Concepción Aleixandre",
+                "date": "1862-1952",
+                "description": "Ginecóloga de renombre y referente en divulgación de salud sexual e higiene femenina",
+                "bio": "Concepción Aleixandre, una figura multifacética y pionera en numerosos campos, dejó una marca indeleble en la medicina y en la lucha por los derechos de las mujeres. Como maestra, médica, ginecóloga, inventora, activista, feminista y sufragista, su legado abarca una amplia gama de disciplinas y causas. Su dedicación a la investigación la llevó a patentar instrumentos ginecológicos en 1910, contribuyendo así al avance de la medicina en su campo. Además, desempeñó un papel crucial en la divulgación de la educación sobre higiene, especialmente dirigida a las mujeres, a través de su gestión de la sección dedicada a la \"salud de mujeres\" en la revista La Medicina Social Española (1916-1920). Aleixandre también se destacó como activista, impartiendo conferencias y mítines en los que abogaba por los derechos de las mujeres, sirviendo como testimonio de perseverancia, valentía y dedicación a la causa de la igualdad de género y el avance científico.",
+                "src": ""
+            },
+            {
+                "id": 6,
+                "name": "Elizabeth Garret",
+                "date": "1836-1917",
+                "description": "Sufragista icónica y primera mujer licenciada en Medicina en Reino Unido",
+                "bio": "Destacada médica y sufragista británica, Elizabeth Garrett Anderson enfrentó la denegación de admisión a las escuelas de medicina y estudió de manera independiente con galenos y en hospitales de Londres. Su determinación y habilidades la llevaron a convertirse en la primera mujer británica en obtener una licenciatura médica en 1865, abriendo así el camino para las generaciones futuras de mujeres en la medicina. No contenta con sus propios logros, Elizabeth Garret también abogó por la educación médica de las mujeres, creando una facultad médica exclusiva para ellas. Además de sus contribuciones a la medicina, Garret fue una pionera en la esfera política y social, siendo la primera mujer en Gran Bretaña en ocupar varios cargos de importancia, incluida la decanía de una escuela de medicina y el cargo de alcaldesa de Aldeburgh, convirtiéndose así en la primera alcaldesa de Gran Bretaña. Su vida y carrera continúan inspirando a mujeres de todo el mundo a perseguir sus sueños y desafiar las normas establecidas.",
+                "src": ""
+            }
+        ]
+    },
+
+    "en": {
+        "chemistry": [
+            {
+                "id": 1,
+                "name": "Marie Curie",
+                "date": "1867-1934",
+                "description": "Pioneer and unparalleled: first woman to win a Nobel and the only person to achieve this recognition in two different categories",
+                "bio": "Marie Curie, an icon of science, challenged the obstacles of her time, becoming a benchmark in the study of radioactivity - a term she herself coined. From her humble beginnings in Poland to her distinguished career in Paris, her bravery and dedication led her to discover techniques for isolating isotopes and the elements radium and polonium, as well as to create the first radiological centers in history. Her legacy and passion are an inspiration to current scientists: Marie Curie broke barriers and became the first woman to be honored with the Nobel and, to this day, the only person to win the award in two different categories: Physics and Chemistry.",
+                "src": ""
+            },
+            {
+                "id": 2,
+                "name": "Alice Ball",
+                "date": "1892-1916",
+                "description": "Icon in the fight against leprosy and the defense of public health",
+                "bio": "Alice Ball challenged the limitations of her time to leave an indelible mark on science: she positioned herself as the creator of the only effective treatment against leprosy until the advent of antibiotics. Despite her early death, her ingenuity and passion for science made her a pioneer in public health preservation, also becoming a reference for racial struggle as the first North American woman of Kale descent to graduate from the University of Hawaii with a master's degree. Alice Ball's legacy is an inspiration for future generations, reminding us that talent and determination can transcend any barrier.",
+                "src": ""
+            },
+            {
+                "id": 3,
+                "name": "Rosalind Franklin",
+                "date": "1920-1958",
+                "description": "Dark Lady of DNA, key figure in the vindication of the Matilda Effect",
+                "bio": "Rosalind Franklin broke the barriers imposed by her society to become a reference in DNA study. Her pioneering work in X-ray crystallography, her dedication and insight, her unstoppable dedication and her great intellect led her to discover the true structure of DNA, positioning herself ahead of her male peers. Although her contribution was underestimated, ignored, and belittled in life, including the theft of her research and exclusion as a Nobel winner, her legacy has solidified as that of an amazing scientist who confronted gender prejudice, surpassing herself and leaving behind fundamental findings for the evolution of knowledge.",
+                "src": ""
+            },
+            {
+                "id": 4,
+                "name": "Gerty Cori",
+                "date": "1896-1957",
+                "description": "Inspiration in biochemistry and third woman to win a Nobel Prize in Medicine",
+                "bio": "Gerty Cori challenged gender barriers and workplace injustices to leave an indelible mark on science and feminism. Despite difficulties in finding recognition and economic reward in her career, she persevered with determination until she became the third woman in the world, and the first in the United States, to receive the Nobel Prize in Medicine, shared with her husband Carl and the Argentine physiologist Bernardo Houssay. Her award was the fruit of years of hard work and dedication to uncovering the secrets of metabolism, revealing the mechanism by which glycogen transforms into lactic acid in muscle tissue. Gerty Cori, with her unmatched bravery and genius, left an eternal legacy in the history of medicine and biochemistry.",
+                "src": ""
+            },
+            {
+                "id": 5,
+                "name": "Jenara Vicenta Arnal",
+                "date": "1902-1960",
+                "description": "Symbol of national feminism, first woman to earn a doctorate in chemical sciences in Spain",
+                "bio": "Jenara Vicenta Arnal carved her own path to recognition in a world dominated by men. As the first woman to earn a Doctorate in Chemical Sciences in Spain, she challenged the conventions of her time to delve deep into chemical research. Her work in the Theoretical Chemistry laboratories at the University of Zaragoza highlighted her as a brilliant and visionary mind, whose work resonated both nationally and internationally. She explored the limits of chemical oxidations caused by the action of fluorine in gaseous flow, combining her career with her passion for teaching and dedicating much of her life to passing on her knowledge to future generations: her commitment to science led her to work for the Higher Council for Scientific Research (CSIC) and collaborate on various educational initiatives, leaving a deep imprint on the scientific thought of her time.",
+                "src": ""
+            },
+            {
+                "id": 6,
+                "name": "Dorothy Hodgkin",
+                "date": "1910-1994",
+                "description": "Protagonist in the discovery of the structure of penicillin, vitamin B12 and insulin",
+                "bio": "Dorothy Hodgkin left an indelible mark on the field of protein crystallography, for which she was awarded the Nobel Prize in Chemistry in 1964. Her scientific legacy was reflected through a series of discoveries including the confirmation of the structure of penicillin and vitamin B12, making her the third woman to receive such prestigious recognition. After 35 years of hard work, Hodgkin deciphered the structure of insulin, a milestone that greatly expanded the understanding of molecular biology. A pioneer in the study of biomolecules using X-ray crystallography techniques, her legacy endures as an inspiration for future generations of female scientists.",
+                "src": ""
+            }
+        ],
+        "physics": [
+            {
+                "id": 1,
+                "name": "Lise Meitner",
+                "date": "1878-1968",
+                "description": "Mother of nuclear fission, undervalued and excluded from the Nobel Prize",
+                "bio": "Lise Meitner dazzled with her scientific genius and moral courage. From her discovery of the radioactive isotope protactinium-231 to her fundamental role in the discovery of nuclear fission in 1938, her work consecrated her as one of the brightest minds of her time. However, despite being acclaimed as the 'German Marie Curie' by Albert Einstein, her contribution to the discovery of nuclear fission was unjustly overshadowed when her collaborator, Otto Hahn, received the Nobel Prize in her place. Meitner, known as the 'Jewish mother of the atomic bomb,' refused to participate in the Manhattan Project for ethical reasons, thus defying the political and ethical pressures of her time. Her courage and dedication to scientific truth make her a symbol of the fight against gender prejudice and injustice.",
+                "src": ""
+            },
+            {
+                "id": 2,
+                "name": "Emmy Noether",
+                "date": "1882-1935",
+                "description": "Reference in physics and relentless feminist",
+                "bio": "Emmy Noether left an indelible legacy in the scientific landscape of the 20th century. Her contributions, of fundamental importance, resonated in the fields of physics and mathematics, particularly in the theorem that bears her name, which establishes an essential connection between symmetry in physics and conservation laws, providing a conceptual framework that remains fundamental to the understanding of the universe. However, despite her brilliance, she was hindered by gender barriers, facing the denial of worthy job opportunities simply because she was a woman. Despite these adversities, her indomitable spirit and tireless dedication to the pursuit of scientific truth make her a symbol of the fight against injustice and a timeless reference in science.",
+                "src": ""
+            },
+            {
+                "id": 3,
+                "name": "Cecilia Payne-Gaposchkin",
+                "date": "1900-1979",
+                "description": "Author of the 'most brilliant Ph.D. thesis ever written in astronomy' and first to assert that stars are primarily composed of hydrogen",
+                "bio": "In 1925, Cecilia Payne's doctoral thesis proposed a bold and visionary idea: that stars are primarily composed of hydrogen. This work, praised as 'the most brilliant Ph.D. thesis ever written in astronomy,' marked a turning point in the understanding of the Universe. Although her early academic career was marked by obstacles and gender prejudice, her passion for science led her to cross borders and oceans in search of opportunities. After studying botany, physics, and chemistry at the University of Cambridge, she found her true home in the United States, where her work was recognized, despite her status as a woman. In 1938, she was granted the title of 'astronomer,' and in 1956, she became the first woman to be appointed as a full professor at Harvard, thereby opening the doors for future generations of women in science.",
+                "src": ""
+            },
+            {
+                "id": 4,
+                "name": "María Goeppert-Mayer",
+                "date": "1906-1972",
+                "description": "Key scientist in the development of nuclear physics and lover of science until her last days",
+                "bio": "Maria Goeppert Mayer, winner of the Nobel Prize in Physics in 1963 for her innovative nuclear shell model, was the second woman to receive this honor after Marie Curie. In her doctoral thesis, she explored the phenomenon of the simultaneous absorption of two photons by an atom, a bold theory that was experimentally confirmed decades later. However, despite her brilliance and scientific prowess, much of her career took place in the shadow of non-remuneration, without securing a full-time paid position until she was 53 years old. She developed the mathematical calculation that underpinned her revolutionary nuclear shell model, an achievement that earned her global recognition with the Nobel Prize in Physics shared with J. Hans D. Jensen and Eugene Paul Wigner. Maria Goeppert Mayer, with her tireless dedication, was one of the most important scientists in the development of nuclear physics and, until her death, loved and worked for science unceasingly.",
+                "src": ""
+            },
+            {
+                "id": 5,
+                "name": "Felisa Martín Bravo",
+                "date": "1898-1979",
+                "description": "First woman to enter the Senior Corps of Meteorology and the first female doctor in Physics in Spain",
+                "bio": "Felisa Martín Bravo challenged gender barriers and political adversities in her relentless pursuit of scientific knowledge. As the first woman to enter the Senior Corps of Meteorology and the first female doctor in Physics in Spain, she marked a milestone in the history of Spanish science. She unraveled the mysteries of the crystalline structure of compounds such as nickel oxide and cobalt, as well as lead sulfide. Her thirst for knowledge took her to Cambridge, where she expanded her understanding of meteorology under the tutelage of Ernest Rutherford, and upon returning to Spain, she joined the National Meteorological Service in Madrid, becoming the first woman to be admitted. However, her refusal to leave Madrid during the Spanish Civil War cost her the position. Her legacy endures as a reminder of the importance of persistence and the fight against prejudice.",
+                "src": ""
+            },
+            {
+                "id": 6,
+                "name": "Chien Shiung Wu",
+                "date": "1912-1997",
+                "description": "First Lady of Physics and one of the greatest experimental scientists in history",
+                "bio": "Chien Shiung Wu stood out as an expert in radioactivity, contributing significantly to the Manhattan Project, where her work was essential in developing the process of uranium isotope separation through gaseous diffusion. However, it was the Wu Experiment that brought her to scientific prominence. This experiment challenged the hypothetical law of conservation of parity, demonstrating that nature does not always follow the symmetry patterns previously assumed. However, her colleagues Tsung-Dao Lee and Chen Ning Yang were the ones who received the 1957 Nobel Prize in Physics for this discovery, leaving Wu excluded from the recognition. Nonetheless, Chien Shiung Wu, with her ingenuity and determination, remains a beacon of inspiration for today's scientists and a feminist symbol of struggle and overcoming.",
+                "src": ""
+            }
+        ],
+        "biology": [
+            {
+                "id": 1,
+                "name": "Mary Anning",
+                "date": "1800-1847",
+                "description": "First paleontologist in history",
+                "bio": "Mary Anning, recognized as the first paleontologist in history, shaped the understanding of the prehistoric world. Residing in Lyme Regis, England, Anning passionately dedicated herself to searching and collecting Jurassic fossils from the seabeds, establishing her reputation as a skilled collector and dealer of paleontological finds. Her discoveries were not only impressive on their own but also prompted fundamental changes in the scientific understanding of the period and Earth’s evolution in the 19th century. Despite her invaluable contribution to the field, Anning faced numerous obstacles due to her gender and social class. As a daughter of low-class dissenters, she was marginalized and excluded from the male-dominated British scientific community, and her achievements were rarely acknowledged in her lifetime. Despite these adversities, her legacy endures as a testament to determination, skill, and passion for knowledge at a time and place where women like her struggled to be recognized in the scientific realm.",
+                "src": ""
+            },
+            {
+                "id": 2,
+                "name": "Rachel Carson",
+                "date": "1907-1964",
+                "description": "Forerunner of environmental awareness and conservation advocacy",
+                "bio": "As an American marine biologist and conservationist, Rachel Carson forever changed the way we perceive the natural world. Initially a writer, her work The Sea Around Us established her as a leading figure in oceanography and ocean life. However, it was in the late 1950s that Carson redirected her focus toward conservation, challenging the indiscriminate use of synthetic pesticides and sparking a seismic shift in national policy: her protest culminated in a nationwide ban on DDT and other harmful chemicals, as well as the creation of the United States Environmental Protection Agency. For her tireless efforts, Rachel Carson was posthumously honored with the Presidential Medal of Freedom by Jimmy Carter, a well-deserved tribute to her extraordinary impact on our planet's protection, which endures to this day.",
+                "src": ""
+            },
+            {
+                "id": 3,
+                "name": "Esther Lederberg",
+                "date": "1922-2006",
+                "description": "Brilliant mind in microbiology and bacterial genetics",
+                "bio": "Esther Lederberg was a true pioneer in the field of bacterial genetics, making groundbreaking contributions that included the discovery of the bacteriophage λ, gene transfer between bacteria via specialized transduction, and the replica plating method. Additionally, her discovery of the F plasmid, or fertility factor, opened new frontiers in understanding bacterial genetics and antibiotic resistance. But her legacy went beyond: she founded and directed the prestigious Plasmid Reference Center at Stanford University, a knowledge hub where plasmids of various types were maintained, named, and distributed, thus facilitating the advancement of research globally. With her pursuit of scientific truth and commitment to science, Esther Lederberg continues to inspire future generations, reminding us of the transformative power of dedication in the quest for knowledge.",
+                "src": ""
+            },
+            {
+                "id": 4,
+                "name": "Sylvia Earle",
+                "date": "1935",
+                "description": "First 'Hero of the Planet' and defender of the oceans",
+                "bio": "Sylvia Earle has dedicated her life to exploring and protecting the mysteries of the underwater world. As a marine biologist, explorer, and author, Sylvia made history by becoming the first female chief scientist of the National Oceanic and Atmospheric Administration, leading efforts to understand and conserve marine ecosystems. Her relentless work earned her recognition as the first Hero of the Planet by Time magazine in 1998, a well-deserved tribute to her dedication, commitment, and tireless defense of the oceans. She also collaborated in studies on the devastating impacts of oil spills, being honored with the prestigious Princess of Asturias Award for Concord in 2018, a recognition of her relentless struggle. Sylvia Earle, with her passion and determination, continues to be an inspiration for ocean conservation efforts, reminding us of the vital importance of protecting and preserving our planet's treasures.",
+                "src": ""
+            },
+            {
+                "id": 5,
+                "name": "Ángeles Alvariño",
+                "date": "1916-2005",
+                "description": "Pioneer in marine research and visionary in oceanographic exploration",
+                "bio": "Ángeles Alvariño left an indelible mark on the exploration and understanding of the oceans. As an oceanographer, zoologist, and pioneering professor in her field, in 1953 she became the first female scientist to embark on the British oceanographic vessel, the Sarsia, thus marking a historic milestone in marine exploration. From 1956 onwards, she extended her influence in the United States, where she continued her research, discovering and documenting 22 previously unknown species of marine organisms. Her legacy was recognized in 2015, when the Royal Galician Academy of Sciences (RAGC) selected Ángeles Alvariño to celebrate June 1st as 'Science Day in Galicia,' marking the first time a female researcher was honored at this event. Her influence continues to resonate today, reminding us of the importance of curiosity, bravery, and determination in exploring the vast marine world.",
+                "src": ""
+            },
+            {
+                "id": 6,
+                "name": "Elizabeth Blackburn",
+                "date": "1948",
+                "description": "Nobel Prize in Medicine and prestigious reference in biochemistry",
+                "bio": "Elizabeth Blackburn has made an indelible mark on understanding the mysteries of DNA and its role in human health. Originally from Australia, she discovered telomerase, a crucial enzyme in the formation of telomeres during DNA duplication. This revolutionary finding not only unveiled information about fundamental processes in cellular biology but also earned her the Nobel Prize in Medicine in 2009. Blackburn, along with her colleague Carol Greider, also made a crucial discovery by revealing that cancer cells can produce telomerase in abnormally high amounts, contributing to the uncontrolled growth of tumors. This finding has opened new doors in cancer research, providing hope for the development of more effective treatments aimed at curbing the activity of this enzyme and combating the disease.",
+                "src": ""
+            }
+        ],
+        "computerScience": [
+            {
+                "id": 1,
+                "name": "Ada Lovelace",
+                "date": "1815-1852",
+                "description": "First software engineer and programmer, creator of the analytical machine",
+                "bio": "Ada Lovelace played a fundamental role in the history of computing and technology. Her collaboration with Charles Babbage in developing the analytical machine marked a milestone in technology history, as while others focused solely on numerical calculations, Lovelace envisioned a much broader future for these machines. She was the first to recognize that the analytical machine was not limited to simple calculation but had the potential to process symbols and perform more complex operations. Additionally, she published what is today recognized as the first algorithm intended to be processed by a machine, thus establishing her place in history as the first computer programmer. Her vision and understanding of computer capabilities laid the groundwork for the development of modern computing, positioning her as a pioneer whose ingenuity and vision transcended her time.",
+                "src": ""
+            },
+            {
+                "id": 2,
+                "name": "Grace Hopper",
+                "date": "1906-1992",
+                "description": "Pioneer in computing and creator of the first compiler for a programming language",
+                "bio": "Grace Hopper, known as 'Amazing Grace,' was much more than a pioneer: as a computer scientist and rear admiral in the United States Navy, she pushed the boundaries of the possible and paved the way for future generations. During the 1950s and 1960s, she developed the first compiler for a programming language, laying the groundwork for the creation of COBOL, a high-level language still in use today. Her vision of machine-independent programming languages paved the way for greater accessibility and flexibility in software development. Her legacy continues to remind us that with ingenuity, determination, and vision, it is possible to overcome any challenge in the field of technology.",
+                "src": ""
+            },
+            {
+                "id": 3,
+                "name": "Annie Easly",
+                "date": "1933-2011",
+                "description": "African-American reference in theoretical computing and space computation",
+                "bio": "Annie Easley, an African-American mathematician and scientist, played a key role in the work conducted at the Lewis Research Center, now known as the Glenn Research Center of NASA, and its predecessor, the National Advisory Committee for Aeronautics (NACA). Her dedication and talent led her to be a leader in the team that developed the software for the Centaur rocket stage, thus contributing to the advancement of space exploration. Additionally, Easley was one of the first African-American women to work as a computer scientist at NASA, being a pioneer in the fight for greater diversity and inclusion in the scientific community, demonstrating that talent and passion know no gender, race, or origin limits.",
+                "src": ""
+            },
+            {
+                "id": 4,
+                "name": "Ana María Prieto",
+                "date": "1942-2018",
+                "description": "Pioneer in programming, inspiration for future generations of computer scientists",
+                "bio": "Ana María Prieto, the first female programmer in Spain, blazed her own trail in a male-dominated world. From her childhood in Santiago de Compostela to her innovative work in Madrid and Galicia, she challenged boundaries and opened doors for women in science and technology in Spain. In 1963, she became the first programmer at Bull General Electric, and upon her return to Galician lands, she brought with her the standard of progress and excellence through her work with Philips and IBM computers. Her legacy endures as a beacon of inspiration for future generations of computer scientists.",
+                "src": ""
+            },
+            {
+                "id": 5,
+                "name": "Ángela Ruiz Robles",
+                "date": "1895-1975",
+                "description": "Creator of the mechanical encyclopedia, precursor of the electronic book",
+                "bio": "Angela Ruiz Robles, a Spanish teacher, writer, and inventor, left an indelible mark on the world of education and technology. She pioneered the development of a mechanical encyclopedia, an innovative device that could be considered the precursor to the modern electronic book. Her vision and creativity led her to anticipate by more than twenty years the device designed by the American Michael Hart in 1971, and by more than half a century the contemporary e-books. With her invention, Ruiz Robles not only revolutionized the way knowledge is accessed and shared but also laid the groundwork for the digital era we were about to experience. She was a visionary whose impact extends far beyond her time, enriching and expanding the technological culture.",
+                "src": ""
+            },
+            {
+                "id": 6,
+                "name": "Joan Clarke",
+                "date": "1917-1996",
+                "description": "Only computer scientist in the Enigma project, pioneer in cryptanalysis and numismatics",
+                "bio": "Joan Clarke, a distinguished British cryptanalyst and numismatist, played a crucial role during World War II by becoming the only woman selected to join Alan Turing's team at Bletchley Park. There, they worked tirelessly on the Enigma project, deciphering the secret communications of Nazi Germany and contributing to the Allied effort. Her skill and dedication were recognized with awards that included being named a Member of the Order of the British Empire (MBE) in 1946. Clarke demonstrated that gender was no impediment to excellence and heroism in wartime, with her valuable contribution being fundamental to the Allies' victory. Joan Clarke not only broke barriers but also inspired future generations to pursue their dreams and challenge gender stereotypes in the fields of science and technology.",
+                "src": ""
+            }
+        ],
+        "mathematics": [
+            {
+                "id": 1,
+                "name": "Maryam Mirzhakani",
+                "date": "1977-2017",
+                "description": "First woman to win the Fields Medal and key researcher in geometry and dynamical systems",
+                "bio": "Maryam Mirzakhani, a brilliant Iranian mathematician, was awarded the prestigious Fields Medal in 2014, becoming the first woman to receive this prize, considered the equivalent of the Nobel Prize in the field of mathematics. Her studies stood out for their depth and originality, especially in areas such as the Teichmüller space, hyperbolic geometry, ergodic theory, and symplectic geometry. Mirzakhani approached existing problems with a unique perspective, conducting impactful research that expanded the boundaries of geometry and dynamical systems. Her legacy endures not only through her brilliant mind but also as a role model for those who dream of making significant contributions to science and research.",
+                "src": ""
+            },
+            {
+                "id": 2,
+                "name": "María Gaetana Agnesi",
+                "date": "1718-1799",
+                "description": "Most prominent female scientist of the 18th century in Europe and reference in differential and integral calculus",
+                "bio": "Maria Gaetana Agnesi, considered a child prodigy, left an indelible mark on the world of mathematics and sciences, with more than 25 literary works published and a significant trajectory in philosophy, linguistics, philanthropy, and numerical analysis. Her most influential works, the 'Institutional Analytics,' became fundamental texts in European mathematical teaching for more than fifty years. With remarkable ability to simplify complex concepts like differential and integral calculus, which she treated with astonishing clarity and simplicity, Agnesi earned recognition as one of the most prominent female scientists of the 18th century in Europe. Her legacy continues to this day, even with a crater on Venus named in her honor, highlighting her contribution to mathematical knowledge and her inspiration as a woman who broke barriers and excelled in an era where limitations were restrictive and unfair.",
+                "src": ""
+            },
+            {
+                "id": 3,
+                "name": "Florence Nightingale",
+                "date": "1820-1910",
+                "description": "Founder of contemporary professional nursing and pioneer in health statistics",
+                "bio": "Florence Nightingale, a renowned British statistician, not only excelled in mathematics from an early age but also applied her knowledge to epidemiology and health statistics, thus laying the foundations of contemporary professional nursing. As the first woman admitted to the Royal Statistical Society in Britain and an honorary member of the American Statistical Association, Nightingale not only broke gender barriers but also revolutionized the field of public health. Her legacy endures through the establishment in 1860 of the nursing school at St. Thomas' Hospital in London, which today is an integral part of King's College London and the NHS, demonstrating her dedication and vision for the professionalization and continuous improvement of nursing, mathematics, and statistics.",
+                "src": ""
+            },
+            {
+                "id": 4,
+                "name": "Sophie Germain",
+                "date": "1776-1831",
+                "description": "Self-taught scientist, pioneer in the development of the theory of elasticity and number theory",
+                "bio": "Sophie Germain, a self-taught French mathematician and physicist, defied the conventions of her time to leave a lasting mark on the history of mathematics and physics. Recognized as one of the pioneers in the theory of elasticity and number theory, Germain made significant contributions, notably her study of prime numbers, later known as Sophie Germain primes. Despite initial opposition from her parents and the barriers imposed by society, Germain persevered in her education under the pseudonym Antoine Auguste LeBlanc, posing as a man to access knowledge. Her dedication and genius allowed her to transcend the gender limitations of her time and leave a lasting legacy and an example for future generations of female scientists.",
+                "src": ""
+            },
+            {
+                "id": 5,
+                "name": "María Montserrat Capdevila",
+                "date": "1905-1993",
+                "description": "Pioneering mathematician in Spain, key figure in the axiomatic study of Hilbert spaces",
+                "bio": "María Montserrat Capdevila stood out as one of the first female mathematicians in Spain, consolidating her reputation in a traditionally male-dominated field. In 1928, with an outstanding academic record in exact sciences, she obtained her degree, marking the beginning of a promising career. Appointed interim professor of mathematics at the Zafra Institute, she later achieved her doctorate at the Central University of Madrid, and in 1931, she received a scholarship from the Board for Advanced Studies to delve deeper into the theory of functions and the axiomatics of Hilbert spaces at the Sorbonne University. Although her path as a researcher was truncated by the Civil War, her legacy endures as a testament to the talent and determination that challenged gender barriers in the world of mathematics in Spain.",
+                "src": ""
+            },
+            {
+                "id": 6,
+                "name": "María del Carmen Martínez Sancho",
+                "date": "1901-1995",
+                "description": "First female doctor and professor of Mathematics in secondary education in Spain",
+                "bio": "María del Carmen Martínez Sancho is an emblematic figure in the history of education and mathematical research in Spain. A pioneer in many respects, she was the first woman to earn a doctorate and serve as a professor of Mathematics in secondary education in the country. Her relentless pursuit of knowledge led her to become the first woman granted a pension by the Board for Advanced Studies at the University of Berlin, where she deepened her research and acquired new pedagogical methods. Her dedication and academic excellence not only distinguished her as a prominent researcher but also as a leader in the educational field, holding prominent positions in the Spanish Mathematical Society. Her legacy endures as an inspiration for future generations of women in the field of mathematics in Spain.",
+                "src": ""
+            }
+        ],
+        "medicine": [
+            {
+                "id": 1,
+                "name": "Elizabeth Blackwell",
+                "date": "1821-1910",
+                "description": "First woman to receive a medical degree in the United States and to be registered with the General Medical Council",
+                "bio": "In addition to becoming a notable British physician, Elizabeth Blackwell was also a pioneer who broke down gender barriers in Medicine. As the first woman to receive a medical degree in the United States and to be registered with the General Medical Council, she paved the way for future generations of women in medicine. Her legacy transcends her academic achievements, as she played a crucial role as a social advocate and promoter of female medical education both in the United States and England. In addition to her work in medicine, Blackwell co-founded the New York Infirmary for Women and Children with her sister Emily Blackwell, and dedicated efforts to educating the female public about the importance of education for girls. During the American Civil War, her role in organizing the nursing corps demonstrated her commitment to feminism and medical care in times of crisis.",
+                "src": ""
+            },
+            {
+                "id": 2,
+                "name": "Nettie Stevens",
+                "date": "1861-1912",
+                "description": "First scientist to describe the chromosomal basis for determining sex and inheritance",
+                "bio": "Nettie Stevens, a prominent American geneticist of English and Swedish descent, left an indelible mark on the field of genetics with her series of groundbreaking discoveries: she was the first researcher to identify the chromosomal basis for determining sex, a fundamental advance that transformed our understanding of biological inheritance. Her work did not stop there; she also made significant contributions to embryology and cytogenetics, broadening the horizon of scientific knowledge in these fields. One of her most notable achievements was the demonstration that chromosomes exist in pairs in cells, an observation that ended a long-standing scientific debate and laid the groundwork for future research in genetics and cell biology.",
+                "src": ""
+            },
+            {
+                "id": 3,
+                "name": "Jane Cooke Wright",
+                "date": "1919-2013",
+                "description": "Pioneering surgeon in the fight against cancer and the development of chemotherapy as an accessible treatment",
+                "bio": "Jane Cooke Wright was a key figure in the battle against cancer, particularly distinguished for her innovations in the field of chemotherapy. She revolutionized the traditional approach by using human tissue cultures instead of laboratory mice to assess the effects of potential drugs on cancer cells, thereby marking a milestone in oncological research. Additionally, she was a pioneer in the use of methotrexate to treat breast and skin cancers, introducing a therapeutic approach that would radically transform clinical practice. Her early breakthroughs turned chemotherapy from a speculative theory into a proven and effective cancer treatment, saving countless lives in the process. Her work laid the foundation for the development of combination therapy and personalized treatment, setting the stage for ongoing research to this day.",
+                "src": ""
+            },
+            {
+                "id": 4,
+                "name": "Dolors Aleu",
+                "date": "1857-1913",
+                "description": "First woman to graduate in medicine in Spain and second to obtain a doctoral degree",
+                "bio": "Dolors Aleu, a Spanish physician, feminist, and visionary, made history in medicine by becoming the first woman to graduate in Medicine in Spain and the second to obtain a doctoral degree. Specializing in Gynecology and Pediatrics, she stood out as a pioneer in her field and, over 25 years, practiced with dedication and passion, treating her patients in her own clinic in Barcelona. She also shared her knowledge as a professor of domestic hygiene at the Academy for Women's Enlightenment, seeking to empower women through health education. Aleu was not only an exceptional doctor but also a prolific author, writing educational texts aimed at improving the quality of life for women, especially in the field of maternity. Her legacy endures as an inspiring testimony to courage, determination, and commitment to societal well-being.",
+                "src": ""
+            },
+            {
+                "id": 5,
+                "name": "Concepción Aleixandre",
+                "date": "1862-1952",
+                "description": "Renowned gynecologist and a reference in the dissemination of sexual health and feminine hygiene",
+                "bio": "Concepción Aleixandre, a multifaceted and pioneering figure in numerous fields, left an indelible mark on medicine and the fight for women's rights. As a teacher, doctor, gynecologist, inventor, activist, feminist, and suffragist, her legacy spans a wide range of disciplines and causes. Her dedication to research led her to patent gynecological instruments in 1910, thereby contributing to advancements in medicine in her field. Additionally, she played a crucial role in disseminating education about hygiene, especially aimed at women, through her management of the section dedicated to 'women's health' in the Spanish Social Medicine magazine (1916-1920). Aleixandre also stood out as an activist, delivering lectures and rallies advocating for women's rights, serving as a testimony to perseverance, bravery, and dedication to the cause of gender equality and scientific advancement.",
+                "src": ""
+            },
+            {
+                "id": 6,
+                "name": "Elizabeth Garret",
+                "date": "1836-1917",
+                "description": "Iconic suffragist and first woman to obtain a medical degree in the United Kingdom",
+                "bio": "A prominent British physician and suffragist, Elizabeth Garrett Anderson faced the denial of admission to medical schools and studied independently with physicians and in hospitals in London. Her determination and skills led her to become the first British woman to earn a medical degree in 1865, thus paving the way for future generations of women in medicine. Not content with her own achievements, Elizabeth Garrett also advocated for the medical education of women, creating an exclusive medical school for them. In addition to her contributions to medicine, Garrett was a pioneer in the political and social spheres, being the first woman in Britain to hold several significant positions, including the deanship of a medical school and the position of mayor of Aldeburgh, thus becoming the first female mayor in Britain. Her life and career continue to inspire women worldwide to pursue their dreams and challenge established norms.",
+                "src": ""
+            }
+        ]
+    }
 }

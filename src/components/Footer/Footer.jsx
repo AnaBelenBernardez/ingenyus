@@ -10,12 +10,17 @@ import viratec from '/logos/VIRATEC.png';
 function Footer() {
     return (
         <footer>
-            <section className='footertext'>
-                <p>unusual agency</p>
-                <p> hola@ingenyus.es</p>
-                <p>únete al equipo talent@ingenyus.es</p>
-                <p>+34 981 227 225 </p>
-                <p>+34 968 107 558</p>
+            <ul className='footertext'>
+                <li className='unusual'>unusual agency</li>
+                <li>
+                    <a href='email'>hola@ingenyus.es</a>
+                </li>
+                <li className='unete'>
+                    <p>únete al equipo </p>
+                    <a href='email'>atalent@ingenyus.es</a>
+                </li>
+                <li>+34 981 227 225 </li>
+                <li>+34 968 107 558</li>
                 <a href=''> R.Real,24, 1º, 15003 A Coruña </a>
 
                 <section>
@@ -31,7 +36,7 @@ function Footer() {
                     <a href='https://www.ingenyus.es/esto-no-es-un-error'>T</a>
                 </section>
                 <a href='https://www.ingenyus.es/kit-digital/'>Kit Digital</a>
-            </section>
+            </ul>
             <section className='logos'>
                 <img src={logoasebio} alt='Logo ASEBIO' />
                 <img

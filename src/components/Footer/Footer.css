@@ -14,6 +14,10 @@ footer {
     align-content: center;
 }
 
+a {
+    color: var(--athens);
+    text-decoration: none;
+}
 .logos {
     height: 287.87px;
     display: flex;

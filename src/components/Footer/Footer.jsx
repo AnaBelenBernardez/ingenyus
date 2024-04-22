@@ -12,24 +12,25 @@ function Footer() {
         <footer>
             <section className='footertext'>
                 <p>unusual agency</p>
-
                 <p> hola@ingenyus.es</p>
-
                 <p>únete al equipo talent@ingenyus.es</p>
-
-                <p>
-                    +34 981 227 225 +34 968 107 558 R.Real,24, 1º, 15003 A
-                    Coruña
-                </p>
+                <p>+34 981 227 225 </p>
+                <p>+34 968 107 558</p>
+                <a href=''> R.Real,24, 1º, 15003 A Coruña </a>
 
                 <section>
-                    <a href='linkedin'> Linkedin</a>
-                    <a href='twitter'> Twitter</a>
-                    <a href='instagram'> Instagram</a>
-                    <a href='T'>T</a>
+                    <a href='https://www.linkedin.com/company/ingenyus/'>
+                        Linkedin
+                    </a>
+                    <a href='https://twitter.com/i/flow/login?redirect_after_login=%2Fingenyus_es'>
+                        Twitter
+                    </a>
+                    <a href='https://www.instagram.com/ingenyus.es'>
+                        Instagram
+                    </a>
+                    <a href='https://www.ingenyus.es/esto-no-es-un-error'>T</a>
                 </section>
-
-                <p className='footertext'> Kit digital</p>
+                <a href='https://www.ingenyus.es/kit-digital/'>Kit Digital</a>
             </section>
             <section className='logos'>
                 <img src={logoasebio} alt='Logo ASEBIO' />

@@ -1,4 +1,6 @@
 import React from 'react';
+import './Footer.css';
+
 import camaracomercio from '/logos/camaracomercio.png';
 import cluster from '/logos/ClusterdaComunicacionlogoclusterdecomunicacion.png';
 import groupclusaga from '/logos/groupclusaga.png';
@@ -8,7 +10,7 @@ import viratec from '/logos/VIRATEC.png';
 function Footer() {
     return (
         <footer>
-            <section>
+            <section className='footertext'>
                 <p>unusual agency</p>
 
                 <p> hola@ingenyus.es</p>
@@ -20,25 +22,28 @@ function Footer() {
                     Coruña
                 </p>
 
-                <a href='linkedin'> Linkedin</a>
-                <a href='twitter'> Twitter</a>
-                <a href='instagram'> Instagram</a>
-                <a href='T'>T</a>
+                <section>
+                    <a href='linkedin'> Linkedin</a>
+                    <a href='twitter'> Twitter</a>
+                    <a href='instagram'> Instagram</a>
+                    <a href='T'>T</a>
+                </section>
 
-                <p>Kit digital</p>
+                <p className='footertext'> Kit digital</p>
             </section>
-            <section>
-                <img src={camaracomercio} alt='Logo de la cámara de comercio' />
-                <img
-                    src={cluster}
-                    alt='Logo Cluster de Comunicacion de Galicia'
-                />
+            <section className='logos'>
+                <img src={logoasebio} alt='Logo ASEBIO' />
                 <img
                     src={groupclusaga}
                     alt='Logo Group Cluster Alimentario de Galicia'
                 />
-                <img src={logoasebio} alt='Logo ASEBIO' />
+                <img src={camaracomercio} alt='Logo de la cámara de comercio' />
                 <img src={viratec} alt='Logo Viratec' />
+
+                <img
+                    src={cluster}
+                    alt='Logo Cluster de Comunicacion de Galicia'
+                />
             </section>
         </footer>
     );

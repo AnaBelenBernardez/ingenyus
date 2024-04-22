@@ -1,11 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import './style.css';
 import LanguageSelector from '../LanguageSelector';
+import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 function Nav() {
-    // function handleChange(event) {
-    //     const selectedValue = event.target.value;
-    // }
+    const { t } = useTranslation();
 
     return (
         <nav className='nav'>
@@ -19,32 +19,44 @@ function Nav() {
                 </li>
                 <li>
                     <button className='buttonNav'>
-                        <NavLink to='chemistry'>química</NavLink>
+                        <NavLink to='chemistry'>
+                            {t('translation.chemistry')}
+                        </NavLink>
                     </button>
                 </li>
                 <li>
                     <button className='buttonNav'>
-                        <NavLink to='physics'>física</NavLink>
+                        <NavLink to='physics'>
+                            {t('translation.physics')}
+                        </NavLink>
                     </button>
                 </li>
                 <li>
                     <button className='buttonNav'>
-                        <NavLink to='biology'>biología</NavLink>
+                        <NavLink to='biology'>
+                            {t('translation.biology')}
+                        </NavLink>
                     </button>
                 </li>
                 <li>
                     <button className='buttonNav'>
-                        <NavLink to='computer-science'>computación</NavLink>
+                        <NavLink to='computer-science'>
+                            {t('translation.computerScience')}
+                        </NavLink>
                     </button>
                 </li>
                 <li>
                     <button className='buttonNav'>
-                        <NavLink to='mathematics'>matemáticas</NavLink>
+                        <NavLink to='mathematics'>
+                            {t('translation.mathematics')}
+                        </NavLink>
                     </button>
                 </li>
                 <li>
                     <button className='buttonNav'>
-                        <NavLink to='medicine'>medicina</NavLink>
+                        <NavLink to='medicine'>
+                            {t('translation.medicine')}
+                        </NavLink>
                     </button>
                 </li>
                 <LanguageSelector />

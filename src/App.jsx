@@ -11,6 +11,7 @@ import { Contact_Newsletter } from './components/Contact&Newsletter/Contact&News
 import Header from './components/Header';
 import PageTitle from './components/PageTitle';
 import ScrollBar from './components/ScrollBar';
+import Footer from './components/Footer/Footer';
 
 function App() {
     return (
@@ -29,6 +30,7 @@ function App() {
                 <Route path='*' element={<div>404 Not Found</div>} />
             </Routes>
             <Contact_Newsletter />
+            <Footer />
         </>
     );
 }

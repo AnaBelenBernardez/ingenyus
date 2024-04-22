@@ -1,9 +1,15 @@
-import data from '../../data/data.json';
-export default function ComputerScienceMap() {
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import data from '../../assets/data/data.json';
+export default function MathematicsMap() {
+    const { i18n } = useTranslation();
+    const language = i18n.language;
+
+    const mathematicsData = data[language].mathematics;
     return (
         <section>
             <div>
-                {data.computerScience.map((item, index) => (
+                {mathematicsData.map((item, index) => (
                     <div key={index}>
                         <div>
                             <img src={item.src} alt={item.name} />

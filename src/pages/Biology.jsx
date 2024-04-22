@@ -1,4 +1,4 @@
-import BiologyMap from '../assets/components/Maps/BiologyMap';
+import BiologyMap from '../components/Maps/BiologyMap';
 const Biology = () => {
     return <BiologyMap />;
 };

@@ -1,4 +1,4 @@
-import MedicineMap from '../assets/components/Maps/MedicineMap';
+import MedicineMap from '../components/Maps/MedicineMap';
 const Medicine = () => {
     return <MedicineMap />;
 };

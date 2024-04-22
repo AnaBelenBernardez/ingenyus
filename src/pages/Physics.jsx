@@ -1,4 +1,4 @@
-import PhysicsMap from '../assets/components/Maps/PhysicsMap';
+import PhysicsMap from '../components/Maps/PhysicsMap';
 
 const Physics = () => {
     return <PhysicsMap />;

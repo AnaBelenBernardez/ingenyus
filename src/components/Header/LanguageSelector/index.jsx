@@ -22,7 +22,7 @@ function LanguageSelector() {
                 <li>
                     <ul id='languageSelector' onClick={toggleLanguages}>
                         <li
-                            className={`language ${i18n.language === 'es' ? 'active' : ''}`}
+                            className={`buttonNav buttonLang language ${i18n.language === 'es' ? 'active' : ''}`}
                             onClick={() => handleChangeLanguage('es')}
                             id='esSelector'
                         >
@@ -31,7 +31,7 @@ function LanguageSelector() {
                         </li>
                         {showLanguages && (
                             <li
-                                className={`language ${i18n.language === 'es' ? 'active' : ''}`}
+                                className={`buttonNav buttonLang language ${i18n.language === 'es' ? 'active' : ''}`}
                                 onClick={() => handleChangeLanguage('en')}
                                 id='enSelector'
                             >

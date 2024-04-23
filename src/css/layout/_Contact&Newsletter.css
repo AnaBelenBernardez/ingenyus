@@ -1,131 +1,174 @@
-@media (max-width: 2010px) {
-    .newsletter_contact {
-        background-color: var(--denim);
-        min-height: 300px;
-        height: 850.5px;
-        display: flex;
-        flex-direction: column;
-        color: #F7F7F8;
-        font-family: 'Satoshi-Regular';
-        align-items: center;
-    }
+/*Desktop*/
+.newsletter_contact {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    background-color: var(--denim);
+    min-height: 300px;
+    height: 850.5px;
+    display: flex;
+    flex-direction: column;
+    color: #F7F7F8;
+    font-family: 'Satoshi-Regular';
+    align-items: center;
+}
 
+.contact,
+.newsletter {
+    width: 80%;
+    flex: 1;
+}
 
-    .contact,
-    .newsletter {
-        width: 80%;
-        flex: 1;
-    }
+.contact {
+    border-bottom: none;
+    padding-top: 1rem;
+}
 
+.both_title {
+    padding: 3rem 0rem 0rem 0rem;
+    font-size: 67.2px;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    line-height: 96px;
+    margin-bottom: 2rem;
+}
 
-    .contact {
-        border-bottom: none;
-        padding-top: 2rem;
-    }
+.nc_text {
+    font-size: 16.8px;
+    font-style: none;
+    font-family: 'Satoshi-Regular';
+    font-weight: 300;
+    color: white;
+    margin-top: 1.5rem;
+}
 
+.newsletter {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    border-top: 1px solid white;
+}
 
-    .both_title {
-        padding: 3rem 0rem 0rem 0rem;
-        font-size: 67.2px;
-        margin-bottom: 1rem;
-        font-weight: 300;
-        line-height: 96px;
-        margin-bottom: 2rem;
-    }
+.newsletter_left,
+.newsletter_right {
+    flex: 1;
+}
 
-    .nc_text {
-        font-size: 16.8px;
-        font-style: none;
-        font-family: 'Satoshi-Regular';
-        font-weight: 300;
-        color: white;
-        margin-top: 1.5rem;
-    }
+.newsletter_right {
+    margin-top: 8rem;
+}
 
+.newsletter_email {
+    display: flex;
+    flex-direction: column;
+}
 
-    .newsletter {
-        display: flex;
-        flex-direction: row;
-        gap: 3rem;
-        border-top: 1px solid white;
+.newsletter_email input {
+    background-color:
+        rgba(25, 81, 228, 255);
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    height: 34px;
+}
 
-    }
+.newsletter_email input:hover {
+    background-color: white;
+    color: rgba(25, 81, 228, 255);
+    font-weight: bolder;
+    padding-left: 0.1rem;
+}
 
+.newsletter_email input::placeholder {
+    color: white;
+    opacity: 0.3;
+    font-size: 16.8px;
+    padding-left: 0.1rem;
+}
 
+.nc_email {
+    padding-bottom: 0.4rem;
+    font-weight: 700;
+    font-size: 16.8px;
+    line-height: 24px;
+}
 
-    .newsletter_left,
-    .newsletter_right {
-        flex: 1;
-    }
+.button_contact {
+    border-radius: 840px;
+    background-color: #F7F7F8;
+    font-size: 14.7px;
+    font-weight: 400;
+    color: #1851E3;
+    width: 84.3px;
+    height: 35.7px;
+    border: 1.05px;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
 
-    .newsletter_right {
-        margin-top: 8rem;
-    }
+.button_contact:hover {
+    background-color: #1851E3;
+    color: #F7F7F8;
+    border: 1px solid white;
+}
 
+.contact_button_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2.5rem
+}
 
+.hidden_form {
+    position: absolute;
+    margin-top: 3.2rem;
+    margin-left: 4.7rem;
+    top: 1;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+    /* Adjust the duration and timing function as needed */
+}
 
-    .newsletter_email {
-        display: flex;
-        flex-direction: column;
-    }
+.hidden_form.visible {
+    opacity: 1;
+}
 
-
-    .newsletter_email input {
-        background-color:
-            rgba(25, 81, 228, 255);
-        border: none;
-        border-bottom: 1px solid white;
-        height: 34.38px;
-    }
-
-
-    .newsletter_email input::placeholder {
-        color: white;
-        opacity: 0.3;
-        font-size: 16.8px;
-    }
-
-    .nc_email {
-        font-weight: 700;
-        font-size: 16.8px;
-        line-height: 24px;
-    }
-
-    .button_contact {
-        border-radius: 840px;
-        background-color: #F7F7F8;
-        font-size: 14.7px;
-        font-weight: 400;
-        color: #1851E3;
-        width: 84.3px;
-        height: 35.7px;
-        border: 1.05px;
-        padding-bottom: 3px;
-        cursor: pointer;
-    }
-
-    .button_contact:hover {
-        background-color: #1851E3;
-        color: #F7F7F8;
-        border: 1px solid white;
-    }
-
-    .contact_button_box {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 3.7rem
-    }
+.contacto_email_input {
+    background-color: rgba(25, 81, 228, 255);
+    border: none;
+    border-bottom: 1px solid white;
+    margin-right: 0.5rem;
+    height: 30px
 }
 
 
+.contacto_email_input::placeholder {
+    color: white;
+    opacity: 0.3;
+    font-size: 16.8px;
+    padding-left: 0.1rem;
+    margin-bottom: 0.5rem;
+}
 
 
+.subscribe_contact {
+    border-radius: 840px;
+    background-color: #F7F7F8;
+    font-size: 11px;
+    font-weight: 400;
+    color: #1851E3;
+    width: 65px;
+    height: 22px;
+    border: 1.05px;
+    padding-bottom: 3px;
+    cursor: pointer;
 
+}
 
-/* ************** MEDIA QUERY ************** */
+/* 
+adicionar mais um bocado de padding - comparar c/ o site da ingenyous + formulario de contacto*/
 /*Tablet */
-@media (max-width: 1020px) {
+@media (max-width: 1320px) {
     .button_contact {
         margin-bottom: 2rem;
     }
@@ -136,6 +179,10 @@
 
     .both_title {
         font-size: 55px;
+    }
+
+    .hidden_form {
+        margin-top: 2.4rem;
     }
 }
 
@@ -171,4 +218,7 @@
         font-size: 40px;
     }
 
+    .hidden_form {
+        margin-top: 2.4rem;
+    }
 }

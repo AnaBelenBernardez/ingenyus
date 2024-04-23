@@ -1,9 +1,15 @@
-import data from '../../data/data.json';
-export default function MathematicsMap() {
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import data from '../../assets/data/data.json';
+export default function PhysicsMaps() {
+    const { i18n } = useTranslation();
+    const language = i18n.language;
+
+    const physicsData = data[language].physics;
     return (
         <section>
             <div>
-                {data.mathematics.map((item, index) => (
+                {physicsData.map((item, index) => (
                     <div key={index}>
                         <div>
                             <img src={item.src} alt={item.name} />

@@ -39,6 +39,8 @@
         color: var(--athens);
         text-decoration: none;
         line-height: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     a:hover {
@@ -52,10 +54,13 @@
     .logos {
         height: 287.87px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         padding-left: 25vh;
         padding-right: 25vh;
+    }
+    .logos > img {
+        padding: 20px;
     }
 }
 
@@ -63,5 +68,10 @@
     .footertext {
         size: 1rem;
         line-height: 1.25rem;
+    }
+
+    .logos {
+        display: flex;
+        flex-wrap: wrap;
     }
 }

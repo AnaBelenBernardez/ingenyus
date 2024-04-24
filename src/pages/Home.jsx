@@ -5,7 +5,7 @@ import '../css/layout/_General.css';
 const Home = () => {
     const { t } = useTranslation();
     return (
-        <main>
+        <main className='noise'>
             <h1>{t('translation.title')}</h1>
             <span>{'#>/<>'}</span>
         </main>

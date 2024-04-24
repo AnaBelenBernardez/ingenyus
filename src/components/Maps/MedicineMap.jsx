@@ -8,7 +8,7 @@ export default function MedicineMaps() {
 
     const medicineData = data[language].medicine;
     return (
-        <section>
+        <main className='noise'>
             <div>
                 {medicineData.map((item, index) => (
                     <div key={index}>
@@ -24,6 +24,6 @@ export default function MedicineMaps() {
                     </div>
                 ))}
             </div>
-        </section>
+        </main>
     );
 }

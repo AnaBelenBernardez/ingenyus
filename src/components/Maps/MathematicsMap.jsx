@@ -8,7 +8,7 @@ export default function MathematicsMap() {
 
     const mathematicsData = data[language].mathematics;
     return (
-        <section>
+        <main className='noise'>
             <div>
                 {mathematicsData.map((item, index) => (
                     <div key={index}>
@@ -24,6 +24,6 @@ export default function MathematicsMap() {
                     </div>
                 ))}
             </div>
-        </section>
+        </main>
     );
 }

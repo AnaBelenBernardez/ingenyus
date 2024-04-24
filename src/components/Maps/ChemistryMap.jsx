@@ -8,7 +8,7 @@ export default function ChemistryMap() {
 
     const chemistryData = data[language].chemistry;
     return (
-        <section>
+        <main className='noise'>
             <div>
                 {chemistryData.map((item, index) => (
                     <div key={index}>
@@ -24,6 +24,6 @@ export default function ChemistryMap() {
                     </div>
                 ))}
             </div>
-        </section>
+        </main>
     );
 }

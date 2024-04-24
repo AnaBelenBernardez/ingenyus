@@ -8,7 +8,7 @@ export default function ComputerScienceMap() {
 
     const computerScienceData = data[language].computerScience;
     return (
-        <section>
+        <main className='noise'>
             <div>
                 {computerScienceData.map((item, index) => (
                     <div key={index}>
@@ -24,6 +24,6 @@ export default function ComputerScienceMap() {
                     </div>
                 ))}
             </div>
-        </section>
+        </main>
     );
 }

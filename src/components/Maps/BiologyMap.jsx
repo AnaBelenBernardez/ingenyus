@@ -9,7 +9,7 @@ export default function BiologyMap() {
     const biologyData = data[language].biology;
 
     return (
-        <section>
+        <main className='noise'>
             <div>
                 {biologyData.map((item, index) => (
                     <div key={index}>
@@ -25,6 +25,6 @@ export default function BiologyMap() {
                     </div>
                 ))}
             </div>
-        </section>
+        </main>
     );
 }

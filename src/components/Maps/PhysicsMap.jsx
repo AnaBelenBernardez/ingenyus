@@ -7,7 +7,7 @@ export default function PhysicsMaps() {
 
     const physicsData = data[language].physics;
     return (
-        <section>
+        <main className='noise'>
             <div>
                 {physicsData.map((item, index) => (
                     <div key={index}>
@@ -23,6 +23,6 @@ export default function PhysicsMaps() {
                     </div>
                 ))}
             </div>
-        </section>
+        </main>
     );
 }

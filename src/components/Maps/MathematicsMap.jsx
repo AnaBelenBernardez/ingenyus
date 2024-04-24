@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+
 import data from '../../assets/data/data.json';
 export default function MathematicsMap() {
     const { i18n } = useTranslation();
@@ -7,7 +8,7 @@ export default function MathematicsMap() {
 
     const mathematicsData = data[language].mathematics;
     return (
-        <section>
+        <main className='noise'>
             <div>
                 {mathematicsData.map((item, index) => (
                     <div key={index}>
@@ -23,6 +24,6 @@ export default function MathematicsMap() {
                     </div>
                 ))}
             </div>
-        </section>
+        </main>
     );
 }

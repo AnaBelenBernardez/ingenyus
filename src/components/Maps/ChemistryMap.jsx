@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+
 import data from '../../assets/data/data.json';
 export default function ChemistryMap() {
     const { i18n } = useTranslation();
@@ -7,7 +8,7 @@ export default function ChemistryMap() {
 
     const chemistryData = data[language].chemistry;
     return (
-        <section>
+        <main className='noise'>
             <div>
                 {chemistryData.map((item, index) => (
                     <div key={index}>
@@ -23,6 +24,6 @@ export default function ChemistryMap() {
                     </div>
                 ))}
             </div>
-        </section>
+        </main>
     );
 }

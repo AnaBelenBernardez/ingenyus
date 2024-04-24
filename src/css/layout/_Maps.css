@@ -26,7 +26,6 @@
 
 .right-side> :not(:first-child) {
     padding: 1.5rem;
-
 }
 
 .left_side img,

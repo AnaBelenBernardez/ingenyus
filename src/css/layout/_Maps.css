@@ -1,0 +1,44 @@
+.item-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Adicione margem entre os itens */
+}
+
+.left_side,
+.right-side {
+    flex: 1;
+}
+
+.text-title {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding: 2rem 1rem 2rem 1rem
+}
+
+.right-side>* {
+    border: 2px solid white;
+    box-sizing: border-box;
+    padding-left: 3rem;
+
+}
+
+.right-side> :not(:first-child) {
+    padding: 1.5rem;
+
+}
+
+.left_side img,
+.right-side h1,
+.right-side span,
+.right-side h2,
+.right-side p {
+    max-width: 100%;
+}
+
+/* Estilos específicos para quando o índice é par */
+.item-container.even .left_side {
+    order: 1;
+    /* Alterna a ordem dos elementos */
+}

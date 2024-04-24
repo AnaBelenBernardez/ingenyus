@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import data from '../../assets/data/data.json';
@@ -6,24 +6,29 @@ export default function ChemistryMap() {
     const { i18n } = useTranslation();
     const language = i18n.language;
 
+
     const chemistryData = data[language].chemistry;
     return (
-        <main className='noise'>
-            <div>
-                {chemistryData.map((item, index) => (
-                    <div key={index}>
-                        <div>
-                            <img src={item.src} alt={item.name} />
+        <>
+            <main className='noise'>
+                <section className='section_text'>
+                    {chemistryData.map((item, index) => (
+                        <div className={`item-container ${index % 2 === 0 ? 'even' : 'odd'}`} key={index}>
+                            <div className='left_side'>
+                                <img src={item.src} alt={item.name} />
+                            </div>
+                            <div className='right-side'>
+                                <div className='text-title'>
+                                    <h1>{item.name}</h1>
+                                    <span>{item.date}</span>
+                                </div>
+                                <h2>{item.description}</h2>
+                                <p>{item.bio}</p>
+                            </div>
                         </div>
-                        <div>
-                            <h1>{item.name}</h1>
-                            <span>{item.date}</span>
-                            <h2>{item.description}</h2>
-                            <p>{item.bio}</p>
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </main>
+                    ))}
+                </section>
+            </main>
+        </>
     );
 }

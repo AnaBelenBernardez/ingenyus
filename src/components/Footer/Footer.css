@@ -40,6 +40,15 @@
         text-decoration: none;
         line-height: 40px;
     }
+
+    a:hover {
+        color: var(--denim);
+    }
+
+    .nohover:hover {
+        color: var(--athens);
+    }
+
     .logos {
         height: 287.87px;
         display: flex;

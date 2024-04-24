@@ -25,19 +25,33 @@ function Footer() {
                 <li>
                     <a href='tel:+34 968 107 558'>+34 968 107 558</a>
                 </li>
-                <a href=''> R.Real,24, 1º, 15003 A Coruña </a>
+                <a href=''> R. Real, 24, 1º, 15003 A Coruña </a>
 
                 <section>
-                    <a href='https://www.linkedin.com/company/ingenyus/'>
+                    <a
+                        className='nohover'
+                        href='https://www.linkedin.com/company/ingenyus/'
+                    >
                         Linkedin
                     </a>
-                    <a href='https://twitter.com/i/flow/login?redirect_after_login=%2Fingenyus_es'>
+                    <a
+                        className='nohover'
+                        href='https://twitter.com/i/flow/login?redirect_after_login=%2Fingenyus_es'
+                    >
                         Twitter
                     </a>
-                    <a href='https://www.instagram.com/ingenyus.es'>
+                    <a
+                        className='nohover'
+                        href='https://www.instagram.com/ingenyus.es'
+                    >
                         Instagram
                     </a>
-                    <a href='https://www.ingenyus.es/esto-no-es-un-error'>T</a>
+                    <a
+                        className='nohover'
+                        href='https://www.ingenyus.es/esto-no-es-un-error'
+                    >
+                        T
+                    </a>
                 </section>
                 <a href='https://www.ingenyus.es/kit-digital/'>Kit Digital</a>
             </ul>

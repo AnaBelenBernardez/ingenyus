@@ -20,7 +20,7 @@
 
         line-height: 1.7rem;
     }
-    li {
+    .footertext > li {
         line-height: 40px;
     }
     .unusual {
@@ -35,7 +35,7 @@
         padding: 16px 0px;
     }
 
-    a {
+    li > a {
         color: var(--athens);
         text-decoration: none;
         line-height: 40px;
@@ -43,7 +43,7 @@
         padding-right: 20px;
     }
 
-    a:hover {
+    li > a:hover {
         color: var(--denim);
     }
 

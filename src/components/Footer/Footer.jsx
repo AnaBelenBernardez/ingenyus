@@ -25,7 +25,9 @@ function Footer() {
                 <li>
                     <a href='tel:+34 968 107 558'>+34 968 107 558</a>
                 </li>
-                <a href=''> R. Real, 24, 1º, 15003 A Coruña </a>
+                <a href='https://www.google.com/search?q=ingenyus-marketing-consultoria'>
+                    R. Real, 24, 1º, 15003 A Coruña{' '}
+                </a>
 
                 <section>
                     <a

@@ -3,33 +3,64 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-bottom: 5rem;
+    padding: 2rem;
+}
+
+.landingHome {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.homeTitle {
+    margin-bottom: 2rem;
 }
 
 .homeTitle > span {
     font-weight: 400;
     color: var(--athens);
+    display: block;
 }
 
 #homeTitle1 {
     font-family: 'Lastik';
     font-size: 60px;
-    line-height: 50px;
+    margin-bottom: -2rem;
+    margin-right: 2rem;
 }
 
 #homeTitle2 {
     font-family: 'Satoshi-Regular';
     font-size: 45px;
-    line-height: 61px;
+    margin-bottom: -0.8rem;
+    margin-left: 9rem;
+    position: relative;
 }
 
 #homeTitle3 {
     font-family: 'Lastik';
     font-size: 55px;
-    line-height: 50px;
+    margin-left: 3rem;
+    position: relative;
 }
 
-.homeAddons {
-    width: 3rem;
+#homeHABAddon {
+    position: absolute;
+    width: 105px;
+    top: 1.6rem;
+    left: -8.4rem;
+}
+
+#homeINAddon {
+    position: absolute;
+    width: 30px;
+    top: 1.1rem;
+    right: -0.5rem;
 }
 
 .colab {
@@ -38,12 +69,21 @@
     border-radius: 50rem;
     padding: 0rem 1.2rem 0.2rem 1.2rem;
     font-family: 'Satoshi-Regular';
+    margin-top: 1rem;
+}
+
+.homeScrollContainer {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    font-size: 14px;
 }
 
 .homeNav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 5rem;
 }
 
 .homeNav > ul {

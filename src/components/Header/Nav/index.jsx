@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import './style.css';
 import LanguageSelector from '../LanguageSelector';
-import { t } from 'i18next';
 import { useTranslation } from 'react-i18next';
 
 function Nav() {

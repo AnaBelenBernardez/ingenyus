@@ -6,8 +6,7 @@ import { t } from 'i18next';
 import { useTranslation } from 'react-i18next';
 
 export function Contact_Newsletter() {
-
-    const [showHiddenForm, setShowHiddenForm] = useState(false)
+    const [showHiddenForm, setShowHiddenForm] = useState(false);
 
     const handleButtonClick = () => {
         setShowHiddenForm(true)

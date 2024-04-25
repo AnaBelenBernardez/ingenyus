@@ -1,13 +1,14 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import data from '../../assets/data/data.json';
+
 export default function MedicineMaps() {
     const { i18n } = useTranslation();
     const language = i18n.language;
 
     const medicineData = data[language].medicine;
     return (
-        <section>
+        <main className='noise'>
             <div>
                 {medicineData.map((item, index) => (
                     <div key={index}>
@@ -23,6 +24,6 @@ export default function MedicineMaps() {
                     </div>
                 ))}
             </div>
-        </section>
+        </main>
     );
 }

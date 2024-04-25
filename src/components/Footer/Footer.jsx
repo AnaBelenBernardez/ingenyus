@@ -13,27 +13,45 @@ function Footer() {
             <ul className='footertext'>
                 <li className='unusual'>unusual agency</li>
                 <li>
-                    <a href='email'>hola@ingenyus.es</a>
+                    <a href='mailto:hola@ingenyus.es'>hola@ingenyus.es</a>
                 </li>
                 <li className='unete'>
                     <p>únete al equipo </p>
-                    <a href='email'>atalent@ingenyus.es</a>
+                    <a href='mailto:atalent@ingenyus.es'>atalent@ingenyus.es</a>
                 </li>
-                <li>+34 981 227 225 </li>
-                <li>+34 968 107 558</li>
-                <a href=''> R.Real,24, 1º, 15003 A Coruña </a>
+                <li>
+                    <a href='tel:+34 981 227 225 '>+34 981 227 225</a>
+                </li>
+                <li>
+                    <a href='tel:+34 968 107 558'>+34 968 107 558</a>
+                </li>
+                <a href=''> R. Real, 24, 1º, 15003 A Coruña </a>
 
                 <section>
-                    <a href='https://www.linkedin.com/company/ingenyus/'>
+                    <a
+                        className='nohover'
+                        href='https://www.linkedin.com/company/ingenyus/'
+                    >
                         Linkedin
                     </a>
-                    <a href='https://twitter.com/i/flow/login?redirect_after_login=%2Fingenyus_es'>
+                    <a
+                        className='nohover'
+                        href='https://twitter.com/i/flow/login?redirect_after_login=%2Fingenyus_es'
+                    >
                         Twitter
                     </a>
-                    <a href='https://www.instagram.com/ingenyus.es'>
+                    <a
+                        className='nohover'
+                        href='https://www.instagram.com/ingenyus.es'
+                    >
                         Instagram
                     </a>
-                    <a href='https://www.ingenyus.es/esto-no-es-un-error'>T</a>
+                    <a
+                        className='nohover'
+                        href='https://www.ingenyus.es/esto-no-es-un-error'
+                    >
+                        T
+                    </a>
                 </section>
                 <a href='https://www.ingenyus.es/kit-digital/'>Kit Digital</a>
             </ul>

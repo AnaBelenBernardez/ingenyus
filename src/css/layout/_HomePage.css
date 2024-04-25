@@ -1,0 +1,113 @@
+.homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.homeTitle > span {
+    font-weight: 400;
+    color: var(--athens);
+}
+
+#homeTitle1 {
+    font-family: 'Lastik';
+    font-size: 60px;
+    line-height: 50px;
+}
+
+#homeTitle2 {
+    font-family: 'Satoshi-Regular';
+    font-size: 45px;
+    line-height: 61px;
+}
+
+#homeTitle3 {
+    font-family: 'Lastik';
+    font-size: 55px;
+    line-height: 50px;
+}
+
+.homeAddons {
+    width: 3rem;
+}
+
+.colab {
+    color: var(--athens);
+    border: 1px var(--athens) solid;
+    border-radius: 50rem;
+    padding: 0rem 1.2rem 0.2rem 1.2rem;
+    font-family: 'Satoshi-Regular';
+}
+
+.homeNav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.homeNav > ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeNav > ul > li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.buttonNavHome {
+    background-color: transparent;
+    border: none;
+}
+
+.buttonNavHome > a {
+    color: var(--athens);
+    text-decoration: none;
+    font-size: 45px;
+}
+
+/* .buttonNavHome > a:hover {
+    color: var(--denim);
+} */
+
+.navAddons {
+    width: 2rem;
+    font-size: 3rem;
+    font-family: 'Satoshi-Bold';
+    color: var(--athens);
+    margin-right: 1rem;
+}
+
+.lastikNavHome > a {
+    font-family: 'Lastik';
+    font-weight: 400;
+    line-height: 64px;
+}
+
+.satoshiNavHome > a {
+    font-family: 'Satoshi-Regular';
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.italicNavHome > a {
+    font-family: 'Satoshi-Italic';
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.homeScrollContainer > span {
+    color: var(--athens);
+    font-size: 14px;
+}
+
+.homeScroll {
+    margin-top: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

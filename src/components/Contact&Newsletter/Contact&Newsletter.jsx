@@ -19,11 +19,11 @@ export function Contact_Newsletter() {
         <>
             <section className="newsletter_contact">
                 <div className="contact">
-                    <h4 className="both_title">contacto</h4>
-                    <p className="nc_text">Resumir en una web todo lo que hacemos es complicado. Te invitamos a que nos cuentes sobre tu proyecto.</p>
-                    <p className="nc_text">Nuestro equipo se reunirá contigo para valorar conjuntamente en qué podemos ayudarte. Nos podemos reunir por videollamada, en un café o en nuestras oficinas en Calle Real 24, Planta 1ª, 15003, A Coruña.</p>
+                    <h4 className="both_title">{t('translation.contact')}</h4>
+                    <p className="nc_text">{t('translation.description-home')}</p>
+                    <p className="nc_text">{t('translation.description-home2')}</p>
                     <div className="contact_button_box">
-                        <BotonSimple clase={"button_contact"} children={"contacto"} onClick={handleButtonClick} />
+                        <button className="button_contact" onClick={handleButtonClick}>{t('translation.contact')}</button>
                         <div className={`hidden_form ${showHiddenForm ? 'visible' : ''}`}>
                             <form action="https://ingenyus.us15.list-manage.com/subscribe/post" method="POST">
                                 <input type="hidden" name="u" />
@@ -37,7 +37,7 @@ export function Contact_Newsletter() {
                 <div className="newsletter">
                     <div className="newsletter_left">
                         <h4 className="both_title">newsletter</h4>
-                        <p className="nc_text">¡Suscríbete! Prometemos no enviar demasiadas, y sólo con información de interés como ofertas específicas, financiación…</p>
+                        <p className="nc_text"> {t('translation.description-newsletter')}</p>
                     </div>
                     <div className="newsletter_right">
                         <form className="newsletter_email" action="">

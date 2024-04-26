@@ -6,7 +6,15 @@ export default function BiologyMap() {
     const { i18n } = useTranslation();
     const language = i18n.language;
 
-    const biologyData = data[language].biology;
+    const biologyData = data[language]?.biology;
+
+    if (!biologyData || biologyData.length === 0) {
+        return (
+            <main className='noise'>
+                <h1>Ops, no hay datos disponibles</h1>
+            </main>
+        );
+    }
 
     return (
         <main className='noise'>

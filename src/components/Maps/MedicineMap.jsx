@@ -6,7 +6,15 @@ export default function MedicineMaps() {
     const { i18n } = useTranslation();
     const language = i18n.language;
 
-    const medicineData = data[language].medicine;
+    const medicineData = data[language]?.medicine;
+
+    if (!medicineData || medicineData.length === 0) {
+        return (
+            <main className='noise'>
+                <h1>Ops, no hay datos disponibles</h1>
+            </main>
+        );
+    }
     return (
         <main className='noise'>
             <ScrollToTop />

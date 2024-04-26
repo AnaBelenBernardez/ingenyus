@@ -1,4 +1,4 @@
-import React from 'react';
+import ScrollToTop from '../ScrollToTop';
 import { useTranslation } from 'react-i18next';
 
 import data from '../../assets/data/data.json';
@@ -9,6 +9,7 @@ export default function MathematicsMap() {
     const mathematicsData = data[language].mathematics;
     return (
         <main className='noise'>
+            <ScrollToTop />
             <div>
                 {mathematicsData.map((item, index) => (
                     <div key={index}>

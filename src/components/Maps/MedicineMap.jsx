@@ -1,4 +1,4 @@
-import React from 'react';
+import ScrollToTop from '../ScrollToTop';
 import { useTranslation } from 'react-i18next';
 import data from '../../assets/data/data.json';
 
@@ -9,6 +9,7 @@ export default function MedicineMaps() {
     const medicineData = data[language].medicine;
     return (
         <main className='noise'>
+            <ScrollToTop />
             <div>
                 {medicineData.map((item, index) => (
                     <div key={index}>

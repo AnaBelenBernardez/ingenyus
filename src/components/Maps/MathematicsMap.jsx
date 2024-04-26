@@ -6,7 +6,15 @@ export default function MathematicsMap() {
     const { i18n } = useTranslation();
     const language = i18n.language;
 
-    const mathematicsData = data[language].mathematics;
+    const mathematicsData = data[language]?.mathematics;
+
+    if (!mathematicsData || mathematicsData.length === 0) {
+        return (
+            <main className='noise'>
+                <h1>Ops, no hay datos disponibles</h1>
+            </main>
+        );
+    }
     return (
         <main className='noise'>
             <div>

@@ -5,7 +5,15 @@ export default function PhysicsMaps() {
     const { i18n } = useTranslation();
     const language = i18n.language;
 
-    const physicsData = data[language].physics;
+    const physicsData = data[language]?.physics;
+
+    if (!physicsData || physicsData.length === 0) {
+        return (
+            <main className='noise'>
+                <h1>Ops, no hay datos disponibles</h1>
+            </main>
+        );
+    }
     return (
         <main className='noise'>
             <div>

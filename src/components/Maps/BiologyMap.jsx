@@ -1,6 +1,6 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import data from '../../assets/data/data.json';
+import ScrollToTop from '../ScrollToTop';
 
 export default function BiologyMap() {
     const { i18n } = useTranslation();
@@ -18,6 +18,7 @@ export default function BiologyMap() {
 
     return (
         <main className='noise'>
+            <ScrollToTop />
             <div>
                 {biologyData.map((item, index) => (
                     <div key={index}>

@@ -1,3 +1,5 @@
 .noise {
     background-image: url('noise.png');
+    background-size: cover;
+    /* background-size: contain; */
 }

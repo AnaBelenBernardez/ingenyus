@@ -1,9 +1,27 @@
 import { useTranslation } from 'react-i18next';
 import '../css/layout/_HomePage.css';
-import { NavLink } from 'react-router-dom';
+import MobileNavHome from '../components/MobileNavHome';
+import { useState, useEffect } from 'react';
+import DesktopNavHome from '../components/DesktopNavHome';
 
 const Home = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1200);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsDesktop(window.innerWidth >= 1200);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const isEnglish = i18n.language === 'en';
 
     return (
         <main className='noise homePage'>
@@ -22,6 +40,7 @@ const Home = () => {
                         {t('translation.title3')}
                         <img
                             id='homeINAddon'
+                            className={isEnglish ? 'englishAddon' : ''}
                             src='./logos/in_asterisco.svg'
                             alt=''
                         />
@@ -46,64 +65,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <nav className='homeNav'>
-                <ul>
-                    <li>
-                        <span>
-                            <img
-                                className='navAddons'
-                                src='./logos/in_asterisco.svg'
-                                alt=''
-                            />
-                        </span>
-                        <button className='buttonNavHome lastikNavHome'>
-                            <NavLink to='chemistry'>
-                                {t('translation.chemistry')}
-                            </NavLink>
-                        </button>
-                    </li>
-                    <li>
-                        <span className='navAddons'>/</span>
-                        <button className='buttonNavHome satoshiNavHome'>
-                            <NavLink to='physics'>
-                                {t('translation.physics')}
-                            </NavLink>
-                        </button>
-                    </li>
-                    <li>
-                        <span className='navAddons'>{'>'}</span>
-                        <button className='buttonNavHome lastikNavHome'>
-                            <NavLink to='biology'>
-                                {t('translation.biology')}
-                            </NavLink>
-                        </button>
-                    </li>
-                    <li>
-                        <span className='navAddons'>{'–'}</span>
-                        <button className='buttonNavHome lastikNavHome'>
-                            <NavLink to='computer-science'>
-                                {t('translation.computerScience')}
-                            </NavLink>
-                        </button>
-                    </li>
-                    <li>
-                        <span className='navAddons'>#</span>
-                        <button className='buttonNavHome italicNavHome'>
-                            <NavLink to='mathematics'>
-                                {t('translation.mathematics')}
-                            </NavLink>
-                        </button>
-                    </li>
-                    <li>
-                        <span className='navAddons'>{'<'}</span>
-                        <button className='buttonNavHome lastikNavHome'>
-                            <NavLink to='medicine'>
-                                {t('translation.medicine')}
-                            </NavLink>
-                        </button>
-                    </li>
-                </ul>
-            </nav>
+            {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
         </main>
     );
 };

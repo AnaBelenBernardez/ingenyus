@@ -3,10 +3,8 @@ import Home from './Home';
 import './style.css';
 import BurgerNav from './BurgerNav';
 import { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
 
 function Header() {
-    const { t } = useTranslation();
     const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1200);
 
     useEffect(() => {

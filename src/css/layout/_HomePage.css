@@ -56,6 +56,10 @@
     left: -8.4rem;
 }
 
+#homeINAddon.englishAddon {
+    right: -2.5rem;
+}
+
 #homeINAddon {
     position: absolute;
     width: 30px;
@@ -77,6 +81,18 @@
     bottom: 2rem;
     width: 100%;
     font-size: 14px;
+}
+
+.homeScrollContainer > span {
+    color: var(--athens);
+    font-size: 14px;
+}
+
+.homeScroll {
+    margin-top: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .homeNav {
@@ -110,10 +126,6 @@
     font-size: 45px;
 }
 
-/* .buttonNavHome > a:hover {
-    color: var(--denim);
-} */
-
 .navAddons {
     width: 2rem;
     font-size: 3rem;
@@ -125,29 +137,108 @@
 .lastikNavHome > a {
     font-family: 'Lastik';
     font-weight: 400;
-    line-height: 64px;
+    line-height: 40px;
 }
 
 .satoshiNavHome > a {
     font-family: 'Satoshi-Regular';
     font-weight: 400;
-    line-height: 60px;
+    line-height: 40px;
 }
 
 .italicNavHome > a {
     font-family: 'Satoshi-Italic';
     font-weight: 400;
-    line-height: 60px;
+    line-height: 40px;
 }
 
-.homeScrollContainer > span {
-    color: var(--athens);
-    font-size: 14px;
-}
+@media (min-width: 1200px) {
+    .homePage {
+        padding: 0;
+    }
 
-.homeScroll {
-    margin-top: 0.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .homeTitle {
+        margin-bottom: 1rem;
+    }
+
+    #homeTitle1 {
+        font-size: 120px;
+        margin-bottom: -4rem;
+        margin-right: 5rem;
+    }
+
+    #homeTitle2 {
+        font-size: 90px;
+        margin-bottom: -1.5rem;
+        margin-left: 17.5rem;
+    }
+
+    #homeTitle3 {
+        font-size: 110px;
+        margin-left: 5rem;
+    }
+
+    #homeHABAddon {
+        width: 206px;
+        top: 3.3rem;
+        left: -17rem;
+    }
+
+    #homeINAddon {
+        width: 55px;
+        top: 2.5rem;
+        right: 0rem;
+    }
+
+    #homeINAddon.englishAddon {
+        right: -3.5rem;
+    }
+
+    .colab {
+        padding: 0.2rem 1.8rem 0.4rem 1.8rem;
+        font-size: 16px;
+    }
+
+    .homeScrollContainer {
+        bottom: 2rem;
+        font-size: 16px;
+    }
+
+    .homeNav {
+        margin-top: 5rem;
+        height: 100vh;
+    }
+
+    .homeNav > ul {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .homeNav > ul > li {
+        display: flex;
+        align-items: center;
+        margin-bottom: -1.5rem;
+    }
+
+    #liNavHome {
+        position: relative;
+        right: 8rem;
+    }
+
+    .buttonNavHome > a {
+        font-size: 90px;
+        margin-left: -2rem;
+        margin-right: 1.5rem;
+    }
+
+    .navAddons {
+        font-size: 90px;
+        margin-right: 4rem;
+    }
+
+    #desktopINNavHome {
+        width: 4rem;
+    }
 }

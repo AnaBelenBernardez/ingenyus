@@ -11,7 +11,7 @@ ingenyus x hack a boss
 -   [@FlorPerez](https://github.com/FlorPManzano)
 
 <p align="center">
-    <img src="https://skillicons.dev/icons?i=figma,notion,react,css,git,npm,notion,&theme=light" />
+    <img src="https://skillicons.dev/icons?i=figma,notion,react,css,git,npm,&theme=light" />
 </p>
 
 ## Contexto

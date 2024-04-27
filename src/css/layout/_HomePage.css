@@ -241,4 +241,13 @@
     #desktopINNavHome {
         width: 4rem;
     }
+
+    .mapImage {
+        position: absolute;
+        width: 20rem;
+        height: 20rem;
+        left: 6rem;
+        margin-top: 3rem;
+        pointer-events: none;
+    }
 }

@@ -3,3 +3,30 @@
     background-size: cover;
     /* background-size: contain; */
 }
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 400;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 20px;
+    opacity: 0;
+    transform: rotate(180deg);
+    scale: 1.5;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+    .scroll-to-top {
+        bottom: 3rem;
+        right: 3rem;
+        scale: 2;
+    }
+}

@@ -1,14 +1,23 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
+import ScrollToTop from '../ScrollToTop';
 
 import data from '../../assets/data/data.json';
 export default function ComputerScienceMap() {
     const { i18n } = useTranslation();
     const language = i18n.language;
 
-    const computerScienceData = data[language].computerScience;
+    const computerScienceData = data[language]?.computerScience;
+
+    if (!computerScienceData || computerScienceData.length === 0) {
+        return (
+            <main className='noise'>
+                <h1>Ops, no hay datos disponibles</h1>
+            </main>
+        );
+    }
     return (
         <main className='noise'>
+            <ScrollToTop />
             <div>
                 {computerScienceData.map((item, index) => (
                     <div key={index}>

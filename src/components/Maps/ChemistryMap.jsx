@@ -1,15 +1,24 @@
-import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import ScrollToTop from '../ScrollToTop';
 
 import data from '../../assets/data/data.json';
 export default function ChemistryMap() {
     const { i18n } = useTranslation();
     const language = i18n.language;
 
-    const chemistryData = data[language].chemistry;
+
+    const chemistryData = data[language]?.chemistry;
+    if (!chemistryData || chemistryData.length === 0) {
+        return (
+            <main className='noise'>
+                <h1>Ops, no hay datos disponibles</h1>
+            </main>
+        );
+    }
     return (
         <>
             <main className='noise'>
+                <ScrollToTop />
                 <section className='section_text'>
                     {chemistryData.map((item, index) => (
                         <div

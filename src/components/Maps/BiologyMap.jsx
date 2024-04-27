@@ -1,15 +1,24 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import data from '../../assets/data/data.json';
+import ScrollToTop from '../ScrollToTop';
 
 export default function BiologyMap() {
     const { i18n } = useTranslation();
     const language = i18n.language;
 
-    const biologyData = data[language].biology;
+    const biologyData = data[language]?.biology;
+
+    if (!biologyData || biologyData.length === 0) {
+        return (
+            <main className='noise'>
+                <h1>Ops, no hay datos disponibles</h1>
+            </main>
+        );
+    }
 
     return (
         <main className='noise'>
+            <ScrollToTop />
             <div>
                 {biologyData.map((item, index) => (
                     <div key={index}>

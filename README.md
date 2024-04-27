@@ -9,7 +9,7 @@ ingenyus x hack a boss
 -   [@BrunoJaneiro](https://github.com/bjaneiro90)
 -   [@LuciaAguirre](https://github.com/luciaaguirre)
 -   [@FlorPerez](https://github.com/FlorPManzano)
-
+</br>
 <p align="center">
     <img src="https://skillicons.dev/icons?i=figma,notion,react,css,git,npm,&theme=light" />
 </p>

@@ -6,14 +6,16 @@ export default function ChemistryMap() {
     const { i18n } = useTranslation();
     const language = i18n.language;
 
-
     const chemistryData = data[language].chemistry;
     return (
         <>
             <main className='noise'>
                 <section className='section_text'>
                     {chemistryData.map((item, index) => (
-                        <div className={`item-container ${index % 2 === 0 ? 'even' : 'odd'}`} key={index}>
+                        <div
+                            className={`item-container ${index % 2 === 0 ? 'even' : 'odd'}`}
+                            key={index}
+                        >
                             <div className='left_side'>
                                 <img src={item.src} alt={item.name} />
                             </div>

@@ -28,9 +28,11 @@ const DesktopNavHome = () => {
         };
     }, []);
 
-    const handleMouseEnter = (category, imageSrc) => {
+    const handleMouseEnter = (category) => {
         setSelectedCategory(category);
-        setCursorImage(imageSrc);
+        const images = data[i18n.language][category];
+        const randomIndex = Math.floor(Math.random() * images.length);
+        setCursorImage(images[randomIndex].src);
     };
 
     const handleMouseLeave = () => {

@@ -222,32 +222,57 @@
         margin-bottom: -1.5rem;
     }
 
-    #liNavHome {
+    #liCheNav {
         position: relative;
-        right: 8rem;
+        left: 3rem;
+    }
+
+    #liBioNav {
+        position: relative;
+        right: 5rem;
+    }
+
+    #liMathNav {
+        position: relative;
+        left: 3rem;
     }
 
     .buttonNavHome > a {
         font-size: 90px;
         margin-left: -2rem;
         margin-right: 1.5rem;
+        cursor: none;
     }
 
     .navAddons {
         font-size: 90px;
         margin-right: 4rem;
+        cursor: none;
     }
 
     #desktopINNavHome {
         width: 4rem;
     }
 
-    .mapImage {
+    .cursor > img {
         position: absolute;
         width: 20rem;
-        height: 20rem;
-        left: 6rem;
-        margin-top: 3rem;
+        height: auto;
+        right: 1rem;
+        top: -15rem;
         pointer-events: none;
+    }
+
+    .cursor {
+        background-color: transparent;
+        position: fixed;
+        pointer-events: none;
+        background-size: cover;
+        transition: scale 300ms;
+        display: none;
+    }
+
+    .homeNav:hover + .cursor {
+        display: block;
     }
 }

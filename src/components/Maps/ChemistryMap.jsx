@@ -18,22 +18,25 @@ export default function ChemistryMap() {
         <>
             <ScrollToTop />
             <section className='section_text'>
+                <div>
+                    <p className='section_title'>Química</p>
+                </div>
                 {chemistryData.map((item, index) => (
                     <div
                         className={`item-container ${index % 2 === 0 ? 'even' : 'odd'}`}
                         key={index}
                     >
-                        <div className='left_side'>
+                        <article className='left_side'>
                             <img src={item.src} alt={item.name} />
-                        </div>
-                        <div className='right-side'>
+                        </article>
+                        <article className='right-side'>
                             <div className='text-title'>
-                                <h1>{item.name}</h1>
-                                <span>{item.date}</span>
+                                <h1 className='text-name'>{item.name}</h1>
+                                <span className='text-date'>{item.date}</span>
                             </div>
-                            <h2>{item.description}</h2>
-                            <p>{item.bio}</p>
-                        </div>
+                            <h2 className='text-description'>{item.description}</h2>
+                            <p className='text-box'>{item.bio}</p>
+                        </article>
                     </div>
                 ))}
             </section>

@@ -12,6 +12,7 @@
     align-items: center;
 }
 
+
 .contact,
 .newsletter {
     width: 80%;
@@ -100,8 +101,23 @@
     width: 84.3px;
     height: 35.7px;
     border: 1.05px;
+    margin-top: 2.5rem;
     padding-bottom: 3px;
     cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+
+.button_contact.transformed {
+    transform: translateY(28rem);
+    width: 3rem;
+}
+
+
+.visible .button_contact:hover {
+    background-color: #1851e3;
+    color: #f7f7f8;
+    border: 1px solid white;
 }
 
 .button_contact:hover {
@@ -112,27 +128,48 @@
 
 .contact_button_box {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    padding-top: 2.5rem;
 }
 
 .hidden_form {
-    position: absolute;
-    margin-top: 3.2rem;
-    margin-left: 4.7rem;
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-bottom: 10rem;
+    gap: 6rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
     top: 1;
     justify-content: center;
     opacity: 0;
-    transition: opacity 0.7s ease;
-    /* Adjust the duration and timing function as needed */
+    transform: translateY(-5%);
+    animation: slideUp 0.25s ease forwards
+}
+
+.hidden_left,
+.hidden_right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hidden_right {
+    flex-direction: column;
 }
 
 .hidden_form.visible {
-    opacity: 1;
+    transform: translateY(5%);
+    animation: slideDown 0.5s ease forwards;
 }
 
+.contact.not-expanded {
+    transform: translateY(-5%);
+    animation: slideUp 0.5s ease forwards
+}
+
+
 .contacto_email_input {
+    margin-top: 1rem;
     background-color: rgba(25, 81, 228, 255);
     border: none;
     border-bottom: 1px solid white;
@@ -159,6 +196,40 @@
     border: 1.05px;
     padding-bottom: 3px;
     cursor: pointer;
+}
+
+.hidden_form_input {
+    width: 100%;
+}
+
+
+.hl_text {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-5%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(16%);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 1;
+        transform: translateY(16%);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-5%);
+    }
 }
 
 /* 

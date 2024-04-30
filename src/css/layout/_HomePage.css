@@ -71,9 +71,9 @@
     color: var(--athens);
     border: 1px var(--athens) solid;
     border-radius: 50rem;
-    padding: 0rem 1.2rem 0.2rem 1.2rem;
     font-family: 'Satoshi-Regular';
     margin-top: 1rem;
+    padding: 0.2rem 1.8rem 0.4rem 1.8rem;
 }
 
 .homeScrollContainer {

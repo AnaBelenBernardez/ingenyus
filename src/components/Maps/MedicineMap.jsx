@@ -16,7 +16,7 @@ export default function MedicineMaps() {
         );
     }
     return (
-        <main className='noise'>
+        <>
             <ScrollToTop />
             <div>
                 {medicineData.map((item, index) => (
@@ -33,6 +33,6 @@ export default function MedicineMaps() {
                     </div>
                 ))}
             </div>
-        </main>
+        </>
     );
 }

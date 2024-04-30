@@ -14,17 +14,16 @@
     display: flex;
     justify-content: space-between;
     padding-left: 3rem;
-    padding: 2rem 1rem 2rem 1rem
+    padding: 2rem 1rem 2rem 1rem;
 }
 
-.right-side>* {
+.right-side > * {
     border: 2px solid white;
     box-sizing: border-box;
     padding-left: 3rem;
-
 }
 
-.right-side> :not(:first-child) {
+.right-side > :not(:first-child) {
     padding: 1.5rem;
 }
 
@@ -40,4 +39,28 @@
 .item-container.even .left_side {
     order: 1;
     /* Alterna a ordem dos elementos */
+}
+
+#colabBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    padding-bottom: 10rem;
+}
+
+.bodyAddons {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .bodyAddons {
+        display: inline;
+        height: 126px;
+        border: red solid;
+    }
+
+    #colabBody {
+        margin-top: 0rem;
+    }
 }

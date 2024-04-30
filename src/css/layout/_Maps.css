@@ -1,9 +1,18 @@
+.section_title {
+    margin-left: 6.29rem;
+    margin-top: 235.65px;
+    margin-bottom: 4rem;
+    line-height: 100.06px;
+    font-size: 120px;
+    font-family: 'Lastik', sans-serif;
+    font-weight: 400;
+}
+
 .item-container {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    /* Adicione margem entre os itens */
 }
+
 
 .left_side,
 .right-side {
@@ -14,30 +23,97 @@
     display: flex;
     justify-content: space-between;
     padding-left: 3rem;
-    padding: 2rem 1rem 2rem 1rem
+    padding: 2rem 1rem 2rem 1rem;
+
 }
 
 .right-side>* {
     border: 2px solid white;
+    border-bottom: none;
     box-sizing: border-box;
-    padding-left: 3rem;
-
+    margin-left: 6.29rem;
+    margin-right: 6.29rem;
 }
 
+.left_side {
+    display: flex;
+    justify-content: center;
+}
+
+.right-side {
+    align-items: center;
+}
+
+
 .right-side> :not(:first-child) {
-    padding: 1.5rem;
+    padding: 2rem;
+    border-bottom: 2px solid white;
+}
+
+.right-side> :last-child {
+    padding-bottom: 12.5rem;
+    border-top: none;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
 }
 
 .left_side img,
 .right-side h1,
 .right-side span,
-.right-side h2,
-.right-side p {
+.right-side h2 {
     max-width: 100%;
 }
 
-/* Estilos específicos para quando o índice é par */
 .item-container.even .left_side {
     order: 1;
-    /* Alterna a ordem dos elementos */
+}
+
+.text-box {
+    padding-bottom: 3rem;
+    font-size: 16px
+}
+
+.text-name {
+    font-size: 40px;
+    line-height: 56.8px;
+    margin-left: 1rem;
+    font-family: 'Lastik', sans-serif;
+    font-weight: 400;
+}
+
+.text-date,
+.text-description {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.text-date {
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+
+@media (max-width: 1198px) {
+    .item-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left_side {
+        order: 1
+    }
+
+    .right-side {
+        order: 2
+    }
+
+
+    .right-side>* {
+        margin-left: 3.29rem;
+        margin-right: 3.29rem;
+    }
 }

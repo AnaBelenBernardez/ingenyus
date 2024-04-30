@@ -8,21 +8,26 @@ export default function PhysicsMaps() {
     const physicsData = data[language].physics;
     return (
         <main className='noise'>
-            <div>
+            <section className='section_text'>
+                <div>
+                    <p className='section_title'>Física</p>
+                </div>
                 {physicsData.map((item, index) => (
-                    <div key={index}>
-                        <div>
+                    <div className={`item-container ${index % 2 === 0 ? 'even' : 'odd'}`} key={index}>
+                        <article className='left_side'>
                             <img src={item.src} alt={item.name} />
-                        </div>
-                        <div>
-                            <h1>{item.name}</h1>
-                            <span>{item.date}</span>
-                            <h2>{item.description}</h2>
-                            <p>{item.bio}</p>
-                        </div>
+                        </article>
+                        <article className='right-side'>
+                            <div className='text-title'>
+                                <h1 className='text-name'>{item.name}</h1>
+                                <span className='text-date'>{item.date}</span>
+                            </div>
+                            <h2 className='text-description'>{item.description}</h2>
+                            <p className='text-box'>{item.bio}</p>
+                        </article>
                     </div>
                 ))}
-            </div>
+            </section>
         </main>
     );
 }

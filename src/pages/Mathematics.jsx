@@ -52,7 +52,7 @@ const Mathematics = () => {
         return <Loading />;
     }
     return (
-        <main className='noise mainMap'>
+        <main className='mainMap'>
             <MathematicsMap />;
             {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
             <BodyAddons />

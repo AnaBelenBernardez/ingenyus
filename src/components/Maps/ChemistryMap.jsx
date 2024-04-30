@@ -34,7 +34,9 @@ export default function ChemistryMap() {
                                 <h1 className='text-name'>{item.name}</h1>
                                 <span className='text-date'>{item.date}</span>
                             </div>
-                            <h2 className='text-description'>{item.description}</h2>
+                            <h2 className='text-description'>
+                                {item.description}
+                            </h2>
                             <p className='text-box'>{item.bio}</p>
                         </article>
                     </div>

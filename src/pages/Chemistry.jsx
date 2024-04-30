@@ -52,7 +52,7 @@ const Chemistry = () => {
         return <Loading />;
     }
     return (
-        <main className='noise mainMap'>
+        <main className='mainMap'>
             <ChemistryMap />;
             {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
             <BodyAddons />

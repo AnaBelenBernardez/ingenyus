@@ -38,7 +38,7 @@ export default function ComputerScienceMap() {
                         </article>
                     </div>
                 ))}
-            </div>
+            </section>
         </>
     );
 }

@@ -4,6 +4,12 @@
     /* background-size: contain; */
 }
 
+.mainMap {
+    color: var(--athens);
+    font-weight: 400;
+
+}
+
 .scroll-to-top {
     position: fixed;
     bottom: 1.5rem;
@@ -29,9 +35,4 @@
         right: 3rem;
         scale: 2;
     }
-
-    display: flex;
-    color: white;
-    font-weight: 400;
-    width: 100vw
 }

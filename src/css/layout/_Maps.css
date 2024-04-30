@@ -8,9 +8,17 @@
     font-weight: 400;
 }
 
+.mainMap {
+    /* Arreglar para mejorar el fondo */
+    /* height: 100vh; */
+}
+
 .item-container {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
+
+    /* Adicione margem entre os itens */
 }
 
 
@@ -115,5 +123,38 @@
     .right-side>* {
         margin-left: 3.29rem;
         margin-right: 3.29rem;
+    }
+}
+
+#colabBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    padding-bottom: 10rem;
+}
+
+.bodyAddons {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .bodyAddons {
+        display: inline;
+        height: 126px;
+    }
+
+    #bodyIN {
+        position: absolute;
+        left: 5%;
+    }
+
+    #bodyHAB {
+        position: absolute;
+        right: 5%;
+    }
+
+    #colabBody {
+        margin-top: 20rem;
     }
 }

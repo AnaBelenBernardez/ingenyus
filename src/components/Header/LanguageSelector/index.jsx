@@ -1,11 +1,8 @@
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
 import './style.css';
 
 function LanguageSelector() {
-    const { t } = useTranslation();
-
     const handleChangeLanguage = (language) => {
         i18n.changeLanguage(language);
     };

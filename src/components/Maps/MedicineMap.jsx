@@ -1,4 +1,4 @@
-import React from 'react';
+import ScrollToTop from '../ScrollToTop';
 import { useTranslation } from 'react-i18next';
 import data from '../../assets/data/data.json';
 
@@ -6,9 +6,18 @@ export default function MedicineMaps() {
     const { i18n } = useTranslation();
     const language = i18n.language;
 
-    const medicineData = data[language].medicine;
+    const medicineData = data[language]?.medicine;
+
+    if (!medicineData || medicineData.length === 0) {
+        return (
+            <main className='noise'>
+                <h1>Ops, no hay datos disponibles</h1>
+            </main>
+        );
+    }
     return (
-        <main className='noise'>
+        <>
+            <ScrollToTop />
             <section className='section_text'>
                 <div>
                     <p className='section_title'>Medicina</p>
@@ -29,6 +38,6 @@ export default function MedicineMaps() {
                     </div>
                 ))}
             </section>
-        </main>
+        </>
     );
 }

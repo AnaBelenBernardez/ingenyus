@@ -263,12 +263,12 @@
             },
             {
                 "id": 5,
-                "name": "María Montserrat Capdevilla",
+                "name": "María Montserrat Capdevila",
                 "date": "1905 - 1993",
                 "description": "MATEMÁTICA PIONERA EN ESPAÑA, FIGURA CLAVE EN EL ESTUDIO AXIOMÁTICO DE LOS ESPACIOS DE HILBERT",
                 "bio": "María Montserrat Capdevila destacó como una de las primeras matemáticas de España, consolidando su reputación en un terreno tradicionalmente dominado por hombres. En 1928, con un expediente académico brillante en ciencias exactas, obtuvo su licenciatura, marcando el inicio de una carrera prometedora. Nombrada catedrática interina de matemáticas en el Instituto de Zafra, posteriormente logró su doctorado en la Universidad Central de Madrid y en 1931 recibió una beca de la Junta para la Ampliación de Estudios  para profundizar en la teoría de las funciones y la axiomática de los espacios de Hilbert en  la Universidad de la Sorbona. Aunque su camino como investigadora se vio truncado por la Guerra Civil, su legado perdura como un testimonio del talento y la determinación que desafiaron las barreras de género en el mundo de las matemáticas en España.",
-                "src": "/images/MARIA_MONTSERRAT_CAPDEVILLA.webp",
-                "srcScroll": "/images/MARIA_MONTSERRAT_CAPDEVILLA_2.webp"
+                "src": "/images/MARIA_MONTSERRAT_CAPDEVILA.webp",
+                "srcScroll": "/images/MARIA_MONTSERRAT_CAPDEVILA_2.webp"
             },
             {
                 "id": 6,
@@ -345,7 +345,8 @@
                 "date": "1867-1934",
                 "description": "PIONEERING AND UNPARALLELED: THE FIRST WOMAN TO WIN A NOBEL PRIZE AND THE ONLY PERSON TO RECEIVE THAT RECOGNITION IN TWO DIFFERENT CATEGORIES",
                 "bio": "Marie Curie, an icon of science, defied the obstacles of her time, becoming a reference in the study of radioactivity - a term she herself coined. From her humble beginnings in Poland to her distinguished career in Paris, her bravery and dedication led her to discover techniques for the isolation of isotopes and the elements radium and polonium, as well as to establish the first radiological centers in history. Her legacy and passion are an inspiration to today's scientists: Marie Curie broke barriers and became the first woman to be honored with the Nobel Prize and, to this day, the only person to win the award in two different categories: Physics and Chemistry.",
-                "src": ""
+                "src": "/images/MARIE_CURIE.webp",
+                "srcScroll": "/images/MARIE_CURIE_2.webp"
             },
             {
                 "id": 2,
@@ -353,7 +354,8 @@
                 "date": "1892-1916",
                 "description": "ICON OF THE FIGHT AGAINST LEPROSY AND ADVOCATE FOR PUBLIC HEALTH​",
                 "bio": "Alice Ball defied the limitations of her time to make an indelible mark in science: she is credited as the creator of the only effective treatment for leprosy until the advent of antibiotics. Despite her early passing, her ingenuity and passion for science led her to become a pioneer in public health preservation, also positioning her as a role model in the fight against racial discrimination as the first Afro-American woman to graduate from the University of Hawaii with a master's degree. Alice Ball's legacy is an inspiration for future generations, reminding us that talent and determination can transcend any barrier.",
-                "src": ""
+                "src": "/images/ALICE_BALL.webp",
+                "srcScroll": "/images/ALICE_BALL_2.webp"
             },
             {
                 "id": 3,
@@ -369,7 +371,8 @@
                 "date": "1896-1957",
                 "description": "INSPIRATION IN BIOCHEMISTRY AND THIRD WOMAN TO WIN A NOBEL PRIZE IN MEDICINE​",
                 "bio": "Gerty Cori challenged gender barriers and workplace injustices to make an indelible mark on science and feminism. Despite facing difficulties in gaining recognition and financial reward in her career, she persevered with determination to become the third woman in the world, and the first in the United States, to receive the Nobel Prize in Medicine, shared with her husband Carl and the Argentine physiologist Bernardo Houssay. Her award was the result of years of hard work and dedication to uncovering the secrets of metabolism, revealing the mechanism by which glycogen is transformed into lactic acid in muscle tissue. Gerty Cori, with her unparalleled courage and genius, left an eternal legacy in the history of medicine and biochemistry.",
-                "src": ""
+                "src": "/images/GERTY_CORI.webp",
+                "srcScroll": "/images/GERTY_CORI_2.webp"
             },
             {
                 "id": 5,
@@ -395,7 +398,8 @@
                 "date": "1878-1968",
                 "description": "MOTHER OF NUCLEAR FISSION, UNDERVALUED AND EXCLUDED FROM THE NOBEL PRIZE​",
                 "bio": "Lise Meitner dazzled with her scientific genius and moral courage. From her discovery of the radioactive isotope protactinium-231 to her pivotal role in the discovery of nuclear fission in 1938, her work established her as one of the brightest minds of her time. However, despite being acclaimed as the 'German Marie Curie' by Albert Einstein, her contribution to the discovery of nuclear fission was unjustly overshadowed when her collaborator, Otto Hahn, received the Nobel Prize in her place. Meitner, known as the 'Jewish mother of the atomic bomb,' refused to participate in the Manhattan Project due to ethical convictions, thereby challenging the political and ethical pressures of her time. Her bravery and dedication to scientific truth make her a symbol of resistance against gender bias and injustice.",
-                "src": ""
+                "src": "/images/LISE_MEITNER.webp",
+                "srcScroll": "/images/LISE_MEITNER_2.webp"
             },
             {
                 "id": 2,
@@ -403,7 +407,8 @@
                 "date": "1882-1935",
                 "description": "ICON IN PHYSICS AND RELENTLESS FEMINIST",
                 "bio": "Emmy Noether left an indelible legacy in the scientific landscape of the 20th century. Her contributions, of fundamental importance, resonated in the fields of physics and mathematics, especially the theorem that bears her name, which establishes an essential connection between symmetry in physics and the laws of conservation, providing a conceptual framework that remains fundamental in understanding the universe. However, despite her brilliance, she was hindered by gender barriers, facing denial of decent job opportunities simply for being a woman. Despite these adversities, her indomitable spirit and tireless dedication to the pursuit of scientific truth make her a symbol of resistance against injustice and a timeless reference in science.",
-                "src": ""
+                "src": "/images/EMMY_NOETHER.webp",
+                "srcScroll": "/images/EMMY_NOETHER_2.webp"
             },
             {
                 "id": 3,
@@ -411,7 +416,8 @@
                 "date": "1900-1979",
                 "description": "AUTHOR OF THE 'MOST BRILLIANT DOCTORAL THESIS EVER WRITTEN IN ASTRONOMY' AND FIRST TO ASSERT THAT STARS ARE COMPOSED OF HYDROGEN",
                 "bio": "In 1925, Cecilia Payne's doctoral thesis proposed a bold and visionary idea: that stars are primarily composed of hydrogen. This work, praised as the 'most brilliant doctoral thesis ever written in astronomy,' marked a turning point in understanding the Universe. Although her early academic career was marked by obstacles and gender prejudices, her passion for science led her to cross borders and oceans in search of opportunities. After studying botany, physics, and chemistry at the University of Cambridge, she found her true home in the United States, where she managed to have her work recognized, despite being a woman. In 1938, she was granted the title of 'astronomer,' and in 1956, she became the first woman to be an associate professor at Harvard, thus paving the way for future generations of women in science.",
-                "src": ""
+                "src": "/images/CECILIA_PAYNE_GAPOSCHKIN.webp",
+                "srcScroll": "/images/CECILIA_PAYNE_GAPOSCHKIN_2.webp"
             },
             {
                 "id": 4,
@@ -511,7 +517,8 @@
                 "date": "1933-2011",
                 "description": "AFRO-AMERICAN TRAILBLAZER IN THEORETICAL COMPUTING AND SPACE COMPUTING​",
                 "bio": "Annie Easley, an Afro-American mathematician and scientist, played a key role in the work carried out by the Lewis Research Center, now known as NASA's Glenn Research Center, and its predecessor, the National Advisory Committee for Aeronautics (NACA). Her dedication and talent led her to be a leader on the team that developed the software for the Centaur rocket stage, thereby contributing to the advancement of space exploration. Moreover, Easley was one of the first Afro-American women to serve as a computer scientist at NASA, pioneering the fight for greater diversity and inclusion in the scientific community, demonstrating that talent and passion know no boundaries of gender, race, or origin.",
-                "src": ""
+                "src": "/images/ANNIE_EASLY.webp",
+                "srcScroll": "/images/ANNIE_EASLY_2.webp"
             },
             {
                 "id": 4,
@@ -535,7 +542,8 @@
                 "date": "1917-1996",
                 "description": "UNIQUE FEMALE COMPUTER SCIENTIST OF THE ENIGMA PROJECT, PIONEER IN CRYPTANALYSIS AND NUMISMATICS",
                 "bio": "Joan Clarke, a distinguished British cryptanalyst and numismatist, played a crucial role during World War II by becoming the only woman selected to join Alan Turing's team at Bletchley Park. There, they worked tirelessly on the Enigma project, deciphering the secret communications of Nazi Germany and contributing to the Allied effort. Her skill and dedication were recognized with awards that included appointment as a Member of the Order of the British Empire (MBE) in 1946. Clarke demonstrated that gender was not a barrier to excellence and heroism in wartime, with her valuable contribution being fundamental to the Allies' victory. Joan Clarke not only broke barriers but also inspired future generations to pursue their dreams and challenge gender stereotypes in the field of science and technology.",
-                "src": ""
+                "src": "/images/JOAN_CLARKE.webp",
+                "srcScroll": "/images/JOAN_CLARKE_2.webp"
             }
         ],
         "mathematics": [
@@ -545,7 +553,8 @@
                 "date": "1977-2017",
                 "description": "FIRST WOMAN TO WIN THE FIELDS MEDAL AND KEY RESEARCHER IN GEOMETRY AND DYNAMICAL SYSTEMS",
                 "bio": "Maryam Mirzakhani, a brilliant Iranian mathematician, was honored with the prestigious Fields Medal in 2014, becoming the first woman to receive this award, considered the equivalent of the Nobel Prize in the field of mathematics. Her studies stood out for their depth and originality, especially in areas such as Teichmüller space, hyperbolic geometry, ergodic theory, and symplectic geometry. Mirzakhani tackled existing problems with a unique perspective, conducting groundbreaking research that expanded the boundaries of geometry and dynamical systems. Her legacy endures not only through her brilliant mind but also as a role model for those dreaming of making significant contributions to science and research.",
-                "src": ""
+                "src": "/images/MARYAM_MIRZHAKANI.webp",
+                "srcScroll": "/images/MARYAM_MIRZHAKANI_2.webp"
             },
             {
                 "id": 2,
@@ -569,7 +578,8 @@
                 "date": "1776-1831",
                 "description": "SELF-TAUGHT SCIENTIST, PIONEER IN THE DEVELOPMENT OF ELASTICITY THEORY AND NUMBER THEORY​",
                 "bio": "Sophie Germain, a self-taught French mathematician and physicist, challenged the conventions of her time to leave an enduring mark on the history of mathematics and physics. Recognized as one of the pioneers in elasticity theory and number theory, Germain made significant contributions, particularly in her study of prime numbers, later known as Sophie Germain primes. Despite facing initial opposition from her parents and societal barriers, Germain persevered in her education under the pseudonym Antoine Auguste LeBlanc, posing as a man to access knowledge. Her dedication and brilliance enabled her to transcend the gender limitations of her era, leaving a lasting legacy and setting an example for future generations of female scientists.",
-                "src": ""
+                "src": "/images/SOPHIE_GERMAIN.webp",
+                "srcScroll": "/images/SOPHIE_GERMAIN_2.webp"
             },
             {
                 "id": 5,
@@ -585,7 +595,8 @@
                 "date": "1901-1995",
                 "description": "FIRST FEMALE DOCTOR AND PROFESSOR OF MATHEMATICS IN SECONDARY EDUCATION IN SPAIN",
                 "bio": "María del Carmen Martínez Sancho is an emblematic figure in the history of education and mathematical research in Spain. A pioneer in many respects, she was the first woman to obtain a doctoral degree and hold the position of professor of Mathematics in secondary education in the country. Her tireless pursuit of knowledge led her to become the first woman funded by the Junta de Ampliación de Estudios at the University of Berlin, where she deepened her research and acquired new pedagogical methods. Her dedication and academic excellence not only distinguished her as an outstanding researcher but also as a leader in the educational field, holding prominent positions in the Spanish Mathematical Society. Her legacy endures as an inspiration for future generations of women in the field of mathematics in Spain.",
-                "src": ""
+                "src": "/images/MARIA_DEL_CARMEN_MARTINEZ_SANCHO.webp",
+                "srcScroll": "/images/MARIA_DEL_CARMEN_MARTINEZ_SANCHO_2.webp"
             }
         ],
         "medicine": [
@@ -595,7 +606,8 @@
                 "date": "1821-1910",
                 "description": "FIRST WOMAN TO OBTAIN A MEDICAL DEGREE IN THE UNITED STATES AND BE REGISTERED WITH THE GENERAL MEDICAL COUNCIL​",
                 "bio": "In addition to becoming a notable British physician, Elizabeth Blackwell was also a pioneering figure who broke gender barriers in Medicine. As the first woman to earn a medical degree in the United States and be registered with the General Medical Council, she paved the way for future generations of women in medicine. Her legacy transcends her academic achievements, as she played a crucial role as a social advocate and promoter of female medical education both in the United States and England. Apart from her work in medicine, Blackwell co-founded the New York Infirmary for Women and Children alongside her sister Emily Blackwell, and dedicated efforts to educating the female public about the importance of education for girls. During the American Civil War, her role in organizing the nursing corps demonstrated her commitment to feminism and healthcare in times of crisis.",
-                "src": ""
+                "src": "/images/ELIZABETH_BLACKWELL.webp",
+                "srcScroll": "/images/ELIZABETH_BLACKWELL_2.webp"
             },
             {
                 "id": 2,
@@ -611,7 +623,8 @@
                 "date": "1919-2013",
                 "description": "PIONEERING SURGEON IN THE FIGHT AGAINST CANCER AND THE DEVELOPMENT OF ACCESSIBLE CHEMOTHERAPY",
                 "bio": "Jane Cooke Wright was a key figure in the battle against cancer, particularly distinguished for her innovations in the field of chemotherapy. She revolutionized the traditional approach by using human tissue cultures instead of laboratory mice to assess the effects of potential drugs on cancer cells, marking a milestone in oncological research. Moreover, she was a pioneer in the application of methotrexate to treat breast and skin cancers, introducing a therapeutic approach that would radically transform clinical practice. Her early breakthroughs turned chemotherapy from a speculative theory into a proven and effective cancer therapy, saving countless lives in the process. Her work laid the groundwork for the development of combination therapy and personalized treatment, setting the stage for ongoing research today.",
-                "src": ""
+                "src": "/images/JANE_COOKE_WRIGHT.webp",
+                "srcScroll": "/images/JANE_COOKE_WRIGHT_2.webp"
             },
             {
                 "id": 4,

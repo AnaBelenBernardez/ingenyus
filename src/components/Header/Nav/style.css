@@ -17,6 +17,7 @@
 .buttonNav > a {
     text-decoration: none;
     color: var(--athens);
+    text-transform: lowercase;
 }
 
 .buttonNav:hover,

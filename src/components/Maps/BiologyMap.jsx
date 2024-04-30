@@ -1,15 +1,23 @@
-import React from 'react';
+import ScrollToTop from '../ScrollToTop';
 import { useTranslation } from 'react-i18next';
 import data from '../../assets/data/data.json';
 
-export default function BiologyMap() {
+export default function BiologyMaps() {
     const { i18n } = useTranslation();
     const language = i18n.language;
 
-    const biologyData = data[language].biology;
+    const biologyData = data[language]?.biology;
 
+    if (!biologyData || biologyData.length === 0) {
+        return (
+            <main className='noise'>
+                <h1>Ops, no hay datos disponibles</h1>
+            </main>
+        );
+    }
     return (
-        <main className='noise'>
+        <>
+            <ScrollToTop />
             <section className='section_text'>
                 <div>
                     <p className='section_title'>Biología</p>
@@ -30,6 +38,6 @@ export default function BiologyMap() {
                     </div>
                 ))}
             </section>
-        </main>
+        </>
     );
 }

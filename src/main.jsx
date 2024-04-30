@@ -5,8 +5,8 @@ import App from './App.jsx';
 import './index.css';
 import i18n from 'i18next';
 import { I18nextProvider } from 'react-i18next';
-import esTranslation from './assets/languajes/es.json';
-import enTranslation from './assets/languajes/en.json';
+import esTranslation from './assets/languages/es.json';
+import enTranslation from './assets/languages/en.json';
 
 const resources = {
     en: {

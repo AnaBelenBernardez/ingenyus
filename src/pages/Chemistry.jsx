@@ -1,11 +1,28 @@
-import ChemystryMap from '../components/Maps/ChemistryMap';
+import ChemistryMap from '../components/Maps/ChemistryMap';
 import '../css/layout/_General.css';
+import '../css/layout/_Maps.css';
 import Loading from '../components/Loading/index.jsx';
 import { useEffect, useState } from 'react';
+import DesktopNavHome from '../components/DesktopNavHome.jsx';
+import MobileNavHome from '../components/MobileNavHome.jsx';
+import BodyAddons from '../components/BodyAddons.jsx';
 
 const Chemistry = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [showLoading, setShowLoading] = useState(false);
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1200);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsDesktop(window.innerWidth >= 1200);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     useEffect(() => {
         let showLoadingTimeout = setTimeout(() => {
@@ -34,7 +51,13 @@ const Chemistry = () => {
     if (isLoading && showLoading) {
         return <Loading />;
     }
-    return <ChemystryMap />;
+    return (
+        <main className='noise mainMap'>
+            <ChemistryMap />;
+            {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
+            <BodyAddons />
+        </main>
+    );
 };
 
 export default Chemistry;

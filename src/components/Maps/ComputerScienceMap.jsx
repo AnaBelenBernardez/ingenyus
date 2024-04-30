@@ -16,7 +16,7 @@ export default function ComputerScienceMap() {
         );
     }
     return (
-        <main className='noise'>
+        <>
             <ScrollToTop />
             <div>
                 {computerScienceData.map((item, index) => (
@@ -33,6 +33,6 @@ export default function ComputerScienceMap() {
                     </div>
                 ))}
             </div>
-        </main>
+        </>
     );
 }

@@ -16,7 +16,7 @@ export default function MathematicsMap() {
         );
     }
     return (
-        <main className='noise'>
+        <>
             <ScrollToTop />
             <div>
                 {mathematicsData.map((item, index) => (
@@ -33,6 +33,6 @@ export default function MathematicsMap() {
                     </div>
                 ))}
             </div>
-        </main>
+        </>
     );
 }

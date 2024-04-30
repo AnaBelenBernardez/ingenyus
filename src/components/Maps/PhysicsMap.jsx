@@ -15,7 +15,7 @@ export default function PhysicsMaps() {
         );
     }
     return (
-        <main className='noise'>
+        <>
             <ScrollToTop />
             <div>
                 {physicsData.map((item, index) => (
@@ -32,6 +32,6 @@ export default function PhysicsMaps() {
                     </div>
                 ))}
             </div>
-        </main>
+        </>
     );
 }

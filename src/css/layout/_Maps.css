@@ -1,7 +1,13 @@
+.mainMap {
+    /* Arreglar para mejorar el fondo */
+    /* height: 100vh; */
+}
+
 .item-container {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+
     /* Adicione margem entre os itens */
 }
 
@@ -14,17 +20,16 @@
     display: flex;
     justify-content: space-between;
     padding-left: 3rem;
-    padding: 2rem 1rem 2rem 1rem
+    padding: 2rem 1rem 2rem 1rem;
 }
 
-.right-side>* {
-    border: 2px solid white;
+.right-side > * {
+    border: 2px solid var(--athens);
     box-sizing: border-box;
     padding-left: 3rem;
-
 }
 
-.right-side> :not(:first-child) {
+.right-side > :not(:first-child) {
     padding: 1.5rem;
 }
 
@@ -40,4 +45,37 @@
 .item-container.even .left_side {
     order: 1;
     /* Alterna a ordem dos elementos */
+}
+
+#colabBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    padding-bottom: 10rem;
+}
+
+.bodyAddons {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .bodyAddons {
+        display: inline;
+        height: 126px;
+    }
+
+    #bodyIN {
+        position: absolute;
+        left: 5%;
+    }
+
+    #bodyHAB {
+        position: absolute;
+        right: 5%;
+    }
+
+    #colabBody {
+        margin-top: 20rem;
+    }
 }

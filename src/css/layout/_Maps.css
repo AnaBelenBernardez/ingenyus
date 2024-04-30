@@ -1,7 +1,13 @@
+.mainMap {
+    /* Arreglar para mejorar el fondo */
+    /* height: 100vh; */
+}
+
 .item-container {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+
     /* Adicione margem entre os itens */
 }
 
@@ -18,7 +24,7 @@
 }
 
 .right-side > * {
-    border: 2px solid white;
+    border: 2px solid var(--athens);
     box-sizing: border-box;
     padding-left: 3rem;
 }

@@ -1,11 +1,28 @@
 import ComputerScienceMap from '../components/Maps/ComputerScienceMap';
 import '../css/layout/_General.css';
+import '../css/layout/_Maps.css';
 import Loading from '../components/Loading/index.jsx';
 import { useEffect, useState } from 'react';
+import DesktopNavHome from '../components/DesktopNavHome.jsx';
+import MobileNavHome from '../components/MobileNavHome.jsx';
+import BodyAddons from '../components/BodyAddons.jsx';
 
 const ComputerScience = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [showLoading, setShowLoading] = useState(false);
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1200);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsDesktop(window.innerWidth >= 1200);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     useEffect(() => {
         let showLoadingTimeout = setTimeout(() => {
@@ -34,7 +51,13 @@ const ComputerScience = () => {
     if (isLoading && showLoading) {
         return <Loading />;
     }
-    return <ComputerScienceMap />;
+    return (
+        <main className='noise mainMap'>
+            <ComputerScienceMap />;
+            {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
+            <BodyAddons />
+        </main>
+    );
 };
 
 export default ComputerScience;

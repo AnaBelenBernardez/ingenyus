@@ -57,10 +57,19 @@
     .bodyAddons {
         display: inline;
         height: 126px;
-        border: red solid;
+    }
+
+    #bodyIN {
+        position: absolute;
+        left: 5%;
+    }
+
+    #bodyHAB {
+        position: absolute;
+        right: 5%;
     }
 
     #colabBody {
-        margin-top: 0rem;
+        margin-top: 20rem;
     }
 }

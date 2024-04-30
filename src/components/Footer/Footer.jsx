@@ -31,7 +31,10 @@ function Footer() {
                 <li>
                     <a href='tel:+34 968 107 558'>+34 968 107 558</a>
                 </li>
-                <a href='https://www.google.com/search?q=ingenyus-marketing-consultoria'>
+                <a
+                    className='direction'
+                    href='https://www.google.com/search?q=ingenyus-marketing-consultoria'
+                >
                     R. Real, 24, 1º, 15003 A Coruña{' '}
                 </a>
 
@@ -64,7 +67,9 @@ function Footer() {
                         />
                     </a>
                 </section>
-                <a href='https://www.ingenyus.es/kit-digital/'>Kit Digital</a>
+                <a className='kit' href='https://www.ingenyus.es/kit-digital/'>
+                    Kit Digital
+                </a>
             </ul>
             <section className='logos'>
                 <img src={logoasebio} alt='Logo ASEBIO' />

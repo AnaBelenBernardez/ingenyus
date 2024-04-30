@@ -52,7 +52,7 @@ const Physics = () => {
         return <Loading />;
     }
     return (
-        <main className='noise mainMap'>
+        <main className='mainMap'>
             <PhysicsMap />;{isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
             <BodyAddons />
         </main>

@@ -1,11 +1,14 @@
 .section_title {
     margin-left: 6.29rem;
-    margin-top: 235.65px;
-    margin-bottom: 4rem;
+    /* margin-top: 235.65px; */
+    position: relative;
+    top: 15rem;
+    margin-bottom: 20rem;
     line-height: 100.06px;
     font-size: 120px;
     font-family: 'Lastik', sans-serif;
     font-weight: 400;
+    color: var(--athens);
 }
 
 .mainMap {
@@ -21,7 +24,6 @@
     /* Adicione margem entre os itens */
 }
 
-
 .left_side,
 .right-side {
     flex: 1;
@@ -32,10 +34,9 @@
     justify-content: space-between;
     padding-left: 3rem;
     padding: 2rem 1rem 2rem 1rem;
-
 }
 
-.right-side>* {
+.right-side > * {
     border: 2px solid white;
     border-bottom: none;
     box-sizing: border-box;
@@ -52,17 +53,15 @@
     align-items: center;
 }
 
-
-.right-side> :not(:first-child) {
+.right-side > :not(:first-child) {
     padding: 2rem;
     border-bottom: 2px solid white;
 }
 
-.right-side> :last-child {
+.right-side > :last-child {
     padding-bottom: 12.5rem;
     border-top: none;
 }
-
 
 .flex {
     display: flex;
@@ -82,7 +81,7 @@
 
 .text-box {
     padding-bottom: 3rem;
-    font-size: 16px
+    font-size: 16px;
 }
 
 .text-name {
@@ -104,7 +103,6 @@
     padding-right: 1rem;
 }
 
-
 @media (max-width: 1198px) {
     .item-container {
         display: flex;
@@ -112,15 +110,14 @@
     }
 
     .left_side {
-        order: 1
+        order: 1;
     }
 
     .right-side {
-        order: 2
+        order: 2;
     }
 
-
-    .right-side>* {
+    .right-side > * {
         margin-left: 3.29rem;
         margin-right: 3.29rem;
     }

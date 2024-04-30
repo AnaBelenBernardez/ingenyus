@@ -62,6 +62,12 @@
     .logos > img {
         padding: 20px;
     }
+    .social {
+        padding: 20px;
+    }
+    .social > a {
+        padding-left: 1rem;
+    }
 }
 
 @media (max-width: 780px) {

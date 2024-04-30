@@ -1,6 +1,12 @@
 import React from 'react';
 import './Footer.css';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faInstagram,
+    faLinkedin,
+    faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
 import camaracomercio from '/logos/camaracomercio.png';
 import cluster from '/logos/ClusterdaComunicacionlogoclusterdecomunicacion.png';
 import groupclusaga from '/logos/groupclusaga.png';
@@ -29,30 +35,33 @@ function Footer() {
                     R. Real, 24, 1º, 15003 A Coruña{' '}
                 </a>
 
-                <section>
+                <section className='social'>
                     <a
                         className='nohover'
                         href='https://www.linkedin.com/company/ingenyus/'
                     >
-                        Linkedin
+                        <FontAwesomeIcon
+                            icon={faLinkedin}
+                            style={{ color: 'var(--athens)' }}
+                        />
                     </a>
                     <a
                         className='nohover'
                         href='https://twitter.com/i/flow/login?redirect_after_login=%2Fingenyus_es'
                     >
-                        Twitter
+                        <FontAwesomeIcon
+                            icon={faTwitter}
+                            style={{ color: 'var(--athens)' }}
+                        />
                     </a>
                     <a
                         className='nohover'
                         href='https://www.instagram.com/ingenyus.es'
                     >
-                        Instagram
-                    </a>
-                    <a
-                        className='nohover'
-                        href='https://www.ingenyus.es/esto-no-es-un-error'
-                    >
-                        T
+                        <FontAwesomeIcon
+                            icon={faInstagram}
+                            style={{ color: 'var(--athens)' }}
+                        />
                     </a>
                 </section>
                 <a href='https://www.ingenyus.es/kit-digital/'>Kit Digital</a>

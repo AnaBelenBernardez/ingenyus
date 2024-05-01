@@ -12,6 +12,7 @@ import cluster from '/logos/ClusterdaComunicacionlogoclusterdecomunicacion.png';
 import groupclusaga from '/logos/groupclusaga.png';
 import logoasebio from '/logos/LogoAsebioNombrecompletoTRANSPARENTE.png';
 import viratec from '/logos/VIRATEC.png';
+import itemas from '/logos/itemas.webp';
 
 function Footer() {
     return (
@@ -84,6 +85,7 @@ function Footer() {
                     src={cluster}
                     alt='Logo Cluster de Comunicacion de Galicia'
                 />
+                <img src={itemas} alt='Logo Itemas Isciii' />
             </section>
         </footer>
     );

@@ -7,7 +7,11 @@ export const BotonRedireccion = () => {
         window.location.href = 'https://www.ingenyus.es/';
     };
 
-    return <button onClick={redirectToPage}>Ir a la página de Ingenyus</button>;
+    return (
+        <button onClick={redirectToPage} className='redirección'>
+            Ir a la página de Ingenyus
+        </button>
+    );
 };
 
 export const ErrorPage = () => {
@@ -18,7 +22,7 @@ export const ErrorPage = () => {
                     <img src={logoingenyus} alt='logo ingenius' />
                 </a>
             </header>
-            <p>404</p>
+            <p className='errorcode'>404</p>
             <BotonRedireccion />{' '}
             {/* Coloca el botón dentro del componente ErrorPage */}
         </>

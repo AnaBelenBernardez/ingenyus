@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { useTranslation } from 'react-i18next';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -15,6 +16,7 @@ import viratec from '/logos/VIRATEC.png';
 import itemas from '/logos/itemas.webp';
 
 function Footer() {
+    const { t } = useTranslation();
     return (
         <footer>
             <ul className='footertext'>
@@ -87,6 +89,35 @@ function Footer() {
                 />
                 <img src={itemas} alt='Logo Itemas Isciii' />
             </section>
+            <ul className='legal-notice'>
+                <li>
+                    <a
+                        href='https://www.ingenyus.es/en/legal-notice/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        {t('translation.legal-notice')}
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href='https://www.ingenyus.es/en/privacy-policy/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        {t('translation.privacy-policy')}
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href='https://www.ingenyus.es/en/cookies-policy/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        {t('translation.cookies-policy')}
+                    </a>
+                </li>
+            </ul>
         </footer>
     );
 }

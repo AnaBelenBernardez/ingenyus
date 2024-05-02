@@ -1,9 +1,8 @@
 /*Desktop*/
 .newsletter_contact {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
     background-color: var(--denim);
-    min-height: 300px;
     height: 850.5px;
     display: flex;
     flex-direction: column;
@@ -63,22 +62,36 @@
     flex-direction: column;
 }
 
-.newsletter_email input {
+.hidden_form_input {
     background-color: rgba(25, 81, 228, 255);
     color: white;
     border: none;
     border-bottom: 1px solid white;
-    height: 34px;
+    height: 25px;
+    width: 100%;
+    outline: none;
 }
 
-.newsletter_email input:hover {
+.hidden_form_textarea {
+    background-color: rgba(25, 81, 228, 255);
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    height: 25px;
+    width: 100%;
+    height: 5rem;
+}
+
+.hidden_form_input.clicked,
+.hidden_form_textarea.clicked {
     background-color: white;
     color: rgba(25, 81, 228, 255);
     font-weight: bolder;
     padding-left: 0.1rem;
 }
 
-.newsletter_email input::placeholder {
+.newsletter_email input::placeholder,
+.newsletter_email textarea::placeholder {
     color: white;
     opacity: 0.3;
     font-size: 16.8px;
@@ -86,6 +99,7 @@
 }
 
 .nc_email {
+    padding-top: 0.2rem;
     padding-bottom: 0.4rem;
     font-weight: 700;
     font-size: 16.8px;
@@ -101,7 +115,7 @@
     width: 84.3px;
     height: 35.7px;
     border: 1.05px;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     padding-bottom: 3px;
     cursor: pointer;
     transition: transform 0.5s ease;
@@ -132,17 +146,16 @@
 }
 
 .hidden_form {
+    visibility: hidden;
     width: 100%;
     display: flex;
     position: relative;
     margin-bottom: 10rem;
-    gap: 6rem;
-    margin-top: 0rem;
-    margin-left: 0rem;
+    gap: 3rem;
     top: 1;
     justify-content: center;
     opacity: 0;
-    transform: translateY(-5%);
+    transform: translateY(0%);
     animation: slideUp 0.25s ease forwards
 }
 
@@ -158,14 +171,11 @@
 }
 
 .hidden_form.visible {
-    transform: translateY(5%);
+    visibility: inherit;
+    transform: translateY(2%);
     animation: slideDown 0.5s ease forwards;
 }
 
-.contact.not-expanded {
-    transform: translateY(-5%);
-    animation: slideUp 0.5s ease forwards
-}
 
 
 .contacto_email_input {
@@ -198,15 +208,72 @@
     cursor: pointer;
 }
 
-.hidden_form_input {
-    width: 100%;
-}
-
 
 .hl_text {
     font-size: 25px;
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
 }
+
+.hl_li {
+    padding-top: 1rem;
+    /* espaçamento entre os itens */
+}
+
+.checkbox_email_confirm {
+    padding-top: 0.3rem;
+    padding-left: 1rem;
+    font-weight: 400;
+}
+
+.animation_checkbox {
+    opacity: 1;
+    /* Inicialmente, o elemento estará invisível */
+    transform: translateY(-100%);
+    /* O elemento estará posicionado acima */
+    animation: slideDownCheckbox 1s ease forwards;
+    /* Aplica a animação */
+}
+
+.animation_checkbox.slideUpCheckbox {
+    animation: slideUpCheckbox 1s ease forwards;
+}
+
+.checkbox_email_confirm label {
+    padding-left: 0.3rem;
+}
+
+.checkbox_email_confirm input {
+    padding-top: 2rem;
+}
+
+
+@keyframes slideDownCheckbox {
+    from {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUpCheckbox {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+}
+
 
 @keyframes slideDown {
     from {

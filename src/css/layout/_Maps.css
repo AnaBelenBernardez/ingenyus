@@ -127,10 +127,12 @@
         margin-top: 20rem;
     }
 
+    /* ////////////////////// */
+
     .section_title {
         margin-left: 8rem;
         top: 15rem;
-        margin-bottom: 20rem;
+        margin-bottom: 19rem;
         line-height: 100.06px;
         font-size: 120px;
     }
@@ -139,7 +141,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: -2rem;
     }
 
     .left_side,
@@ -161,8 +163,8 @@
 
     .right-side > * {
         border: 0.8px solid var(--athens);
-        margin-left: 6.29rem;
-        margin-right: 6.29rem;
+        margin-left: 8rem;
+        margin-right: 8rem;
     }
 
     .right-side > :not(:first-child) {
@@ -172,7 +174,7 @@
     }
 
     .right-side > :last-child {
-        padding-bottom: 12.5rem;
+        padding-bottom: 9rem;
     }
 
     .text-box {

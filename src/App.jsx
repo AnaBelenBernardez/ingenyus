@@ -12,6 +12,7 @@ import Header from './components/Header';
 import PageTitle from './components/PageTitle';
 import ScrollBar from './components/ScrollBar';
 import Footer from './components/Footer/Footer';
+import { ErrorPage } from './pages/ErrorPage';
 
 function App() {
     return (
@@ -27,7 +28,7 @@ function App() {
                 <Route path='mathematics' element={<Mathematics />} />
                 <Route path='computer-science' element={<ComputerScience />} />
                 <Route path='medicine' element={<Medicine />} />
-                <Route path='*' element={<div>404 Not Found</div>} />
+                <Route path='*' element={<ErrorPage />} />
             </Routes>
             <Contact_Newsletter />
             <Footer />

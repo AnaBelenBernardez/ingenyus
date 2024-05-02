@@ -68,4 +68,8 @@
         position: fixed;
         bottom: 4rem;
     }
+    .redireccion:hover {
+        background-color: var(--athens);
+        color: var(--codgray);
+    }
 }

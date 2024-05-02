@@ -52,7 +52,7 @@ const Biology = () => {
         return <Loading />;
     }
     return (
-        <main className='noise mainMap'>
+        <main className='mainMap'>
             <BiologyMap />;{isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
             <BodyAddons />
         </main>

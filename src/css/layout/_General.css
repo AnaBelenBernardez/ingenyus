@@ -5,9 +5,10 @@
 }
 
 .mainMap {
-    color: var(--athens);
     font-weight: 400;
-
+    width: 100vw;
+    background-image: url('noise.png');
+    background-size: contain;
 }
 
 .scroll-to-top {
@@ -36,3 +37,4 @@
         scale: 2;
     }
 }
+

@@ -52,7 +52,7 @@ const ComputerScience = () => {
         return <Loading />;
     }
     return (
-        <main className='noise mainMap'>
+        <main className='mainMap'>
             <ComputerScienceMap />;
             {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
             <BodyAddons />

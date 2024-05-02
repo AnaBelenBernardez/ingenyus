@@ -24,7 +24,10 @@ export default function ComputerScienceMap() {
                     <p className='section_title'>Computación</p>
                 </div>
                 {computerScienceData.map((item, index) => (
-                    <div className={`item-container ${index % 2 === 0 ? 'even' : 'odd'}`} key={index}>
+                    <div
+                        className={`item-container ${index % 2 === 0 ? 'even' : 'odd'}`}
+                        key={index}
+                    >
                         <article className='left_side'>
                             <img src={item.src} alt={item.name} />
                         </article>
@@ -33,7 +36,9 @@ export default function ComputerScienceMap() {
                                 <h1 className='text-name'>{item.name}</h1>
                                 <span className='text-date'>{item.date}</span>
                             </div>
-                            <h2 className='text-description'>{item.description}</h2>
+                            <h2 className='text-description'>
+                                {item.description}
+                            </h2>
                             <p className='text-box'>{item.bio}</p>
                         </article>
                     </div>

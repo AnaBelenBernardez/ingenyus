@@ -7,6 +7,7 @@
 .mainMap {
     font-weight: 400;
     width: 100vw;
+    color: var(--athens);
     background-image: url('noise.png');
     background-size: contain;
 }
@@ -69,4 +70,3 @@
         bottom: 4rem;
     }
 }
-

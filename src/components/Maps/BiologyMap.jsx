@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import data from '../../assets/data/data.json';
 
 export default function BiologyMaps() {
+    const { t } = useTranslation();
+
     const { i18n } = useTranslation();
     const language = i18n.language;
 
@@ -11,7 +13,7 @@ export default function BiologyMaps() {
     if (!biologyData || biologyData.length === 0) {
         return (
             <main className='noise'>
-                <h1>Ops, no hay datos disponibles</h1>
+                <h1>{t('translation.empty-data')}</h1>
             </main>
         );
     }

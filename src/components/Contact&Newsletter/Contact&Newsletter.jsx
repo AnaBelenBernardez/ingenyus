@@ -1,5 +1,5 @@
-import { useState } from "react";
-import "../../css/layout/_Contact&Newsletter.css";
+import { useState } from 'react';
+import '../../css/layout/_Contact&Newsletter.css';
 import { useTranslation } from 'react-i18next';
 
 export function Contact_Newsletter() {
@@ -10,24 +10,24 @@ export function Contact_Newsletter() {
     const [showText, setShowText] = useState(false);
     const [showTextNewsletter, setShowTextNewsletter] = useState(false);
 
-
-
     const handleInputChangeEmail = (event) => {
         setClickedInput(event.target.name);
-        setShowText(event.target.value.trim() !== "");
+        setShowText(event.target.value.trim() !== '');
         checkAllInputsFilled();
     };
 
     const handleInputChangeEmailNewsletter = (event) => {
         setClickedInput(event.target.name);
-        setShowTextNewsletter(event.target.value.trim() !== "");
+        setShowTextNewsletter(event.target.value.trim() !== '');
     };
 
     const checkAllInputsFilled = () => {
-        const inputs = document.querySelectorAll('.hidden_form_input, .hidden_form_textarea');
+        const inputs = document.querySelectorAll(
+            '.hidden_form_input, .hidden_form_textarea'
+        );
         let allFilled = true;
 
-        inputs.forEach(input => {
+        inputs.forEach((input) => {
             if (!input.value.trim()) {
                 allFilled = false;
             }
@@ -37,15 +37,15 @@ export function Contact_Newsletter() {
     };
 
     const toggleHiddenForm = () => {
-        setShowHiddenForm(prevState => !prevState);
-        setContactHeight(prevHeight => prevHeight === 0 ? '100%' : 0);
+        setShowHiddenForm((prevState) => !prevState);
+        setContactHeight((prevHeight) => (prevHeight === 0 ? '100%' : 0));
     };
 
     const { t } = useTranslation();
 
     return (
-        <section className="newsletter_contact">
-            <div className={`contact ${showHiddenForm ? 'expanded' : "not-expanded"}`} style={{ height: contactHeight }}>
+        <section className='newsletter_contact'>
+            {/* <div className={`contact ${showHiddenForm ? 'expanded' : "not-expanded"}`} style={{ height: contactHeight }}>
                 <h4 className="both_title">{t('translation.contact')}</h4>
                 <p className="nc_text">{t('translation.description-home')}</p>
                 <p className="nc_text">{t('translation.description-home2')}</p>
@@ -83,30 +83,47 @@ export function Contact_Newsletter() {
                                 <button className="button_contact">Unirme</button>
                             </div>
                         </form>
-                        {/* <form className="subscribe_form" action="https://ingenyus.us15.list-manage.com/subscribe/post" method="POST">
+                        <form className="subscribe_form" action="https://ingenyus.us15.list-manage.com/subscribe/post" method="POST">
                             <input type="hidden" name="u" />
                             <input type="hidden" name="id" value="ef5c40ecca" />
                             <input type="email" placeholder="email@ejemplo.com" className="contacto_email_input" autoapitalize="off" autocorrect="off" name="EMAIL" id="EMAIL" size="25" value="" />
                             <input type="submit" className="subscribe_contact" name="submit" value="Subscribe"></input>
-                        </form> */}
+                        </form> 
                     </div>
                 </section>
-            </div>
-            <div className="newsletter">
-                <div className="newsletter_left">
-                    <h4 className="both_title">newsletter</h4>
-                    <p className="nc_text"> {t('translation.description-newsletter')}</p>
+            </div> */}
+            <div className='newsletter'>
+                <div className='newsletter_left'>
+                    <h4 className='both_title'>newsletter</h4>
+                    <p className='nc_text'>
+                        {' '}
+                        {t('translation.description-newsletter')}
+                    </p>
                 </div>
-                <div className="newsletter_right">
-                    <form className="newsletter_email" action="">
-                        <label className="nc_email" htmlFor="">email*</label>
-                        <input className={`hidden_form_input ${clickedInput === 'emaile' ? 'clicked' : ''}`} type="email" placeholder="email@ejemplo.com" onClick={() => setClickedInput('emaile')} onChange={handleInputChangeEmailNewsletter} onBlur={() => setClickedInput(false)} />
-                        <div className={`animation_checkbox ${showTextNewsletter ? 'slideDownCheckbox' : 'slideUpCheckbox'}`}>
-                            <div className="checkbox_email_confirm">
-                                <input type="checkbox" />
-                                <label><strong>he leído y acepto</strong> la política de privacidad</label>
+                <div className='newsletter_right'>
+                    <form className='newsletter_email' action=''>
+                        <label className='nc_email' htmlFor=''>
+                            email*
+                        </label>
+                        <input
+                            className={`hidden_form_input ${clickedInput === 'emaile' ? 'clicked' : ''}`}
+                            type='email'
+                            placeholder='email@ejemplo.com'
+                            onClick={() => setClickedInput('emaile')}
+                            onChange={handleInputChangeEmailNewsletter}
+                            onBlur={() => setClickedInput(false)}
+                        />
+                        <div
+                            className={`animation_checkbox ${showTextNewsletter ? 'slideDownCheckbox' : 'slideUpCheckbox'}`}
+                        >
+                            <div className='checkbox_email_confirm'>
+                                <input type='checkbox' />
+                                <label>
+                                    <strong>he leído y acepto</strong> la
+                                    política de privacidad
+                                </label>
                             </div>
-                            <button className="button_contact">Unirme</button>
+                            <button className='button_contact'>Unirme</button>
                         </div>
                     </form>
                 </div>

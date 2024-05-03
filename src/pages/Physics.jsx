@@ -53,7 +53,8 @@ const Physics = () => {
     }
     return (
         <main className='mainMap'>
-            <PhysicsMap />;{isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
+            <PhysicsMap />
+            {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
             <BodyAddons />
         </main>
     );

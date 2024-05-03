@@ -53,7 +53,8 @@ const Biology = () => {
     }
     return (
         <main className='mainMap'>
-            <BiologyMap />;{isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
+            <BiologyMap />
+            {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
             <BodyAddons />
         </main>
     );

@@ -53,7 +53,7 @@ const ComputerScience = () => {
     }
     return (
         <main className='mainMap'>
-            <ComputerScienceMap />;
+            <ComputerScienceMap />
             {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
             <BodyAddons />
         </main>

@@ -6,11 +6,10 @@
     height: 850.5px;
     display: flex;
     flex-direction: column;
-    color: #f7f7f8;
+    color: var(--athens);
     font-family: 'Satoshi-Regular';
     align-items: center;
 }
-
 
 .contact,
 .newsletter {
@@ -37,7 +36,7 @@
     font-style: none;
     font-family: 'Satoshi-Regular';
     font-weight: 300;
-    color: white;
+    color: var(--athens);
     margin-top: 1.5rem;
 }
 
@@ -45,7 +44,6 @@
     display: flex;
     flex-direction: row;
     gap: 3rem;
-    border-top: 1px solid white;
 }
 
 .newsletter_left,
@@ -64,9 +62,9 @@
 
 .hidden_form_input {
     background-color: rgba(25, 81, 228, 255);
-    color: white;
+    color: var(--athens);
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--athens);
     height: 25px;
     width: 100%;
     outline: none;
@@ -74,9 +72,9 @@
 
 .hidden_form_textarea {
     background-color: rgba(25, 81, 228, 255);
-    color: white;
+    color: var(--athens);
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--athens);
     height: 25px;
     width: 100%;
     height: 5rem;
@@ -84,7 +82,7 @@
 
 .hidden_form_input.clicked,
 .hidden_form_textarea.clicked {
-    background-color: white;
+    background-color: var(--athens);
     color: rgba(25, 81, 228, 255);
     font-weight: bolder;
     padding-left: 0.1rem;
@@ -92,7 +90,7 @@
 
 .newsletter_email input::placeholder,
 .newsletter_email textarea::placeholder {
-    color: white;
+    color: var(--athens);
     opacity: 0.3;
     font-size: 16.8px;
     padding-left: 0.1rem;
@@ -108,10 +106,10 @@
 
 .button_contact {
     border-radius: 840px;
-    background-color: #f7f7f8;
+    background-color: var(--athens);
     font-size: 14.7px;
     font-weight: 400;
-    color: #1851e3;
+    color: var(--denim);
     width: 84.3px;
     height: 35.7px;
     border: 1.05px;
@@ -121,23 +119,21 @@
     transition: transform 0.5s ease;
 }
 
-
 .button_contact.transformed {
     transform: translateY(28rem);
     width: 3rem;
 }
 
-
 .visible .button_contact:hover {
-    background-color: #1851e3;
-    color: #f7f7f8;
-    border: 1px solid white;
+    background-color: var(--denim);
+    color: var(--athens);
+    border: 1px solid var(--athens);
 }
 
 .button_contact:hover {
-    background-color: #1851e3;
-    color: #f7f7f8;
-    border: 1px solid white;
+    background-color: var(--denim);
+    color: var(--athens);
+    border: 1px solid var(--athens);
 }
 
 .contact_button_box {
@@ -156,7 +152,7 @@
     justify-content: center;
     opacity: 0;
     transform: translateY(0%);
-    animation: slideUp 0.25s ease forwards
+    animation: slideUp 0.25s ease forwards;
 }
 
 .hidden_left,
@@ -176,19 +172,17 @@
     animation: slideDown 0.5s ease forwards;
 }
 
-
-
 .contacto_email_input {
     margin-top: 1rem;
     background-color: rgba(25, 81, 228, 255);
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--athens);
     margin-right: 0.5rem;
     height: 30px;
 }
 
 .contacto_email_input::placeholder {
-    color: white;
+    color: var(--athens);
     opacity: 0.3;
     font-size: 16.8px;
     padding-left: 0.1rem;
@@ -197,17 +191,16 @@
 
 .subscribe_contact {
     border-radius: 840px;
-    background-color: #f7f7f8;
+    background-color: var(--athens);
     font-size: 11px;
     font-weight: 400;
-    color: #1851e3;
+    color: var(--denim);
     width: 65px;
     height: 22px;
     border: 1.05px;
     padding-bottom: 3px;
     cursor: pointer;
 }
-
 
 .hl_text {
     font-size: 25px;
@@ -249,7 +242,6 @@
     padding-top: 2rem;
 }
 
-
 @keyframes slideDownCheckbox {
     from {
         opacity: 0;
@@ -273,7 +265,6 @@
         transform: translateY(-20%);
     }
 }
-
 
 @keyframes slideDown {
     from {
@@ -325,7 +316,7 @@ adicionar mais um bocado de padding - comparar c/ o site da ingenyous + formular
     .newsletter {
         flex-direction: column;
         gap: 0rem;
-        border-top: 1px solid white;
+        border-top: 1px solid var(--athens);
     }
 
     .newsletter_contact {

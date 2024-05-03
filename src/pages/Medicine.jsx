@@ -53,7 +53,8 @@ const Medicine = () => {
     }
     return (
         <main className='mainMap'>
-            <MedicineMap />;{isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
+            <MedicineMap />
+            {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
             <BodyAddons />
         </main>
     );

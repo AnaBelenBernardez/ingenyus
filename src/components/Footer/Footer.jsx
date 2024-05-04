@@ -1,4 +1,5 @@
 import './Footer.css';
+import { useTranslation } from 'react-i18next';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -14,6 +15,7 @@ import viratec from '/logos/VIRATEC.png';
 import itemas from '/logos/itemas.webp';
 
 function Footer() {
+    const { t } = useTranslation();
     return (
         <footer>
             <ul className='footertext'>
@@ -83,23 +85,26 @@ function Footer() {
                 <a
                     className='direction'
                     target='_blank'
+                    rel='noopener noreferrer'
                     href='https://www.ingenyus.es/aviso-legal/'
                 >
-                    Aviso Legal
+                      {t('translation.legal-notice')}
                 </a>
                 <a
                     className='direction'
                     target='_blank'
+                    rel='noopener noreferrer'
                     href='https://www.ingenyus.es/politica-privacidad/'
                 >
-                    Política de privacidad
+                   {t('translation.privacy-policy')}
                 </a>
                 <a
                     className='direction'
                     target='_blank'
+                    rel='noopener noreferrer'
                     href='https://www.ingenyus.es/politica-cookies/'
                 >
-                    Política de cookies
+                  {t('translation.cookies-policy')}
                 </a>
             </section>
         </footer>

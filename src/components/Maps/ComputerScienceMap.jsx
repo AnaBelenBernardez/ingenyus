@@ -4,6 +4,7 @@ import data from '../../assets/data/data.json';
 
 export default function ComputerScienceMap() {
     const { i18n } = useTranslation();
+    const { t } = useTranslation();
     const language = i18n.language;
 
     const computerScienceData = data[language]?.computerScience;
@@ -11,7 +12,7 @@ export default function ComputerScienceMap() {
     if (!computerScienceData || computerScienceData.length === 0) {
         return (
             <main className='noise'>
-                <h1>Ops, no hay datos disponibles</h1>
+                <h1>{t('translation.empty-data')}</h1>
             </main>
         );
     }

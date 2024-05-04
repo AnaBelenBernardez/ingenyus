@@ -1,6 +1,7 @@
 import ScrollToTop from '../ScrollToTop';
 import { useTranslation } from 'react-i18next';
 import data from '../../assets/data/data.json';
+import '../../css/layout/_Maps.css';
 
 export default function BiologyMaps() {
     const { t } = useTranslation();
@@ -12,8 +13,8 @@ export default function BiologyMaps() {
 
     if (!biologyData || biologyData.length === 0) {
         return (
-            <main className='noise'>
-                <h1>{t('translation.empty-data')}</h1>
+            <main className='landingHome'>
+                <h1 className='section_title'>{t('translation.empty-data')}</h1>
             </main>
         );
     }

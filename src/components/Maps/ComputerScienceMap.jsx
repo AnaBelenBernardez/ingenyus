@@ -11,8 +11,8 @@ export default function ComputerScienceMap() {
 
     if (!computerScienceData || computerScienceData.length === 0) {
         return (
-            <main className='noise'>
-                <h1>{t('translation.empty-data')}</h1>
+            <main className='landingHome'>
+                <h1 className='section_title'>{t('translation.empty-data')}</h1>
             </main>
         );
     }

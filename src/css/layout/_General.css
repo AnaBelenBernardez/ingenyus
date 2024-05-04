@@ -6,7 +6,6 @@
 
 .mainMap {
     font-weight: 400;
-
     color: var(--athens);
     background-image: url('noise.png');
     background-size: contain;

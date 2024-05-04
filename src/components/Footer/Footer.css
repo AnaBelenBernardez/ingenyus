@@ -33,6 +33,8 @@ footer > * a:hover {
 .unusual {
     margin-bottom: 0.6rem;
     font-weight: 100;
+    font-weight: 400;
+    font-family: 'Satoshi-Light';
 }
 
 .unete {
@@ -42,6 +44,11 @@ footer > * a:hover {
     margin-top: 1.2rem;
     line-height: 1;
     margin-bottom: 1.2rem;
+}
+
+.unete > p {
+    font-weight: 400;
+    font-family: 'Satoshi-Light';
 }
 
 .social {
@@ -97,4 +104,46 @@ footer > * a:hover {
 }
 
 @media (min-width: 1200px) {
+    footer {
+        font-size: 1.5rem;
+    }
+
+    footer > * a {
+        font-weight: 100;
+    }
+
+    .footertext {
+        margin-top: 2.7rem;
+        line-height: 1.7;
+        font-weight: 300;
+    }
+
+    .unusual {
+        margin-bottom: 0.3rem;
+        font-weight: 100;
+    }
+
+    .unete {
+        margin-top: 1.2rem;
+        line-height: 1.3;
+        margin-bottom: 1.1rem;
+    }
+
+    .social {
+        margin-top: 0.8rem;
+    }
+
+    .kit {
+        margin-top: 0.9rem;
+        margin-bottom: 0.9rem;
+    }
+
+    .logos {
+        margin: 0.7rem;
+    }
+
+    .footerInfo > a {
+        flex: none;
+        font-size: 1rem;
+    }
 }

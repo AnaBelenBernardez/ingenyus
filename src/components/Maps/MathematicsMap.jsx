@@ -21,7 +21,9 @@ export default function MathematicsMap() {
             <ScrollToTop />
             <section className='section_text'>
                 <div>
-                    <p className='section_title'>Matemáticas</p>
+                    <p className='section_title'>
+                        {t('translation.mathematics')}
+                    </p>
                 </div>
                 {mathematicsData.map((item, index) => (
                     <div

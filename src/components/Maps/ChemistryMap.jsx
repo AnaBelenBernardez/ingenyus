@@ -20,7 +20,9 @@ export default function ChemistryMap() {
             <ScrollToTop />
             <section className='section_text'>
                 <div>
-                    <p className='section_title'>Química</p>
+                    <p className='section_title'>
+                        {t('translation.chemistry')}
+                    </p>
                 </div>
                 {chemistryData.map((item, index) => (
                     <div

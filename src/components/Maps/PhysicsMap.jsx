@@ -20,7 +20,7 @@ export default function PhysicsMaps() {
             <ScrollToTop />
             <section className='section_text'>
                 <div>
-                    <p className='section_title'>Física</p>
+                    <p className='section_title'>{t('translation.physics')}</p>
                 </div>
                 {physicsData.map((item, index) => (
                     <div

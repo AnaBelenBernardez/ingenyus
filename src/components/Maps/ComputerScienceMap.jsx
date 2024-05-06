@@ -22,7 +22,9 @@ export default function ComputerScienceMap() {
             <ScrollToTop />
             <section className='section_text'>
                 <div>
-                    <p className='section_title'>Computación</p>
+                    <p className='section_title'>
+                        {t('translation.computerScience')}
+                    </p>
                 </div>
                 {computerScienceData.map((item, index) => (
                     <div

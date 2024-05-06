@@ -21,7 +21,7 @@ export default function MedicineMaps() {
             <ScrollToTop />
             <section className='section_text'>
                 <div>
-                    <p className='section_title'>Medicina</p>
+                    <p className='section_title'>{t('translation.medicine')}</p>
                 </div>
                 {medicineData.map((item, index) => (
                     <div

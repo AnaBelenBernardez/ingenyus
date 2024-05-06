@@ -1,108 +1,93 @@
 import { slide as BurgerMenu } from 'react-burger-menu';
-import React from 'react';
+import { useState } from 'react';
 import './style.css';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import LanguageSelector from '../LanguageSelector';
 
-class BurgerNav extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isOpen: false,
-        };
-    }
+const BurgerNav = () => {
+    const [isOpen, setIsOpen] = useState(false);
 
-    handleItemClick = () => {
-        this.setState({ isOpen: false });
+    const { t } = useTranslation();
+
+    const handleItemClick = () => {
+        setIsOpen(false);
     };
 
-    handleMenuOpen = () => {
-        this.setState({ isOpen: true });
+    const handleMenuOpen = () => {
+        setIsOpen(true);
     };
 
-    handleMenuClose = () => {
-        this.setState({ isOpen: false });
+    const handleMenuClose = () => {
+        setIsOpen(false);
     };
 
-    render() {
-        return (
-            <BurgerMenu
-                right
-                width={'100%'}
-                isOpen={this.state.isOpen}
-                className='burgerMenu'
-                onOpen={this.handleMenuOpen}
-                onClose={this.handleMenuClose}
-                noOverlay
-            >
-                <nav className='navBurger'>
-                    <ul>
-                        <li>
-                            <button
-                                className='buttonNav'
-                                onClick={this.handleItemClick}
-                            >
-                                <NavLink exact='true' to='/'>
-                                    home
-                                </NavLink>
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                className='buttonNav'
-                                onClick={this.handleItemClick}
-                            >
-                                <NavLink to='chemistry'>química</NavLink>
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                className='buttonNav'
-                                onClick={this.handleItemClick}
-                            >
-                                <NavLink to='physics'>física</NavLink>
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                className='buttonNav'
-                                onClick={this.handleItemClick}
-                            >
-                                <NavLink to='biology'>biología</NavLink>
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                className='buttonNav'
-                                onClick={this.handleItemClick}
-                            >
-                                <NavLink to='computer-science'>
-                                    computación
-                                </NavLink>
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                className='buttonNav'
-                                onClick={this.handleItemClick}
-                            >
-                                <NavLink to='mathematics'>matemáticas</NavLink>
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                className='buttonNav'
-                                onClick={this.handleItemClick}
-                            >
-                                <NavLink to='medicine'>medicina</NavLink>
-                            </button>
-                        </li>
-                        <LanguageSelector />
-                    </ul>
-                </nav>
-            </BurgerMenu>
-        );
-    }
-}
+    return (
+        <BurgerMenu
+            right
+            width={'100%'}
+            isOpen={isOpen}
+            className='burgerMenu'
+            onOpen={handleMenuOpen}
+            onClose={handleMenuClose}
+            noOverlay
+        >
+            <nav className='navBurger'>
+                <ul>
+                    <li>
+                        <button className='buttonNav' onClick={handleItemClick}>
+                            <NavLink exact='true' to='/'>
+                                home
+                            </NavLink>
+                        </button>
+                    </li>
+                    <li>
+                        <button className='buttonNav' onClick={handleItemClick}>
+                            <NavLink to='chemistry'>
+                                {t('translation.chemistry')}
+                            </NavLink>
+                        </button>
+                    </li>
+                    <li>
+                        <button className='buttonNav' onClick={handleItemClick}>
+                            <NavLink to='physics'>
+                                {t('translation.physics')}
+                            </NavLink>
+                        </button>
+                    </li>
+                    <li>
+                        <button className='buttonNav' onClick={handleItemClick}>
+                            <NavLink to='biology'>
+                                {t('translation.biology')}
+                            </NavLink>
+                        </button>
+                    </li>
+                    <li>
+                        <button className='buttonNav' onClick={handleItemClick}>
+                            <NavLink to='computer-science'>
+                                {t('translation.computerScience')}
+                            </NavLink>
+                        </button>
+                    </li>
+                    <li>
+                        <button className='buttonNav' onClick={handleItemClick}>
+                            <NavLink to='mathematics'>
+                                {t('translation.mathematics')}
+                            </NavLink>
+                        </button>
+                    </li>
+                    <li>
+                        <button className='buttonNav' onClick={handleItemClick}>
+                            <NavLink to='medicine'>
+                                {t('translation.medicine')}
+                            </NavLink>
+                        </button>
+                    </li>
+                    <LanguageSelector />
+                </ul>
+            </nav>
+        </BurgerMenu>
+    );
+};
 
 export default BurgerNav;

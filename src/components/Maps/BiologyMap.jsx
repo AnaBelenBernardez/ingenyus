@@ -23,7 +23,7 @@ export default function BiologyMaps() {
             <ScrollToTop />
             <section className='section_text'>
                 <div>
-                    <p className='section_title'>Biología</p>
+                    <p className='section_title'>{t('translation.biology')}</p>
                 </div>
                 {biologyData.map((item, index) => (
                     <div

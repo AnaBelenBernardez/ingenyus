@@ -3,7 +3,7 @@
     padding-left: 7rem;
     padding-right: 7rem;
     background-color: var(--denim);
-    height: 850.5px;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     color: var(--athens);
@@ -316,7 +316,6 @@ adicionar mais um bocado de padding - comparar c/ o site da ingenyous + formular
     .newsletter {
         flex-direction: column;
         gap: 0rem;
-        border-top: 1px solid var(--athens);
     }
 
     .newsletter_contact {

@@ -4,6 +4,7 @@ import MobileNavHome from '../components/MobileNavHome';
 import { useState, useEffect } from 'react';
 import DesktopNavHome from '../components/DesktopNavHome';
 import Loading from '../components/Loading/index.jsx';
+import '../css/base/_backgrounds.css';
 
 const Home = () => {
     const { t, i18n } = useTranslation();
@@ -56,7 +57,12 @@ const Home = () => {
     }
 
     return (
-        <main className='noise homePage'>
+        <main className='noise homePage blurBack'>
+            <div className='ellipseWhite' id='e8'></div>
+            <div className='ellipseBlue' id='e7'></div>
+            <div className='ellipseWhite' id='e11'></div>
+            <div className='ellipseWhite' id='e9'></div>
+            <div className='ellipseBlue' id='e10'></div>
             <div className='landingHome'>
                 <h1 className='homeTitle'>
                     <span id='homeTitle1'> {t('translation.title')}</span>

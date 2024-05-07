@@ -13,6 +13,10 @@
         "description-home": " Resumir en una web todo lo que hacemos es complicado. Te invitamos a que nos cuentes sobre tu proyecto. ",
         "description-home2": "Nuestro equipo se reunirá contigo para valorar conjuntamente en qué podemos ayudarte. Nos podemos reunir por videollamada, en un café o en nuestras oficinas en Calle Real 24, Planta 1ª, 15003, A Coruña.",
         "description-newsletter": "¡Suscríbete! Prometemos no enviar demasiadas, y sólo con información de interés como ofertas específicas, financiación…",
+
+        "description-newsletter-confirm1": "he leído y acepto ",
+        "description-newsletter-confirm2": "la política de privacidad"
+
         "empty-data": "Oops, no hay datos disponibles",
         "legal-notice": "Aviso legal",
         "privacy-policy": "Política de privacidad",

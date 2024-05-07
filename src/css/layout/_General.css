@@ -1,6 +1,8 @@
 .noise {
     background-image: url('noise.png');
     background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
 
 .mainMap {

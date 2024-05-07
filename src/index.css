@@ -18,7 +18,7 @@ body {
     --denim: #1851e3;
     --gallery: #eeeeee;
     font-family: 'Satoshi-Regular', serif;
-    background-color: #1851e3;
+    background-color: var(--codgray);
 }
 
 ::selection {

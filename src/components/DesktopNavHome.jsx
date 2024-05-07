@@ -63,7 +63,7 @@ const DesktopNavHome = () => {
                                     alt=''
                                 />
                             </span>
-                            <NavLink to='chemistry'>
+                            <NavLink to='/chemistry'>
                                 {t('translation.chemistry')}
                             </NavLink>
                         </button>
@@ -78,7 +78,7 @@ const DesktopNavHome = () => {
                             onMouseLeave={handleMouseLeave}
                         >
                             <span className='navAddons'>/</span>
-                            <NavLink to='physics'>
+                            <NavLink to='/physics'>
                                 {t('translation.physics')}
                             </NavLink>
                         </button>
@@ -95,7 +95,7 @@ const DesktopNavHome = () => {
                             onMouseLeave={handleMouseLeave}
                         >
                             <span className='navAddons'>{'>'}</span>
-                            <NavLink to='biology'>
+                            <NavLink to='/biology'>
                                 {t('translation.biology')}
                             </NavLink>
                         </button>
@@ -111,7 +111,7 @@ const DesktopNavHome = () => {
                             onMouseLeave={handleMouseLeave}
                         >
                             <span className='navAddons'>{'–'}</span>
-                            <NavLink to='computer-science'>
+                            <NavLink to='/computer-science'>
                                 {t('translation.computerScience')}
                             </NavLink>
                         </button>
@@ -129,7 +129,7 @@ const DesktopNavHome = () => {
                             onMouseLeave={handleMouseLeave}
                         >
                             <span className='navAddons'>#</span>
-                            <NavLink to='mathematics'>
+                            <NavLink to='/mathematics'>
                                 {t('translation.mathematics')}
                             </NavLink>
                         </button>
@@ -145,7 +145,7 @@ const DesktopNavHome = () => {
                             onMouseLeave={handleMouseLeave}
                         >
                             <span className='navAddons'>{'<'}</span>
-                            <NavLink to='medicine'>
+                            <NavLink to='/medicine'>
                                 {t('translation.medicine')}
                             </NavLink>
                         </button>

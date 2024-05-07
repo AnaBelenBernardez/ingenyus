@@ -1,0 +1,56 @@
+@media (min-width: 1200px) {
+    .blurBack {
+        background-color: var(--codgray);
+        position: relative;
+    }
+
+    .ellipseWhite {
+        position: absolute;
+        background: var(--athens);
+    }
+
+    .ellipseBlue {
+        position: absolute;
+        background: var(--denim);
+    }
+
+    #e8 {
+        left: 20.34%;
+        right: 5.38%;
+        top: 0%;
+        bottom: 30.46%;
+        filter: blur(141.101px);
+    }
+
+    #e7 {
+        left: 25.9%;
+        right: 14.64%;
+        top: 15.4%;
+        bottom: 25.92%;
+        filter: blur(151.635px);
+    }
+
+    #e10 {
+        left: 20.46%;
+        right: 30.08%;
+        top: 55.24%;
+        bottom: 0%;
+        filter: blur(151.635px);
+    }
+
+    #e9 {
+        left: 0%;
+        right: 62.54%;
+        top: 22.38%;
+        bottom: 0%;
+        filter: blur(151.635px);
+    }
+
+    #e11 {
+        left: 56.54%;
+        right: 0%;
+        top: 49.55%;
+        bottom: 0%;
+        filter: blur(151.635px);
+    }
+}

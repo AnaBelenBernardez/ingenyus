@@ -17,7 +17,7 @@ const MobileNavHome = () => {
                         />
                     </span>
                     <button className='buttonNavHome lastikNavHome'>
-                        <NavLink to='chemistry'>
+                        <NavLink to='/chemistry'>
                             {t('translation.chemistry')}
                         </NavLink>
                     </button>
@@ -25,7 +25,7 @@ const MobileNavHome = () => {
                 <li>
                     <span className='navAddons'>/</span>
                     <button className='buttonNavHome satoshiNavHome'>
-                        <NavLink to='physics'>
+                        <NavLink to='/physics'>
                             {t('translation.physics')}
                         </NavLink>
                     </button>
@@ -33,7 +33,7 @@ const MobileNavHome = () => {
                 <li>
                     <span className='navAddons'>{'>'}</span>
                     <button className='buttonNavHome lastikNavHome'>
-                        <NavLink to='biology'>
+                        <NavLink to='/biology'>
                             {t('translation.biology')}
                         </NavLink>
                     </button>
@@ -41,7 +41,7 @@ const MobileNavHome = () => {
                 <li>
                     <span className='navAddons'>{'–'}</span>
                     <button className='buttonNavHome lastikNavHome'>
-                        <NavLink to='computer-science'>
+                        <NavLink to='/computer-science'>
                             {t('translation.computerScience')}
                         </NavLink>
                     </button>
@@ -49,7 +49,7 @@ const MobileNavHome = () => {
                 <li>
                     <span className='navAddons'>#</span>
                     <button className='buttonNavHome italicNavHome'>
-                        <NavLink to='mathematics'>
+                        <NavLink to='/mathematics'>
                             {t('translation.mathematics')}
                         </NavLink>
                     </button>
@@ -57,7 +57,7 @@ const MobileNavHome = () => {
                 <li>
                     <span className='navAddons'>{'<'}</span>
                     <button className='buttonNavHome lastikNavHome'>
-                        <NavLink to='medicine'>
+                        <NavLink to='/medicine'>
                             {t('translation.medicine')}
                         </NavLink>
                     </button>

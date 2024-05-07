@@ -34,7 +34,7 @@ export default function BiologyMaps() {
                             <img src={item.src} alt={item.name} />
                         </article>
                         <article className='right-side'>
-                            <section className='text-title'>
+                            <div className='text-title'>
                                 <h1 className='text-name'>{item.name}</h1>
                                 <span className='text-date'>{item.date}</span>
                             </div>

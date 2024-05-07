@@ -1,17 +1,17 @@
 import '../css/layout/_General.css';
+import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export const ErrorPage = () => {
-    const redirectToPage = () => {
-        // Redirige a la página de Ingenyus
-        window.location.href = '/';
-    };
+    const { t } = useTranslation();
+
     return (
         <>
             <main className='landingHome errorPage'>
                 <p className='errorcode'>404</p>
-                <button onClick={redirectToPage} className='redireccion'>
-                    volver al inicio
-                </button>
+                <NavLink className='redireccion' to='/'>
+                    {t('translation.backHome')}
+                </NavLink>
             </main>
         </>
     );

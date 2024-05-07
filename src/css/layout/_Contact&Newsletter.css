@@ -6,12 +6,10 @@
     height: 400px;
     display: flex;
     flex-direction: column;
-    color: #f7f7f8;
-    font-family: 'Satoshi-Regular';
+    color: var(--athens);
+    font-family: 'Satoshi-Light';
     align-items: center;
 }
-
-
 
 .both_title {
     padding: 3rem 0rem 0rem 0rem;
@@ -20,20 +18,21 @@
     font-weight: 300;
     line-height: 96px;
     margin-bottom: 2rem;
+    font-family: 'Satoshi-Light';
 }
 
 .nc_text {
     font-size: 16.8px;
     font-style: none;
-    font-family: 'Satoshi-Regular';
+    font-family: 'Satoshi-Light';
     font-weight: 300;
-    color: white;
+    color: var(--athens);
 }
 
 .newsletter {
     display: flex;
     gap: 3rem;
-    border-top: 1px solid white;
+    border-top: 1px solid var(--athens);
     padding-top: 2.9rem;
 }
 
@@ -100,12 +99,10 @@
     transition: transform 0.5s ease;
 }
 
-
 .button_contact.transformed {
     transform: translateY(28rem);
     width: 3rem;
 }
-
 
 .visible .button_contact:hover {
     background-color: #1851e3;
@@ -114,12 +111,10 @@
 }
 
 .button_contact:hover {
-    background-color: #1851e3;
-    color: #f7f7f8;
-    border: 1px solid white;
+    background-color: var(--denim);
+    color: var(--athens);
+    border: 1px solid var(--athens);
 }
-
-
 
 .animation_checkbox {
     opacity: 1;
@@ -141,7 +136,6 @@
 .checkbox_email_confirm input {
     padding-top: 2rem;
 }
-
 
 @keyframes slideDownCheckbox {
     from {
@@ -166,7 +160,6 @@
         transform: translateY(-20%);
     }
 }
-
 
 @keyframes slideDown {
     from {
@@ -215,7 +208,6 @@ adicionar mais um bocado de padding - comparar c/ o site da ingenyous + formular
 
 /* Smartphone */
 @media (max-width: 780px) {
-
     .newsletter_contact {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -229,7 +221,7 @@ adicionar mais um bocado de padding - comparar c/ o site da ingenyous + formular
     .newsletter {
         flex-direction: column;
         gap: 0rem;
-        border-top: 1px solid white;
+        border-top: 1px solid var(--athens);
     }
 
     .newsletter_contact {

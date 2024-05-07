@@ -52,9 +52,9 @@
 
 .hidden_form_input {
     background-color: rgba(25, 81, 228, 255);
-    color: var(--athens);
+    color: white;
     border: none;
-    border-bottom: 1px solid var(--athens);
+    border-bottom: 1px solid white;
     height: 25px;
     width: 100%;
     outline: none;
@@ -62,7 +62,7 @@
 
 .hidden_form_input.clicked,
 .hidden_form_textarea.clicked {
-    background-color: var(--athens);
+    background-color: white;
     color: rgba(25, 81, 228, 255);
     font-weight: bolder;
     padding-left: 0.1rem;
@@ -70,7 +70,7 @@
 
 .newsletter_email input::placeholder,
 .newsletter_email textarea::placeholder {
-    color: var(--athens);
+    color: white;
     opacity: 0.3;
     font-size: 16.8px;
     padding-left: 0.1rem;
@@ -86,10 +86,10 @@
 
 .button_contact {
     border-radius: 840px;
-    background-color: var(--athens);
+    background-color: #f7f7f8;
     font-size: 14.7px;
     font-weight: 400;
-    color: var(--denim);
+    color: #1851e3;
     width: 84.3px;
     height: 35.7px;
     border: 1.05px;
@@ -105,9 +105,9 @@
 }
 
 .visible .button_contact:hover {
-    background-color: var(--denim);
-    color: var(--athens);
-    border: 1px solid var(--athens);
+    background-color: #1851e3;
+    color: #f7f7f8;
+    border: 1px solid white;
 }
 
 .button_contact:hover {

@@ -3,14 +3,15 @@ import ScrollToTop from '../ScrollToTop';
 
 import data from '../../assets/data/data.json';
 export default function ChemistryMap() {
+    const { t } = useTranslation();
     const { i18n } = useTranslation();
     const language = i18n.language;
 
     const chemistryData = data[language]?.chemistry;
     if (!chemistryData || chemistryData.length === 0) {
         return (
-            <main className='noise'>
-                <h1>Ops, no hay datos disponibles</h1>
+            <main className='landingHome'>
+                <h1 className='section_title'>{t('translation.empty-data')}</h1>
             </main>
         );
     }
@@ -19,7 +20,9 @@ export default function ChemistryMap() {
             <ScrollToTop />
             <section className='section_text'>
                 <div>
-                    <p className='section_title'>Química</p>
+                    <p className='section_title'>
+                        {t('translation.chemistry')}
+                    </p>
                 </div>
                 {chemistryData.map((item, index) => (
                     <div

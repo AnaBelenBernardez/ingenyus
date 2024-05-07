@@ -53,7 +53,7 @@ const Mathematics = () => {
     }
     return (
         <main className='mainMap'>
-            <MathematicsMap />;
+            <MathematicsMap />
             {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
             <BodyAddons />
         </main>

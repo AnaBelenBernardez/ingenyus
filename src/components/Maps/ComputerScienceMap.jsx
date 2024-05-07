@@ -4,14 +4,15 @@ import data from '../../assets/data/data.json';
 
 export default function ComputerScienceMap() {
     const { i18n } = useTranslation();
+    const { t } = useTranslation();
     const language = i18n.language;
 
     const computerScienceData = data[language]?.computerScience;
 
     if (!computerScienceData || computerScienceData.length === 0) {
         return (
-            <main className='noise'>
-                <h1>Ops, no hay datos disponibles</h1>
+            <main className='landingHome'>
+                <h1 className='section_title'>{t('translation.empty-data')}</h1>
             </main>
         );
     }
@@ -21,7 +22,9 @@ export default function ComputerScienceMap() {
             <ScrollToTop />
             <section className='section_text'>
                 <div>
-                    <p className='section_title'>Computación</p>
+                    <p className='section_title'>
+                        {t('translation.computerScience')}
+                    </p>
                 </div>
                 {computerScienceData.map((item, index) => (
                     <div

@@ -1,101 +1,165 @@
-@media (max-width: 2010px) {
+footer {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--codgray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: var(--athens);
+    overflow: hidden;
+}
+
+footer > * a {
+    text-decoration: none;
+    color: var(--athens);
+    font-weight: 400;
+    font-family: 'Satoshi-Light';
+}
+
+footer > * a:hover {
+    color: var(--denim);
+}
+
+.footertext {
+    color: var(--athens);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.6rem;
+}
+
+.unusual {
+    margin-bottom: 0.6rem;
+    font-weight: 100;
+    font-weight: 400;
+    font-family: 'Satoshi-Light';
+}
+
+.unete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.2rem;
+    line-height: 1;
+    margin-bottom: 1.2rem;
+}
+
+.unete > p {
+    font-weight: 400;
+    font-family: 'Satoshi-Light';
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social > a:hover .socialIcons {
+    color: var(--denim) !important;
+}
+
+.kit {
+    text-decoration: none;
+    color: var(--athens);
+    font-weight: 400;
+    font-family: 'Satoshi-Light';
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.kit:hover {
+    color: var(--denim);
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7rem;
+}
+
+.logos > img {
+    padding: 20px;
+}
+
+.footerInfo {
+    display: flex;
+    margin: 0 2rem 0 2rem;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0 1rem;
+}
+
+.footerInfo > a {
+    flex: 1;
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
     footer {
-        position: absolute;
-        width: 100vw;
-
-        z-index: 9999;
-        background-color: var(--codgray);
+        font-size: 1.5rem;
     }
+
+    footer > * a {
+        font-weight: 100;
+    }
+
     .footertext {
-        color: var(--athens);
-        height: 514.28px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        box-sizing: border-box;
-
-        padding: 80px 0px;
-        font-size: 24px;
-
-        line-height: 1.7rem;
+        margin-top: 2.7rem;
+        line-height: 1.7;
+        font-weight: 300;
     }
-    .footertext > li {
-        line-height: 40px;
-    }
+
     .unusual {
-        margin: 0px 0px 10px;
+        margin-bottom: 0.3rem;
+        font-weight: 100;
     }
 
     .unete {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        padding: 16px 0px;
+        margin-top: 1.2rem;
+        line-height: 1.3;
+        margin-bottom: 1.1rem;
     }
 
-    footer > ul > li > a {
-        color: var(--athens);
-        text-decoration: none;
-        line-height: 40px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .direction {
-        text-decoration: none;
-        color: var(--athens);
-    }
-
-    .direction:hover {
-        color: var(--denim);
+    .social {
+        margin-top: 0.8rem;
     }
 
     .kit {
-        text-decoration: none;
-        color: var(--athens);
-    }
-    .kit:hover {
-        color: var(--denim);
-    }
-
-    footer > ul > li > a:hover {
-        color: var(--denim);
-    }
-
-    .nohover:hover {
-        color: var(--athens);
+        margin-top: 0.9rem;
+        margin-bottom: 0.9rem;
     }
 
     .logos {
-        height: 287.87px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 25vh;
-        padding-right: 25vh;
+        margin: 0.7rem;
     }
-    .logos > img {
-        padding: 20px;
-    }
-    .social {
-        padding: 20px;
-    }
-    .social > a {
-        padding-left: 1rem;
-        height: 24px;
+
+    .footerInfo > a {
+        flex: none;
+        font-size: 1rem;
     }
 }
 
-@media (max-width: 780px) {
-    .footertext {
-        size: 1rem;
-        line-height: 1.25rem;
-    }
+.legal-notice {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
 
-    .logos {
-        display: flex;
-        flex-wrap: wrap;
+@media (min-width: 600px) {
+    .legal-notice {
+        flex-direction: row;
+        justify-content: center;
     }
 }

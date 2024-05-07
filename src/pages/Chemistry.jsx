@@ -53,7 +53,7 @@ const Chemistry = () => {
     }
     return (
         <main className='mainMap'>
-            <ChemistryMap />;
+            <ChemistryMap />
             {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
             <BodyAddons />
         </main>

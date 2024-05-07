@@ -1,5 +1,5 @@
-import React from 'react';
 import './Footer.css';
+import { useTranslation } from 'react-i18next';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -15,6 +15,7 @@ import viratec from '/logos/VIRATEC.png';
 import itemas from '/logos/itemas.webp';
 
 function Footer() {
+    const { t } = useTranslation();
     return (
         <footer>
             <ul className='footertext'>
@@ -23,8 +24,8 @@ function Footer() {
                     <a href='mailto:hola@ingenyus.es'>hola@ingenyus.es</a>
                 </li>
                 <li className='unete'>
-                    <p>únete al equipo </p>
-                    <a href='mailto:atalent@ingenyus.es'>atalent@ingenyus.es</a>
+                    <p>únete al equipo</p>
+                    <a href='mailto:talent@ingenyus.es'>talent@ingenyus.es</a>
                 </li>
                 <li>
                     <a href='tel:+34 981 227 225 '>+34 981 227 225</a>
@@ -36,42 +37,35 @@ function Footer() {
                     className='direction'
                     href='https://www.google.com/search?q=ingenyus-marketing-consultoria'
                 >
-                    R. Real, 24, 1º, 15003 A Coruña{' '}
-                </a>
-
-                <section className='social'>
-                    <a
-                        className='nohover'
-                        href='https://www.linkedin.com/company/ingenyus/'
-                    >
-                        <FontAwesomeIcon
-                            icon={faLinkedin}
-                            style={{ color: 'var(--athens)' }}
-                        />
-                    </a>
-                    <a
-                        className='nohover'
-                        href='https://twitter.com/i/flow/login?redirect_after_login=%2Fingenyus_es'
-                    >
-                        <FontAwesomeIcon
-                            icon={faTwitter}
-                            style={{ color: 'var(--athens)' }}
-                        />
-                    </a>
-                    <a
-                        className='nohover'
-                        href='https://www.instagram.com/ingenyus.es'
-                    >
-                        <FontAwesomeIcon
-                            icon={faInstagram}
-                            style={{ color: 'var(--athens)' }}
-                        />
-                    </a>
-                </section>
-                <a className='kit' href='https://www.ingenyus.es/kit-digital/'>
-                    Kit Digital
+                    R. Real, 24, 1º, 15003 A Coruña
                 </a>
             </ul>
+            <section className='social'>
+                <a href='https://www.linkedin.com/company/ingenyus/'>
+                    <FontAwesomeIcon
+                        icon={faLinkedin}
+                        className='socialIcons'
+                    />
+                </a>
+                <a href='https://twitter.com/i/flow/login?redirect_after_login=%2Fingenyus_es'>
+                    <FontAwesomeIcon icon={faTwitter} className='socialIcons' />
+                </a>
+                <a href='https://www.instagram.com/ingenyus.es'>
+                    <FontAwesomeIcon
+                        className='socialIcons'
+                        icon={faInstagram}
+                    />
+                </a>
+            </section>
+            <a
+                className='kit'
+                target='_blank'
+                href='https://www.ingenyus.es/kit-digital/'
+            >
+                Kit Digital
+            </a>
+
+            <p>Formamos parte de:</p>
             <section className='logos'>
                 <img src={logoasebio} alt='Logo ASEBIO' />
                 <img
@@ -86,6 +80,32 @@ function Footer() {
                     alt='Logo Cluster de Comunicacion de Galicia'
                 />
                 <img src={itemas} alt='Logo Itemas Isciii' />
+            </section>
+            <section className='footerInfo'>
+                <a
+                    className='direction'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    href='https://www.ingenyus.es/aviso-legal/'
+                >
+                      {t('translation.legal-notice')}
+                </a>
+                <a
+                    className='direction'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    href='https://www.ingenyus.es/politica-privacidad/'
+                >
+                   {t('translation.privacy-policy')}
+                </a>
+                <a
+                    className='direction'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    href='https://www.ingenyus.es/politica-cookies/'
+                >
+                  {t('translation.cookies-policy')}
+                </a>
             </section>
         </footer>
     );

@@ -28,10 +28,10 @@ export default function BiologyMaps() {
                             <img src={item.src} alt={item.name} />
                         </article>
                         <article className='right-side'>
-                            <div className='text-title'>
+                            <section className='text-title'>
                                 <h1 className='text-name'>{item.name}</h1>
                                 <span className='text-date'>{item.date}</span>
-                            </div>
+                            </section>
                             <h2 className='text-description'>{item.description}</h2>
                             <p className='text-box'>{item.bio}</p>
                         </article>

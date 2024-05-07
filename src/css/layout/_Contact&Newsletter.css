@@ -3,23 +3,12 @@
     padding-left: 7rem;
     padding-right: 7rem;
     background-color: var(--denim);
-    height: 20rem;
+    height: 400px;
     display: flex;
     flex-direction: column;
     color: var(--athens);
-    font-family: 'Satoshi-Regular';
+    font-family: 'Satoshi-Light';
     align-items: center;
-}
-
-.contact,
-.newsletter {
-    width: 80%;
-    flex: 1;
-}
-
-.contact {
-    border-bottom: none;
-    padding-top: 1rem;
 }
 
 .both_title {
@@ -29,21 +18,22 @@
     font-weight: 300;
     line-height: 96px;
     margin-bottom: 2rem;
+    font-family: 'Satoshi-Light';
 }
 
 .nc_text {
     font-size: 16.8px;
     font-style: none;
-    font-family: 'Satoshi-Regular';
+    font-family: 'Satoshi-Light';
     font-weight: 300;
     color: var(--athens);
-    margin-top: 1.5rem;
 }
 
 .newsletter {
     display: flex;
-    flex-direction: row;
     gap: 3rem;
+    border-top: 1px solid var(--athens);
+    padding-top: 2.9rem;
 }
 
 .newsletter_left,
@@ -68,16 +58,6 @@
     height: 25px;
     width: 100%;
     outline: none;
-}
-
-.hidden_form_textarea {
-    background-color: rgba(25, 81, 228, 255);
-    color: var(--athens);
-    border: none;
-    border-bottom: 1px solid var(--athens);
-    height: 25px;
-    width: 100%;
-    height: 5rem;
 }
 
 .hidden_form_input.clicked,
@@ -134,91 +114,6 @@
     background-color: var(--denim);
     color: var(--athens);
     border: 1px solid var(--athens);
-}
-
-.contact_button_box {
-    display: flex;
-    justify-content: center;
-}
-
-.hidden_form {
-    visibility: hidden;
-    width: 100%;
-    display: flex;
-    position: relative;
-    margin-bottom: 10rem;
-    gap: 3rem;
-    top: 1;
-    justify-content: center;
-    opacity: 0;
-    transform: translateY(0%);
-    animation: slideUp 0.25s ease forwards;
-}
-
-.hidden_left,
-.hidden_right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.hidden_right {
-    flex-direction: column;
-}
-
-.hidden_form.visible {
-    visibility: inherit;
-    transform: translateY(2%);
-    animation: slideDown 0.5s ease forwards;
-}
-
-.contacto_email_input {
-    margin-top: 1rem;
-    background-color: rgba(25, 81, 228, 255);
-    border: none;
-    border-bottom: 1px solid var(--athens);
-    margin-right: 0.5rem;
-    height: 30px;
-}
-
-.contacto_email_input::placeholder {
-    color: var(--athens);
-    opacity: 0.3;
-    font-size: 16.8px;
-    padding-left: 0.1rem;
-    margin-bottom: 0.5rem;
-}
-
-.subscribe_contact {
-    border-radius: 840px;
-    background-color: var(--athens);
-    font-size: 11px;
-    font-weight: 400;
-    color: var(--denim);
-    width: 65px;
-    height: 22px;
-    border: 1.05px;
-    padding-bottom: 3px;
-    cursor: pointer;
-}
-
-.hl_text {
-    font-size: 25px;
-    font-weight: 400;
-    display: flex;
-    flex-direction: column;
-    padding-top: 1rem;
-}
-
-.hl_li {
-    padding-top: 1rem;
-    /* espaçamento entre os itens */
-}
-
-.checkbox_email_confirm {
-    padding-top: 0.3rem;
-    padding-left: 1rem;
-    font-weight: 400;
 }
 
 .animation_checkbox {
@@ -313,9 +208,20 @@ adicionar mais um bocado de padding - comparar c/ o site da ingenyous + formular
 
 /* Smartphone */
 @media (max-width: 780px) {
+    .newsletter_contact {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .both_title {
+        padding: 0;
+        margin-top: 1rem;
+    }
+
     .newsletter {
         flex-direction: column;
         gap: 0rem;
+        border-top: 1px solid var(--athens);
     }
 
     .newsletter_contact {

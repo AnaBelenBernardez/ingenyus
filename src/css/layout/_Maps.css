@@ -89,6 +89,10 @@
     font-weight: 400;
 }
 
+.text-description {
+    text-transform: uppercase;
+}
+
 .text-date {
     padding-right: 1rem;
     height: 100%;

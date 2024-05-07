@@ -29,7 +29,7 @@
     height: 34px;
     width: 34px;
     margin-right: 1rem;
-    margin-top: -1rem;
+    margin-top: 1.5rem;
     scale: 2.5;
 }
 .bm-cross {
@@ -43,6 +43,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu-wrap {
     position: fixed;
     height: 100vh;
+    top: 0;
 }
 
 .bm-menu {

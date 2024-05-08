@@ -101,7 +101,7 @@
     justify-content: center;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    z-index: 2;
+    z-index: 0;
 }
 
 .homeNav > ul {
@@ -263,6 +263,7 @@
         right: 1rem;
         top: -15rem;
         pointer-events: none;
+        z-index: 5;
     }
 
     .cursor {

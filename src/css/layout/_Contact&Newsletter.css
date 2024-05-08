@@ -85,16 +85,17 @@
 
 .button_contact {
     border-radius: 840px;
-    background-color: var(--athens);
     font-size: 14.7px;
     font-weight: 400;
-    color: var(--denim);
     width: 84.3px;
     height: 35.7px;
     border: 1px;
     margin-top: 1rem;
     cursor: pointer;
     transition: transform 0.5s ease;
+    background-color: var(--denim);
+    color: var(--athens);
+    border: 1px solid var(--athens);
 }
 
 .button_contact.transformed {
@@ -109,9 +110,8 @@
 }
 
 .button_contact:hover {
-    background-color: var(--denim);
-    color: var(--athens);
-    border: 1px solid var(--athens);
+    background-color: var(--athens);
+    color: var(--denim);
 }
 
 .animation_checkbox {
@@ -129,6 +129,12 @@
 
 .checkbox_email_confirm label {
     padding-left: 0.3rem;
+}
+
+.checkbox_email_confirm > label > a {
+    font-family: 'Satoshi-Light';
+    text-decoration: none;
+    color: var(--athens);
 }
 
 .checkbox_email_confirm input {

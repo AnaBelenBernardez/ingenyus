@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import '../css/layout/_HomePage.css';
+import '../css/layout/_General.css';
 import MobileNavHome from '../components/MobileNavHome';
 import { useState, useEffect } from 'react';
 import DesktopNavHome from '../components/DesktopNavHome';
@@ -63,12 +64,13 @@ const Home = () => {
             <div className='ellipseBlue' id='e10'></div>
             <div className='ellipseWhite' id='e9'></div>
             <div className='ellipseWhite' id='e11'></div> */}
-            <main className='noise homePage blurBack'>
+            <main className=' homePage blurBack'>
                 <div className='ellipseWhite' id='e8'></div>
                 <div className='ellipseBlue' id='e7'></div>
                 <div className='ellipseBlue' id='e10'></div>
                 <div className='ellipseWhite' id='e9'></div>
                 <div className='ellipseWhite' id='e11'></div>
+
                 <div className='landingHome'>
                     <h1 className='homeTitle'>
                         <span id='homeTitle1'> {t('translation.title')}</span>

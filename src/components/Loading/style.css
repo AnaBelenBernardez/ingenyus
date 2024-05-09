@@ -4,10 +4,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--athens);
+    background-color: var(--codgray);
     z-index: 99;
-    background-image: url('noise.png');
-    background-color: var(--denim);
+    overflow: hidden;
 }
 
 .spinner {

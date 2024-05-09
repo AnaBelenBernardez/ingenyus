@@ -59,18 +59,13 @@ const Home = () => {
 
     return (
         <>
-            {/* <div className='ellipseWhite' id='e8'></div>
-            <div className='ellipseBlue' id='e7'></div>
-            <div className='ellipseBlue' id='e10'></div>
-            <div className='ellipseWhite' id='e9'></div>
-            <div className='ellipseWhite' id='e11'></div> */}
             <main className=' homePage blurBack'>
                 <div className='ellipseWhite' id='e8'></div>
                 <div className='ellipseBlue' id='e7'></div>
                 <div className='ellipseBlue' id='e10'></div>
                 <div className='ellipseWhite' id='e9'></div>
                 <div className='ellipseWhite' id='e11'></div>
-
+                <div className='noiseBack'></div>
                 <div className='landingHome'>
                     <h1 className='homeTitle'>
                         <span id='homeTitle1'> {t('translation.title')}</span>

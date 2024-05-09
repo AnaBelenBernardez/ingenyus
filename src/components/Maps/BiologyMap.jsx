@@ -14,7 +14,7 @@ export default function BiologyMaps() {
     if (!biologyData || biologyData.length === 0) {
         return (
             <main className='landingHome'>
-                <h1 className='section_title'>{t('translation.empty-data')}</h1>
+                <h1 className='section_empty'>{t('translation.empty-data')}</h1>
             </main>
         );
     }

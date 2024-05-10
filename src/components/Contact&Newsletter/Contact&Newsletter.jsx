@@ -19,7 +19,6 @@ export function Contact_Newsletter() {
                 <div className='newsletter_left'>
                     <h4 className='both_title'>newsletter</h4>
                     <p className='nc_text'>
-                        {' '}
                         {t('translation.description-newsletter')}
                     </p>
                 </div>
@@ -45,6 +44,7 @@ export function Contact_Newsletter() {
                         />
                         <div
                             className={`animation_checkbox ${showTextNewsletter ? 'slideDownCheckbox' : 'slideUpCheckbox'}`}
+                            hidden={!showTextNewsletter}
                         >
                             <div className='checkbox_email_confirm'>
                                 <input type='checkbox' />

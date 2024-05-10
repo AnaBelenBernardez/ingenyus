@@ -127,6 +127,7 @@
 .buttonNavHome {
     background-color: transparent;
     border: none;
+    cursor: none;
 }
 
 .buttonNavHome > a {

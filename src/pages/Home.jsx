@@ -72,12 +72,16 @@ const Home = () => {
                         <span id='homeTitle2'>
                             <img
                                 id='homeHABAddon'
+                                className={isEnglish ? 'englishAddon' : ''}
                                 src='./logos/HAB_icon.svg'
                                 alt=''
                             />
                             {t('translation.title2')}
                         </span>
-                        <span id='homeTitle3'>
+                        <span
+                            id='homeTitle3'
+                            className={isEnglish ? 'englishTitle' : ''}
+                        >
                             {t('translation.title3')}
                             <img
                                 id='homeINAddon'

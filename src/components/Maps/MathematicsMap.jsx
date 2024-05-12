@@ -2,7 +2,7 @@ import ScrollToTop from '../ScrollToTop';
 import { useTranslation } from 'react-i18next';
 import React, { useState, useEffect, useRef } from 'react';
 
-import data from '../../assets/data/data.json';
+import data from '../../../public/data.json';
 export default function MathematicsMap() {
     const { i18n } = useTranslation();
     const language = i18n.language;

@@ -1,6 +1,6 @@
 import ScrollToTop from '../ScrollToTop';
 import { useTranslation } from 'react-i18next';
-import data from '../../assets/data/data.json';
+import data from '../../../public/data.json';
 import React, { useState, useEffect, useRef } from 'react';
 export default function PhysicsMaps() {
     const { t } = useTranslation();

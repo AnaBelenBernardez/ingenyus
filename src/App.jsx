@@ -22,12 +22,12 @@ function App() {
             <ScrollBar />
             <Routes>
                 <Route exact path='/' element={<Home />} />
-                <Route path='biology' element={<Biology />} />
-                <Route path='physics' element={<Physics />} />
-                <Route path='chemistry' element={<Chemistry />} />
-                <Route path='mathematics' element={<Mathematics />} />
-                <Route path='computer-science' element={<ComputerScience />} />
-                <Route path='medicine' element={<Medicine />} />
+                <Route path='/biology' element={<Biology />} />
+                <Route path='/physics' element={<Physics />} />
+                <Route path='/chemistry' element={<Chemistry />} />
+                <Route path='/mathematics' element={<Mathematics />} />
+                <Route path='/computer-science' element={<ComputerScience />} />
+                <Route path='/medicine' element={<Medicine />} />
                 <Route path='*' element={<ErrorPage />} />
             </Routes>
             <Contact_Newsletter />

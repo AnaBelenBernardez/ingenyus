@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
-import data from '../assets/data/data.json';
+import data from '../../public/data.json';
 import i18n from 'i18next';
 import '../css/layout/_HomePage.css';
 

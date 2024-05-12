@@ -29,7 +29,7 @@ const Biology = () => {
             setShowLoading(true);
         }, 100);
 
-        fetch('/assets/data/data.json')
+        fetch('/data.json')
             .then((response) => response.json())
             .then((data) => {
                 console.log(data);

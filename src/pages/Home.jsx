@@ -34,7 +34,7 @@ const Home = () => {
             setShowLoading(true);
         }, 100);
 
-        fetch('src/assets/data/data.json')
+        fetch('/assets/data/data.json')
             .then((response) => response.json())
             .then((data) => {
                 console.log(data);

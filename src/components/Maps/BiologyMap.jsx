@@ -2,7 +2,7 @@ import ScrollToTop from '../ScrollToTop';
 import { useTranslation } from 'react-i18next';
 import data from '../../../public/data.json';
 import '../../css/layout/_Maps.css';
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export default function BiologyMaps() {
     const { t } = useTranslation();

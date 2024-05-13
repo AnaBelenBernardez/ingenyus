@@ -20,7 +20,7 @@ function Home() {
     return (
         <div className='home'>
             <button className='buttonHome'>
-                <Link id='linkHome' to='/'>
+                <Link id='linkHome' to='/' aria-label='Home'>
                     <img
                         className='logoButtonHome'
                         src={

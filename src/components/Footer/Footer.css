@@ -54,6 +54,10 @@ footer > * a:hover {
     font-family: 'Satoshi-Light';
 }
 
+.address > a {
+    font-style: normal;
+}
+
 .social {
     display: flex;
     gap: 1rem;

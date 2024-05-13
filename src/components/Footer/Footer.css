@@ -9,6 +9,9 @@ footer {
     font-size: 1rem;
     color: var(--athens);
     overflow: hidden;
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
 }
 
 footer > * a {

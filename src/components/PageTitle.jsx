@@ -56,7 +56,7 @@ function PageTitle() {
             if (inactive) {
                 document.title = randomMessage;
             } else {
-                document.title = 'ingenyus*' + pageTitle;
+                document.title = 'Científicas que nos inspiran*' + pageTitle;
             }
             resetTimer();
         };

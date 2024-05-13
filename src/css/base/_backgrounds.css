@@ -1,3 +1,9 @@
+.backgroundSolid {
+    position: relative;
+    background-size: cover;
+    background: var(--codgray);
+    z-index: -1;
+}
 .noiseBack {
     position: absolute;
     top: 0;
@@ -7,7 +13,7 @@
     background-image: url('/noise.png');
     background-size: cover;
     background-position: center;
-    z-index: 0;
+    z-index: 2;
 }
 
 .blurBack {
@@ -24,6 +30,7 @@
     height: 80vw;
     width: 634.83px;
     height: 711.31px;
+    z-index: 1;
 }
 
 .ellipseBlue {
@@ -35,6 +42,7 @@
     height: 80vw;
     width: 634.83px;
     height: 711.31px;
+    z-index: 1;
 }
 
 #e7 {

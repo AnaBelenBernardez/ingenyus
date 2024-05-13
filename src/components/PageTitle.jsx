@@ -24,7 +24,7 @@ function PageTitle() {
         resetTimer();
 
         const updatePageTitle = () => {
-            const currentPath = window.location.pathname;
+            const currentPath = location.pathname;
             let pageTitle = '';
 
             if (currentPath === '/') {

@@ -11,7 +11,7 @@ footer {
     overflow: hidden;
     position: sticky;
     bottom: 0;
-    z-index: -1;
+    z-index: -10;
 }
 
 footer > * a {
@@ -52,6 +52,10 @@ footer > * a:hover {
 .unete > p {
     font-weight: 400;
     font-family: 'Satoshi-Light';
+}
+
+.address > a {
+    font-style: normal;
 }
 
 .social {

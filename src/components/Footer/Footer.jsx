@@ -18,45 +18,60 @@ function Footer() {
     const { t } = useTranslation();
     return (
         <footer>
-            <ul className='footertext'>
-                <li className='unusual'>unusual agency</li>
-                <li>
-                    <a href='mailto:hola@ingenyus.es'>hola@ingenyus.es</a>
-                </li>
-                <li className='unete'>
-                    <p>únete al equipo</p>
-                    <a href='mailto:talent@ingenyus.es'>talent@ingenyus.es</a>
-                </li>
-                <li>
-                    <a href='tel:+34 981 227 225 '>+34 981 227 225</a>
-                </li>
-                <li>
-                    <a href='tel:+34 968 107 558'>+34 968 107 558</a>
-                </li>
-                <a
-                    className='direction'
-                    href='https://www.google.com/search?q=ingenyus-marketing-consultoria'
-                >
-                    R. Real, 24, 1º, 15003 A Coruña
-                </a>
-            </ul>
-            <section className='social'>
+            <nav>
+                <ul className='footertext'>
+                    <li className='unusual'>unusual agency</li>
+                    <li>
+                        <a href='mailto:hola@ingenyus.es'>hola@ingenyus.es</a>
+                    </li>
+                    <li className='unete'>
+                        <p>únete al equipo</p>
+                        <a href='mailto:talent@ingenyus.es'>
+                            talent@ingenyus.es
+                        </a>
+                    </li>
+                    <li>
+                        <a href='tel:+34 981 227 225 '>+34 981 227 225</a>
+                    </li>
+                    <li>
+                        <a href='tel:+34 968 107 558'>+34 968 107 558</a>
+                    </li>
+                    <li>
+                        <address className='address'>
+                            <a
+                                href='https://www.google.com/search?q=ingenyus-marketing-consultoria'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
+                                R. Real, 24, 1º, 15003 A Coruña
+                            </a>
+                        </address>
+                    </li>
+                </ul>
+            </nav>
+            <nav className='social'>
                 <a href='https://www.linkedin.com/company/ingenyus/'>
                     <FontAwesomeIcon
                         icon={faLinkedin}
                         className='socialIcons'
+                        aria-label='LinkedIn'
                     />
                 </a>
                 <a href='https://twitter.com/i/flow/login?redirect_after_login=%2Fingenyus_es'>
-                    <FontAwesomeIcon icon={faTwitter} className='socialIcons' />
+                    <FontAwesomeIcon
+                        icon={faTwitter}
+                        className='socialIcons'
+                        aria-label='Twitter'
+                    />
                 </a>
                 <a href='https://www.instagram.com/ingenyus.es'>
                     <FontAwesomeIcon
                         className='socialIcons'
                         icon={faInstagram}
+                        aria-label='Instagram'
                     />
                 </a>
-            </section>
+            </nav>
             <a
                 className='kit'
                 target='_blank'
@@ -65,7 +80,7 @@ function Footer() {
                 Kit Digital
             </a>
 
-            <p>Formamos parte de:</p>
+            <p>{t('translation.part-of')}</p>
             <section className='logos'>
                 <img src={logoasebio} alt='Logo ASEBIO' />
                 <img
@@ -88,7 +103,7 @@ function Footer() {
                     rel='noopener noreferrer'
                     href='https://www.ingenyus.es/aviso-legal/'
                 >
-                      {t('translation.legal-notice')}
+                    {t('translation.legal-notice')}
                 </a>
                 <a
                     className='direction'
@@ -96,7 +111,7 @@ function Footer() {
                     rel='noopener noreferrer'
                     href='https://www.ingenyus.es/politica-privacidad/'
                 >
-                   {t('translation.privacy-policy')}
+                    {t('translation.privacy-policy')}
                 </a>
                 <a
                     className='direction'
@@ -104,7 +119,7 @@ function Footer() {
                     rel='noopener noreferrer'
                     href='https://www.ingenyus.es/politica-cookies/'
                 >
-                  {t('translation.cookies-policy')}
+                    {t('translation.cookies-policy')}
                 </a>
             </section>
         </footer>

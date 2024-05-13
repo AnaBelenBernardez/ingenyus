@@ -13,7 +13,7 @@ const MobileNavHome = () => {
                         <img
                             className='navAddons'
                             src='./logos/in_asterisco.svg'
-                            alt=''
+                            alt='Logo ingenyus'
                         />
                     </span>
                     <button className='buttonNavHome lastikNavHome'>

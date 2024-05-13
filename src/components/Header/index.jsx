@@ -20,7 +20,7 @@ function Header() {
     }, []);
 
     return (
-        <header>
+        <header role='banner' aria-label='Header'>
             {isDesktop ? <Nav /> : <BurgerNav />}
             <Home className='home' />
         </header>

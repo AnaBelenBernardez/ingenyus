@@ -17,7 +17,11 @@ function LanguageSelector() {
         <>
             <div className='languageSelector'>
                 <li>
-                    <ul id='languageSelector' onClick={toggleLanguages}>
+                    <ul
+                        id='languageSelector'
+                        onClick={toggleLanguages}
+                        aria-expanded={showLanguages}
+                    >
                         <li
                             className={`buttonNav buttonLang language ${i18n.language === 'es' ? 'active' : ''}`}
                             onClick={() => handleChangeLanguage('es')}

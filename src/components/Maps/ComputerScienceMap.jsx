@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import ScrollToTop from '../ScrollToTop';
 import data from '../../../public/data.json';
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 export default function ComputerScienceMap() {
     const { i18n } = useTranslation();
     const { t } = useTranslation();

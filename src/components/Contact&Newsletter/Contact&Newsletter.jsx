@@ -24,22 +24,22 @@ export function Contact_Newsletter() {
                 </div>
                 <div className='newsletter_right'>
                     <form className='newsletter_email' action=''>
-                        <label className='nc_email' htmlFor=''>
+                        <label className='nc_email' htmlFor='email'>
                             email*
                         </label>
                         <input type='hidden' name='u' />
                         <input type='hidden' name='id' value='ef5c40ecca' />
                         <input
-                            className={`hidden_form_input ${clickedInput === 'emaile' ? 'clicked' : ''}`}
+                            className={`hidden_form_input ${clickedInput === 'email' ? 'clicked' : ''}`}
                             type='email'
                             autoCapitalize='off'
                             autoCorrect='off'
                             placeholder='email@ejemplo.com'
-                            onClick={() => setClickedInput('emaile')}
+                            onClick={() => setClickedInput('email')}
                             onChange={handleInputChangeEmailNewsletter}
                             onBlur={() => setClickedInput(false)}
-                            name='EMAIL'
-                            id='EMAIL'
+                            name='email'
+                            id='email'
                             size='25'
                         />
                         <div

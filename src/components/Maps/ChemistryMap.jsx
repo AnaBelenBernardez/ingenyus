@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import ScrollToTop from '../ScrollToTop';
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 import data from '../../../public/data.json';
 export default function ChemistryMap() {
@@ -31,7 +31,6 @@ export default function ChemistryMap() {
         if (!containerRef.current || !scientistRefs.current.length) return;
 
         const containerTop = containerRef.current.offsetTop;
-        const containerHeight = containerRef.current.offsetHeight;
         const windowHeight = window.innerHeight;
         const windowCenter = scrollPosition + windowHeight / 3.5;
 

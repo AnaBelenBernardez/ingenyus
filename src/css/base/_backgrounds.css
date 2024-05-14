@@ -14,7 +14,7 @@
     background-size: cover;
     background-position: center;
     z-index: 2;
-    position: fixed;
+    position: absolute;
 }
 
 .blurBack {

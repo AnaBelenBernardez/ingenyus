@@ -9,6 +9,8 @@
     color: var(--athens);
     font-family: 'Satoshi-Light';
     align-items: center;
+    position: relative;
+    z-index: 6;
 }
 
 .both_title {

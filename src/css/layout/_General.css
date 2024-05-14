@@ -18,7 +18,7 @@
     position: fixed;
     bottom: 1.5rem;
     right: 1.5rem;
-    z-index: 400;
+    z-index: 400 !important;
     background-color: transparent;
     border: none;
     outline: none;

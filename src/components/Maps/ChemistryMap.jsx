@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import ScrollToTop from '../ScrollToTop';
 import { useState, useEffect, useRef } from 'react';
 
 import data from '../../../public/data.json';
@@ -63,7 +62,6 @@ export default function ChemistryMap() {
 
     return (
         <>
-            <ScrollToTop />
             <section className='section_text' ref={containerRef}>
                 <div>
                     <p className='section_title'>

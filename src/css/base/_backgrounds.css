@@ -13,7 +13,7 @@
     background-image: url('/noise.png');
     background-size: cover;
     background-position: center;
-    z-index: 2;
+    z-index: 6;
     position: absolute;
 }
 

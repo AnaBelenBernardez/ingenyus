@@ -1,4 +1,3 @@
-import ScrollToTop from '../ScrollToTop';
 import { useTranslation } from 'react-i18next';
 import { useState, useEffect, useRef } from 'react';
 
@@ -61,7 +60,6 @@ export default function MathematicsMap() {
 
     return (
         <>
-            <ScrollToTop />
             <section className='section_text'>
                 <div>
                     <p className='section_title'>

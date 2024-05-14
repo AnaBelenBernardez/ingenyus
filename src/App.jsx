@@ -13,6 +13,7 @@ import PageTitle from './components/PageTitle';
 import ScrollBar from './components/ScrollBar';
 import Footer from './components/Footer/Footer';
 import { ErrorPage } from './pages/ErrorPage';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
     return (
@@ -30,6 +31,7 @@ function App() {
                 <Route path='/medicine' element={<Medicine />} />
                 <Route path='*' element={<ErrorPage />} />
             </Routes>
+            <ScrollToTop />
             <Contact_Newsletter />
             <Footer />
         </>

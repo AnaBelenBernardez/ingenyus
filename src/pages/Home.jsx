@@ -59,63 +59,58 @@ const Home = () => {
 
     return (
         <>
-            <main className=' homePage blurBack'>
-                <div className='backgroundSolid'>
-                    <div className='ellipseWhite' id='e8'></div>
-                    <div className='ellipseBlue' id='e7'></div>
-                    <div className='ellipseBlue' id='e10'></div>
-                    <div className='ellipseWhite' id='e9'></div>
-                    <div className='ellipseWhite' id='e11'></div>
-                    <div className='noiseBack'></div>
-                    <div className='landingHome'>
-                        <h1 className='homeTitle'>
-                            <span id='homeTitle1'>
-                                {' '}
-                                {t('translation.title')}
-                            </span>
-                            <span id='homeTitle2'>
-                                <img
-                                    id='homeHABAddon'
-                                    className={isEnglish ? 'englishAddon' : ''}
-                                    src='./logos/HAB_icon.svg'
-                                    alt=''
-                                />
-                                {t('translation.title2')}
-                            </span>
-                            <span
-                                id='homeTitle3'
-                                className={isEnglish ? 'englishTitle' : ''}
+            <main className=' homePage blurBack backgroundSolid'>
+                <div className='ellipseWhite' id='e8'></div>
+                <div className='ellipseBlue' id='e7'></div>
+                <div className='ellipseBlue' id='e10'></div>
+                <div className='ellipseWhite' id='e9'></div>
+                <div className='ellipseWhite' id='e11'></div>
+                <div className='noiseBack'></div>
+                <div className='landingHome'>
+                    <h1 className='homeTitle'>
+                        <span id='homeTitle1'> {t('translation.title')}</span>
+                        <span id='homeTitle2'>
+                            <img
+                                id='homeHABAddon'
+                                className={isEnglish ? 'englishAddon' : ''}
+                                src='./logos/HAB_icon.svg'
+                                alt=''
+                            />
+                            {t('translation.title2')}
+                        </span>
+                        <span
+                            id='homeTitle3'
+                            className={isEnglish ? 'englishTitle' : ''}
+                        >
+                            {t('translation.title3')}
+                            <img
+                                id='homeINAddon'
+                                className={isEnglish ? 'englishAddon' : ''}
+                                src='./logos/in_asterisco.svg'
+                                alt=''
+                            />
+                        </span>
+                    </h1>
+                    <span className='colab'>ingenyus x hack a boss</span>
+                    <div className='homeScrollContainer'>
+                        <span>scroll</span>
+                        <div className='homeScroll'>
+                            <svg
+                                width='14'
+                                height='9'
+                                viewBox='0 0 14 9'
+                                fill='none'
+                                xmlns='http://www.w3.org/2000/svg'
                             >
-                                {t('translation.title3')}
-                                <img
-                                    id='homeINAddon'
-                                    className={isEnglish ? 'englishAddon' : ''}
-                                    src='./logos/in_asterisco.svg'
-                                    alt=''
+                                <path
+                                    d='M6.6678 8.14006L0.0512695 1.52353L0.699949 0.874847L6.6678 6.8427L12.6357 0.874847L13.2843 1.52353L6.6678 8.14006Z'
+                                    fill='var(--athens)'
                                 />
-                            </span>
-                        </h1>
-                        <span className='colab'>ingenyus x hack a boss</span>
-                        <div className='homeScrollContainer'>
-                            <span>scroll</span>
-                            <div className='homeScroll'>
-                                <svg
-                                    width='14'
-                                    height='9'
-                                    viewBox='0 0 14 9'
-                                    fill='none'
-                                    xmlns='http://www.w3.org/2000/svg'
-                                >
-                                    <path
-                                        d='M6.6678 8.14006L0.0512695 1.52353L0.699949 0.874847L6.6678 6.8427L12.6357 0.874847L13.2843 1.52353L6.6678 8.14006Z'
-                                        fill='var(--athens)'
-                                    />
-                                </svg>
-                            </div>
+                            </svg>
                         </div>
                     </div>
-                    {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
                 </div>
+                {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
             </main>
         </>
     );

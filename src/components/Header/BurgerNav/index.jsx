@@ -1,5 +1,5 @@
+import React, { useState } from 'react';
 import { slide as BurgerMenu } from 'react-burger-menu';
-import { useState } from 'react';
 import './style.css';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -7,11 +7,11 @@ import LanguageSelector from '../LanguageSelector';
 
 const BurgerNav = () => {
     const [isOpen, setIsOpen] = useState(false);
-
     const { t } = useTranslation();
 
     const handleItemClick = () => {
-        setIsOpen(false);
+        setIsOpen(false); // Cerramos el menú primero
+        window.scrollTo(0, 0); // Luego hacemos scroll hacia arriba
     };
 
     const handleMenuOpen = () => {

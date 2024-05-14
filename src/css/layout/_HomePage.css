@@ -1,3 +1,10 @@
+.backgroundSolid {
+    position: relative;
+    background-size: cover;
+    background: var(--codgray);
+    z-index: 2;
+}
+
 .homePage {
     position: relative;
     display: flex;
@@ -112,7 +119,8 @@
     justify-content: center;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    z-index: 0;
+    color: var(--athens);
+    z-index: 5;
 }
 
 .homeNav > ul {
@@ -285,7 +293,7 @@
         right: 1rem;
         top: -15rem;
         pointer-events: none;
-        z-index: 5;
+        z-index: 6;
     }
 
     .cursor {
@@ -299,5 +307,6 @@
 
     .homeNav:hover + .cursor {
         display: block;
+        z-index: 5;
     }
 }

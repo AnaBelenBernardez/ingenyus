@@ -54,6 +54,7 @@ const Physics = () => {
     }
     return (
         <main className='mainMap blurBack'>
+            <div className='noiseBack'> </div>
             <div className='backgroundSolid'>
                 <PhysicsMap />
                 <div className='ellipseWhiteMap' id='e22'></div>

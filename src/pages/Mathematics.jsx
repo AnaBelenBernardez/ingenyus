@@ -54,6 +54,7 @@ const Mathematics = () => {
     }
     return (
         <main className='mainMap blurBack'>
+            <div className='noiseBack'> </div>
             <div className='backgroundSolid'>
                 <MathematicsMap />
                 <div className='ellipseWhiteMap' id='e22'></div>

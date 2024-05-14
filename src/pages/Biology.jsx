@@ -54,6 +54,7 @@ const Biology = () => {
     }
     return (
         <main className='mainMap blurBack'>
+            <div className='noiseBack'> </div>
             <div className='backgroundSolid'>
                 <BiologyMap />
 

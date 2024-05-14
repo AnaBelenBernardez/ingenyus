@@ -17,7 +17,7 @@ function Nav() {
                 <li>
                     <button className='buttonNav' onClick={goToTop}>
                         <NavLink
-                            exact={true}
+                            exact='true'
                             to='/'
                             activeclassname='active'
                             aria-label='Home'

@@ -293,7 +293,7 @@
         right: 1rem;
         top: -15rem;
         pointer-events: none;
-        z-index: 5;
+        z-index: 6;
     }
 
     .cursor {
@@ -307,5 +307,6 @@
 
     .homeNav:hover + .cursor {
         display: block;
+        z-index: 5;
     }
 }

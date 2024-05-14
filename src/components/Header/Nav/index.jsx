@@ -19,7 +19,7 @@ function Nav() {
                         <NavLink
                             exact={true}
                             to='/'
-                            activeClassName='active'
+                            activeclassname='active'
                             aria-label='Home'
                         >
                             home

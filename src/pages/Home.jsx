@@ -59,7 +59,7 @@ const Home = () => {
 
     return (
         <>
-            <main className=' homePage blurBack backgroundSolid'>
+            <main className='homePage blurBack backgroundSolid'>
                 <div className='ellipseWhite' id='e8'></div>
                 <div className='ellipseBlue' id='e7'></div>
                 <div className='ellipseBlue' id='e10'></div>

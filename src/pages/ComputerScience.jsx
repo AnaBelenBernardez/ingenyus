@@ -54,6 +54,7 @@ const ComputerScience = () => {
     }
     return (
         <main className='mainMap blurBack'>
+            <div className='noiseBack'> </div>
             <div className='backgroundSolid'>
                 <ComputerScienceMap />
                 <div className='ellipseWhiteMap' id='e22'></div>

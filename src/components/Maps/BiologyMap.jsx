@@ -1,4 +1,3 @@
-import ScrollToTop from '../ScrollToTop';
 import { useTranslation } from 'react-i18next';
 import data from '../../../public/data.json';
 import '../../css/layout/_Maps.css';
@@ -62,7 +61,6 @@ export default function BiologyMaps() {
 
     return (
         <>
-            <ScrollToTop />
             <section className='section_text'>
                 <div>
                     <p className='section_title'>{t('translation.biology')}</p>

@@ -1,4 +1,3 @@
-import ScrollToTop from '../ScrollToTop';
 import { useTranslation } from 'react-i18next';
 import data from '../../../public/data.json';
 import { useState, useEffect, useRef } from 'react';
@@ -60,7 +59,6 @@ export default function PhysicsMaps() {
 
     return (
         <>
-            <ScrollToTop />
             <section className='section_text'>
                 <div>
                     <p className='section_title'>{t('translation.physics')}</p>

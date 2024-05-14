@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import ScrollToTop from '../ScrollToTop';
 import data from '../../../public/data.json';
 import { useState, useEffect, useRef } from 'react';
 export default function ComputerScienceMap() {
@@ -60,7 +59,6 @@ export default function ComputerScienceMap() {
 
     return (
         <>
-            <ScrollToTop />
             <section className='section_text'>
                 <div>
                     <p className='section_title'>

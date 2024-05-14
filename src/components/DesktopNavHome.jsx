@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 import data from '../../public/data.json';
@@ -49,6 +48,10 @@ const DesktopNavHome = () => {
         setCursorImage(null);
     };
 
+    const goToTop = () => {
+        window.scrollTo(0, 0);
+    };
+
     return (
         <>
             <nav className='homeNav'>
@@ -70,6 +73,7 @@ const DesktopNavHome = () => {
                             <NavLink
                                 to='/chemistry'
                                 aria-label={t('translation.chemistry')}
+                                onClick={goToTop}
                             >
                                 {t('translation.chemistry')}
                             </NavLink>
@@ -83,6 +87,7 @@ const DesktopNavHome = () => {
                             <NavLink
                                 to='/physics'
                                 aria-label={t('translation.physics')}
+                                onClick={goToTop}
                             >
                                 {t('translation.physics')}
                             </NavLink>
@@ -98,6 +103,7 @@ const DesktopNavHome = () => {
                             <NavLink
                                 to='/biology'
                                 aria-label={t('translation.biology')}
+                                onClick={goToTop}
                             >
                                 {t('translation.biology')}
                             </NavLink>
@@ -113,6 +119,7 @@ const DesktopNavHome = () => {
                             <NavLink
                                 to='/computer-science'
                                 aria-label={t('translation.computerScience')}
+                                onClick={goToTop}
                             >
                                 {t('translation.computerScience')}
                             </NavLink>
@@ -129,6 +136,7 @@ const DesktopNavHome = () => {
                             <NavLink
                                 to='/mathematics'
                                 aria-label={t('translation.mathematics')}
+                                onClick={goToTop}
                             >
                                 {t('translation.mathematics')}
                             </NavLink>
@@ -143,6 +151,7 @@ const DesktopNavHome = () => {
                             <NavLink
                                 to='/medicine'
                                 aria-label={t('translation.medicine')}
+                                onClick={goToTop}
                             >
                                 {t('translation.medicine')}
                             </NavLink>

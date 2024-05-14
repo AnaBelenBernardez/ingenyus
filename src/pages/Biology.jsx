@@ -53,6 +53,7 @@ const Biology = () => {
     }
     return (
         <main className='mainMap blurBack backgroundSolid'>
+            <div className='noiseBack'></div>
             <BiologyMap />
             <div className='ellipseWhiteMap' id='e22'></div>
             <div className='ellipseWhiteMap' id='e18'></div>
@@ -68,7 +69,6 @@ const Biology = () => {
             <div className='ellipseBlueMap' id='e20'></div>
             <div className='ellipseBlueMap' id='e17'></div>
             <div className='ellipseBlueMap' id='e16'></div>
-            <div className='noiseBack'></div>
             {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
             <BodyAddons />
         </main>

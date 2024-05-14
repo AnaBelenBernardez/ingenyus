@@ -37,7 +37,6 @@ const Home = () => {
         fetch('/data.json')
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
                 clearTimeout(showLoadingTimeout);
                 setIsLoading(false);
                 setShowLoading(false);

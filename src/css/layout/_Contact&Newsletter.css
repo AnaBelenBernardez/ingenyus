@@ -132,6 +132,8 @@
 
 .animation_checkbox.slideUpCheckbox {
     animation: slideUpCheckbox 1s ease forwards;
+    visibility: hidden;
+    transition: 700ms ease;
 }
 
 .checkbox_email_confirm label {
@@ -146,7 +148,7 @@
 @keyframes slideDownCheckbox {
     from {
         opacity: 0;
-        transform: translateY(-20%);
+        transform: translateY(-5%);
     }
 
     to {
@@ -163,7 +165,7 @@
 
     to {
         opacity: 0;
-        transform: translateY(-20%);
+        transform: translateY(-5%);
     }
 }
 

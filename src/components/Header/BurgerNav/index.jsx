@@ -10,29 +10,26 @@ const BurgerNav = () => {
 
     const { t } = useTranslation();
 
+    const handleMenuToggle = () => {
+        setIsOpen(!isOpen);
+    };
+
     const handleItemClick = () => {
         setIsOpen(false);
+
     };
 
-    const handleMenuOpen = () => {
-        setIsOpen(true);
-    };
 
-    const handleMenuClose = () => {
-        setIsOpen(false);
-    };
 
     return (
-        <BurgerMenu
-            right
-            width={'100%'}
-            isOpen={isOpen}
-            className='burgerMenu'
-            onOpen={handleMenuOpen}
-            onClose={handleMenuClose}
-            noOverlay
-        >
-            <nav className='navBurger'>
+        <>
+
+            <div className={`botaoHamburguer ${isOpen ? 'open' : ''}`} id="nav-icon4" onClick={handleMenuToggle}>
+                <span></span>
+                <span className="hoverEffect"></span>
+                <span></span>
+            </div>
+            <nav className={`navBurger ${isOpen ? 'open' : 'close'}`}>
                 <ul>
                     <li>
                         <button className='buttonNav' onClick={handleItemClick}>
@@ -86,7 +83,72 @@ const BurgerNav = () => {
                     <LanguageSelector />
                 </ul>
             </nav>
-        </BurgerMenu>
+
+        </>
+
+
+        // <BurgerMenu
+        //     right
+        //     width={'100%'}
+        //     isOpen={isOpen}
+        //     className='burgerMenu'
+        //     onStateChange={(state) => setIsOpen(state.isOpen)}
+        // >
+        //     <nav className='navBurger'>
+        //         <ul>
+        //             <li>
+        //                 <button className='buttonNav' onClick={handleItemClick}>
+        //                     <NavLink exact='true' to='/'>
+        //                         home
+        //                     </NavLink>
+        //                 </button>
+        //             </li>
+        //             <li>
+        //                 <button className='buttonNav' onClick={handleItemClick}>
+        //                     <NavLink to='chemistry'>
+        //                         {t('translation.chemistry')}
+        //                     </NavLink>
+        //                 </button>
+        //             </li>
+        //             <li>
+        //                 <button className='buttonNav' onClick={handleItemClick}>
+        //                     <NavLink to='physics'>
+        //                         {t('translation.physics')}
+        //                     </NavLink>
+        //                 </button>
+        //             </li>
+        //             <li>
+        //                 <button className='buttonNav' onClick={handleItemClick}>
+        //                     <NavLink to='biology'>
+        //                         {t('translation.biology')}
+        //                     </NavLink>
+        //                 </button>
+        //             </li>
+        //             <li>
+        //                 <button className='buttonNav' onClick={handleItemClick}>
+        //                     <NavLink to='computer-science'>
+        //                         {t('translation.computerScience')}
+        //                     </NavLink>
+        //                 </button>
+        //             </li>
+        //             <li>
+        //                 <button className='buttonNav' onClick={handleItemClick}>
+        //                     <NavLink to='mathematics'>
+        //                         {t('translation.mathematics')}
+        //                     </NavLink>
+        //                 </button>
+        //             </li>
+        //             <li>
+        //                 <button className='buttonNav' onClick={handleItemClick}>
+        //                     <NavLink to='medicine'>
+        //                         {t('translation.medicine')}
+        //                     </NavLink>
+        //                 </button>
+        //             </li>
+        //             <LanguageSelector />
+        //         </ul>
+        //     </nav>
+        // </BurgerMenu>
     );
 };
 

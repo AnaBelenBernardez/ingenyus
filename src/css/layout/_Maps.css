@@ -20,6 +20,7 @@
 
 .left_side {
     order: 1;
+
 }
 
 .right-side {
@@ -174,8 +175,8 @@
 
     .right-side>* {
         border: 0.8px solid var(--athens);
-        margin-left: 8rem;
-        margin-right: 8rem;
+        margin-left: 5rem;
+        margin-right: 3rem;
     }
 
     .right-side> :not(:first-child) {
@@ -185,7 +186,7 @@
     }
 
     .right-side> :last-child {
-        padding-bottom: 9rem;
+        padding-bottom: 8rem;
     }
 
     .text-box {
@@ -200,5 +201,32 @@
 
     .text-date {
         padding-top: 1rem;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .right-side>* {
+        border: 0.8px solid var(--athens);
+        margin-left: 7.8rem;
+        margin-right: 7.8rem;
+    }
+
+    .right-side> :last-child {
+        padding-bottom: 8rem;
+    }
+
+    .text-description,
+    .text-date {
+        font-size: 15px;
+    }
+
+    .text-name {
+        font-size: 25px
+    }
+
+    .text-box {
+        padding-bottom: 3rem;
+        font-size: 16px;
     }
 }

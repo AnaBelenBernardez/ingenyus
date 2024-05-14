@@ -14,7 +14,7 @@
 .scroll-to-top {
     position: fixed;
     bottom: 1.5rem;
-    right: 1.5rem;
+    right: 0.6rem;
     z-index: 400;
     background-color: transparent;
     border: none;
@@ -36,12 +36,14 @@
         right: 3rem;
         scale: 2;
     }
+
     .errorPage {
         display: flex;
         flex-direction: column;
         background-color: var(--codgray);
         height: 100vh;
     }
+
     .errorcode {
         display: flex;
         flex-direction: column;
@@ -58,6 +60,7 @@
         font-weight: 900;
         color: #f7f7f8;
     }
+
     .redireccion {
         background-color: transparent;
         border-radius: 25px;
@@ -68,6 +71,7 @@
         position: fixed;
         bottom: 4rem;
     }
+
     .redireccion:hover {
         background-color: var(--athens);
         color: var(--codgray);

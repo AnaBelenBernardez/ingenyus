@@ -137,7 +137,7 @@
     width: 50%;
 }
 
-.checkbox_email_confirm>label>a {
+.checkbox_email_confirm > label > a {
     font-family: 'Satoshi-Light';
     text-decoration: none;
     color: var(--athens);

@@ -16,7 +16,7 @@ const BodyAddons = () => {
                 alt=''
             />
             <div id='colabBody'>
-                <span className='colab'>ingenyus x hack a boss</span>
+                <span className='colab'>ingenyus x HACK A BOSS</span>
             </div>
         </>
     );

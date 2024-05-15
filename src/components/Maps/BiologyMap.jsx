@@ -84,7 +84,9 @@ export default function BiologyMaps() {
                         <article className='right-side'>
                             <div className='text-title'>
                                 <h1 className='text-name'>{item.name}</h1>
-                                <span className='text-date'>{item.date}</span>
+                                <span className='text-date' aria-label='Fecha'>
+                                    {item.date}
+                                </span>
                             </div>
                             <h2 className='text-description'>
                                 {item.description}

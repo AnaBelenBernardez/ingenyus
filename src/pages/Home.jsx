@@ -90,7 +90,7 @@ const Home = () => {
                             />
                         </span>
                     </h1>
-                    <span className='colab'>ingenyus x hack a boss</span>
+                    <span className='colab'>ingenyus x HACK A BOSS</span>
                     <div className='homeScrollContainer'>
                         <span>scroll</span>
                         <div className='homeScroll'>

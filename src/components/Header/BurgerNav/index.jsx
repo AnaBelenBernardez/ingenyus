@@ -24,9 +24,12 @@ const BurgerNav = () => {
                 id='nav-icon4'
                 onClick={handleMenuToggle}
             >
-                <span></span>
-                <span className='hoverEffect'></span>
-                <span></span>
+                <div className='botao-hover'>
+
+                    <span></span>
+                    <span className='hoverEffect'></span>
+                    <span></span>
+                </div>
             </div>
             <nav className={`navBurger ${isOpen ? 'open' : 'close'}`}>
                 <ul>

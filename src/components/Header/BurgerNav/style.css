@@ -28,6 +28,21 @@
     width: 1rem;
     z-index: 1;
     margin-top: -0.4rem;
+    /* Adiciona o cursor pointer para o estado normal */
+}
+
+.botao-hover {
+    margin-bottom: 5px;
+    width: 3.8rem;
+    height: 3.3rem;
+
+    cursor: pointer;
+}
+
+
+.botaoHamburguer:hover {
+    cursor: pointer;
+    /* Garante que o cursor de ponteiro apareça ao passar o mouse */
 }
 
 #nav-icon1,

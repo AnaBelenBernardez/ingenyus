@@ -31,7 +31,6 @@
 
 .left_side {
     order: 1;
-
 }
 
 .right-side {
@@ -201,7 +200,7 @@
         border-top: none;
     }
 
-    .right-side> :last-child {
+    .right-side > :last-child {
         padding-bottom: 8rem;
     }
 
@@ -219,15 +218,14 @@
     }
 }
 
-
 @media (min-width: 769px) and (max-width: 1200px) {
-    .right-side>* {
+    .right-side > * {
         border: 0.8px solid var(--athens);
         margin-left: 7.8rem;
         margin-right: 7.8rem;
     }
 
-    .right-side> :last-child {
+    .right-side > :last-child {
         padding-bottom: 8rem;
     }
 
@@ -237,12 +235,11 @@
     }
 
     .text-name {
-        font-size: 25px
+        font-size: 25px;
     }
 
     .text-box {
         padding-bottom: 3rem;
         font-size: 16px;
     }
-}
 }

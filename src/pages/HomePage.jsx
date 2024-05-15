@@ -1,13 +1,16 @@
 import { useTranslation } from 'react-i18next';
 import '../css/layout/_HomePage.css';
 import '../css/layout/_General.css';
-import MobileNavHome from '../components/MobileNavHome';
+import MobileNavHome from '../components/MobileNavHome.jsx';
 import { useState, useEffect } from 'react';
-import DesktopNavHome from '../components/DesktopNavHome';
+import DesktopNavHome from '../components/DesktopNavHome.jsx';
 import Loading from '../components/Loading/index.jsx';
 import '../css/base/_backgrounds.css';
+import Header from '../components/Header/index.jsx';
+import { Contact_Newsletter } from '../components/Contact&Newsletter/Contact&Newsletter.jsx';
+import Footer from '../components/Footer/Footer.jsx';
 
-const Home = () => {
+const HomePage = () => {
     const { t, i18n } = useTranslation();
 
     const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1200);
@@ -58,6 +61,7 @@ const Home = () => {
 
     return (
         <>
+            <Header />
             <main className='homePage blurBack backgroundSolid'>
                 <div className='ellipseWhite' id='e8'></div>
                 <div className='ellipseBlue' id='e7'></div>
@@ -111,8 +115,10 @@ const Home = () => {
                 </div>
                 {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
             </main>
+            <Contact_Newsletter />
+            <Footer />
         </>
     );
 };
 
-export default Home;
+export default HomePage;

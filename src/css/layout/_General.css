@@ -56,6 +56,8 @@
     font-weight: 900;
     color: var(--athens);
     pointer-events: none;
+    position: absolute;
+    top: -2.6rem !important;
 }
 
 .redireccion {
@@ -67,12 +69,18 @@
     border: 1px solid var(--athens);
     font-size: 16px;
     text-decoration: none;
-    bottom: 5rem;
+    margin-bottom: 1rem;
 }
 
 .redireccion:hover {
     background-color: var(--athens);
     color: var(--codgray);
+}
+
+.buttonHome {
+    position: absolute;
+    top: 4px;
+    scale: 0.83;
 }
 
 @media (min-width: 1200px) {
@@ -101,7 +109,6 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        opacity: 0.5;
         font-family: 'Satoshi-Black';
         font-weight: 900;
         color: var(--athens);

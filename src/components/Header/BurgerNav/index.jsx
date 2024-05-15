@@ -21,12 +21,14 @@ const BurgerNav = () => {
         <>
             <div
                 className={`botaoHamburguer ${isOpen ? 'open' : ''}`}
-                id='nav-icon4'
+                id='nav-icon'
                 onClick={handleMenuToggle}
             >
-                <span></span>
-                <span className='hoverEffect'></span>
-                <span></span>
+                <div className='botao-hover'>
+                    <span></span>
+                    <span className='hoverEffect'></span>
+                    <span></span>
+                </div>
             </div>
             <nav className={`navBurger ${isOpen ? 'open' : 'close'}`}>
                 <ul>

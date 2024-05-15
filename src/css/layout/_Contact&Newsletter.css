@@ -33,8 +33,9 @@
 
 .newsletter {
     display: flex;
-    gap: 3rem;
+    gap: 5rem;
     padding-top: 2.9rem;
+    max-width: 1500px;
 }
 
 .newsletter_left,
@@ -57,7 +58,6 @@
     border: none;
     border-bottom: 1px solid var(--athens);
     height: 25px;
-    width: 100%;
     outline: none;
 }
 
@@ -86,6 +86,7 @@
 }
 
 .button_contact {
+    padding-bottom: 3px;
     border-radius: 840px;
     font-size: 14.7px;
     font-weight: 400;
@@ -133,12 +134,14 @@
 
 .checkbox_email_confirm label {
     padding-left: 0.3rem;
+    width: 50%;
 }
 
-.checkbox_email_confirm > label > a {
+.checkbox_email_confirm>label>a {
     font-family: 'Satoshi-Light';
     text-decoration: none;
     color: var(--athens);
+    width: 20%;
 }
 
 .checkbox_email_confirm input {

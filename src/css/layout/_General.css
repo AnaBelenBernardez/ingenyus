@@ -1,14 +1,17 @@
 .noise {
-    background-image: url('noise.png');
+    background-image: url('/noise.png');
     background-size: cover;
-    /* background-size: contain; */
+    position: relative;
+    overflow: hidden;
+    z-index: 6;
 }
 
 .mainMap {
     font-weight: 400;
     color: var(--athens);
-    background-image: url('noise.png');
+    background-image: url('/noise.png');
     background-size: contain;
+    z-index: 6;
 }
 
 .scroll-to-top {
@@ -25,9 +28,51 @@
     scale: 1.5;
 }
 
+.scroll-to-top:hover .arrow-icon {
+    fill: var(--denim);
+}
+
 .scroll-to-top.show {
     opacity: 1;
     cursor: pointer;
+}
+
+.errorPage {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--codgray);
+    height: 100vh;
+}
+
+.errorcode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25vw;
+    position: absolute;
+    opacity: 0.2;
+    font-family: 'Satoshi-Black';
+    font-weight: 900;
+    color: var(--athens);
+    pointer-events: none;
+}
+
+.redireccion {
+    position: absolute;
+    background-color: transparent;
+    border-radius: 25px;
+    color: var(--athens);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--athens);
+    font-size: 16px;
+    text-decoration: none;
+    bottom: 5rem;
+}
+
+.redireccion:hover {
+    background-color: var(--athens);
+    color: var(--codgray);
 }
 
 @media (min-width: 1200px) {
@@ -76,4 +121,5 @@
         background-color: var(--athens);
         color: var(--codgray);
     }
+}
 }

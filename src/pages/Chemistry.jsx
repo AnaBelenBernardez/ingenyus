@@ -1,6 +1,7 @@
 import ChemistryMap from '../components/Maps/ChemistryMap';
 import '../css/layout/_General.css';
 import '../css/layout/_Maps.css';
+import '../css/base/_backgrounds.css';
 import Loading from '../components/Loading/index.jsx';
 import { useEffect, useState } from 'react';
 import DesktopNavHome from '../components/DesktopNavHome.jsx';
@@ -29,10 +30,9 @@ const Chemistry = () => {
             setShowLoading(true);
         }, 100);
 
-        fetch('../assets/data/data.json')
+        fetch('/data.json')
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
                 clearTimeout(showLoadingTimeout);
                 setIsLoading(false);
                 setShowLoading(false);
@@ -52,8 +52,23 @@ const Chemistry = () => {
         return <Loading />;
     }
     return (
-        <main className='mainMap'>
+        <main className='mainMap blurBack backgroundSolid'>
+            <div className='noiseBack'> </div>
             <ChemistryMap />
+            <div className='ellipseWhiteMap' id='e22'></div>
+            <div className='ellipseWhiteMap' id='e18'></div>
+            <div className='ellipseWhiteMap' id='e23'></div>
+            <div className='ellipseWhiteMap' id='e19'></div>
+            <div className='ellipseWhiteMap' id='e12'></div>
+            <div className='ellipseWhiteMap' id='e14'></div>
+            <div className='ellipseWhiteMap' id='e21'></div>
+            <div className='ellipseWhiteMap' id='e15'></div>
+            <div className='ellipseBlueMap' id='e24'></div>
+            <div className='ellipseBlueMap' id='e25'></div>
+            <div className='ellipseBlueMap' id='e13'></div>
+            <div className='ellipseBlueMap' id='e20'></div>
+            <div className='ellipseBlueMap' id='e17'></div>
+            <div className='ellipseBlueMap' id='e16'></div>
             {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
             <BodyAddons />
         </main>

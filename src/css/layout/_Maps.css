@@ -1,3 +1,13 @@
+.section_empty {
+    font-size: 60px;
+    font-family: 'Lastik', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
 .section_title {
     margin-left: 1.5rem;
     position: relative;
@@ -8,8 +18,9 @@
     font-weight: 400;
 }
 
-.section_text {
+.section_text * {
     color: var(--athens);
+    z-index: 0;
 }
 
 .item-container {
@@ -39,9 +50,10 @@
     font-family: 'Lastik', sans-serif;
     font-weight: 400;
     width: 60%;
+    z-index: 0;
 }
 
-.right-side>* {
+.right-side > * {
     border: 0.5px solid var(--athens);
     border-bottom: none;
     box-sizing: border-box;
@@ -58,13 +70,12 @@
     align-items: center;
 }
 
-
-.right-side> :not(:first-child) {
+.right-side > :not(:first-child) {
     padding: 1rem;
     border-bottom: 0.5px solid var(--athens);
 }
 
-.right-side> :last-child {
+.right-side > :last-child {
     padding-bottom: 3rem;
     border-top: none;
 }
@@ -74,10 +85,10 @@
     justify-content: center;
 }
 
-.left_side>img,
-.right-side>h1,
-.right-side>span,
-.right-side>h2 {
+.left_side > img,
+.right-side > h1,
+.right-side > span,
+.right-side > h2 {
     max-width: 100%;
 }
 
@@ -86,17 +97,18 @@
 }
 
 .text-box {
-    font-size: 9.5px;
+    font-size: 12px;
 }
 
 .text-date,
 .text-description {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 400;
 }
 
 .text-description {
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 .text-date {
@@ -105,8 +117,8 @@
     justify-content: center;
     padding-right: 1rem;
     line-height: 33px;
+    z-index: 0;
 }
-
 
 #colabBody {
     display: flex;
@@ -138,6 +150,10 @@
 
     #colabBody {
         margin-top: 20rem;
+    }
+
+    .section_empty {
+        font-size: 80px;
     }
 
     .section_title {
@@ -173,13 +189,13 @@
         margin-left: 1rem;
     }
 
-    .right-side>* {
+    .right-side > * {
         border: 0.8px solid var(--athens);
         margin-left: 5rem;
         margin-right: 3rem;
     }
 
-    .right-side> :not(:first-child) {
+    .right-side > :not(:first-child) {
         padding: 2rem;
         border-bottom: 0.8px solid var(--athens);
         border-top: none;
@@ -198,7 +214,6 @@
     .text-description {
         font-size: 20px;
     }
-
     .text-date {
         padding-top: 1rem;
     }
@@ -229,4 +244,5 @@
         padding-bottom: 3rem;
         font-size: 16px;
     }
+}
 }

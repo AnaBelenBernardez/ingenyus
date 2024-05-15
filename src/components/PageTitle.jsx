@@ -24,7 +24,7 @@ function PageTitle() {
         resetTimer();
 
         const updatePageTitle = () => {
-            const currentPath = window.location.pathname;
+            const currentPath = location.pathname;
             let pageTitle = '';
 
             if (currentPath === '/') {
@@ -56,7 +56,7 @@ function PageTitle() {
             if (inactive) {
                 document.title = randomMessage;
             } else {
-                document.title = 'ingenyus*' + pageTitle;
+                document.title = 'Científicas que nos inspiran*' + pageTitle;
             }
             resetTimer();
         };

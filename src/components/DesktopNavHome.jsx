@@ -1,9 +1,17 @@
-/* eslint-disable no-unused-vars */
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
-import data from '../assets/data/data.json';
+import data from '../../public/data.json';
 import i18n from 'i18next';
+import '../css/layout/_HomePage.css';
+
+const Cursor = ({ image }) => {
+    return (
+        <div className='cursor'>
+            {image && <img src={image} alt='cursorImage' />}
+        </div>
+    );
+};
 
 const DesktopNavHome = () => {
     const { t } = useTranslation();
@@ -40,6 +48,10 @@ const DesktopNavHome = () => {
         setCursorImage(null);
     };
 
+    const goToTop = () => {
+        window.scrollTo(0, 0);
+    };
+
     return (
         <>
             <nav className='homeNav'>
@@ -47,12 +59,7 @@ const DesktopNavHome = () => {
                     <li id='liCheNav'>
                         <button
                             className='buttonNavHome lastikNavHome'
-                            onMouseEnter={() =>
-                                handleMouseEnter(
-                                    'chemistry',
-                                    data[i18n.language]['chemistry'][0].src
-                                )
-                            }
+                            onMouseEnter={() => handleMouseEnter('chemistry')}
                             onMouseLeave={handleMouseLeave}
                         >
                             <span>
@@ -63,22 +70,25 @@ const DesktopNavHome = () => {
                                     alt=''
                                 />
                             </span>
-                            <NavLink to='chemistry'>
+                            <NavLink
+                                to='/chemistry'
+                                aria-label={t('translation.chemistry')}
+                                onClick={goToTop}
+                            >
                                 {t('translation.chemistry')}
                             </NavLink>
                         </button>
                         <button
                             className='buttonNavHome satoshiNavHome'
-                            onMouseEnter={() =>
-                                handleMouseEnter(
-                                    'physics',
-                                    data[i18n.language]['physics'][0].src
-                                )
-                            }
+                            onMouseEnter={() => handleMouseEnter('physics')}
                             onMouseLeave={handleMouseLeave}
                         >
                             <span className='navAddons'>/</span>
-                            <NavLink to='physics'>
+                            <NavLink
+                                to='/physics'
+                                aria-label={t('translation.physics')}
+                                onClick={goToTop}
+                            >
                                 {t('translation.physics')}
                             </NavLink>
                         </button>
@@ -86,32 +96,31 @@ const DesktopNavHome = () => {
                     <li id='liBioNav'>
                         <button
                             className='buttonNavHome lastikNavHome'
-                            onMouseEnter={() =>
-                                handleMouseEnter(
-                                    'biology',
-                                    data[i18n.language]['biology'][0].src
-                                )
-                            }
+                            onMouseEnter={() => handleMouseEnter('biology')}
                             onMouseLeave={handleMouseLeave}
                         >
                             <span className='navAddons'>{'>'}</span>
-                            <NavLink to='biology'>
+                            <NavLink
+                                to='/biology'
+                                aria-label={t('translation.biology')}
+                                onClick={goToTop}
+                            >
                                 {t('translation.biology')}
                             </NavLink>
                         </button>
                         <button
                             className='buttonNavHome lastikNavHome'
                             onMouseEnter={() =>
-                                handleMouseEnter(
-                                    'computerScience',
-                                    data[i18n.language]['computerScience'][0]
-                                        .src
-                                )
+                                handleMouseEnter('computerScience')
                             }
                             onMouseLeave={handleMouseLeave}
                         >
                             <span className='navAddons'>{'–'}</span>
-                            <NavLink to='computer-science'>
+                            <NavLink
+                                to='/computer-science'
+                                aria-label={t('translation.computerScience')}
+                                onClick={goToTop}
+                            >
                                 {t('translation.computerScience')}
                             </NavLink>
                         </button>
@@ -120,41 +129,37 @@ const DesktopNavHome = () => {
                     <li id='liMathNav'>
                         <button
                             className='buttonNavHome italicNavHome'
-                            onMouseEnter={() =>
-                                handleMouseEnter(
-                                    'mathematics',
-                                    data[i18n.language]['mathematics'][0].src
-                                )
-                            }
+                            onMouseEnter={() => handleMouseEnter('mathematics')}
                             onMouseLeave={handleMouseLeave}
                         >
                             <span className='navAddons'>#</span>
-                            <NavLink to='mathematics'>
+                            <NavLink
+                                to='/mathematics'
+                                aria-label={t('translation.mathematics')}
+                                onClick={goToTop}
+                            >
                                 {t('translation.mathematics')}
                             </NavLink>
                         </button>
 
                         <button
                             className='buttonNavHome lastikNavHome'
-                            onMouseEnter={() =>
-                                handleMouseEnter(
-                                    'medicine',
-                                    data[i18n.language]['medicine'][0].src
-                                )
-                            }
+                            onMouseEnter={() => handleMouseEnter('medicine')}
                             onMouseLeave={handleMouseLeave}
                         >
                             <span className='navAddons'>{'<'}</span>
-                            <NavLink to='medicine'>
+                            <NavLink
+                                to='/medicine'
+                                aria-label={t('translation.medicine')}
+                                onClick={goToTop}
+                            >
                                 {t('translation.medicine')}
                             </NavLink>
                         </button>
                     </li>
                 </ul>
             </nav>
-            <div className='cursor'>
-                {cursorImage && <img src={cursorImage} alt='cursorImage' />}
-            </div>
+            <Cursor image={cursorImage} />
         </>
     );
 };

@@ -95,6 +95,7 @@
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
     transform-origin: left center;
+
 }
 
 #nav-icon4.open span:nth-child(1) {

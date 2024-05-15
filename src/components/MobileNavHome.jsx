@@ -1,9 +1,13 @@
+import React from 'react';
 import { useTranslation } from 'react-i18next';
-import '../css/layout/_HomePage.css';
 import { NavLink } from 'react-router-dom';
 
 const MobileNavHome = () => {
     const { t } = useTranslation();
+
+    const goToTop = () => {
+        window.scrollTo(0, 0);
+    };
 
     return (
         <nav className='homeNav'>
@@ -13,51 +17,69 @@ const MobileNavHome = () => {
                         <img
                             className='navAddons'
                             src='./logos/in_asterisco.svg'
-                            alt=''
+                            alt='Logo ingenyus'
                         />
                     </span>
-                    <button className='buttonNavHome lastikNavHome'>
-                        <NavLink to='chemistry'>
+                    <button
+                        className='buttonNavHome lastikNavHome'
+                        onClick={goToTop}
+                    >
+                        <NavLink to='/chemistry'>
                             {t('translation.chemistry')}
                         </NavLink>
                     </button>
                 </li>
                 <li>
                     <span className='navAddons'>/</span>
-                    <button className='buttonNavHome satoshiNavHome'>
-                        <NavLink to='physics'>
+                    <button
+                        className='buttonNavHome satoshiNavHome'
+                        onClick={goToTop}
+                    >
+                        <NavLink to='/physics'>
                             {t('translation.physics')}
                         </NavLink>
                     </button>
                 </li>
                 <li>
                     <span className='navAddons'>{'>'}</span>
-                    <button className='buttonNavHome lastikNavHome'>
-                        <NavLink to='biology'>
+                    <button
+                        className='buttonNavHome lastikNavHome'
+                        onClick={goToTop}
+                    >
+                        <NavLink to='/biology'>
                             {t('translation.biology')}
                         </NavLink>
                     </button>
                 </li>
                 <li>
                     <span className='navAddons'>{'–'}</span>
-                    <button className='buttonNavHome lastikNavHome'>
-                        <NavLink to='computer-science'>
+                    <button
+                        className='buttonNavHome lastikNavHome'
+                        onClick={goToTop}
+                    >
+                        <NavLink to='/computer-science'>
                             {t('translation.computerScience')}
                         </NavLink>
                     </button>
                 </li>
                 <li>
                     <span className='navAddons'>#</span>
-                    <button className='buttonNavHome italicNavHome'>
-                        <NavLink to='mathematics'>
+                    <button
+                        className='buttonNavHome italicNavHome'
+                        onClick={goToTop}
+                    >
+                        <NavLink to='/mathematics'>
                             {t('translation.mathematics')}
                         </NavLink>
                     </button>
                 </li>
                 <li>
                     <span className='navAddons'>{'<'}</span>
-                    <button className='buttonNavHome lastikNavHome'>
-                        <NavLink to='medicine'>
+                    <button
+                        className='buttonNavHome lastikNavHome'
+                        onClick={goToTop}
+                    >
+                        <NavLink to='/medicine'>
                             {t('translation.medicine')}
                         </NavLink>
                     </button>

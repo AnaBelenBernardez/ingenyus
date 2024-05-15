@@ -13,6 +13,7 @@ import PageTitle from './components/PageTitle';
 import ScrollBar from './components/ScrollBar';
 import Footer from './components/Footer/Footer';
 import { ErrorPage } from './pages/ErrorPage';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
     return (
@@ -22,14 +23,15 @@ function App() {
             <ScrollBar />
             <Routes>
                 <Route exact path='/' element={<Home />} />
-                <Route path='biology' element={<Biology />} />
-                <Route path='physics' element={<Physics />} />
-                <Route path='chemistry' element={<Chemistry />} />
-                <Route path='mathematics' element={<Mathematics />} />
-                <Route path='computer-science' element={<ComputerScience />} />
-                <Route path='medicine' element={<Medicine />} />
+                <Route path='/biology' element={<Biology />} />
+                <Route path='/physics' element={<Physics />} />
+                <Route path='/chemistry' element={<Chemistry />} />
+                <Route path='/mathematics' element={<Mathematics />} />
+                <Route path='/computer-science' element={<ComputerScience />} />
+                <Route path='/medicine' element={<Medicine />} />
                 <Route path='*' element={<ErrorPage />} />
             </Routes>
+            <ScrollToTop />
             <Contact_Newsletter />
             <Footer />
         </>

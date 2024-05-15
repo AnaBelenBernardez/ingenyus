@@ -6,12 +6,12 @@
     height: 400px;
     display: flex;
     flex-direction: column;
-    color: #f7f7f8;
-    font-family: 'Satoshi-Regular';
+    color: var(--athens);
+    font-family: 'Satoshi-Light';
     align-items: center;
+    position: relative;
+    z-index: 6;
 }
-
-
 
 .both_title {
     padding: 3rem 0rem 0rem 0rem;
@@ -20,20 +20,20 @@
     font-weight: 300;
     line-height: 96px;
     margin-bottom: 2rem;
+    font-family: 'Satoshi-Light';
 }
 
 .nc_text {
     font-size: 16.8px;
     font-style: none;
-    font-family: 'Satoshi-Regular';
+    font-family: 'Satoshi-Light';
     font-weight: 300;
-    color: white;
+    color: var(--athens);
 }
 
 .newsletter {
     display: flex;
     gap: 3rem;
-    border-top: 1px solid white;
     padding-top: 2.9rem;
 }
 
@@ -53,9 +53,9 @@
 
 .hidden_form_input {
     background-color: rgba(25, 81, 228, 255);
-    color: white;
+    color: var(--athens);
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--athens);
     height: 25px;
     width: 100%;
     outline: none;
@@ -63,7 +63,7 @@
 
 .hidden_form_input.clicked,
 .hidden_form_textarea.clicked {
-    background-color: white;
+    background-color: var(--athens);
     color: rgba(25, 81, 228, 255);
     font-weight: bolder;
     padding-left: 0.1rem;
@@ -71,7 +71,7 @@
 
 .newsletter_email input::placeholder,
 .newsletter_email textarea::placeholder {
-    color: white;
+    color: var(--athens);
     opacity: 0.3;
     font-size: 16.8px;
     padding-left: 0.1rem;
@@ -87,39 +87,34 @@
 
 .button_contact {
     border-radius: 840px;
-    background-color: #f7f7f8;
     font-size: 14.7px;
     font-weight: 400;
-    color: #1851e3;
     width: 84.3px;
     height: 35.7px;
-    border: 1.05px;
+    border: 1px;
     margin-top: 1rem;
-    padding-bottom: 3px;
     cursor: pointer;
     transition: transform 0.5s ease;
+    background-color: var(--denim);
+    color: var(--athens);
+    border: 1px solid var(--athens);
 }
-
 
 .button_contact.transformed {
     transform: translateY(28rem);
     width: 3rem;
 }
 
-
 .visible .button_contact:hover {
-    background-color: #1851e3;
-    color: #f7f7f8;
-    border: 1px solid white;
+    background-color: var(--denim);
+    color: var(--athens);
+    border: 1px solid var(--athens);
 }
 
 .button_contact:hover {
-    background-color: #1851e3;
-    color: #f7f7f8;
-    border: 1px solid white;
+    background-color: var(--athens);
+    color: var(--denim);
 }
-
-
 
 .animation_checkbox {
     opacity: 1;
@@ -140,10 +135,15 @@
     padding-left: 0.3rem;
 }
 
+.checkbox_email_confirm > label > a {
+    font-family: 'Satoshi-Light';
+    text-decoration: none;
+    color: var(--athens);
+}
+
 .checkbox_email_confirm input {
     padding-top: 2rem;
 }
-
 
 @keyframes slideDownCheckbox {
     from {
@@ -168,7 +168,6 @@
         transform: translateY(-5%);
     }
 }
-
 
 @keyframes slideDown {
     from {
@@ -217,7 +216,6 @@ adicionar mais um bocado de padding - comparar c/ o site da ingenyous + formular
 
 /* Smartphone */
 @media (max-width: 780px) {
-
     .newsletter_contact {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -231,7 +229,6 @@ adicionar mais um bocado de padding - comparar c/ o site da ingenyous + formular
     .newsletter {
         flex-direction: column;
         gap: 0rem;
-        border-top: 1px solid white;
     }
 
     .newsletter_contact {

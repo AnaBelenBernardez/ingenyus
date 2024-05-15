@@ -69,6 +69,11 @@
     padding-left: 0.1rem;
 }
 
+.hidden_form_input.clicked::selection {
+    background-color: var(--denim);
+    color: var(--athens);
+}
+
 .newsletter_email input::placeholder,
 .newsletter_email textarea::placeholder {
     color: var(--athens);

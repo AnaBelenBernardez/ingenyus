@@ -7,6 +7,9 @@ import { useEffect, useState } from 'react';
 import DesktopNavHome from '../components/DesktopNavHome.jsx';
 import MobileNavHome from '../components/MobileNavHome.jsx';
 import BodyAddons from '../components/BodyAddons.jsx';
+import Header from '../components/Header/index.jsx';
+import { Contact_Newsletter } from '../components/Contact&Newsletter/Contact&Newsletter.jsx';
+import Footer from '../components/Footer/Footer.jsx';
 
 const Medicine = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -52,27 +55,31 @@ const Medicine = () => {
         return <Loading />;
     }
     return (
-        <main className='mainMap blurBack backgroundSolid'>
-            <div className='noiseBack'> </div>
-
-            <MedicineMap />
-            <div className='ellipseWhiteMap' id='e22'></div>
-            <div className='ellipseWhiteMap' id='e18'></div>
-            <div className='ellipseWhiteMap' id='e23'></div>
-            <div className='ellipseWhiteMap' id='e19'></div>
-            <div className='ellipseWhiteMap' id='e12'></div>
-            <div className='ellipseWhiteMap' id='e14'></div>
-            <div className='ellipseWhiteMap' id='e21'></div>
-            <div className='ellipseWhiteMap' id='e15'></div>
-            <div className='ellipseBlueMap' id='e24'></div>
-            <div className='ellipseBlueMap' id='e25'></div>
-            <div className='ellipseBlueMap' id='e13'></div>
-            <div className='ellipseBlueMap' id='e20'></div>
-            <div className='ellipseBlueMap' id='e17'></div>
-            <div className='ellipseBlueMap' id='e16'></div>
-            {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
-            <BodyAddons />
-        </main>
+        <>
+            <Header />
+            <main className='mainMap blurBack backgroundSolid'>
+                <div className='noiseBack'></div>
+                <MedicineMap />
+                <div className='ellipseWhiteMap' id='e22'></div>
+                <div className='ellipseWhiteMap' id='e18'></div>
+                <div className='ellipseWhiteMap' id='e23'></div>
+                <div className='ellipseWhiteMap' id='e19'></div>
+                <div className='ellipseWhiteMap' id='e12'></div>
+                <div className='ellipseWhiteMap' id='e14'></div>
+                <div className='ellipseWhiteMap' id='e21'></div>
+                <div className='ellipseWhiteMap' id='e15'></div>
+                <div className='ellipseBlueMap' id='e24'></div>
+                <div className='ellipseBlueMap' id='e25'></div>
+                <div className='ellipseBlueMap' id='e13'></div>
+                <div className='ellipseBlueMap' id='e20'></div>
+                <div className='ellipseBlueMap' id='e17'></div>
+                <div className='ellipseBlueMap' id='e16'></div>
+                {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
+                <BodyAddons />
+            </main>
+            <Contact_Newsletter />
+            <Footer />
+        </>
     );
 };
 

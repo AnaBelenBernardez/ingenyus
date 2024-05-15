@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
+import HomePage from './pages/HomePage';
 import Biology from './pages/Biology';
 import Physics from './pages/Physics';
 import Chemistry from './pages/Chemistry';
@@ -7,11 +7,8 @@ import Mathematics from './pages/Mathematics';
 import ComputerScience from './pages/ComputerScience';
 import Medicine from './pages/Medicine';
 import '../src/css/base/_globals.css';
-import { Contact_Newsletter } from './components/Contact&Newsletter/Contact&Newsletter';
-import Header from './components/Header';
 import PageTitle from './components/PageTitle';
 import ScrollBar from './components/ScrollBar';
-import Footer from './components/Footer/Footer';
 import { ErrorPage } from './pages/ErrorPage';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -19,10 +16,9 @@ function App() {
     return (
         <>
             <PageTitle />
-            <Header />
             <ScrollBar />
             <Routes>
-                <Route exact path='/' element={<Home />} />
+                <Route exact path='/' element={<HomePage />} />
                 <Route path='/biology' element={<Biology />} />
                 <Route path='/physics' element={<Physics />} />
                 <Route path='/chemistry' element={<Chemistry />} />
@@ -32,8 +28,6 @@ function App() {
                 <Route path='*' element={<ErrorPage />} />
             </Routes>
             <ScrollToTop />
-            <Contact_Newsletter />
-            <Footer />
         </>
     );
 }

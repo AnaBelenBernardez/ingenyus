@@ -54,7 +54,6 @@ const Chemistry = () => {
     return (
         <main className='mainMap blurBack backgroundSolid'>
             <div className='noiseBack'> </div>
-
             <ChemistryMap />
             <div className='ellipseWhiteMap' id='e22'></div>
             <div className='ellipseWhiteMap' id='e18'></div>

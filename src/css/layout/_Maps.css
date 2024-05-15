@@ -18,8 +18,9 @@
     font-weight: 400;
 }
 
-.section_text {
+.section_text * {
     color: var(--athens);
+    z-index: 0;
 }
 
 .item-container {
@@ -48,6 +49,7 @@
     font-family: 'Lastik', sans-serif;
     font-weight: 400;
     width: 60%;
+    z-index: 0;
 }
 
 .right-side > * {
@@ -114,6 +116,7 @@
     justify-content: center;
     padding-right: 1rem;
     line-height: 33px;
+    z-index: 0;
 }
 
 #colabBody {

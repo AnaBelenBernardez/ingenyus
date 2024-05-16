@@ -41,42 +41,42 @@ const BurgerNav = () => {
                     </li>
                     <li>
                         <button className='buttonNav' onClick={handleItemClick}>
-                            <NavLink to='chemistry'>
+                            <NavLink to='/chemistry'>
                                 {t('translation.chemistry')}
                             </NavLink>
                         </button>
                     </li>
                     <li>
                         <button className='buttonNav' onClick={handleItemClick}>
-                            <NavLink to='physics'>
+                            <NavLink to='/physics'>
                                 {t('translation.physics')}
                             </NavLink>
                         </button>
                     </li>
                     <li>
                         <button className='buttonNav' onClick={handleItemClick}>
-                            <NavLink to='biology'>
+                            <NavLink to='/biology'>
                                 {t('translation.biology')}
                             </NavLink>
                         </button>
                     </li>
                     <li>
                         <button className='buttonNav' onClick={handleItemClick}>
-                            <NavLink to='computer-science'>
+                            <NavLink to='/computer-science'>
                                 {t('translation.computerScience')}
                             </NavLink>
                         </button>
                     </li>
                     <li>
                         <button className='buttonNav' onClick={handleItemClick}>
-                            <NavLink to='mathematics'>
+                            <NavLink to='/mathematics'>
                                 {t('translation.mathematics')}
                             </NavLink>
                         </button>
                     </li>
                     <li>
                         <button className='buttonNav' onClick={handleItemClick}>
-                            <NavLink to='medicine'>
+                            <NavLink to='/medicine'>
                                 {t('translation.medicine')}
                             </NavLink>
                         </button>

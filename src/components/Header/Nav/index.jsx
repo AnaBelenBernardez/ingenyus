@@ -29,7 +29,7 @@ function Nav() {
                 <li>
                     <button className='buttonNav' onClick={goToTop}>
                         <NavLink
-                            to='chemistry'
+                            to='/chemistry'
                             aria-label={t('translation.chemistry')}
                         >
                             {t('translation.chemistry')}
@@ -39,7 +39,7 @@ function Nav() {
                 <li>
                     <button className='buttonNav' onClick={goToTop}>
                         <NavLink
-                            to='physics'
+                            to='/physics'
                             aria-label={t('translation.physics')}
                         >
                             {t('translation.physics')}
@@ -49,7 +49,7 @@ function Nav() {
                 <li>
                     <button className='buttonNav' onClick={goToTop}>
                         <NavLink
-                            to='biology'
+                            to='/biology'
                             aria-label={t('translation.biology')}
                         >
                             {t('translation.biology')}
@@ -59,7 +59,7 @@ function Nav() {
                 <li>
                     <button className='buttonNav' onClick={goToTop}>
                         <NavLink
-                            to='computer-science'
+                            to='/computer-science'
                             aria-label={t('translation.computerScience')}
                         >
                             {t('translation.computerScience')}
@@ -69,7 +69,7 @@ function Nav() {
                 <li>
                     <button className='buttonNav' onClick={goToTop}>
                         <NavLink
-                            to='mathematics'
+                            to='/mathematics'
                             aria-label={t('translation.mathematics')}
                         >
                             {t('translation.mathematics')}
@@ -79,7 +79,7 @@ function Nav() {
                 <li>
                     <button className='buttonNav' onClick={goToTop}>
                         <NavLink
-                            to='medicine'
+                            to='/medicine'
                             aria-label={t('translation.medicine')}
                         >
                             {t('translation.medicine')}

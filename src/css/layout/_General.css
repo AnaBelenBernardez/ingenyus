@@ -56,12 +56,9 @@
     font-weight: 900;
     color: var(--athens);
     pointer-events: none;
-    position: absolute;
-    top: -2.6rem !important;
 }
 
 .redireccion {
-    position: absolute;
     background-color: transparent;
     border-radius: 25px;
     color: var(--athens);
@@ -69,18 +66,23 @@
     border: 1px solid var(--athens);
     font-size: 16px;
     text-decoration: none;
-    margin-bottom: 1rem;
+    position: fixed;
+    bottom: 10rem;
 }
 
 .redireccion:hover {
     background-color: var(--athens);
-    color: var(--codgray);
+    color: var(--denim);
 }
 
-.buttonHome {
+.errorHome {
     position: absolute;
     top: 4px;
     scale: 0.83;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 1200px) {
@@ -113,6 +115,8 @@
         font-weight: 900;
         color: var(--athens);
         pointer-events: none;
+        position: absolute;
+        top: -2.6rem !important;
     }
 
     .redireccion {
@@ -122,14 +126,8 @@
         padding: 0.5rem 1rem;
         border: 1px solid var(--athens);
         font-size: 16px;
-        position: fixed;
         bottom: 4rem;
-        position: absolute;
         text-decoration: none;
-    }
-
-    .redireccion:hover {
-        background-color: var(--athens);
-        color: var(--codgray);
+        margin-bottom: 1rem;
     }
 }

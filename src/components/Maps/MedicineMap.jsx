@@ -3,9 +3,8 @@ import data from '../../../public/data.json';
 import { useState, useEffect, useRef } from 'react';
 
 export default function MedicineMaps() {
-    const { i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
     const language = i18n.language;
-    const t = useTranslation().t;
 
     const medicineData = data[language]?.medicine;
     const [currentItem, setCurrentItem] = useState(0);
@@ -72,11 +71,17 @@ export default function MedicineMaps() {
                     >
                         <article className='left_side'>
                             <img
-                                src={
-                                    currentItem === index
-                                        ? item.srcScroll
-                                        : item.src
+                                className={
+                                    currentItem === index ? 'visible' : ''
                                 }
+                                src={item.srcScroll}
+                                alt={item.name}
+                            />
+                            <img
+                                className={
+                                    currentItem !== index ? 'visible' : ''
+                                }
+                                src={item.src}
                                 alt={item.name}
                             />
                         </article>

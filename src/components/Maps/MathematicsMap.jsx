@@ -3,9 +3,8 @@ import { useState, useEffect, useRef } from 'react';
 
 import data from '../../../public/data.json';
 export default function MathematicsMap() {
-    const { i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
     const language = i18n.language;
-    const { t } = useTranslation();
 
     const mathematicsData = data[language]?.mathematics;
     const [currentItem, setCurrentItem] = useState(0);
@@ -74,11 +73,17 @@ export default function MathematicsMap() {
                     >
                         <article className='left_side'>
                             <img
-                                src={
-                                    index === currentItem
-                                        ? item.srcScroll
-                                        : item.src
+                                className={
+                                    currentItem === index ? 'visible' : ''
                                 }
+                                src={item.srcScroll}
+                                alt={item.name}
+                            />
+                            <img
+                                className={
+                                    currentItem !== index ? 'visible' : ''
+                                }
+                                src={item.src}
                                 alt={item.name}
                             />
                         </article>

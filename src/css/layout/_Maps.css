@@ -131,6 +131,16 @@
     display: none;
 }
 
+.item-container img {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.item-container img.visible {
+    position: absolute;
+    opacity: 1;
+}
+
 @media (min-width: 769px) and (max-width: 1200px) {
     .right-side > * {
         border: 0.8px solid var(--athens);

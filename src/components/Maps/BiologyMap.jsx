@@ -4,8 +4,7 @@ import '../../css/layout/_Maps.css';
 import { useState, useEffect, useRef } from 'react';
 
 export default function BiologyMaps() {
-    const { t } = useTranslation();
-    const { i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
     const language = i18n.language;
 
     const biologyData = data[language]?.biology;
@@ -15,8 +14,7 @@ export default function BiologyMaps() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const position = window.scrollY;
-            setScrollPosition(position);
+            setScrollPosition(window.scrollY);
         };
 
         window.addEventListener('scroll', handleScroll, { passive: true });
@@ -60,42 +58,40 @@ export default function BiologyMaps() {
     }
 
     return (
-        <>
-            <section className='section_text'>
-                <div>
-                    <p className='section_title'>{t('translation.biology')}</p>
+        <section className='section_text'>
+            <div>
+                <p className='section_title'>{t('translation.biology')}</p>
+            </div>
+            {biologyData.map((item, index) => (
+                <div
+                    className={`item-container ${index % 2 === 0 ? 'even' : 'odd'}`}
+                    key={index}
+                    ref={(element) => (itemRefs.current[index] = element)}
+                >
+                    <article className='left_side'>
+                        <img
+                            className={currentItem === index ? 'visible' : ''}
+                            src={item.srcScroll}
+                            alt={item.name}
+                        />
+                        <img
+                            className={currentItem !== index ? 'visible' : ''}
+                            src={item.src}
+                            alt={item.name}
+                        />
+                    </article>
+                    <article className='right-side'>
+                        <div className='text-title'>
+                            <h1 className='text-name'>{item.name}</h1>
+                            <span className='text-date' aria-label='Fecha'>
+                                {item.date}
+                            </span>
+                        </div>
+                        <h2 className='text-description'>{item.description}</h2>
+                        <p className='text-box'>{item.bio}</p>
+                    </article>
                 </div>
-                {biologyData.map((item, index) => (
-                    <div
-                        className={`item-container ${index % 2 === 0 ? 'even' : 'odd'}`}
-                        key={index}
-                        ref={(element) => (itemRefs.current[index] = element)}
-                    >
-                        <article className='left_side'>
-                            <img
-                                src={
-                                    currentItem === index
-                                        ? item.srcScroll
-                                        : item.src
-                                }
-                                alt={item.name}
-                            />
-                        </article>
-                        <article className='right-side'>
-                            <div className='text-title'>
-                                <h1 className='text-name'>{item.name}</h1>
-                                <span className='text-date' aria-label='Fecha'>
-                                    {item.date}
-                                </span>
-                            </div>
-                            <h2 className='text-description'>
-                                {item.description}
-                            </h2>
-                            <p className='text-box'>{item.bio}</p>
-                        </article>
-                    </div>
-                ))}
-            </section>
-        </>
+            ))}
+        </section>
     );
 }

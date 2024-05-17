@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import data from '../../../public/data.json';
 import { useState, useEffect, useRef } from 'react';
+
 export default function PhysicsMaps() {
-    const { t } = useTranslation();
-    const { i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
     const language = i18n.language;
 
     const physicsData = data[language]?.physics;
@@ -13,8 +13,7 @@ export default function PhysicsMaps() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const position = window.scrollY;
-            setScrollPosition(position);
+            setScrollPosition(window.scrollY);
         };
 
         window.addEventListener('scroll', handleScroll, { passive: true });
@@ -71,11 +70,17 @@ export default function PhysicsMaps() {
                     >
                         <article className='left_side'>
                             <img
-                                src={
-                                    currentItem === index
-                                        ? item.srcScroll
-                                        : item.src
+                                className={
+                                    currentItem === index ? 'visible' : ''
                                 }
+                                src={item.srcScroll}
+                                alt={item.name}
+                            />
+                            <img
+                                className={
+                                    currentItem !== index ? 'visible' : ''
+                                }
+                                src={item.src}
                                 alt={item.name}
                             />
                         </article>

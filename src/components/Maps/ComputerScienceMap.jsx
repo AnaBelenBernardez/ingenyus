@@ -2,8 +2,7 @@ import { useTranslation } from 'react-i18next';
 import data from '../../../public/data.json';
 import { useState, useEffect, useRef } from 'react';
 export default function ComputerScienceMap() {
-    const { i18n } = useTranslation();
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const language = i18n.language;
 
     const computerScienceData = data[language]?.computerScience;
@@ -73,11 +72,17 @@ export default function ComputerScienceMap() {
                     >
                         <article className='left_side'>
                             <img
-                                src={
-                                    currentItem === index
-                                        ? item.srcScroll
-                                        : item.src
+                                className={
+                                    currentItem === index ? 'visible' : ''
                                 }
+                                src={item.srcScroll}
+                                alt={item.name}
+                            />
+                            <img
+                                className={
+                                    currentItem !== index ? 'visible' : ''
+                                }
+                                src={item.src}
                                 alt={item.name}
                             />
                         </article>

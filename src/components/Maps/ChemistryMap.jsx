@@ -1,22 +1,19 @@
 import { useTranslation } from 'react-i18next';
 import { useState, useEffect, useRef } from 'react';
-
 import data from '../../../public/data.json';
+
 export default function ChemistryMap() {
-    const { t } = useTranslation();
-    const { i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
     const language = i18n.language;
 
     const chemistryData = data[language]?.chemistry;
-    const [currentScientist, setCurrentScientist] = useState(0);
+    const [currentItem, setCurrentItem] = useState(0);
     const [scrollPosition, setScrollPosition] = useState(0);
-    const scientistRefs = useRef([]);
-    const containerRef = useRef(null);
+    const itemRefs = useRef([]);
 
     useEffect(() => {
         const handleScroll = () => {
-            const position = window.scrollY;
-            setScrollPosition(position);
+            setScrollPosition(window.scrollY);
         };
 
         window.addEventListener('scroll', handleScroll, { passive: true });
@@ -27,29 +24,28 @@ export default function ChemistryMap() {
     }, []);
 
     useEffect(() => {
-        if (!containerRef.current || !scientistRefs.current.length) return;
+        if (!itemRefs.current.length) return;
 
-        const containerTop = containerRef.current.offsetTop;
+        const containerTop = itemRefs.current[0].offsetTop;
         const windowHeight = window.innerHeight;
         const windowCenter = scrollPosition + windowHeight / 3.5;
 
-        let closestScientistIndex = 0;
+        let closestItemIndex = 0;
         let closestDistance = Math.abs(
-            windowCenter - (containerTop + scientistRefs.current[0].offsetTop)
+            windowCenter - (containerTop + itemRefs.current[0].offsetTop)
         );
 
-        for (let i = 1; i < scientistRefs.current.length; i++) {
-            const scientistTop =
-                containerTop + scientistRefs.current[i].offsetTop;
-            const distance = Math.abs(windowCenter - scientistTop);
+        itemRefs.current.forEach((item, index) => {
+            const itemTop = containerTop + item.offsetTop;
+            const distance = Math.abs(windowCenter - itemTop);
 
             if (distance < closestDistance) {
                 closestDistance = distance;
-                closestScientistIndex = i;
+                closestItemIndex = index;
             }
-        }
+        });
 
-        setCurrentScientist(closestScientistIndex);
+        setCurrentItem(closestItemIndex);
     }, [scrollPosition]);
 
     if (!chemistryData || chemistryData.length === 0) {
@@ -62,7 +58,7 @@ export default function ChemistryMap() {
 
     return (
         <>
-            <section className='section_text' ref={containerRef}>
+            <section className='section_text'>
                 <div>
                     <p className='section_title'>
                         {t('translation.chemistry')}
@@ -72,17 +68,21 @@ export default function ChemistryMap() {
                     <div
                         className={`item-container ${index % 2 === 0 ? 'even' : 'odd'}`}
                         key={index}
-                        ref={(element) =>
-                            (scientistRefs.current[index] = element)
-                        }
+                        ref={(element) => (itemRefs.current[index] = element)}
                     >
                         <article className='left_side'>
                             <img
-                                src={
-                                    currentScientist === index
-                                        ? item.srcScroll
-                                        : item.src
+                                className={
+                                    currentItem === index ? 'visible' : ''
                                 }
+                                src={item.srcScroll}
+                                alt={item.name}
+                            />
+                            <img
+                                className={
+                                    currentItem !== index ? 'visible' : ''
+                                }
+                                src={item.src}
                                 alt={item.name}
                             />
                         </article>

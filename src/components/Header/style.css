@@ -11,10 +11,11 @@ header {
     margin-top: 26px;
 }
 
-.home {
+.homeHeader {
     margin-right: auto;
 }
 
 .nav {
     margin-left: auto;
+    margin-top: -1.5rem;
 }

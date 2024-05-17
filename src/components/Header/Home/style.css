@@ -12,14 +12,16 @@
     text-decoration: none;
 }
 
-.logoButtonHome {
-    @media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
+    .logoButtonHome {
         width: 102%;
         margin-bottom: 1rem;
         margin-left: -0.5rem;
     }
+}
 
-    @media screen and (max-width: 1199px) {
+@media (max-width: 1199px) {
+    .logoButtonHome {
         width: 230%;
         margin-bottom: 1rem;
         margin-left: -0.3rem;

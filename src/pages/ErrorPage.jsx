@@ -8,7 +8,7 @@ export const ErrorPage = () => {
     return (
         <>
             <main className='landingHome errorPage'>
-                <button className='buttonHome'>
+                <button className='errorHome'>
                     <NavLink to='/' aria-label='Home'>
                         <img alt='home' src='/logos/in_logo_desktop.svg' />
                     </NavLink>

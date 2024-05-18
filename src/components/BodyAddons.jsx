@@ -1,4 +1,5 @@
 import '../css/layout/_Maps.css';
+import { Link } from 'react-router-dom';
 
 const BodyAddons = () => {
     return (
@@ -15,8 +16,10 @@ const BodyAddons = () => {
                 id='bodyHAB'
                 alt=''
             />
-            <div id='colabBody'>
-                <span className='colab'>ingenyus x HACK A BOSS</span>
+            <div id='colabBody' aria-label='Home'>
+                <Link className='colab' id='colabBodyLink' to='/'>
+                    ingenyus x HACK A BOSS
+                </Link>
             </div>
         </>
     );

@@ -91,12 +91,12 @@
 }
 
 .button_contact {
-    padding-bottom: 3px;
+    padding-bottom: 2px;
     border-radius: 840px;
     font-size: 14.7px;
     font-weight: 400;
-    width: 84.3px;
-    height: 35.7px;
+    width: 68px;
+    height: 34px;
     border: 1px;
     margin-top: 1rem;
     cursor: pointer;

@@ -1,7 +1,6 @@
 # Científicas que nos inspiran
 
-ingenyus x hack a boss
-
+ingenyus x HACK A BOSS
 ## Developers
 
 -   [@AyozeJesus](https://github.com/AyozeJesus)

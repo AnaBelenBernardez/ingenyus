@@ -127,6 +127,12 @@
     padding-bottom: 10rem;
 }
 
+#colabBodyLink {
+    cursor: pointer;
+    z-index: 99 !important;
+    text-decoration: none;
+}
+
 .bodyAddons {
     display: none;
 }

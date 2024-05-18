@@ -1,6 +1,13 @@
 # Científicas que nos inspiran
 
-ingenyus x HACK A BOSS
+<div align="center">
+
+[ingenyus\*](https://www.ingenyus.es/) x [HACK A BOSS](https://www.hackaboss.com/)
+
+</div>
+
+![Lading Page](https://i.postimg.cc/PxYSS0V5/in-landing.png)
+
 ## Developers
 
 -   [@AyozeJesus](https://github.com/AyozeJesus)
@@ -18,6 +25,8 @@ ingenyus x HACK A BOSS
 ¿Quién se te viene a la cabeza cuando piensas en mujeres en ciencia y tecnología? Seguramente el primer nombre que atraviesa la mente de la mayoría de la población sea Marie Curie.
 
 En segundo lugar puede ser que Ada Lovelace, Jane Goodall o Rosalind Franklin aparezcan entre murmullos. En el gran porcentaje de casos, la respuesta termina ahí.
+
+![Page](https://i.postimg.cc/hGbJMrbq/in-page.png)
 
 ### Visibilización
 

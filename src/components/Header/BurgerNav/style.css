@@ -52,25 +52,6 @@
     cursor: pointer;
 }
 
-#nav-icon {
-    width: 50px;
-    height: 4px;
-    position: absolute;
-    right: 0;
-    top: 0px;
-    margin-top: -1;
-    margin-right: 0.9rem;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-}
-
 #nav-icon span {
     display: block;
     position: absolute;
@@ -83,10 +64,10 @@
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: 0.35s ease-in-out;
-    -moz-transition: 0.35s ease-in-out;
-    -o-transition: 0.35s ease-in-out;
-    transition: 0.35s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 #nav-icon span:nth-child(1) {
@@ -118,7 +99,7 @@
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    top: 0;
+    top: -1.5px;
     left: 0;
 }
 
@@ -135,7 +116,6 @@
     top: 34px;
     left: 0;
 }
-
 
 @keyframes slideIn {
     0% {
@@ -158,12 +138,12 @@
 }
 
 .navBurger.open {
-    animation: slideIn 0.4s ease forwards;
+    animation: slideIn 0.5s ease forwards;
 }
 
 .navBurger.close {
     visibility: hidden;
-    animation: slideOut 0.4s ease forwards;
+    animation: slideOut 0.5s ease forwards;
     transition: 500ms ease;
 }
 

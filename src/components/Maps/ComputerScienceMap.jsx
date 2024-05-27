@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import data from '../../../public/data.json';
+import '../../css/layout/_Maps.css';
 import { useState, useEffect, useRef } from 'react';
+
 export default function ComputerScienceMap() {
     const { t, i18n } = useTranslation();
     const language = i18n.language;
@@ -8,12 +10,15 @@ export default function ComputerScienceMap() {
     const computerScienceData = data[language]?.computerScience;
     const [currentItem, setCurrentItem] = useState(0);
     const [scrollPosition, setScrollPosition] = useState(0);
+    const [hasScrolled, setHasScrolled] = useState(false);
     const itemRefs = useRef([]);
 
     useEffect(() => {
         const handleScroll = () => {
-            const position = window.scrollY;
-            setScrollPosition(position);
+            setScrollPosition(window.scrollY);
+            if (!hasScrolled) {
+                setHasScrolled(true);
+            }
         };
 
         window.addEventListener('scroll', handleScroll, { passive: true });
@@ -21,10 +26,10 @@ export default function ComputerScienceMap() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [hasScrolled]);
 
     useEffect(() => {
-        if (!itemRefs.current.length) return;
+        if (!itemRefs.current.length || !hasScrolled) return;
 
         const containerTop = itemRefs.current[0].offsetTop;
         const windowHeight = window.innerHeight;
@@ -46,7 +51,7 @@ export default function ComputerScienceMap() {
         });
 
         setCurrentItem(closestItemIndex);
-    }, [scrollPosition]);
+    }, [scrollPosition, hasScrolled]);
 
     if (!computerScienceData || computerScienceData.length === 0) {
         return (
@@ -73,17 +78,35 @@ export default function ComputerScienceMap() {
                         <article className='left_side'>
                             <img
                                 className={
-                                    currentItem === index ? 'visible' : ''
+                                    hasScrolled && currentItem === index
+                                        ? 'visible'
+                                        : 'hidden'
                                 }
                                 src={item.srcScroll}
                                 alt={item.name}
                             />
                             <img
                                 className={
-                                    currentItem !== index ? 'visible' : ''
+                                    hasScrolled && currentItem !== index
+                                        ? 'visible'
+                                        : ''
                                 }
                                 src={item.src}
                                 alt={item.name}
+                                style={{
+                                    display:
+                                        hasScrolled && currentItem !== index
+                                            ? 'block'
+                                            : 'none',
+                                }}
+                            />
+                            <img
+                                className={!hasScrolled ? 'visible' : 'hidden'}
+                                src={item.src}
+                                alt={item.name}
+                                style={{
+                                    display: !hasScrolled ? 'block' : 'none',
+                                }}
                             />
                         </article>
                         <article className='right-side'>

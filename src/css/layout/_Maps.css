@@ -31,10 +31,14 @@
 
 .left_side {
     order: 1;
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .right-side {
     order: 2;
+    align-items: center;
 }
 
 .text-title {
@@ -63,10 +67,6 @@
 .left_side {
     display: flex;
     justify-content: center;
-}
-
-.right-side {
-    align-items: center;
 }
 
 .right-side > :not(:first-child) {
@@ -143,8 +143,12 @@
 }
 
 .item-container img.visible {
-    position: absolute;
     opacity: 1;
+}
+
+.item-container img.hidden {
+    transition: opacity 1s ease-in-out;
+    position: absolute;
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {

@@ -10,11 +10,15 @@ export default function BiologyMaps() {
     const biologyData = data[language]?.biology;
     const [currentItem, setCurrentItem] = useState(0);
     const [scrollPosition, setScrollPosition] = useState(0);
+    const [hasScrolled, setHasScrolled] = useState(false);
     const itemRefs = useRef([]);
 
     useEffect(() => {
         const handleScroll = () => {
             setScrollPosition(window.scrollY);
+            if (!hasScrolled) {
+                setHasScrolled(true);
+            }
         };
 
         window.addEventListener('scroll', handleScroll, { passive: true });
@@ -22,10 +26,10 @@ export default function BiologyMaps() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [hasScrolled]);
 
     useEffect(() => {
-        if (!itemRefs.current.length) return;
+        if (!itemRefs.current.length || !hasScrolled) return;
 
         const containerTop = itemRefs.current[0].offsetTop;
         const windowHeight = window.innerHeight;
@@ -47,7 +51,7 @@ export default function BiologyMaps() {
         });
 
         setCurrentItem(closestItemIndex);
-    }, [scrollPosition]);
+    }, [scrollPosition, hasScrolled]);
 
     if (!biologyData || biologyData.length === 0) {
         return (
@@ -70,22 +74,42 @@ export default function BiologyMaps() {
                 >
                     <article className='left_side'>
                         <img
-                            className={currentItem === index ? 'visible' : ''}
+                            className={
+                                hasScrolled && currentItem === index
+                                    ? 'visible'
+                                    : 'hidden'
+                            }
                             src={item.srcScroll}
                             alt={item.name}
                         />
                         <img
-                            className={currentItem !== index ? 'visible' : ''}
+                            className={
+                                hasScrolled && currentItem !== index
+                                    ? 'visible'
+                                    : ''
+                            }
                             src={item.src}
                             alt={item.name}
+                            style={{
+                                display:
+                                    hasScrolled && currentItem !== index
+                                        ? 'block'
+                                        : 'none',
+                            }}
+                        />
+                        <img
+                            className={!hasScrolled ? 'visible' : 'hidden'}
+                            src={item.src}
+                            alt={item.name}
+                            style={{
+                                display: !hasScrolled ? 'block' : 'none',
+                            }}
                         />
                     </article>
                     <article className='right-side'>
                         <div className='text-title'>
                             <h1 className='text-name'>{item.name}</h1>
-                            <span className='text-date' aria-label='Fecha'>
-                                {item.date}
-                            </span>
+                            <span className='text-date'>{item.date}</span>
                         </div>
                         <h2 className='text-description'>{item.description}</h2>
                         <p className='text-box'>{item.bio}</p>

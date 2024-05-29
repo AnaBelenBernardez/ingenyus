@@ -137,18 +137,26 @@
     display: none;
 }
 
-.item-container img {
-    transition: opacity 1s ease-in-out;
-    opacity: 0;
+.image-container {
+    position: relative;
 }
 
-.item-container img.visible {
+.bw-image {
+    display: block;
     opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
 
-.item-container img.hidden {
-    transition: opacity 1s ease-in-out;
+.filter-image {
     position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.filter-image.visible {
+    opacity: 1;
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {

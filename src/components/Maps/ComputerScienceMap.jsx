@@ -76,38 +76,18 @@ export default function ComputerScienceMap() {
                         ref={(element) => (itemRefs.current[index] = element)}
                     >
                         <article className='left_side'>
-                            <img
-                                className={
-                                    hasScrolled && currentItem === index
-                                        ? 'visible'
-                                        : 'hidden'
-                                }
-                                src={item.srcScroll}
-                                alt={item.name}
-                            />
-                            <img
-                                className={
-                                    hasScrolled && currentItem !== index
-                                        ? 'visible'
-                                        : ''
-                                }
-                                src={item.src}
-                                alt={item.name}
-                                style={{
-                                    display:
-                                        hasScrolled && currentItem !== index
-                                            ? 'block'
-                                            : 'none',
-                                }}
-                            />
-                            <img
-                                className={!hasScrolled ? 'visible' : 'hidden'}
-                                src={item.src}
-                                alt={item.name}
-                                style={{
-                                    display: !hasScrolled ? 'block' : 'none',
-                                }}
-                            />
+                            <div className='image-container'>
+                                <img
+                                    className='bw-image'
+                                    src={item.src}
+                                    alt={item.name}
+                                />
+                                <img
+                                    className={`filter-image ${hasScrolled && currentItem === index ? 'visible' : ''}`}
+                                    src={item.srcScroll}
+                                    alt={item.name}
+                                />
+                            </div>
                         </article>
                         <article className='right-side'>
                             <div className='text-title'>

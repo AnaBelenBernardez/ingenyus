@@ -141,8 +141,13 @@
     position: relative;
 }
 
+.image-wrapper {
+    position: relative;
+}
+
 .bw-image {
-    display: block;
+    top: 0;
+    left: 0;
     opacity: 1;
     transition: opacity 1s ease-in-out;
     width: 100%;
@@ -159,6 +164,10 @@
 
 .filter-image.visible {
     opacity: 1;
+}
+
+.bw-image.hidden {
+    opacity: 0;
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {

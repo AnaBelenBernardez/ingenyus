@@ -75,16 +75,18 @@ export default function PhysicsMaps() {
                     >
                         <article className='left_side'>
                             <div className='image-container'>
-                                <img
-                                    className='bw-image'
-                                    src={item.src}
-                                    alt={item.name}
-                                />
-                                <img
-                                    className={`filter-image ${hasScrolled && currentItem === index ? 'visible' : ''}`}
-                                    src={item.srcScroll}
-                                    alt={item.name}
-                                />
+                                <div className='image-wrapper'>
+                                    <img
+                                        className={`bw-image ${hasScrolled && currentItem === index ? 'hidden' : ''}`}
+                                        src={item.src}
+                                        alt={item.name}
+                                    />
+                                    <img
+                                        className={`filter-image ${hasScrolled && currentItem === index ? 'visible' : ''}`}
+                                        src={item.srcScroll}
+                                        alt={item.name}
+                                    />
+                                </div>
                             </div>
                         </article>
                         <article className='right-side'>

@@ -8,7 +8,7 @@ import MobileNavHome from '../components/MobileNavHome.jsx';
 import BodyAddons from '../components/BodyAddons.jsx';
 import '../css/base/_backgrounds.css';
 import Header from '../components/Header/index.jsx';
-import { Contact_Newsletter } from '../components/Contact&Newsletter/Contact&Newsletter.jsx';
+import { Contact_Newsletter } from '../components/ContactNewsletter/ContactNewsletter.jsx';
 import Footer from '../components/Footer/Footer.jsx';
 
 const Biology = () => {

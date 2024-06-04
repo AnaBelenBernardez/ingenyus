@@ -15,10 +15,9 @@ export default function PhysicsMaps() {
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrollPosition(window.scrollY);
-            if (!hasScrolled) {
-                setHasScrolled(true);
-            }
+            const scrollY = window.scrollY;
+            setScrollPosition(scrollY);
+            setHasScrolled(scrollY > 0);
         };
 
         window.addEventListener('scroll', handleScroll, { passive: true });
@@ -26,7 +25,7 @@ export default function PhysicsMaps() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [hasScrolled]);
+    }, []);
 
     useEffect(() => {
         if (!itemRefs.current.length || !hasScrolled) return;
@@ -62,46 +61,42 @@ export default function PhysicsMaps() {
     }
 
     return (
-        <>
-            <section className='section_text'>
-                <div>
-                    <p className='section_title'>{t('translation.physics')}</p>
+        <section className='section_text'>
+            <div>
+                <p className='section_title'>{t('translation.physics')}</p>
+            </div>
+            {physicsData.map((item, index) => (
+                <div
+                    className={`item-container ${index % 2 === 0 ? 'even' : 'odd'}`}
+                    key={index}
+                    ref={(element) => (itemRefs.current[index] = element)}
+                >
+                    <article className='left_side'>
+                        <div className='image-container'>
+                            <div className='image-wrapper'>
+                                <img
+                                    className={`bw-image ${hasScrolled && currentItem === index ? 'hidden' : ''}`}
+                                    src={item.src}
+                                    alt={item.name}
+                                />
+                                <img
+                                    className={`filter-image ${hasScrolled && currentItem === index ? 'visible' : ''}`}
+                                    src={item.srcScroll}
+                                    alt={item.name}
+                                />
+                            </div>
+                        </div>
+                    </article>
+                    <article className='right-side'>
+                        <div className='text-title'>
+                            <h1 className='text-name'>{item.name}</h1>
+                            <span className='text-date'>{item.date}</span>
+                        </div>
+                        <h2 className='text-description'>{item.description}</h2>
+                        <p className='text-box'>{item.bio}</p>
+                    </article>
                 </div>
-                {physicsData.map((item, index) => (
-                    <div
-                        className={`item-container ${index % 2 === 0 ? 'even' : 'odd'}`}
-                        key={index}
-                        ref={(element) => (itemRefs.current[index] = element)}
-                    >
-                        <article className='left_side'>
-                            <div className='image-container'>
-                                <div className='image-wrapper'>
-                                    <img
-                                        className={`bw-image ${hasScrolled && currentItem === index ? 'hidden' : ''}`}
-                                        src={item.src}
-                                        alt={item.name}
-                                    />
-                                    <img
-                                        className={`filter-image ${hasScrolled && currentItem === index ? 'visible' : ''}`}
-                                        src={item.srcScroll}
-                                        alt={item.name}
-                                    />
-                                </div>
-                            </div>
-                        </article>
-                        <article className='right-side'>
-                            <div className='text-title'>
-                                <h1 className='text-name'>{item.name}</h1>
-                                <span className='text-date'>{item.date}</span>
-                            </div>
-                            <h2 className='text-description'>
-                                {item.description}
-                            </h2>
-                            <p className='text-box'>{item.bio}</p>
-                        </article>
-                    </div>
-                ))}
-            </section>
-        </>
+            ))}
+        </section>
     );
 }

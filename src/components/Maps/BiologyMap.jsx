@@ -15,10 +15,9 @@ export default function BiologyMaps() {
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrollPosition(window.scrollY);
-            if (!hasScrolled) {
-                setHasScrolled(true);
-            }
+            const scrollY = window.scrollY;
+            setScrollPosition(scrollY);
+            setHasScrolled(scrollY > 0);
         };
 
         window.addEventListener('scroll', handleScroll, { passive: true });
@@ -26,7 +25,7 @@ export default function BiologyMaps() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [hasScrolled]);
+    }, []);
 
     useEffect(() => {
         if (!itemRefs.current.length || !hasScrolled) return;

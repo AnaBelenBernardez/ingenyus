@@ -63,15 +63,15 @@
 
 .hidden_form_input.clicked,
 .hidden_form_textarea.clicked {
-    background-color: var(--athens);
-    color: rgba(25, 81, 228, 255);
-    font-weight: bolder;
+    /* background-color: var(--athens); */
+    /* font-weight: bolder; */
+    color: var(--athens);
     padding-left: 0.1rem;
 }
 
 .hidden_form_input.clicked::selection {
-    background-color: var(--denim);
-    color: var(--athens);
+    background-color: var(--athens);
+    color: var(--denim);
 }
 
 .newsletter_email input::placeholder,

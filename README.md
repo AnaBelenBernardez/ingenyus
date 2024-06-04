@@ -1,6 +1,12 @@
 # Científicas que nos inspiran
 
-ingenyus x hack a boss
+<div align="center">
+
+[ingenyus\*](https://www.ingenyus.es/) x [HACK A BOSS](https://www.hackaboss.com/)
+
+</div>
+
+![Lading Page](https://i.postimg.cc/PxYSS0V5/in-landing.png)
 
 ## Developers
 
@@ -19,6 +25,8 @@ ingenyus x hack a boss
 ¿Quién se te viene a la cabeza cuando piensas en mujeres en ciencia y tecnología? Seguramente el primer nombre que atraviesa la mente de la mayoría de la población sea Marie Curie.
 
 En segundo lugar puede ser que Ada Lovelace, Jane Goodall o Rosalind Franklin aparezcan entre murmullos. En el gran porcentaje de casos, la respuesta termina ahí.
+
+![Page](https://i.postimg.cc/hGbJMrbq/in-page.png)
 
 ### Visibilización
 
@@ -39,3 +47,27 @@ Crear un futuro feminista e igualitario es equivalente a resaltar aquellas figur
 ### Modelos a seguir
 
 "El síndrome del impostor" o "el síndrome de Matilda" son simples ejemplos de las consecuencias que esta falta de referentes tiene sobre las nuevas generaciones. Resaltar el papel de estas científicas es una forma de demostrar a las mujeres y niñas con aspiraciones científico-tecnológicas que no están solas y que, si otras figuras consiguieron luchar por sus sueños, ellas determinan dónde están sus límites.
+
+## Inicialización
+
+Introduce los siguientes comandos en la consola:
+
+-   Primero debes instalar los módulos necesarios:
+
+```
+npm i
+```
+
+-   Para iniciar el servidor:
+
+```
+npm run dev
+```
+
+-   Puedes clicar en el link que la terminal te proporcione para iniciar el navegador.
+-   O abrir tu navegador favorito e introducir la dirección que indica la terminal.
+    Por ejemplo:
+
+```
+http://localhost:5173/
+```

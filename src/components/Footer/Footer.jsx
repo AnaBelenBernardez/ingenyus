@@ -50,21 +50,33 @@ function Footer() {
                 </ul>
             </nav>
             <nav className='social'>
-                <a href='https://www.linkedin.com/company/ingenyus/'>
+                <a
+                    href='https://www.linkedin.com/company/ingenyus/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
                     <FontAwesomeIcon
                         icon={faLinkedin}
                         className='socialIcons'
                         aria-label='LinkedIn'
                     />
                 </a>
-                <a href='https://twitter.com/i/flow/login?redirect_after_login=%2Fingenyus_es'>
+                <a
+                    href='https://twitter.com/i/flow/login?redirect_after_login=%2Fingenyus_es'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
                     <FontAwesomeIcon
                         icon={faTwitter}
                         className='socialIcons'
                         aria-label='Twitter'
                     />
                 </a>
-                <a href='https://www.instagram.com/ingenyus.es'>
+                <a
+                    href='https://www.instagram.com/ingenyus.es'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
                     <FontAwesomeIcon
                         className='socialIcons'
                         icon={faInstagram}

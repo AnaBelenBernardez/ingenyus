@@ -148,13 +148,11 @@
     height: 34px;
     margin-top: 1rem;
     cursor: pointer;
-    -webkit-transition: -webkit-transform 0.5s ease;
-    transition: -webkit-transform 0.5s ease;
+    -webkit-transition:
+        -webkit-transform 0.5s ease,
+        transform 0.5s ease;
     -o-transition: transform 0.5s ease;
     transition: transform 0.5s ease;
-    transition:
-        transform 0.5s ease,
-        -webkit-transform 0.5s ease;
     background-color: var(--denim);
     color: var(--athens);
     border: 1px solid var(--athens);

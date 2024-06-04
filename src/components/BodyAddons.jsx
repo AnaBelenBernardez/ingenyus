@@ -2,6 +2,10 @@ import '../css/layout/_Maps.css';
 import { Link } from 'react-router-dom';
 
 const BodyAddons = () => {
+    const goToTop = () => {
+        window.scrollTo(0, 0);
+    };
+
     return (
         <>
             <img
@@ -16,7 +20,7 @@ const BodyAddons = () => {
                 id='bodyHAB'
                 alt=''
             />
-            <div id='colabBody' aria-label='Home'>
+            <div id='colabBody' aria-label='Home' onClick={goToTop}>
                 <Link className='colab' id='colabBodyLink' to='/'>
                     ingenyus x HACK A BOSS
                 </Link>

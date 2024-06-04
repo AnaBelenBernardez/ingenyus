@@ -17,9 +17,13 @@ function Home() {
         };
     }, []);
 
+    const goToTop = () => {
+        window.scrollTo(0, 0);
+    };
+
     return (
         <div className='home'>
-            <button className='buttonHome'>
+            <button className='buttonHome' onClick={goToTop}>
                 <Link id='linkHome' to='/' aria-label='Home'>
                     <img
                         className='logoButtonHome'

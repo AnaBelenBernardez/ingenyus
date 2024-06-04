@@ -13,13 +13,24 @@
     position: fixed;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    -webkit-animation: spinner-aib1d7 3s infinite linear;
     animation: spinner-aib1d7 3s infinite linear;
     z-index: 999;
 }
 
+@-webkit-keyframes spinner-aib1d7 {
+    to {
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
 @keyframes spinner-aib1d7 {
     to {
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }

@@ -4,10 +4,17 @@
     padding-right: 7rem;
     background-color: var(--denim);
     height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     color: var(--athens);
-    font-family: 'Satoshi-Light';
+    font-family: 'Satoshi-Light', sans-serif;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: relative;
     z-index: 6;
@@ -16,22 +23,23 @@
 .both_title {
     padding: 3rem 0rem 0rem 0rem;
     font-size: 67.2px;
-    margin-bottom: 1rem;
     font-weight: 300;
     line-height: 96px;
     margin-bottom: 2rem;
-    font-family: 'Satoshi-Light';
+    font-family: 'Satoshi-Light', sans-serif;
 }
 
 .nc_text {
     font-size: 16.8px;
     font-style: none;
-    font-family: 'Satoshi-Light';
+    font-family: 'Satoshi-Light', sans-serif;
     font-weight: 300;
     color: var(--athens);
 }
 
 .newsletter {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 5rem;
     padding-top: 2.9rem;
@@ -40,6 +48,8 @@
 
 .newsletter_left,
 .newsletter_right {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
 }
 
@@ -48,7 +58,12 @@
 }
 
 .newsletter_email {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -63,15 +78,49 @@
 
 .hidden_form_input.clicked,
 .hidden_form_textarea.clicked {
-    /* background-color: var(--athens); */
-    /* font-weight: bolder; */
     color: var(--athens);
-    padding-left: 0.1rem;
+}
+
+.hidden_form_input.clicked::-moz-selection {
+    background-color: var(--athens);
+    color: var(--denim);
 }
 
 .hidden_form_input.clicked::selection {
     background-color: var(--athens);
     color: var(--denim);
+}
+
+.newsletter_email input::-webkit-input-placeholder,
+.newsletter_email textarea::-webkit-input-placeholder {
+    color: var(--athens);
+    opacity: 0.3;
+    font-size: 16.8px;
+    padding-left: 0.1rem;
+}
+
+.newsletter_email input::-moz-placeholder,
+.newsletter_email textarea::-moz-placeholder {
+    color: var(--athens);
+    opacity: 0.3;
+    font-size: 16.8px;
+    padding-left: 0.1rem;
+}
+
+.newsletter_email input:-ms-input-placeholder,
+.newsletter_email textarea:-ms-input-placeholder {
+    color: var(--athens);
+    opacity: 0.3;
+    font-size: 16.8px;
+    padding-left: 0.1rem;
+}
+
+.newsletter_email input::-ms-input-placeholder,
+.newsletter_email textarea::-ms-input-placeholder {
+    color: var(--athens);
+    opacity: 0.3;
+    font-size: 16.8px;
+    padding-left: 0.1rem;
 }
 
 .newsletter_email input::placeholder,
@@ -97,16 +146,23 @@
     font-weight: 400;
     width: 68px;
     height: 34px;
-    border: 1px;
     margin-top: 1rem;
     cursor: pointer;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
     transition: transform 0.5s ease;
+    transition:
+        transform 0.5s ease,
+        -webkit-transform 0.5s ease;
     background-color: var(--denim);
     color: var(--athens);
     border: 1px solid var(--athens);
 }
 
 .button_contact.transformed {
+    -webkit-transform: translateY(28rem);
+    -ms-transform: translateY(28rem);
     transform: translateY(28rem);
     width: 3rem;
 }
@@ -124,16 +180,19 @@
 
 .animation_checkbox {
     opacity: 1;
-    /* Inicialmente, o elemento estará invisível */
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
     transform: translateY(-100%);
-    /* O elemento estará posicionado acima */
+    -webkit-animation: slideDownCheckbox 1s ease forwards;
     animation: slideDownCheckbox 1s ease forwards;
-    /* Aplica a animação */
 }
 
 .animation_checkbox.slideUpCheckbox {
+    -webkit-animation: slideUpCheckbox 1s ease forwards;
     animation: slideUpCheckbox 1s ease forwards;
     visibility: hidden;
+    -webkit-transition: 700ms ease;
+    -o-transition: 700ms ease;
     transition: 700ms ease;
 }
 
@@ -143,7 +202,7 @@
 }
 
 .checkbox_email_confirm > label > a {
-    font-family: 'Satoshi-Light';
+    font-family: 'Satoshi-Light', sans-serif;
     text-decoration: none;
     color: var(--athens);
     width: 20%;
@@ -153,56 +212,118 @@
     padding-top: 2rem;
 }
 
-@keyframes slideDownCheckbox {
+@-webkit-keyframes slideDownCheckbox {
     from {
         opacity: 0;
+        -webkit-transform: translateY(-5%);
         transform: translateY(-5%);
     }
 
     to {
         opacity: 1;
+        -webkit-transform: translateY(0);
         transform: translateY(0);
+    }
+}
+
+@keyframes slideDownCheckbox {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-5%);
+        transform: translateY(-5%);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes slideUpCheckbox {
+    from {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(-5%);
+        transform: translateY(-5%);
     }
 }
 
 @keyframes slideUpCheckbox {
     from {
         opacity: 1;
+        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 
     to {
         opacity: 0;
+        -webkit-transform: translateY(-5%);
         transform: translateY(-5%);
+    }
+}
+
+@-webkit-keyframes slideDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-5%);
+        transform: translateY(-5%);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(16%);
+        transform: translateY(16%);
     }
 }
 
 @keyframes slideDown {
     from {
         opacity: 0;
+        -webkit-transform: translateY(-5%);
         transform: translateY(-5%);
     }
 
     to {
         opacity: 1;
+        -webkit-transform: translateY(16%);
         transform: translateY(16%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    from {
+        opacity: 1;
+        -webkit-transform: translateY(16%);
+        transform: translateY(16%);
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(-5%);
+        transform: translateY(-5%);
     }
 }
 
 @keyframes slideUp {
     from {
         opacity: 1;
+        -webkit-transform: translateY(16%);
         transform: translateY(16%);
     }
 
     to {
         opacity: 0;
+        -webkit-transform: translateY(-5%);
         transform: translateY(-5%);
     }
 }
 
-/* 
-adicionar mais um bocado de padding - comparar c/ o site da ingenyous + formulario de contacto*/
 /*Tablet */
 @media (max-width: 1320px) {
     .button_contact {
@@ -227,20 +348,21 @@ adicionar mais um bocado de padding - comparar c/ o site da ingenyous + formular
     .newsletter_contact {
         padding-left: 2rem;
         padding-right: 2rem;
+        height: 100%;
     }
 
     .both_title {
         padding: 0;
         margin-top: 1rem;
+        font-size: 40px;
     }
 
     .newsletter {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 0rem;
-    }
-
-    .newsletter_contact {
-        height: 100%;
     }
 
     .newsletter_right {
@@ -255,10 +377,6 @@ adicionar mais um bocado de padding - comparar c/ o site da ingenyous + formular
 
     .contact_button_box {
         padding-top: 2rem;
-    }
-
-    .both_title {
-        font-size: 40px;
     }
 
     .hidden_form {

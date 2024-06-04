@@ -1,30 +1,44 @@
 .backgroundSolid {
     position: relative;
-    background-size: cover;
     background: var(--codgray);
+    background-size: cover;
     z-index: 2;
 }
 
 .homePage {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 5rem;
-    padding: 2rem;
     z-index: 10;
+    padding: 2rem 2rem 5rem 2rem;
 }
 
 .landingHome {
     position: relative;
     height: 100vh;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    position: relative;
     z-index: 3;
 }
 
@@ -39,14 +53,14 @@
 }
 
 #homeTitle1 {
-    font-family: 'Lastik';
+    font-family: 'Lastik', serif;
     font-size: 60px;
     margin-bottom: -2rem;
     margin-right: 2rem;
 }
 
 #homeTitle2 {
-    font-family: 'Satoshi-Regular';
+    font-family: 'Satoshi-Regular', sans-serif;
     font-size: 45px;
     margin-bottom: -0.8rem;
     margin-left: 9rem;
@@ -54,7 +68,7 @@
 }
 
 #homeTitle3 {
-    font-family: 'Lastik';
+    font-family: 'Lastik', serif;
     font-size: 55px;
     margin-left: 3rem;
     position: relative;
@@ -89,7 +103,7 @@
     color: var(--athens);
     border: 1px var(--athens) solid;
     border-radius: 50rem;
-    font-family: 'Satoshi-Regular';
+    font-family: 'Satoshi-Regular', sans-serif;
     margin-top: 1rem;
     padding: 0.2rem 1.8rem 0.4rem 1.8rem;
 }
@@ -108,14 +122,25 @@
 
 .homeScroll {
     margin-top: 0.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .homeNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -126,8 +151,15 @@
 .homeNav > ul {
     list-style: none;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     z-index: 0;
 }
@@ -152,25 +184,25 @@
 .navAddons {
     width: 2rem;
     font-size: 3rem;
-    font-family: 'Satoshi-Bold';
+    font-family: 'Satoshi-Bold', sans-serif;
     color: var(--athens);
     margin-right: 1rem;
 }
 
 .lastikNavHome > a {
-    font-family: 'Lastik';
+    font-family: 'Lastik', serif;
     font-weight: 400;
     line-height: 40px;
 }
 
 .satoshiNavHome > a {
-    font-family: 'Satoshi-Regular';
+    font-family: 'Satoshi-Regular', sans-serif;
     font-weight: 400;
     line-height: 40px;
 }
 
 .italicNavHome > a {
-    font-family: 'Satoshi-Italic';
+    font-family: 'Satoshi-Italic', sans-serif;
     font-weight: 400;
     line-height: 40px;
 }
@@ -222,11 +254,8 @@
     }
     #homeINAddon.englishAddon {
         right: 0.7rem;
-    }
-    #homeINAddon.englishAddon {
         right: 2.5rem;
     }
-
     .colab {
         padding: 0.2rem 1.8rem 0.4rem 1.8rem;
         font-size: 16px;
@@ -244,13 +273,22 @@
 
     .homeNav > ul {
         padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
     .homeNav > ul > li {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         margin-bottom: -1.5rem;
     }
@@ -302,6 +340,8 @@
         position: fixed;
         pointer-events: none;
         background-size: cover;
+        -webkit-transition: scale 300ms;
+        -o-transition: scale 300ms;
         transition: scale 300ms;
         display: none;
     }

@@ -25,10 +25,7 @@ li {
     position: absolute;
     top: 50%;
     left: 1.7rem;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-}
-
-.buttonNav:hover .triangleDown,
-.buttonLang:hover .triangleDown {
-    border-top-color: var(--denim);
 }

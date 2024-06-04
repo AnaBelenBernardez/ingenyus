@@ -28,6 +28,11 @@ body {
     --denim: #1560bd;
 }
 
+::-moz-selection {
+    background-color: var(--athens);
+    color: var(--denim);
+}
+
 ::selection {
     background-color: var(--athens);
     color: var(--denim);

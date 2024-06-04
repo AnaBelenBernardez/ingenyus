@@ -1,5 +1,5 @@
 {
-    "name": "proyecto",
+    "name": "ingenyus-cientificas",
     "private": true,
     "version": "0.0.0",
     "type": "module",
@@ -11,8 +11,10 @@
         "lint:fix": "eslint . --fix",
         "lint:check": "eslint .",
         "format:fix": "prettier --write .",
-        "format:check": "prettier --check ."
+        "format:check": "prettier --check .",
+        "prefix": "postcss ./src/css/layout/_ContactNewsletter.css --use autoprefixer -d ./src/css/prefixed/"
     },
+    "browserslist": "last 4 versions",
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.5.2",
         "@fortawesome/free-brands-svg-icons": "^6.5.2",

@@ -35,6 +35,7 @@
 .ellipseWhite {
     position: absolute;
     background: var(--athens);
+    -webkit-filter: blur(40vw);
     filter: blur(40vw);
     border-radius: 50%;
     width: 80vw;
@@ -47,6 +48,7 @@
 .ellipseBlue {
     position: absolute;
     background: var(--denim);
+    -webkit-filter: blur(25vw);
     filter: blur(25vw);
     border-radius: 50%;
     width: 80vw;
@@ -84,6 +86,7 @@
 .ellipseWhiteMap {
     position: absolute;
     background: var(--athens);
+    -webkit-filter: blur(170.825px);
     filter: blur(170.825px);
     width: 996.58px;
     height: 973.37px;
@@ -94,6 +97,7 @@
 .ellipseBlueMap {
     position: absolute;
     background: var(--denim);
+    -webkit-filter: blur(183.578px);
     filter: blur(183.578px);
     height: 861.15px;
     border-radius: 50%;
@@ -195,18 +199,22 @@
 
 @media (min-width: 680px) {
     .ellipseWhite {
+        -webkit-filter: blur(30vw);
         filter: blur(30vw);
     }
 
     .ellipseBlue {
+        -webkit-filter: blur(15vw);
         filter: blur(15vw);
     }
     .ellipseWhiteMap {
+        -webkit-filter: blur(25vw);
         filter: blur(25vw);
         width: 1800px;
     }
 
     .ellipseBlueMap {
+        -webkit-filter: blur(20vw);
         filter: blur(20vw);
         height: 1500px;
     }
@@ -216,6 +224,7 @@
     .ellipseWhite {
         position: absolute;
         background: var(--athens);
+        -webkit-filter: blur(10vw);
         filter: blur(10vw);
         border-radius: 50%;
         width: 80vw;
@@ -225,6 +234,7 @@
     .ellipseBlue {
         position: absolute;
         background: var(--denim);
+        -webkit-filter: blur(15vw);
         filter: blur(15vw);
         border-radius: 50%;
         width: 80vw;
@@ -235,6 +245,7 @@
         left: 15%;
         top: -10%;
         bottom: 20%;
+        -webkit-filter: blur(10vw);
         filter: blur(10vw);
         width: 99vw;
         height: 99vw;
@@ -262,6 +273,7 @@
     }
 
     .ellipseWhiteMap {
+        -webkit-filter: blur(254.5px);
         filter: blur(254.5px);
         width: 1482.86px;
         height: 1663.94px;
@@ -270,6 +282,7 @@
     .ellipseBlueMap {
         width: 1482.86px;
         height: 1663.94px;
+        -webkit-filter: blur(273.5px);
         filter: blur(273.5px);
     }
 

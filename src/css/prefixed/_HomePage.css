@@ -1,0 +1,357 @@
+.backgroundSolid {
+    position: relative;
+    background-size: cover;
+    background: var(--codgray);
+    z-index: 2;
+}
+
+.homePage {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 5rem;
+    padding: 2rem;
+    z-index: 10;
+}
+
+.landingHome {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.homeTitle {
+    margin-bottom: 2rem;
+}
+
+.homeTitle > span {
+    font-weight: 400;
+    color: var(--athens);
+    display: block;
+}
+
+#homeTitle1 {
+    font-family: 'Lastik';
+    font-size: 60px;
+    margin-bottom: -2rem;
+    margin-right: 2rem;
+}
+
+#homeTitle2 {
+    font-family: 'Satoshi-Regular';
+    font-size: 45px;
+    margin-bottom: -0.8rem;
+    margin-left: 9rem;
+    position: relative;
+}
+
+#homeTitle3 {
+    font-family: 'Lastik';
+    font-size: 55px;
+    margin-left: 3rem;
+    position: relative;
+}
+
+#homeHABAddon {
+    position: absolute;
+    width: 105px;
+    top: 1.6rem;
+    left: -8.4rem;
+}
+
+#homeINAddon {
+    position: absolute;
+    width: 30px;
+    top: 1.1rem;
+    right: -0.5rem;
+}
+
+#homeTitle3.englishTitle {
+    margin-left: -3rem;
+}
+
+#homeHABAddon.englishAddon {
+    left: -9rem;
+}
+#homeINAddon.englishAddon {
+    right: 0.7rem;
+}
+
+.colab {
+    color: var(--athens);
+    border: 1px var(--athens) solid;
+    border-radius: 50rem;
+    font-family: 'Satoshi-Regular';
+    margin-top: 1rem;
+    padding: 0.2rem 1.8rem 0.4rem 1.8rem;
+}
+
+.homeScrollContainer {
+    position: absolute;
+    bottom: 5rem;
+    width: 100%;
+    font-size: 14px;
+}
+
+.homeScrollContainer > span {
+    color: var(--athens);
+    font-size: 14px;
+}
+
+.homeScroll {
+    margin-top: 0.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.homeNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: var(--athens);
+    z-index: 5;
+}
+
+.homeNav > ul {
+    list-style: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.homeNav > ul > li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.buttonNavHome {
+    background-color: transparent;
+    border: none;
+    cursor: none;
+}
+
+.buttonNavHome > a {
+    color: var(--athens);
+    text-decoration: none;
+    font-size: 45px;
+}
+
+.navAddons {
+    width: 2rem;
+    font-size: 3rem;
+    font-family: 'Satoshi-Bold';
+    color: var(--athens);
+    margin-right: 1rem;
+}
+
+.lastikNavHome > a {
+    font-family: 'Lastik';
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.satoshiNavHome > a {
+    font-family: 'Satoshi-Regular';
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.italicNavHome > a {
+    font-family: 'Satoshi-Italic';
+    font-weight: 400;
+    line-height: 40px;
+}
+
+@media (min-width: 1200px) {
+    .homePage {
+        padding: 0;
+    }
+
+    .homeTitle {
+        margin-bottom: 1rem;
+    }
+
+    #homeTitle1 {
+        font-size: 120px;
+        margin-bottom: -4rem;
+        margin-right: 5rem;
+    }
+
+    #homeTitle2 {
+        font-size: 90px;
+        margin-bottom: -1.5rem;
+        margin-left: 17.5rem;
+    }
+
+    #homeTitle3 {
+        font-size: 110px;
+        margin-left: 5rem;
+    }
+
+    #homeHABAddon {
+        width: 206px;
+        top: 3.3rem;
+        left: -17rem;
+    }
+
+    #homeINAddon {
+        width: 55px;
+        top: 2.5rem;
+        right: 0rem;
+    }
+
+    #homeTitle3.englishTitle {
+        margin-left: -7rem;
+    }
+
+    #homeHABAddon.englishAddon {
+        left: -17.5rem;
+    }
+    #homeINAddon.englishAddon {
+        right: 0.7rem;
+    }
+    #homeINAddon.englishAddon {
+        right: 2.5rem;
+    }
+
+    .colab {
+        padding: 0.2rem 1.8rem 0.4rem 1.8rem;
+        font-size: 16px;
+    }
+
+    .homeScrollContainer {
+        bottom: 2rem;
+        font-size: 16px;
+    }
+
+    .homeNav {
+        margin-top: 5rem;
+        height: 100vh;
+    }
+
+    .homeNav > ul {
+        padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .homeNav > ul > li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: -1.5rem;
+    }
+
+    #liCheNav {
+        position: relative;
+        left: 3rem;
+    }
+
+    #liBioNav {
+        position: relative;
+        right: 5rem;
+    }
+
+    #liMathNav {
+        position: relative;
+        left: 3rem;
+    }
+
+    .buttonNavHome > a {
+        font-size: 90px;
+        margin-left: -2rem;
+        margin-right: 1.5rem;
+        cursor: none;
+    }
+
+    .navAddons {
+        font-size: 90px;
+        margin-right: 4rem;
+        cursor: none;
+    }
+
+    #desktopINNavHome {
+        width: 4rem;
+    }
+
+    .cursor > img {
+        position: absolute;
+        width: 20rem;
+        height: auto;
+        right: 1rem;
+        top: -15rem;
+        pointer-events: none;
+        z-index: 6;
+    }
+
+    .cursor {
+        background-color: transparent;
+        position: fixed;
+        pointer-events: none;
+        background-size: cover;
+        -webkit-transition: scale 300ms;
+        transition: scale 300ms;
+        display: none;
+    }
+
+    .homeNav:hover + .cursor {
+        display: block;
+        z-index: 5;
+    }
+}

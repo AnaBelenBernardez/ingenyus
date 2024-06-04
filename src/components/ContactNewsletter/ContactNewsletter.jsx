@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../../css/layout/_Contact&Newsletter.css';
+import '../../css/layout/_ContactNewsletter.css';
 import { useTranslation } from 'react-i18next';
 
 export function Contact_Newsletter() {

@@ -15,10 +15,6 @@ body {
     font-family: 'Satoshi-Regular', serif;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .main {
     margin: 0 auto;
 }

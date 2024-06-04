@@ -1,7 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
 .main {
     margin: 0 auto;
 }
@@ -26,6 +22,11 @@ body {
     --codgray: #1d1d1d;
     --athens: #e8e8e8;
     --denim: #1560bd;
+}
+
+::-moz-selection {
+    background-color: var(--athens);
+    color: var(--denim);
 }
 
 ::selection {

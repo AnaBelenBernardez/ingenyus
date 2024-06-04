@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Satoshi-Regular';
 }
@@ -12,10 +13,6 @@ body {
     --denim: #1851e3;
     --gallery: #eeeeee;
     font-family: 'Satoshi-Regular', serif;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 .main {

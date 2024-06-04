@@ -4,10 +4,17 @@
     padding-right: 7rem;
     background-color: var(--denim);
     height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     color: var(--athens);
     font-family: 'Satoshi-Light';
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: relative;
     z-index: 6;
@@ -32,6 +39,8 @@
 }
 
 .newsletter {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 5rem;
     padding-top: 2.9rem;
@@ -40,6 +49,8 @@
 
 .newsletter_left,
 .newsletter_right {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
 }
 
@@ -48,7 +59,12 @@
 }
 
 .newsletter_email {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -61,17 +77,46 @@
     outline: none;
 }
 
-.hidden_form_input.clicked,
-.hidden_form_textarea.clicked {
-    /* background-color: var(--athens); */
-    /* font-weight: bolder; */
-    color: var(--athens);
-    padding-left: 0.1rem;
+.hidden_form_input.clicked::-moz-selection {
+    background-color: var(--athens);
+    color: var(--denim);
 }
 
 .hidden_form_input.clicked::selection {
     background-color: var(--athens);
     color: var(--denim);
+}
+
+.newsletter_email input::-webkit-input-placeholder,
+.newsletter_email textarea::-webkit-input-placeholder {
+    color: var(--athens);
+    opacity: 0.3;
+    font-size: 16.8px;
+    padding-left: 0.1rem;
+}
+
+.newsletter_email input::-moz-placeholder,
+.newsletter_email textarea::-moz-placeholder {
+    color: var(--athens);
+    opacity: 0.3;
+    font-size: 16.8px;
+    padding-left: 0.1rem;
+}
+
+.newsletter_email input:-ms-input-placeholder,
+.newsletter_email textarea:-ms-input-placeholder {
+    color: var(--athens);
+    opacity: 0.3;
+    font-size: 16.8px;
+    padding-left: 0.1rem;
+}
+
+.newsletter_email input::-ms-input-placeholder,
+.newsletter_email textarea::-ms-input-placeholder {
+    color: var(--athens);
+    opacity: 0.3;
+    font-size: 16.8px;
+    padding-left: 0.1rem;
 }
 
 .newsletter_email input::placeholder,
@@ -100,13 +145,20 @@
     border: 1px;
     margin-top: 1rem;
     cursor: pointer;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
+    transition:
+        transform 0.5s ease,
+        -webkit-transform 0.5s ease;
     background-color: var(--denim);
     color: var(--athens);
     border: 1px solid var(--athens);
 }
 
 .button_contact.transformed {
+    -webkit-transform: translateY(28rem);
+    -ms-transform: translateY(28rem);
     transform: translateY(28rem);
     width: 3rem;
 }
@@ -125,15 +177,20 @@
 .animation_checkbox {
     opacity: 1;
     /* Inicialmente, o elemento estará invisível */
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
     transform: translateY(-100%);
     /* O elemento estará posicionado acima */
+    -webkit-animation: slideDownCheckbox 1s ease forwards;
     animation: slideDownCheckbox 1s ease forwards;
     /* Aplica a animação */
 }
 
 .animation_checkbox.slideUpCheckbox {
+    -webkit-animation: slideUpCheckbox 1s ease forwards;
     animation: slideUpCheckbox 1s ease forwards;
     visibility: hidden;
+    -webkit-transition: 700ms ease;
     transition: 700ms ease;
 }
 
@@ -153,50 +210,114 @@
     padding-top: 2rem;
 }
 
-@keyframes slideDownCheckbox {
+@-webkit-keyframes slideDownCheckbox {
     from {
         opacity: 0;
+        -webkit-transform: translateY(-5%);
         transform: translateY(-5%);
     }
 
     to {
         opacity: 1;
+        -webkit-transform: translateY(0);
         transform: translateY(0);
+    }
+}
+
+@keyframes slideDownCheckbox {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-5%);
+        transform: translateY(-5%);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes slideUpCheckbox {
+    from {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(-5%);
+        transform: translateY(-5%);
     }
 }
 
 @keyframes slideUpCheckbox {
     from {
         opacity: 1;
+        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 
     to {
         opacity: 0;
+        -webkit-transform: translateY(-5%);
         transform: translateY(-5%);
+    }
+}
+
+@-webkit-keyframes slideDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-5%);
+        transform: translateY(-5%);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(16%);
+        transform: translateY(16%);
     }
 }
 
 @keyframes slideDown {
     from {
         opacity: 0;
+        -webkit-transform: translateY(-5%);
         transform: translateY(-5%);
     }
 
     to {
         opacity: 1;
+        -webkit-transform: translateY(16%);
         transform: translateY(16%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    from {
+        opacity: 1;
+        -webkit-transform: translateY(16%);
+        transform: translateY(16%);
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(-5%);
+        transform: translateY(-5%);
     }
 }
 
 @keyframes slideUp {
     from {
         opacity: 1;
+        -webkit-transform: translateY(16%);
         transform: translateY(16%);
     }
 
     to {
         opacity: 0;
+        -webkit-transform: translateY(-5%);
         transform: translateY(-5%);
     }
 }
@@ -235,6 +356,9 @@ adicionar mais um bocado de padding - comparar c/ o site da ingenyous + formular
     }
 
     .newsletter {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 0rem;
     }

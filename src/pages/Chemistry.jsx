@@ -2,6 +2,7 @@ import ChemistryMap from '../components/Maps/ChemistryMap';
 import '../assets/styles/General.css';
 import '../assets/styles/Maps.css';
 import '../assets/styles/Background.css';
+import '../assets/styles/BackgroundSafari.css';
 import Loading from '../components/Loading.jsx';
 import { useEffect, useState } from 'react';
 import DesktopNavHome from '../components/DesktopNavHome.jsx';

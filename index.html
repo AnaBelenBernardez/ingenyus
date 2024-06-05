@@ -6,8 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Científicas que nos inspiran*</title>
         <link rel="stylesheet" href="./src/assets/fonts/fonts.css" />
+        <script>
+            // JavaScript to detect if the browser is Safari
+            if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+                // If Safari, load BackgroundSafari.css
+                document.write(
+                    '<link rel="stylesheet" href="./src/assets/styles/BackgroundSafari.css" />'
+                );
+            } else {
+                // If not Safari, load Background.css
+                document.write(
+                    '<link rel="stylesheet" href="./src/assets/styles/Background.css" />'
+                );
+            }
+        </script>
     </head>
-
     <body>
         <div id="root"></div>
         <script type="module" src="/src/main.jsx"></script>

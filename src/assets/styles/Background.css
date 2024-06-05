@@ -5,17 +5,6 @@
     z-index: 2;
     -webkit-font-smoothing: antialiased;
 }
-.noiseBackHome {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/noise.png');
-    background-position: center;
-    z-index: 3;
-}
-
 .noiseBack {
     position: absolute;
     top: 0;
@@ -27,31 +16,34 @@
     z-index: 0;
 }
 
+.noiseBackHome {
+    z-index: 3;
+}
+
 .blurBack {
     overflow: hidden;
     position: relative;
 }
 
-.ellipseWhite {
+.ellipseWhite,
+.ellipseBlue {
     position: absolute;
-    background: var(--athens);
-    -webkit-filter: blur(40vw);
-    filter: blur(40vw);
     border-radius: 50%;
     width: 634.83px;
     height: 711.31px;
     z-index: 2;
 }
 
+.ellipseWhite {
+    background: var(--athens);
+    -webkit-filter: blur(40vw);
+    filter: blur(40vw);
+}
+
 .ellipseBlue {
-    position: absolute;
     background: var(--denim);
     -webkit-filter: blur(25vw);
     filter: blur(25vw);
-    border-radius: 50%;
-    width: 634.83px;
-    height: 711.31px;
-    z-index: 2;
 }
 
 #e7 {
@@ -79,25 +71,26 @@
     top: 50%;
 }
 
-.ellipseWhiteMap {
+.ellipseWhiteMap,
+.ellipseBlueMap {
     position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.ellipseWhiteMap {
     background: var(--athens);
     -webkit-filter: blur(170.825px);
     filter: blur(170.825px);
     width: 996.58px;
     height: 973.37px;
-    border-radius: 50%;
-    z-index: -1;
 }
 
 .ellipseBlueMap {
-    position: absolute;
     background: var(--denim);
     -webkit-filter: blur(183.578px);
     filter: blur(183.578px);
     height: 861.15px;
-    border-radius: 50%;
-    z-index: -1;
 }
 
 #e22 {

@@ -7,6 +7,7 @@ import DesktopNavHome from '../components/DesktopNavHome.jsx';
 import MobileNavHome from '../components/MobileNavHome.jsx';
 import BodyAddons from '../components/BodyAddons.jsx';
 import '../assets/styles/Background.css';
+import '../assets/styles/BackgroundSafari.css';
 import Header from '../components/Header/index.jsx';
 import { ContactNewsletter } from '../components/ContactNewsletter.jsx';
 import Footer from '../components/Footer.jsx';

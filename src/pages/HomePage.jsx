@@ -9,6 +9,7 @@ import '../assets/styles/Background.css';
 import Header from '../components/Header/index.jsx';
 import { ContactNewsletter } from '../components/ContactNewsletter.jsx';
 import Footer from '../components/Footer.jsx';
+import '../assets/styles/BackgroundSafari.css';
 
 const HomePage = () => {
     const { t, i18n } = useTranslation();

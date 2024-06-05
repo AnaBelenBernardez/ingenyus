@@ -2,14 +2,19 @@
     background-color: transparent;
     border: none;
     color: var(--athens);
-    font-family: 'Satoshi-Regular';
+    font-family: 'Satoshi-Regular', sans-serif;
     font-size: 18px;
     cursor: pointer;
 }
 
 .nav > ul {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     gap: 1rem;
     width: 100%;

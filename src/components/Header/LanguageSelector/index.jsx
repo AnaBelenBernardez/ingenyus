@@ -14,35 +14,33 @@ function LanguageSelector() {
     };
 
     return (
-        <>
-            <div className='languageSelector'>
-                <li>
-                    <ul
-                        id='languageSelector'
-                        onClick={toggleLanguages}
-                        aria-expanded={showLanguages}
+        <div className='languageSelector'>
+            <li>
+                <ul
+                    id='languageSelector'
+                    onClick={toggleLanguages}
+                    aria-expanded={showLanguages}
+                >
+                    <li
+                        className={`buttonNav buttonLang language ${i18n.language === 'es' ? 'active' : ''}`}
+                        onClick={() => handleChangeLanguage('es')}
+                        id='esSelector'
                     >
+                        es
+                        <div className='triangleDown' />
+                    </li>
+                    {showLanguages && (
                         <li
                             className={`buttonNav buttonLang language ${i18n.language === 'es' ? 'active' : ''}`}
-                            onClick={() => handleChangeLanguage('es')}
-                            id='esSelector'
+                            onClick={() => handleChangeLanguage('en')}
+                            id='enSelector'
                         >
-                            es
-                            <div className='triangleDown' />
+                            en
                         </li>
-                        {showLanguages && (
-                            <li
-                                className={`buttonNav buttonLang language ${i18n.language === 'es' ? 'active' : ''}`}
-                                onClick={() => handleChangeLanguage('en')}
-                                id='enSelector'
-                            >
-                                en
-                            </li>
-                        )}
-                    </ul>
-                </li>
-            </div>
-        </>
+                    )}
+                </ul>
+            </li>
+        </div>
     );
 }
 

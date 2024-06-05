@@ -1,8 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Satoshi-Regular';
+    font-family: 'Satoshi-Regular', sans-serif;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
     --athens: #f7f7f8;
     --denim: #1851e3;
     --gallery: #eeeeee;
-    font-family: 'Satoshi-Regular', serif;
+    font-family: 'Satoshi-Regular', sans-serif;
 }
 
 .main {

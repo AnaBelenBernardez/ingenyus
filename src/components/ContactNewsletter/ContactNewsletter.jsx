@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../../css/layout/_ContactNewsletter.css';
 import { useTranslation } from 'react-i18next';
 
-export function Contact_Newsletter() {
+export function ContactNewsletter() {
     const [clickedInput, setClickedInput] = useState(false);
     const [showTextNewsletter, setShowTextNewsletter] = useState(false);
 
@@ -30,7 +30,7 @@ export function Contact_Newsletter() {
                         <input type='hidden' name='u' />
                         <input type='hidden' name='id' value='ef5c40ecca' />
                         <input
-                            className={`hidden_form_input ${clickedInput === 'email' ? 'clicked' : ''}`}
+                            className={`hidden_form_input ${clickedInput == 'email' ? 'clicked' : ''}`}
                             type='email'
                             autoCapitalize='off'
                             autoCorrect='off'

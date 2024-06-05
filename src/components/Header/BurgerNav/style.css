@@ -6,16 +6,29 @@
     background-color: var(--denim);
     width: 100%;
     height: 101vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .navBurger > ul {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 2rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -42,11 +55,9 @@
     margin-top: -1;
     margin-right: 0.9rem;
     -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
     -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     cursor: pointer;
@@ -61,11 +72,9 @@
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
     -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 }
@@ -73,31 +82,27 @@
 #nav-icon span:nth-child(1) {
     top: 0px;
     -webkit-transform-origin: left center;
-    -moz-transform-origin: left center;
-    -o-transform-origin: left center;
+    -ms-transform-origin: left center;
     transform-origin: left center;
 }
 
 #nav-icon span:nth-child(2) {
     top: 16px;
     -webkit-transform-origin: left center;
-    -moz-transform-origin: left center;
-    -o-transform-origin: left center;
+    -ms-transform-origin: left center;
     transform-origin: left center;
 }
 
 #nav-icon span:nth-child(3) {
     top: 32px;
     -webkit-transform-origin: left center;
-    -moz-transform-origin: left center;
-    -o-transform-origin: left center;
+    -ms-transform-origin: left center;
     transform-origin: left center;
 }
 
 #nav-icon.open span:nth-child(1) {
     -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     top: -1.5px;
     left: 0;
@@ -110,43 +115,76 @@
 
 #nav-icon.open span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     top: 34px;
     left: 0;
 }
 
-@keyframes slideIn {
+@-webkit-keyframes slideIn {
     0% {
+        -webkit-transform: translateX(100%);
         transform: translateX(100%);
     }
 
     100% {
+        -webkit-transform: translateX(0);
         transform: translateX(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes slideOut {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
     }
 }
 
 @keyframes slideOut {
     0% {
+        -webkit-transform: translateX(0);
         transform: translateX(0);
     }
 
     100% {
+        -webkit-transform: translateX(100%);
         transform: translateX(100%);
     }
 }
 
 .navBurger.open {
+    -webkit-animation: slideIn 0.5s ease forwards;
     animation: slideIn 0.5s ease forwards;
 }
 
 .navBurger.close {
     visibility: hidden;
+    -webkit-animation: slideOut 0.5s ease forwards;
     animation: slideOut 0.5s ease forwards;
+    -webkit-transition: 500ms ease;
+    -o-transition: 500ms ease;
     transition: 500ms ease;
 }
 
 .botao-hover:hover .hoverEffect {
+    -webkit-transform: scaleX(0.75) !important;
+    -ms-transform: scaleX(0.75) !important;
     transform: scaleX(0.75) !important;
 }

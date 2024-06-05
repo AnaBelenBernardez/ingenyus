@@ -12,7 +12,7 @@ function Nav() {
 
     return (
         <nav className='nav'>
-            <ul role='navigation'>
+            <ul>
                 <li>
                     <button className='buttonNav' onClick={goToTop}>
                         <NavLink

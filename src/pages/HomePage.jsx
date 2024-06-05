@@ -7,7 +7,7 @@ import DesktopNavHome from '../components/DesktopNavHome.jsx';
 import Loading from '../components/Loading/index.jsx';
 import '../css/base/_backgrounds.css';
 import Header from '../components/Header/index.jsx';
-import { Contact_Newsletter } from '../components/ContactNewsletter/ContactNewsletter.jsx';
+import { ContactNewsletter } from '../components/ContactNewsletter/ContactNewsletter.jsx';
 import Footer from '../components/Footer/Footer.jsx';
 
 const HomePage = () => {
@@ -115,7 +115,7 @@ const HomePage = () => {
                 </div>
                 {isDesktop ? <DesktopNavHome /> : <MobileNavHome />}
             </main>
-            <Contact_Newsletter />
+            <ContactNewsletter />
             <Footer />
         </>
     );

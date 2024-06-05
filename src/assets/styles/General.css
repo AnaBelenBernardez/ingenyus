@@ -101,6 +101,43 @@
     margin-bottom: 1rem;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--codgray);
+    z-index: 99;
+    overflow: hidden;
+}
+
+.spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-animation: spinner-aib1d7 3s infinite linear;
+    animation: spinner-aib1d7 3s infinite linear;
+    z-index: 999;
+}
+
+@-webkit-keyframes spinner-aib1d7 {
+    to {
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes spinner-aib1d7 {
+    to {
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
 @media (min-width: 1200px) {
     .scroll-to-top {
         bottom: 3rem;

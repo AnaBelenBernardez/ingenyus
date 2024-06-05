@@ -1,4 +1,4 @@
-import './Footer.css';
+import '../assets/styles/Footer.css';
 import { useTranslation } from 'react-i18next';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

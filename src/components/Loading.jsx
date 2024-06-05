@@ -1,4 +1,4 @@
-import './style.css';
+import '../assets/styles/General.css';
 
 const Loading = () => {
     return (

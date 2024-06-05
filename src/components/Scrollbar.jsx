@@ -1,4 +1,4 @@
-import './style.css';
+import '../../src/index.css';
 
 function ScrollBar() {
     return (

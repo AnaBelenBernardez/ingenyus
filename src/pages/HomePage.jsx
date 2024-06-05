@@ -1,14 +1,14 @@
 import { useTranslation } from 'react-i18next';
-import '../css/layout/_HomePage.css';
-import '../css/layout/_General.css';
+import '../assets/styles/HomePage.css';
+import '../assets/styles/General.css';
 import MobileNavHome from '../components/MobileNavHome.jsx';
 import { useState, useEffect } from 'react';
 import DesktopNavHome from '../components/DesktopNavHome.jsx';
-import Loading from '../components/Loading/index.jsx';
-import '../css/base/_backgrounds.css';
+import Loading from '../components/Loading.jsx';
+import '../assets/styles/Background.css';
 import Header from '../components/Header/index.jsx';
-import { ContactNewsletter } from '../components/ContactNewsletter/ContactNewsletter.jsx';
-import Footer from '../components/Footer/Footer.jsx';
+import { ContactNewsletter } from '../components/ContactNewsletter.jsx';
+import Footer from '../components/Footer.jsx';
 
 const HomePage = () => {
     const { t, i18n } = useTranslation();

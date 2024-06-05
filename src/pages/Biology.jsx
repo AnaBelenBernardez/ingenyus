@@ -1,15 +1,15 @@
 import BiologyMap from '../components/Maps/BiologyMap';
-import '../css/layout/_General.css';
-import '../css/layout/_Maps.css';
-import Loading from '../components/Loading/index.jsx';
+import '../assets/styles/General.css';
+import '../assets/styles/Maps.css';
+import Loading from '../components/Loading.jsx';
 import { useEffect, useState } from 'react';
 import DesktopNavHome from '../components/DesktopNavHome.jsx';
 import MobileNavHome from '../components/MobileNavHome.jsx';
 import BodyAddons from '../components/BodyAddons.jsx';
-import '../css/base/_backgrounds.css';
+import '../assets/styles/Background.css';
 import Header from '../components/Header/index.jsx';
-import { ContactNewsletter } from '../components/ContactNewsletter/ContactNewsletter.jsx';
-import Footer from '../components/Footer/Footer.jsx';
+import { ContactNewsletter } from '../components/ContactNewsletter.jsx';
+import Footer from '../components/Footer.jsx';
 
 const Biology = () => {
     const [isLoading, setIsLoading] = useState(true);

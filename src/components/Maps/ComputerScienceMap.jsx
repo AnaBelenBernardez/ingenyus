@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import data from '../../../public/data.json';
-import '../../css/layout/_Maps.css';
+import '../../assets/styles/Maps.css';
 import { useState, useEffect, useRef } from 'react';
 
 export default function ComputerScienceMap() {

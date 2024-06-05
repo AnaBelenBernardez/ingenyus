@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useState, useEffect, useRef } from 'react';
-import '../../css/layout/_Maps.css';
+import '../../assets/styles/Maps.css';
 
 import data from '../../../public/data.json';
 export default function MathematicsMap() {

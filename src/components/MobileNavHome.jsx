@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
+import '../assets/styles/HomePage.css';
 
 const MobileNavHome = () => {
     const { t } = useTranslation();

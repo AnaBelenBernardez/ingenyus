@@ -6,10 +6,10 @@ import Chemistry from './pages/Chemistry';
 import Mathematics from './pages/Mathematics';
 import ComputerScience from './pages/ComputerScience';
 import Medicine from './pages/Medicine';
-import '../src/css/base/_globals.css';
+import './index.css';
 import PageTitle from './components/PageTitle';
-import ScrollBar from './components/ScrollBar';
 import { ErrorPage } from './pages/ErrorPage';
+import ScrollBar from './components/Scrollbar';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {

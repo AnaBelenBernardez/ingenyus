@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useState, useEffect, useRef } from 'react';
 import data from '../../../public/data.json';
-import '../../css/layout/_Maps.css';
+import '../../assets/styles/Maps.css';
 
 export default function ChemistryMap() {
     const { t, i18n } = useTranslation();

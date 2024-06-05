@@ -1,4 +1,4 @@
-import '../css/layout/_Maps.css';
+import '../assets/styles/Maps.css';
 import { Link } from 'react-router-dom';
 
 const BodyAddons = () => {

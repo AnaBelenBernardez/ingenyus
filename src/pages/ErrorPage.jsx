@@ -1,4 +1,4 @@
-import '../css/layout/_General.css';
+import '../assets/styles/General.css';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 

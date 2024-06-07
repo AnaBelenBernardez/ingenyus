@@ -9,12 +9,12 @@
         <link
             id="original-css"
             rel="stylesheet"
-            href="src/assets/styles/Background.css"
+            href="./src/assets/styles/Background.css"
         />
         <link
             id="safari-css"
             rel="stylesheet"
-            href="src/assets/styles/BackgroundSafari.css"
+            href="./src/assets/styles/BackgroundSafari.css"
         />
     </head>
     <body>
@@ -28,10 +28,6 @@
                 if (chromeAgent && safariAgent) {
                     safariAgent = false;
                 }
-
-                console.log('Chrome: ' + chromeAgent);
-                console.log('Safari: ' + safariAgent);
-                console.log('Cotillas');
 
                 if (safariAgent) {
                     document.getElementById('original-css').disabled = true;

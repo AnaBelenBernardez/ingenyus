@@ -6,7 +6,7 @@
 
 </div>
 
-![Lading Page](https://i.postimg.cc/PxYSS0V5/in-landing.png)
+![Lading Page](https://raw.githubusercontent.com/anabelenbernardez/ingenyus/main/src/cientificas.png)
 
 ## Developers
 

@@ -368,3 +368,97 @@
         top: 82%;
     }
 }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @supports (-webkit-touch-callout: none) and
+        (not (-webkit-overflow-scrolling: touch)) {
+        .ellipseWhite {
+            box-shadow: 0px 0px 190px 200px var(--athens);
+            opacity: 0.6;
+        }
+
+        .ellipseBlue {
+            box-shadow: 0px 0px 120px 120px var(--denim);
+            opacity: 0.8;
+        }
+
+        #e9 {
+            opacity: 0.3;
+        }
+
+        #e11 {
+            opacity: 0.3;
+        }
+
+        .ellipseWhiteMap {
+            box-shadow: 0px 0px 190px 200px var(--athens);
+            opacity: 0.6;
+        }
+
+        .ellipseBlueMap {
+            box-shadow: 0px 0px 120px 120px var(--denim);
+            opacity: 0.8;
+        }
+
+        @media (min-width: 680px) {
+            .ellipseWhite {
+                box-shadow: 0px 0px 200px 250px var(--athens);
+                opacity: 0.6;
+            }
+
+            .ellipseBlue {
+                box-shadow: 0 0 75px var(--denim);
+                box-shadow: 0px 0px 120px 120px var(--denim);
+                opacity: 0.8;
+            }
+
+            .ellipseWhiteMap {
+                box-shadow: 0px 0px 300px 400px var(--athens);
+                opacity: 0.6;
+            }
+
+            .ellipseBlueMap {
+                box-shadow: 0px 0px 350px 350px var(--denim);
+                opacity: 0.8;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .ellipseWhite {
+                box-shadow: 0px 0px 160px 200px var(--athens);
+                opacity: 0.6;
+            }
+
+            .ellipseBlue {
+                box-shadow: 0px 0px 120px 120px var(--denim);
+                opacity: 0.8;
+            }
+
+            #e8 {
+                transform: scale(1.1);
+            }
+
+            #e7 {
+                box-shadow: 0px 0px 200px 200px var(--denim);
+            }
+
+            #e9 {
+                opacity: 0.3;
+            }
+
+            #e11 {
+                opacity: 0.3;
+            }
+
+            .ellipseWhiteMap {
+                box-shadow: 0px 0px 300px 400px var(--athens);
+                opacity: 0.6;
+            }
+
+            .ellipseBlueMap {
+                box-shadow: 0px 0px 350px 350px var(--denim);
+                opacity: 0.8;
+            }
+        }
+    }
+}

@@ -37,8 +37,8 @@
     }
 
     .ellipseWhite {
-        background: var(--athens);
-        box-shadow: 0px 0px 190px 200px var(--athens);
+        background: red;
+        box-shadow: 0px 0px 190px 200px red;
         opacity: 0.6;
     }
 
@@ -83,8 +83,8 @@
     }
 
     .ellipseWhiteMap {
-        background: var(--athens);
-        box-shadow: 0px 0px 190px 200px var(--athens);
+        background: red;
+        box-shadow: 0px 0px 190px 200px red;
         opacity: 0.6;
         width: 996.58px;
         height: 973.37px;
@@ -191,7 +191,7 @@
 
     @media (min-width: 680px) {
         .ellipseWhite {
-            box-shadow: 0px 0px 200px 250px var(--athens);
+            box-shadow: 0px 0px 200px 250px red;
             opacity: 0.6;
         }
 
@@ -202,7 +202,7 @@
         }
 
         .ellipseWhiteMap {
-            box-shadow: 0px 0px 300px 400px var(--athens);
+            box-shadow: 0px 0px 300px 400px red;
             opacity: 0.6;
             width: 1800px;
         }
@@ -224,8 +224,8 @@
         }
 
         .ellipseWhite {
-            background: var(--athens);
-            box-shadow: 0px 0px 160px 200px var(--athens);
+            background: red;
+            box-shadow: 0px 0px 160px 200px red;
             opacity: 0.6;
         }
 
@@ -269,7 +269,7 @@
         }
 
         .ellipseWhiteMap {
-            box-shadow: 0px 0px 300px 400px var(--athens);
+            box-shadow: 0px 0px 300px 400px red;
             opacity: 0.6;
             width: 1482.86px;
             height: 1663.94px;

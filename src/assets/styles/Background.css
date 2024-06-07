@@ -368,3 +368,65 @@
         top: 82%;
     }
 }
+
+/* Safari */
+@media not all and (min-resolution: 0.001dpcm) {
+    .backgroundSolid {
+        background: var(--codgray);
+        background-size: cover;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .noiseBack {
+        background-image: url('/noise.png');
+        background-position: center;
+    }
+
+    .ellipseWhite {
+        box-shadow: 0px 0px 190px 200px var(--athens);
+        opacity: 0.6;
+    }
+
+    .ellipseBlue {
+        box-shadow: 0px 0px 120px 120px var(--denim);
+        opacity: 0.8;
+    }
+
+    #e9 {
+        opacity: 0.3;
+    }
+
+    #e11 {
+        opacity: 0.3;
+    }
+
+    .ellipseWhiteMap {
+        box-shadow: 0px 0px 190px 200px var(--athens);
+        opacity: 0.6;
+    }
+
+    .ellipseBlueMap {
+        box-shadow: 0px 0px 120px 120px var(--denim);
+        opacity: 0.8;
+    }
+
+    #e22 {
+        opacity: 0.7;
+    }
+
+    #e18 {
+        opacity: 0.8;
+    }
+
+    #e19 {
+        opacity: 0.8;
+    }
+
+    #e21 {
+        opacity: 1;
+    }
+
+    #e15 {
+        opacity: 0.8;
+    }
+}
